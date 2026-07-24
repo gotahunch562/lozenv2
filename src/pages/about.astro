@@ -1,0 +1,81 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CtaStrip from '../components/CtaStrip.astro';
+---
+
+<BaseLayout title="About Us — Exporta Global" description="Our story, mission, and the team helping businesses take their products to the world.">
+<section class="page-hero">
+  <div class="grid-bg"></div>
+  <div class="wrap inner">
+    <div class="crumb"><a href="/">Home</a> &nbsp;/&nbsp; About</div>
+    <span class="pill">Our story &amp; mission</span>
+    <h1>On a mission to create more exporters</h1>
+    <p class="sub">Exporta Global exists to make exporting accessible. We turn the complex, intimidating world of international trade into a clear, repeatable path — and we walk it alongside you.</p>
+    
+  </div>
+</section>
+
+<section id="main">
+  <div class="wrap two-col">
+    <div class="prose reveal">
+      <span class="eyebrow">Who we are</span>
+      <h2 class="h2">From a single export desk to a global practice</h2>
+      <p>What began as one consultant helping a handful of local businesses ship abroad has grown into a full-service export consultancy. Along the way we've helped hundreds of companies — from first-time exporters to large corporations — find buyers, ship correctly, and get paid.</p>
+      <p>We're not a brokerage and we're not a course factory. We're hands-on partners who care about one thing: that your products reach the world, profitably.</p>
+    </div>
+    <div class="reveal">
+      <div class="checklist" style="grid-template-columns:1fr">
+        <div class="check"><span class="ck">✓</span><p>Hundreds of businesses helped to export</p></div>
+        <div class="check"><span class="ck">✓</span><p>Shipments to 40+ countries</p></div>
+        <div class="check"><span class="ck">✓</span><p>20+ years of combined trade experience</p></div>
+        <div class="check"><span class="ck">✓</span><p>Hands-on, done-with-you approach</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="center section-head"><span class="eyebrow">What we believe</span><h2 class="h2">Our values</h2></div>
+    <div class="values">
+      <div class="value reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div><h3>Results over theory</h3><p>We measure success by shipments and revenue, not slide decks. Everything we do is built to produce real orders.</p></div>
+      <div class="value reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3>Partnership, not hand-offs</h3><p>We work alongside you through the hard parts — sourcing, shipping, payments — instead of handing you a plan and walking away.</p></div>
+      <div class="value reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div><h3>Honesty &amp; transparency</h3><p>Clear pricing, realistic timelines, and straight answers — including when a deal or market isn't worth pursuing.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="center section-head"><span class="eyebrow">Our journey</span><h2 class="h2">How we got here</h2></div>
+    <div class="timeline">
+      <div class="tl reveal"><div class="yr">The early years</div><h3>Started at the export desk</h3><p>Our founder began as a junior export executive, learning the trade shipment by shipment.</p></div>
+      <div class="tl reveal"><div class="yr">Growth</div><h3>From solo consulting to a team</h3><p>Word spread, demand grew, and a single consultant became a full practice serving SMEs and corporates.</p></div>
+      <div class="tl reveal"><div class="yr">Today</div><h3>Hundreds of exporters, 40+ markets</h3><p>We now help businesses of every size reach buyers across the world — and we're just getting started.</p></div>
+      <div class="tl reveal"><div class="yr">The mission</div><h3>Creating thousands of new exporters</h3><p>Our goal is to make exporting something any capable business can do well.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="center section-head"><span class="eyebrow">The team</span><h2 class="h2">People who do this every day</h2></div>
+    <div class="team">
+      <div class="member reveal"><div class="av"><img src="/founder-daniel-carter.png" alt="Daniel Carter" /></div><div class="nm">Daniel Carter</div><div class="rl">Founder &amp; Lead Consultant</div></div>
+      <div class="member reveal"><div class="av"><img src="/team-aisha-morgan.png" alt="Aisha Morgan" /></div><div class="nm">Aisha Morgan</div><div class="rl">Head of Market Research</div></div>
+      <div class="member reveal"><div class="av"><img src="/team-raj-kapoor.png" alt="Raj Kapoor" /></div><div class="nm">Raj Kapoor</div><div class="rl">Logistics &amp; Compliance Lead</div></div>
+      <div class="member reveal"><div class="av"><img src="/team-elena-lopez.png" alt="Elena Lopez" /></div><div class="nm">Elena Lopez</div><div class="rl">Buyer Relations Manager</div></div>
+    </div>
+  </div>
+</section>
+
+<CtaStrip
+  title="Ready to take your products global?"
+  description="Book a free consultation and we'll map out exactly how we can help you export profitably."
+  primaryHref="/contact"
+  primaryLabel="Get a Free Consultation →"
+  secondaryHref="/webinar"
+  secondaryLabel="Join the free webinar"
+  paddedTop={false}
+/>
+</BaseLayout>

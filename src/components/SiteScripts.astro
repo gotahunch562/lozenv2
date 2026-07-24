@@ -1,0 +1,121 @@
+<script>
+  const nav = document.getElementById('nav');
+  if (nav) {
+    addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 10));
+  }
+
+  const mb = document.getElementById('menuBtn');
+  const mp = document.getElementById('mobilePanel');
+  if (mb && mp) {
+    mb.addEventListener('click', () => mp.classList.toggle('open'));
+    mp.querySelectorAll('a').forEach((a) =>
+      a.addEventListener('click', () => mp.classList.remove('open'))
+    );
+  }
+
+  const io = new IntersectionObserver(
+    (entries) =>
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      }),
+    { threshold: 0.12 }
+  );
+  document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+
+  function animate(el) {
+    const target = Number(el.dataset.count);
+    const suffix = el.dataset.suffix || '';
+    const dur = 1400;
+    const t0 = performance.now();
+    function step(t) {
+      const p = Math.min((t - t0) / dur, 1);
+      const ease = 1 - Math.pow(1 - p, 3);
+      el.textContent =
+        Math.floor(ease * target).toLocaleString('en-US') + (p === 1 ? suffix : '');
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  const co = new IntersectionObserver(
+    (entries) =>
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          animate(entry.target);
+          co.unobserve(entry.target);
+        }
+      }),
+    { threshold: 0.5 }
+  );
+  document.querySelectorAll('[data-count]').forEach((el) => co.observe(el));
+
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      contactForm.style.display = 'none';
+      document.getElementById('contactSuccess')?.classList.add('show');
+    });
+  }
+
+  const consultForm = document.getElementById('consultForm');
+  if (consultForm) {
+    consultForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      consultForm.style.display = 'none';
+      document.getElementById('consultSuccess')?.classList.add('show');
+    });
+  }
+
+  const regForm = document.getElementById('regForm');
+  if (regForm) {
+    regForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      regForm.style.display = 'none';
+      document.getElementById('success')?.classList.add('show');
+      const seats = document.querySelector('.reg-card .seats');
+      if (seats instanceof HTMLElement) seats.style.display = 'none';
+    });
+  }
+
+  const newsForm = document.getElementById('newsForm');
+  if (newsForm) {
+    newsForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      newsForm.innerHTML =
+        "<p style='color:#fff;font-weight:600;margin:0'>✓ Thanks — you're subscribed!</p>";
+    });
+  }
+
+  const cdD = document.getElementById('cd-d');
+  if (cdD) {
+    function nextFriday9pm() {
+      const now = new Date();
+      const d = new Date(now);
+      d.setHours(21, 0, 0, 0);
+      let day = (5 - d.getDay() + 7) % 7;
+      if (day === 0 && now > d) day = 7;
+      d.setDate(d.getDate() + day);
+      return d;
+    }
+
+    function tick() {
+      const t = nextFriday9pm().getTime() - Date.now();
+      const s = Math.max(0, Math.floor(t / 1000));
+      const dEl = document.getElementById('cd-d');
+      const hEl = document.getElementById('cd-h');
+      const mEl = document.getElementById('cd-m');
+      const sEl = document.getElementById('cd-s');
+      if (dEl) dEl.textContent = String(Math.floor(s / 86400));
+      if (hEl) hEl.textContent = String(Math.floor((s % 86400) / 3600));
+      if (mEl) mEl.textContent = String(Math.floor((s % 3600) / 60));
+      if (sEl) sEl.textContent = String(s % 60);
+    }
+
+    tick();
+    setInterval(tick, 1000);
+  }
+</script>

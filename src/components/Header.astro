@@ -1,0 +1,42 @@
+---
+interface Props {
+  isHome?: boolean;
+}
+
+const { isHome = false } = Astro.props;
+const servicesHref = isHome ? '#services' : '/#services';
+const contactHref = isHome ? '#contact' : '/contact';
+---
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="/" class="logo">
+      <span class="mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="9"></circle>
+          <path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"></path>
+        </svg>
+      </span>
+      <span class="word">Exporta<b>Global</b><small>Trade Consultancy</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href={servicesHref}>Services</a>
+      <a href="/consultancy">Consultancy</a>
+      <a href="/webinar">Webinar</a>
+      <a href="/blog">Blog</a>
+      <a href="/about">About</a>
+    </nav>
+    <div class="nav-cta">
+      <a href={contactHref} class="btn btn-primary">Get a Free Consultation</a>
+    </div>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu"><span></span></button>
+  </div>
+</header>
+<div class="mobile-panel" id="mobilePanel">
+  <a href={servicesHref}>Services</a>
+  <a href="/consultancy">Consultancy</a>
+  <a href="/webinar">Webinar</a>
+  <a href="/blog">Blog</a>
+  <a href="/about">About</a>
+  <a href={contactHref} class="btn btn-primary" style="justify-content:center;margin-top:14px">Get a Free Consultation</a>
+</div>

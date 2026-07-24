@@ -1,0 +1,40 @@
+---
+import { Image } from 'astro:assets';
+import founderPhoto from '../assets/founder-daniel-carter.png';
+
+interface Props {
+  variant?: 'mentor' | 'host' | 'byline' | 'author';
+  alt?: string;
+  class?: string;
+}
+
+const {
+  variant = 'mentor',
+  alt = 'Daniel Carter',
+  class: className,
+} = Astro.props;
+
+const sizes: Record<NonNullable<Props['variant']>, { width: number; height: number; widths?: number[]; sizes?: string }> = {
+  mentor: {
+    width: 800,
+    height: 1000,
+    widths: [480, 640, 800],
+    sizes: '(max-width: 980px) 100vw, 480px',
+  },
+  host: { width: 168, height: 168 },
+  byline: { width: 76, height: 76 },
+  author: { width: 144, height: 144 },
+};
+
+const config = sizes[variant];
+---
+
+<Image
+  src={founderPhoto}
+  alt={alt}
+  width={config.width}
+  height={config.height}
+  widths={config.widths}
+  sizes={config.sizes}
+  class={className}
+/>

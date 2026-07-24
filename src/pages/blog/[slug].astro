@@ -1,0 +1,30 @@
+---
+import { getCollection, getEntry, render } from 'astro:content';
+import BlogPost from '../../layouts/BlogPost.astro';
+import { getRelatedPosts } from '../../lib/blog';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((post) => ({
+    params: { slug: post.id },
+  }));
+}
+
+const { slug } = Astro.params;
+if (!slug) {
+  return Astro.redirect('/blog');
+}
+
+const post = await getEntry('blog', slug);
+if (!post) {
+  return Astro.redirect('/blog');
+}
+
+const allPosts = await getCollection('blog');
+const relatedPosts = getRelatedPosts(allPosts, post.id, post.data.relatedSlugs);
+const { Content } = await render(post);
+---
+
+<BlogPost post={post} relatedPosts={relatedPosts}>
+  <Content />
+</BlogPost>

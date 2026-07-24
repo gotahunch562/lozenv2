@@ -1,0 +1,27 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { formatPostDate, postHref } from '../lib/blog';
+
+interface Props {
+  post: CollectionEntry<'blog'>;
+  excerpt?: string;
+}
+
+const { post, excerpt } = Astro.props;
+const { title, tag, emoji, image, pubDate, readTime } = post.data;
+---
+
+<a href={postHref(post.id)} class="post-card reveal">
+  <div class="thumb">
+    {image ? <img src={image} alt="" loading="lazy" /> : <span>{emoji}</span>}
+  </div>
+  <div class="body">
+    <span class="tag">{tag}</span>
+    <h3>{title}</h3>
+    <p>{excerpt ?? post.data.description}</p>
+    <div class="post-meta">
+      <span class="av">DC</span>
+      {formatPostDate(pubDate)} · {readTime}
+    </div>
+  </div>
+</a>

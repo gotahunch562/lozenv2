@@ -1,0 +1,130 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CtaStrip from '../components/CtaStrip.astro';
+import FounderPortrait from '../components/FounderPortrait.astro';
+---
+
+<BaseLayout title="Free Export Strategy Webinar — Exporta Global" description="Reserve your seat for our free weekly live webinar on how to find buyers, ship correctly, and build a profitable export business.">
+<section class="page-hero">
+  <div class="grid-bg"></div>
+  <div class="wrap web-hero">
+    <div class="inner" style="max-width:none">
+      <div class="crumb"><a href="/">Home</a> &nbsp;/&nbsp; Webinar</div>
+      <span class="pill"><span style="width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block"></span> FREE LIVE WEBINAR · EVERY FRIDAY</span>
+      <h1>Export Strategy Session: <span class="hl">Find Buyers &amp; Ship with Confidence</span></h1>
+      <p class="sub">A practical, no-fluff live session on how to find real overseas buyers, get your paperwork and shipping right, and build an export business that actually turns a profit.</p>
+      <div class="web-meta">
+        <span class="chip">📅 Every Friday</span>
+        <span class="chip">🕘 9:00–10:00 PM</span>
+        <span class="chip">💻 Live on Zoom</span>
+        <span class="chip">🎁 Free workbook included</span>
+      </div>
+      <p style="color:rgba(255,255,255,.6);font-size:13.5px;font-weight:600;margin-top:18px">Next session starts in</p>
+      <div class="countdown" id="countdown">
+        <div class="cd"><div class="v" id="cd-d">0</div><div class="u">Days</div></div>
+        <div class="cd"><div class="v" id="cd-h">0</div><div class="u">Hours</div></div>
+        <div class="cd"><div class="v" id="cd-m">0</div><div class="u">Mins</div></div>
+        <div class="cd"><div class="v" id="cd-s">0</div><div class="u">Secs</div></div>
+      </div>
+    </div>
+
+    <!-- REGISTRATION CARD -->
+    <div id="register" class="reg-card">
+      <span class="seats">🔥 Limited seats — 18 left this week</span>
+      <h3 style="font-size:23px;font-weight:700;margin-bottom:4px">Reserve your free seat</h3>
+      <p class="sub" style="color:var(--muted);font-size:14.5px;margin-bottom:20px">Takes 30 seconds. You'll get the Zoom link and a calendar invite by email.</p>
+      <form id="regForm">
+        <div class="field"><label>Full name</label><input type="text" required placeholder="Your name" /></div>
+        <div class="row2">
+          <div class="field"><label>Email</label><input type="email" required placeholder="you@email.com" /></div>
+          <div class="field"><label>Phone (WhatsApp)</label><input type="tel" placeholder="Phone number" /></div>
+        </div>
+        <div class="field"><label>Company (optional)</label><input type="text" placeholder="Company name" /></div>
+        <div class="field">
+          <label>What best describes you?</label>
+          <select>
+            <option>I'm new to exporting</option>
+            <option>I export occasionally</option>
+            <option>I export regularly and want to scale</option>
+            <option>I run a corporate / SME export operation</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Biggest export challenge? (optional)</label>
+          <textarea rows="2" placeholder="e.g. finding buyers, shipping, payments…"></textarea>
+        </div>
+        <button type="submit" class="btn btn-accent">Reserve my free seat →</button>
+        <p style="font-size:12px;color:var(--muted);text-align:center;margin-top:12px">No spam. We'll only email about this webinar.</p>
+      </form>
+      <div class="success" id="success">
+        <div class="big"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:52px;height:52px;color:var(--accent)"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+        <h3>You're registered!</h3>
+        <p>Check your inbox for the Zoom link and calendar invite. See you Friday at 9 PM.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT YOU'LL LEARN -->
+<section>
+  <div class="wrap">
+    <div class="center section-head">
+      <span class="eyebrow">What you'll learn</span>
+      <h2 class="h2">One hour that can change how you export</h2>
+    </div>
+    <div class="feature-grid">
+      <div class="fcard reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div><h3>Find real buyers</h3><p>The exact method we use to find and qualify serious overseas buyers — not tyre-kickers.</p></div>
+      <div class="fcard reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div><h3>Pick the right market</h3><p>How to tell which countries actually want your product before you spend a cent.</p></div>
+      <div class="fcard reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div><h3>Avoid paperwork traps</h3><p>The licensing and documentation mistakes that get shipments stuck — and how to dodge them.</p></div>
+      <div class="fcard reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div><h3>Ship without losing money</h3><p>Incoterms and logistics basics that protect your margin.</p></div>
+      <div class="fcard reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></div><h3>Get paid safely</h3><p>How to structure payments so you actually collect, in full and on time.</p></div>
+      <div class="fcard reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><h3>Live Q&amp;A</h3><p>Bring your situation — we answer real questions live, every week.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- AGENDA -->
+<section class="band">
+  <div class="wrap">
+    <div class="center section-head">
+      <span class="eyebrow">Agenda</span>
+      <h2 class="h2">How the hour runs</h2>
+    </div>
+    <div class="agenda" style="margin-left:auto;margin-right:auto">
+      <div class="ag reveal"><div class="t">0:00</div><div><h4>Welcome &amp; the export mindset</h4><p>Why most exporters stall — and what the successful ones do differently.</p></div></div>
+      <div class="ag reveal"><div class="t">0:10</div><div><h4>Finding &amp; qualifying buyers</h4><p>The 5-step buyer-hunting framework, walked through live.</p></div></div>
+      <div class="ag reveal"><div class="t">0:30</div><div><h4>Shipping, documents &amp; payments</h4><p>The operational essentials that keep deals from falling apart.</p></div></div>
+      <div class="ag reveal"><div class="t">0:45</div><div><h4>Live Q&amp;A</h4><p>Open floor — ask anything about your own export situation.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOST -->
+<section>
+  <div class="wrap" style="max-width:820px">
+    <div class="center section-head">
+      <span class="eyebrow">Your host</span>
+      <h2 class="h2">Led by a 20-year trade expert</h2>
+    </div>
+    <div class="host reveal">
+      <FounderPortrait variant="host" alt="Daniel Carter" />
+      <div>
+        <div class="nm">Daniel Carter</div>
+        <div class="rl">Founder &amp; Lead Consultant, Exporta Global</div>
+        <p>Daniel has spent two decades helping businesses — from first-time exporters to large corporations — sell across borders profitably. Each week he shares the same frameworks his consultancy clients pay for, free and live.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<CtaStrip
+  title="Seats fill up every week"
+  description="Reserve yours now and get the workbook, Zoom link, and a calendar reminder by email."
+  primaryHref="#register"
+  primaryLabel="Reserve my free seat →"
+  secondaryHref="/#services"
+  secondaryLabel="Explore our services"
+  paddedTop={true}
+/>
+</BaseLayout>

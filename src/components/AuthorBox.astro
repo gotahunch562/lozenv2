@@ -1,0 +1,20 @@
+---
+import FounderPortrait from './FounderPortrait.astro';
+
+interface Props {
+  bio?: string;
+}
+
+const {
+  bio = 'Daniel has spent two decades helping businesses sell across borders profitably — from first-time exporters to large corporations.',
+} = Astro.props;
+---
+
+<div class="author-box reveal">
+  <FounderPortrait variant="author" alt="Daniel Carter" />
+  <div>
+    <div class="nm">Daniel Carter</div>
+    <div class="rl">Founder &amp; Lead Consultant, Exporta Global</div>
+    <p>{bio}</p>
+  </div>
+</div>
