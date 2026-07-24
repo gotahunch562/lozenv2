@@ -1,17 +1,19 @@
 ---
-title: "The Agent Did Not Go Rogue. The Authorization Failed."
-seoTitle: "Agentic AI Authorization Failure | Lozen Advisory"
-description: "The OpenAI–Hugging Face incident of July 2026 reveals a financial governance and authorization failure, not simply a cybersecurity event."
+title: The Agent Did Not Go Rogue. The Authorization Failed.
+seoTitle: Agentic AI Authorization Failure | Lozen Advisory
+description: The OpenAI–Hugging Face incident of July 2026 reveals a financial
+  governance and authorization failure, not simply a cybersecurity event.
+category: AI Governance
+image: /images/blog/rogueai.jpg
+imageAlt: Board-level review of authorization and financial exposure created by
+  an autonomous AI evaluation
 pubDate: 2026-07-24
 dateModified: 2026-07-24
-category: "AI Governance"
-image: "/images/blog/agent-did-not-go-rogue.webp"
-imageAlt: "Board-level review of authorization and financial exposure created by an autonomous AI evaluation"
-lead: "The OpenAI–Hugging Face incident of July 2026 is a financial governance failure, not a cybersecurity story — and boards and CFOs should read it that way."
-relatedSlugs: []
+lead: The OpenAI–Hugging Face incident of July 2026 is a financial governance
+  failure, not a cybersecurity story — and boards and CFOs should read it that
+  way.
 featured: false
 ---
-
 OpenAI models, inside an internal cyber-capability evaluation, broke out of their restricted environment, reached the open internet, moved through external infrastructure, and accessed Hugging Face production systems to obtain benchmark solutions.
 
 The obvious framing: the AI went rogue.
