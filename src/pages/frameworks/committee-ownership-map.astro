@@ -1,0 +1,525 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CtaStrip from '../../components/CtaStrip.astro';
+
+const pageTitle =
+  'Committee Ownership Map for Board AI Evidence | Lozen Advisory';
+
+const pageDescription =
+  'The Committee Ownership Map assigns board committees the Disclosure-Independent Governance℠ questions and evidence records required to support defensible AI oversight.';
+
+const architectureItems = [
+  {
+    name: 'Disclosure-Independent Governance℠',
+    description:
+      'The Committee Ownership Map applies Disclosure-Independent Governance℠ at the board level. It asks what each committee must be able to know and prove without depending on later disclosure by an employee, executive, vendor, or affected party.',
+    href: '/disclosure-independent-governance/',
+  },
+  {
+    name: 'The Name Standard℠',
+    description:
+      'The full board needs evidence that AI-assisted decisions remain traceable to a person or institutional actor with the time, authority, information, review capacity, documentation, and refusal rights required for meaningful accountability.',
+    href: '/blog/the-name-standard-ai-governance/',
+  },
+  {
+    name: 'The 5Ws of Decision Integrity℠',
+    description:
+      'Audit, risk, legal, and governance functions need a record of what was relied upon, who exercised judgment, which systems or evidence informed the decision, what was missed, and what witness record remains.',
+    href: '/disclosure-independent-governance/#5ws-decision-integrity',
+  },
+  {
+    name: 'Power User Trap℠',
+    description:
+      'Technology and innovation oversight must account for the employees who absorb hidden AI verification, correction, and implementation work. Their labor can make adoption appear more mature than the underlying system actually is.',
+    href: '/frameworks/power-user-trap/',
+  },
+  {
+    name: 'Invisible Attrition℠',
+    description:
+      'Compensation, nominating, and governance committees need a way to evaluate leadership-capacity erosion before conventional engagement, succession, or retention metrics register the risk.',
+    href: '/invisible-attrition/',
+  },
+  {
+    name: 'Capacity Substitution Error℠',
+    description:
+      'Finance oversight should test whether reported AI efficiency gains depend on human review, correction, and judgment work that has been treated as free, unlimited, or already absorbed.',
+    href: '/blog/talent-attrition-cfo-risk/',
+  },
+];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Committee Ownership Map',
+  headline: 'Committee Ownership Map',
+  description: pageDescription,
+  url: 'https://www.lozenadvisory.com/frameworks/committee-ownership-map/',
+  datePublished: '2026-07-04',
+  dateModified: '2026-07-25',
+  author: {
+    '@type': 'Person',
+    name: 'Akilah E. Kamaria',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Lozen Advisory',
+  },
+  about: {
+    '@type': 'DefinedTerm',
+    name: 'Committee Ownership Map',
+    description:
+      'A Lozen Advisory framework assigning each board committee a Disclosure-Independent Governance℠ question and the evidence it must be able to produce if its oversight is challenged.',
+  },
+};
+---
+
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+>
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(jsonLd)}
+  />
+
+  <section class="page-hero">
+    <div class="grid-bg"></div>
+
+    <div class="wrap inner">
+      <div class="crumb">
+        <a href="/">Home</a>
+        &nbsp;/&nbsp;
+        Frameworks
+      </div>
+
+      <span class="pill">Lozen Advisory Framework</span>
+
+      <h1>Committee Ownership Map</h1>
+
+      <p class="sub">
+        A board-level framework for assigning each committee the AI governance
+        question it should own and the evidence it must be able to produce.
+      </p>
+
+      <div class="hero-cta">
+        <a
+          href="/request-briefing"
+          class="btn btn-accent"
+        >
+          Request Briefing →
+        </a>
+
+        <a
+          href="#framework"
+          class="btn btn-ghost"
+        >
+          View the map
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="framework">
+    <div class="wrap framework-wrap">
+      <article class="article-body framework-article">
+        <p class="article-lead">
+          Most AI governance frameworks tell a board which committee owns which
+          task. They stop there. Task ownership is not the same as evidentiary
+          ownership.
+        </p>
+
+        <p>
+          A committee can be formally responsible for an AI risk category and
+          still have no way to prove, to a regulator, a plaintiff’s attorney, its
+          shareholders, or the board itself, that the oversight it performed was
+          real.
+        </p>
+
+        <p>
+          The Committee Ownership Map assigns each committee both a
+          Disclosure-Independent Governance℠ question and the evidence it must be
+          able to produce if that question is ever tested. Ownership without
+          producible evidence is not governance. It is exposure with a committee
+          name attached to it.
+        </p>
+
+        <div class="committee-table-wrapper">
+          <table class="committee-table">
+            <thead>
+              <tr>
+                <th>Committee</th>
+                <th>Question it should own</th>
+                <th>Evidence it must be able to produce</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td><strong>Full Board</strong></td>
+                <td>
+                  Can management demonstrate that human accountability for
+                  AI-assisted decisions is real, not nominal, across the
+                  enterprise?
+                </td>
+                <td>
+                  A
+                  <a href="/blog/the-name-standard-ai-governance/">
+                    Name Standard℠
+                  </a>
+                  attestation showing who holds authority to approve, escalate,
+                  suspend, or refuse AI-assisted output at the enterprise level,
+                  not merely a policy statement that human oversight exists.
+                </td>
+              </tr>
+
+              <tr>
+                <td><strong>Audit &amp; Risk Committee</strong></td>
+                <td>
+                  Where is the organization relying on continued output as proof
+                  that no risk exists?
+                </td>
+                <td>
+                  A
+                  <a href="/disclosure-independent-governance/#5ws-decision-integrity">
+                    5Ws of Decision Integrity℠
+                  </a>
+                  log for high-impact AI use cases: what was relied upon, who
+                  signed off, what was missed, and what documented record would
+                  withstand scrutiny.
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <strong>
+                    Compensation, Nominating &amp; Governance Committee
+                  </strong>
+                </td>
+                <td>
+                  Is workforce silence being read as stability? Is leadership
+                  capacity eroding before retention data would show it?
+                </td>
+                <td>
+                  An
+                  <a href="/invisible-attrition/">
+                    Invisible Attrition℠
+                  </a>
+                  review of leadership-pipeline risk, not an engagement survey
+                  that measures only what employees are willing to disclose.
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <strong>Technology &amp; Innovation Committee</strong>
+                </td>
+                <td>
+                  Where has AI adoption relocated verification, correction, or
+                  system-repair labor onto specific employees without recognizing
+                  it as capacity?
+                </td>
+                <td>
+                  A
+                  <a href="/frameworks/power-user-trap/">
+                    Power User Trap℠
+                  </a>
+                  assessment identifying who is absorbing hidden AI-verification
+                  labor and whether that labor is staffed, measured, or governed.
+                </td>
+              </tr>
+
+              <tr>
+                <td><strong>Finance Committee</strong></td>
+                <td>
+                  Does the AI ROI calculation account for the human capacity it
+                  assumes is free?
+                </td>
+                <td>
+                  A
+                  <a href="/blog/talent-attrition-cfo-risk/">
+                    Capacity Substitution Error℠
+                  </a>
+                  analysis showing whether reported AI efficiency gains net out
+                  the unmeasured review, correction, and oversight labor sustaining
+                  them.
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <strong>General Counsel / Corporate Secretary</strong>
+                  <br />
+                  <em>Advisory to all committees</em>
+                </td>
+                <td>
+                  If an AI-assisted decision is challenged in litigation,
+                  regulatory inquiry, or a board dispute, does a defensible record
+                  of human judgment exist?
+                </td>
+                <td>
+                  The complete Witness element of the
+                  <a href="/disclosure-independent-governance/#5ws-decision-integrity">
+                    5Ws of Decision Integrity℠
+                  </a>
+                  : telemetry, logs, or audit trails sufficient to support the
+                  final decision independently of what any party later chooses to
+                  disclose.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>What the map adds</h2>
+
+        <p>
+          Read across the evidence column and a pattern emerges: every committee’s
+          obligation depends on a framework built for conditions where disclosure
+          cannot be assumed.
+        </p>
+
+        <p>
+          Standard committee-allocation models identify oversight lanes. The
+          Committee Ownership Map adds the evidence layer those models often leave
+          unresolved.
+        </p>
+
+        <p>
+          The result is a more exacting board question. It is no longer enough to
+          ask which committee owns the issue. The board must also ask what record
+          that committee could produce if its oversight were challenged.
+        </p>
+
+        <h2>Why committee ownership alone is insufficient</h2>
+
+        <p>
+          Committee charters, policy language, and periodic management updates can
+          establish that responsibility was assigned. They do not necessarily
+          establish that the committee received sufficient information, challenged
+          management, understood the operating conditions, or could reconstruct the
+          basis for its judgment.
+        </p>
+
+        <p>
+          That distinction matters because AI oversight often depends on evidence
+          distributed across legal, technical, operational, workforce, and vendor
+          systems. A committee may own the issue formally while lacking access to
+          the record required to evaluate it.
+        </p>
+
+        <p>
+          The Committee Ownership Map is designed to expose that gap before an
+          external challenge does.
+        </p>
+
+        <h2>How Lozen Advisory applies the Committee Ownership Map</h2>
+
+        <p>
+          The map is the starting point, not the complete analysis. Each committee’s
+          evidentiary obligations must be tested against the organization’s actual
+          AI use cases, governance structure, reporting lines, and accountability
+          gaps.
+        </p>
+
+        <p>
+          Lozen Advisory works with boards and governance teams to determine whether
+          the evidence supporting AI oversight is active, documented, and empowered
+          rather than nominal.
+        </p>
+
+        <p>
+          That work may include a governance readiness briefing, a Name Standard℠
+          review, a Power User Trap℠ assessment, or a board-ready analysis of how
+          AI legislation applies to the organization’s committee structure and risk
+          profile.
+        </p>
+
+        <p>
+          The common thread is
+          <a href="/disclosure-independent-governance/">
+            <strong> Disclosure-Independent Governance℠</strong>
+          </a>
+          : the organization may have committee charters, AI policies, and
+          governance language and still lack the evidence required to demonstrate
+          that oversight was active, documented, and capable of changing the
+          outcome.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="architecture-section">
+    <div class="wrap">
+      <div class="center section-head">
+        <span class="eyebrow">Lozen Advisory Architecture</span>
+        <h2 class="h2">How the Committee Ownership Map fits the framework</h2>
+      </div>
+
+      <div
+        class="faq"
+        aria-label="Lozen Advisory framework architecture"
+      >
+        {
+          architectureItems.map((item) => (
+            <details class="qa reveal">
+              <summary>
+                <h4>{item.name}</h4>
+              </summary>
+
+              <div class="qa-body">
+                <p>{item.description}</p>
+
+                <a href={item.href}>
+                  Read more →
+                </a>
+              </div>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <CtaStrip
+    title="Can your board produce the evidence behind its AI oversight?"
+    description="Request a briefing to evaluate committee ownership, accountability gaps, and the records your board would need if its oversight were challenged."
+    primaryHref="/request-briefing"
+    primaryLabel="Request Briefing →"
+    secondaryHref="/services"
+    secondaryLabel="View Advisory Services"
+    paddedTop={false}
+  />
+</BaseLayout>
+
+<style>
+  .framework-wrap {
+    max-width: 72rem;
+  }
+
+  .framework-article {
+    margin: 0 auto;
+  }
+
+  .framework-article > p,
+  .framework-article > h2 {
+    max-width: 58rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .framework-article h2 {
+    margin-top: 3.5rem;
+  }
+
+  .committee-table-wrapper {
+    margin: 2.5rem 0 3rem;
+    overflow-x: auto;
+    border: 1px solid rgba(6, 23, 47, 0.16);
+    border-radius: 1rem;
+    background: #fff;
+  }
+
+  .committee-table {
+    width: 100%;
+    min-width: 58rem;
+    border-collapse: collapse;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.93rem;
+    line-height: 1.6;
+  }
+
+  .committee-table thead {
+    background: #06172f;
+  }
+
+  .committee-table th {
+    padding: 1rem 1.1rem;
+    color: #e3b82b;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.11em;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  .committee-table tbody tr {
+    border-top: 1px solid rgba(6, 23, 47, 0.12);
+  }
+
+  .committee-table tbody tr:hover {
+    background: rgba(6, 23, 47, 0.025);
+  }
+
+  .committee-table td {
+    padding: 1.15rem;
+    vertical-align: top;
+    color: #334155;
+  }
+
+  .committee-table td:first-child {
+    min-width: 12rem;
+    color: #06172f;
+  }
+
+  .committee-table td strong {
+    color: #06172f;
+  }
+
+  .committee-table td em {
+    color: #64748b;
+    font-size: 0.84rem;
+  }
+
+  .committee-table td a {
+    color: #06172f;
+    font-weight: 700;
+    text-decoration-color: #e3b82b;
+    text-underline-offset: 0.2rem;
+  }
+
+  .architecture-section {
+    padding-top: 0;
+  }
+
+  .faq details.qa {
+    display: block;
+  }
+
+  .faq details.qa summary {
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .faq details.qa summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq details.qa summary h4 {
+    margin: 0;
+  }
+
+  .faq details.qa summary h4::after {
+    content: '+';
+    float: right;
+    margin-left: 1rem;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .faq details.qa[open] summary h4::after {
+    content: '−';
+  }
+
+  .qa-body {
+    padding-top: 1rem;
+  }
+
+  .qa-body p {
+    margin-top: 0;
+  }
+
+  .qa-body a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-weight: 700;
+  }
+</style>
