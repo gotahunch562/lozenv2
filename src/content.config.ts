@@ -11,7 +11,9 @@ const blog = defineCollection({
   schema: z.object({
     title: z.string(),
     seoTitle: z.string().optional(),
+
     description: z.string(),
+    metaDescription: z.string().optional(),
 
     category: z.string().optional(),
     tag: z.string().optional(),
@@ -23,6 +25,7 @@ const blog = defineCollection({
     dateModified: z.coerce.date().optional(),
 
     featured: z.boolean().default(false),
+    draft: z.boolean().default(true),
 
     lead: z.string(),
     relatedSlugs: z.array(z.string()).default([]),
