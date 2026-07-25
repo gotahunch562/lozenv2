@@ -19,7 +19,7 @@ When developing healthcare cost containment strategies to mitigate these spikes,
 
 The dashboards say utilization is low. That reading may be wrong.
 
-![Chart titled Rising Benefits Spend Is Pressing Against CFO Limits showing Mercer-based cost pressure indicators, a 6.7% projected health benefit cost increase, an 8.0% no-action trend, and $18.5k per-employee annual cost.](../../images/blog/rising-corporate-health-benefits-spend.webp)
+![Chart titled Rising Benefits Spend Is Pressing Against CFO Limits showing Mercer-based cost pressure indicators, a 6.7% projected health benefit cost increase, an 8.0% no-action trend, and $18.5k per-employee annual cost.](/blog/rising-corporate-health-benefits-spend.webp)
 
 *Figure 1: The widening gap between escalating healthcare line-item allocations and visible system engagement.*
 
@@ -29,7 +29,7 @@ Low utilization is not a clean signal. In disclosure-dependent benefit categorie
 
 ## The Financial Risk of Low Utilization and Invisible Attrition
 
-![Bar chart titled The Activation Collapse comparing 76% HR budget allocated to benefit promotion, 10% average point-solution engagement floor, and 0.7% enterprise case study utilization.](../../images/blog/employee-benefits-activation-collapse.webp)
+![Bar chart titled The Activation Collapse comparing 76% HR budget allocated to benefit promotion, 10% average point-solution engagement floor, and 0.7% enterprise case study utilization.](/blog/employee-benefits-activation-collapse.webp)
 
 *Figure 2: Benefit system drop-out velocity mapped across mission-critical corporate infrastructure.*
 
@@ -37,7 +37,7 @@ The employees least likely to create a utilization record are often the ones the
 
 They manage privately. They adjust without disclosing. They exit before the risk is recorded. By the time attrition data reflects the loss, the signal has been gone for months, transforming an unmeasured health benefit gap into a severe hidden workforce liability. This structural blind spot triggers a cycle of [Invisible Attrition℠](/invisible-attrition/) that degrades internal capabilities before leadership realizes a risk exists.
 
-![Horizontal bar chart titled Low Utilization Masks the Exposure CFOs Still Carry showing 87% target cohort not seeking care, 73% active symptoms left untreated, 67% hidden presenteeism and productivity loss, and 23% invisible attrition or replacement risk.](../../images/blog/low-utilization-masks-cfo-exposure.webp)
+![Horizontal bar chart titled Low Utilization Masks the Exposure CFOs Still Carry showing 87% target cohort not seeking care, 73% active symptoms left untreated, 67% hidden presenteeism and productivity loss, and 23% invisible attrition or replacement risk.](/blog/low-utilization-masks-cfo-exposure.webp)
 
 *Figure 3: Analytical model demonstrating how disclosure-dependent data infrastructures create blind spots in financial exposure calculations.*
 
