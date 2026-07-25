@@ -13,41 +13,105 @@ interface Props {
 }
 
 const { post, relatedPosts } = Astro.props;
-const { title, description, tag, image, pubDate, readTime, lead } = post.data;
-const pageTitle = `${title} — Exporta Global`;
+
+const {
+  title,
+  seoTitle,
+  description,
+  metaDescription,
+  category,
+  tag,
+  image,
+  imageAlt,
+  pubDate,
+  dateModified,
+  readTime,
+  lead,
+} = post.data;
+
+const postCategory = category ?? tag ?? '';
+const pageTitle = seoTitle ?? `${title} — Lozen Advisory`;
+const pageDescription = metaDescription ?? description;
 ---
 
-<BaseLayout title={pageTitle} description={description}>
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+>
   <section class="article-hero">
     <div class="grid-bg"></div>
+
     <div class="wrap inner">
-      <span class="tag">{tag}</span>
+      {
+        postCategory && (
+          <span class="tag">{postCategory}</span>
+        )
+      }
+
       <h1>{title}</h1>
+
       <div class="byline">
-        <FounderPortrait variant="byline" class="av" alt="Daniel Carter" />
-        <span>Daniel Carter</span><span class="dot">•</span><span>{formatPostDate(pubDate)}</span><span class="dot">•</span><span>{readTime}</span>
+        <FounderPortrait
+          variant="byline"
+          class="av"
+          alt="Akilah E. Kamaria"
+        />
+
+        <span>Akilah E. Kamaria</span>
+
+        <span class="dot">•</span>
+
+        <span>{formatPostDate(pubDate)}</span>
+
+        {
+          dateModified && (
+            <>
+              <span class="dot">•</span>
+              <span>
+                Updated {formatPostDate(dateModified)}
+              </span>
+            </>
+          )
+        }
+
+        {
+          readTime && (
+            <>
+              <span class="dot">•</span>
+              <span>{readTime}</span>
+            </>
+          )
+        }
       </div>
     </div>
   </section>
 
   <section>
     <div class="wrap">
-      {image ? (
-        <img class="article-cover" src={image} alt="" />
-      ) : null}
+      {
+        image ? (
+          <img
+            class="article-cover"
+            src={image}
+            alt={imageAlt ?? ''}
+          />
+        ) : null
+      }
+
       <article class="article-body">
         <p class="article-lead">{lead}</p>
         <slot />
       </article>
+
       <AuthorBox />
     </div>
   </section>
 
   <CtaStrip
-    title="Want help applying this to your board?"
-    description="Book an advsory briefing and we'll map out your next steps."
-    primaryHref="/contact"
-    secondaryHref="/webinar"
+    title="Need a clearer view of your governance exposure?"
+    description="Request a Lozen Advisory briefing to examine the accountability, measurement, and institutional risks affecting your organization."
+    primaryHref="/request-briefing"
+    secondaryHref="/services"
   />
 
   <RelatedPosts posts={relatedPosts} />
