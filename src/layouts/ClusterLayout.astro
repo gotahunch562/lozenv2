@@ -1,0 +1,543 @@
+---
+/**
+ * ClusterLayout.astro
+ * src/layouts/ClusterLayout.astro
+ *
+ * Use this layout for cluster articles that belong to a larger pillar page.
+ *
+ * Expected Markdown frontmatter:
+ *   layout: ../../layouts/ClusterLayout.astro
+ *   title
+ *   seoTitle
+ *   heading
+ *   subtitle
+ *   description
+ *   metaDescription
+ *   category
+ *   image
+ *   imageAlt
+ *   pubDate
+ *   dateModified
+ *   clusterNumber
+ *   pillarSlug
+ *   pillarTitle
+ *   prevCluster
+ *   nextCluster
+ *
+ * Optional defined-term fields:
+ *   definedTermName
+ *   definedTermAlternateName
+ *   definedTermDescription
+ */
+
+import BaseLayout from './BaseLayout.astro';
+import { formatPostDate } from '../lib/blog';
+
+interface ClusterLink {
+  slug: string;
+  title: string;
+}
+
+interface Frontmatter {
+  title?: string;
+  seoTitle?: string;
+  heading?: string;
+  subtitle?: string;
+  description?: string;
+  metaDescription?: string;
+  jsonLdDescription?: string;
+  category?: string;
+  image?: string;
+  imageAlt?: string;
+  pubDate?: string | Date;
+  datePublished?: string | Date;
+  dateModified?: string | Date;
+  slug?: string;
+  clusterNumber?: number | string;
+  pillarSlug?: string;
+  pillarTitle?: string;
+  definedTermName?: string;
+  definedTermAlternateName?: string;
+  definedTermDescription?: string;
+  prevCluster?: ClusterLink;
+  nextCluster?: ClusterLink;
+}
+
+const { frontmatter = {} } = Astro.props as {
+  frontmatter?: Frontmatter;
+};
+
+const {
+  title,
+  seoTitle,
+  heading,
+  subtitle,
+  description,
+  metaDescription,
+  jsonLdDescription,
+  category,
+  image,
+  imageAlt,
+  pubDate,
+  datePublished,
+  dateModified,
+  slug,
+  clusterNumber,
+  pillarSlug,
+  pillarTitle,
+  definedTermName,
+  definedTermAlternateName,
+  definedTermDescription,
+  prevCluster,
+  nextCluster,
+} = frontmatter;
+
+const articleHeading = heading ?? title ?? 'Lozen Advisory';
+const pageTitle = seoTitle ?? title ?? heading ?? 'Lozen Advisory';
+const pageDescription =
+  metaDescription ??
+  description ??
+  subtitle ??
+  '';
+
+const pageHref = new URL(
+  slug ?? Astro.url.pathname,
+  Astro.site ?? Astro.url.origin
+).toString();
+
+const parentPillarHref = pillarSlug ?? '/blog';
+const parentPillarTitle = pillarTitle ?? 'Lozen Advisory Research';
+
+const publishedDate = datePublished ?? pubDate;
+const modifiedDate = dateModified ?? publishedDate;
+
+const clusterLabel =
+  clusterNumber !== undefined && clusterNumber !== null
+    ? String(clusterNumber).padStart(2, '0')
+    : '';
+
+const formattedPublishedDate = publishedDate
+  ? formatPostDate(new Date(publishedDate))
+  : '';
+
+const frameworkTermName =
+  definedTermName ?? parentPillarTitle;
+
+const frameworkTermDescription =
+  definedTermDescription ??
+  pageDescription;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: articleHeading,
+  description: jsonLdDescription ?? pageDescription,
+  mainEntityOfPage: pageHref,
+  ...(image ? { image: new URL(image, Astro.site ?? Astro.url.origin).toString() } : {}),
+  ...(publishedDate
+    ? { datePublished: new Date(publishedDate).toISOString() }
+    : {}),
+  ...(modifiedDate
+    ? { dateModified: new Date(modifiedDate).toISOString() }
+    : {}),
+  articleSection: parentPillarTitle,
+  author: {
+    '@type': 'Person',
+    name: 'Akilah E. Kamaria',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Lozen Advisory',
+  },
+  about: {
+    '@type': 'DefinedTerm',
+    name: frameworkTermName,
+    ...(definedTermAlternateName
+      ? { alternateName: definedTermAlternateName }
+      : {}),
+    ...(frameworkTermDescription
+      ? { description: frameworkTermDescription }
+      : {}),
+    url: new URL(
+      parentPillarHref,
+      Astro.site ?? Astro.url.origin
+    ).toString(),
+  },
+  isPartOf: {
+    '@type': 'CreativeWorkSeries',
+    name: parentPillarTitle,
+    url: new URL(
+      parentPillarHref,
+      Astro.site ?? Astro.url.origin
+    ).toString(),
+  },
+};
+---
+
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+>
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(jsonLd)}
+  />
+
+  <section class="page-hero cluster-hero">
+    <div class="grid-bg"></div>
+
+    <div class="wrap inner">
+      <a class="pillar-back" href={parentPillarHref}>
+        ← {parentPillarTitle}
+      </a>
+
+      <div class="cluster-meta">
+        {
+          clusterLabel && (
+            <span class="pill">
+              Cluster {clusterLabel}
+            </span>
+          )
+        }
+
+        {
+          category && (
+            <span class="cluster-category">
+              {category}
+            </span>
+          )
+
+        }
+
+        {
+          formattedPublishedDate && (
+            <time datetime={new Date(publishedDate!).toISOString()}>
+              {formattedPublishedDate}
+            </time>
+          )
+        }
+      </div>
+
+      <h1>{articleHeading}</h1>
+
+      {
+        subtitle && (
+          <p class="sub">
+            {subtitle}
+          </p>
+        )
+      }
+    </div>
+  </section>
+
+  {
+    image && (
+      <section class="cluster-cover-section">
+        <div class="wrap">
+          <img
+            class="cluster-cover"
+            src={image}
+            alt={imageAlt ?? ''}
+          />
+        </div>
+      </section>
+    )
+  }
+
+  <section class="cluster-content-section">
+    <div class="wrap cluster-content">
+      <article class="article-body cluster-article">
+        <slot />
+      </article>
+    </div>
+  </section>
+
+  <section class="cluster-navigation-section">
+    <div class="wrap cluster-navigation">
+      <div class="cluster-navigation-grid">
+        <div class="cluster-navigation-cell">
+          {
+            prevCluster?.slug ? (
+              <a
+                class="cluster-navigation-card"
+                href={prevCluster.slug}
+              >
+                <span class="cluster-navigation-label">
+                  ← Previous
+                </span>
+
+                <span class="cluster-navigation-title">
+                  {prevCluster.title}
+                </span>
+              </a>
+            ) : null
+          }
+        </div>
+
+        <div class="cluster-navigation-cell">
+          <a
+            class="cluster-navigation-card cluster-navigation-pillar"
+            href={parentPillarHref}
+          >
+            <span class="cluster-navigation-label">
+              Pillar
+            </span>
+
+            <span class="cluster-navigation-title">
+              Back to {parentPillarTitle}
+            </span>
+          </a>
+        </div>
+
+        <div class="cluster-navigation-cell">
+          {
+            nextCluster?.slug ? (
+              <a
+                class="cluster-navigation-card cluster-navigation-next"
+                href={nextCluster.slug}
+              >
+                <span class="cluster-navigation-label">
+                  Next →
+                </span>
+
+                <span class="cluster-navigation-title">
+                  {nextCluster.title}
+                </span>
+              </a>
+            ) : null
+          }
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cluster-cta-section">
+    <div class="wrap">
+      <div class="cluster-cta">
+        <span class="cluster-cta-eyebrow">
+          Lozen Advisory
+        </span>
+
+        <h2>
+          Need a clearer view of your governance exposure?
+        </h2>
+
+        <p>
+          Request a briefing to examine the accountability,
+          measurement, and institutional risks affecting your
+          organization.
+        </p>
+
+        <a
+          class="btn btn-dark"
+          href="/request-briefing"
+        >
+          Request Briefing
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .cluster-hero .inner {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    text-align: left;
+  }
+
+  .pillar-back {
+    display: inline-flex;
+    margin-bottom: 1.5rem;
+    color: inherit;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .pillar-back:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+  }
+
+  .cluster-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem 1rem;
+    margin-bottom: 1.5rem;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .cluster-category,
+  .cluster-meta time {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .cluster-category {
+    color: var(--muted);
+  }
+
+  .cluster-meta time {
+    color: var(--muted);
+  }
+
+  .cluster-hero h1 {
+    max-width: 58rem;
+  }
+
+  .cluster-hero .sub {
+    max-width: 48rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .cluster-cover-section {
+    padding: 3rem 0 0;
+  }
+
+  .cluster-cover {
+    display: block;
+    width: 100%;
+    max-height: 38rem;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+
+  .cluster-content-section {
+    padding: 3rem 0 4rem;
+  }
+
+  .cluster-content {
+    max-width: 52rem;
+  }
+
+  .cluster-navigation-section {
+    padding: 0 0 4rem;
+  }
+
+  .cluster-navigation {
+    max-width: 68rem;
+  }
+
+  .cluster-navigation-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .cluster-navigation-cell {
+    min-width: 0;
+  }
+
+  .cluster-navigation-card {
+    display: flex;
+    min-height: 8.5rem;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.25rem;
+    border: 1px solid rgba(6, 23, 47, 0.18);
+    border-radius: 0.9rem;
+    background: #fff;
+    color: #06172f;
+    text-decoration: none;
+    transition:
+      transform 180ms ease,
+      border-color 180ms ease,
+      box-shadow 180ms ease;
+  }
+
+  .cluster-navigation-card:hover {
+    transform: translateY(-3px);
+    border-color: #e3b82b;
+    box-shadow: 0 14px 30px rgba(6, 23, 47, 0.1);
+  }
+
+  .cluster-navigation-pillar {
+    text-align: center;
+  }
+
+  .cluster-navigation-next {
+    text-align: right;
+  }
+
+  .cluster-navigation-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .cluster-navigation-title {
+    margin-top: 1.25rem;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.35;
+  }
+
+  .cluster-cta-section {
+    padding: 0 0 5rem;
+  }
+
+  .cluster-cta {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(2rem, 5vw, 3.5rem);
+    border-radius: 1rem;
+    background: #06172f;
+    color: #fff;
+  }
+
+  .cluster-cta::before {
+    content: '';
+    position: absolute;
+    inset: 0 0 auto;
+    height: 0.3rem;
+    background: #e3b82b;
+  }
+
+  .cluster-cta-eyebrow {
+    display: block;
+    margin-bottom: 1rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+  }
+
+  .cluster-cta h2 {
+    max-width: 48rem;
+    margin: 0;
+    color: #fff;
+    font-family: 'Tenor Sans', sans-serif;
+  }
+
+  .cluster-cta p {
+    max-width: 44rem;
+    margin: 1rem 0 1.75rem;
+    color: rgba(255, 255, 255, 0.78);
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.7;
+  }
+
+  @media (max-width: 760px) {
+    .cluster-navigation-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .cluster-navigation-next,
+    .cluster-navigation-pillar {
+      text-align: left;
+    }
+
+    .cluster-navigation-card {
+      min-height: 7rem;
+    }
+  }
+</style>
