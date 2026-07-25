@@ -1,17 +1,22 @@
 ---
-title: 'ABA 2026 Study: Women Lawyers & The Disclosure Gap'
+title: "ABA 2026 Study: Women Lawyers & The Disclosure Gap"
 seoTitle: Women Lawyers, Wellness & The Disclosure Gap
-description: The ABA 2026 study measures wellness data. Learn why non-disclosure is a strategic choice for women lawyers protecting their career trajectory.
-metaDescription: The ABA 2026 study measures reported data. Learn why non-disclosure is a strategic choice for women leaders protecting their career trajectory.
+description: The ABA 2026 study measures wellness data. Learn why non-disclosure
+  is a strategic choice for women lawyers protecting their career trajectory.
+metaDescription: The ABA 2026 study measures reported data. Learn why
+  non-disclosure is a strategic choice for women leaders protecting their career
+  trajectory.
 category: Women, Work & Leadership
-image: /blog/womenlawyerconference.avif
+image: /blog/for_lawyers.webp
 imageAlt: woman lawyer with arms folded
 pubDate: 2026-04-15
 dateModified: 2026-07-09
+lead: The American Bar Association will release its national study on women
+  lawyers and mental wellness in August 2026. The data will be cited, the
+  findings will circulate, and the conversation will follow. The legal
+  profession will treat it as a starting point.
 featured: false
 draft: false
-lead: The American Bar Association will release its national study on women lawyers and mental wellness in August 2026. The data will be cited, the findings will circulate, and the conversation will follow. The legal profession will treat it as a starting point.
-relatedSlugs: []
 ---
 ## The ABA Study Is Asking the Right Question.
 
