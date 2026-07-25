@@ -4,7 +4,7 @@ seoTitle: Agentic AI Authorization Failure | Lozen Advisory
 description: The OpenAI–Hugging Face incident of July 2026 reveals a financial
   governance and authorization failure, not simply a cybersecurity event.
 category: AI Governance
-image: src/images/blog/rogueai.jpg
+image: /blog/rogueai.jpg
 imageAlt: Board-level review of authorization and financial exposure created by
   an autonomous AI evaluation
 pubDate: 2026-07-25
