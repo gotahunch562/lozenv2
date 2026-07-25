@@ -1,16 +1,21 @@
 ---
 title: Enterprise AI Does Not Replace Human Labor. It Relocates It.
 seoTitle: Enterprise AI Does Not Replace Human Labor. It Relocates It.
-description: Enterprise AI does not replace human labor. It relocates the work into verification, quality assurance, exception handling, and audit.
+description: Enterprise AI does not replace human labor. It relocates the work
+  into verification, quality assurance, exception handling, and audit.
+metaDescription: Enterprise AI does not replace human labor. It relocates the
+  work into verification, quality assurance, exception handling, and audit.
 category: AI Governance & Workforce Risk
-image: /blog/corporate-ai-relocation-service.avif
+image: /blog/Corporate-AI-Relocation-Service.avif
 imageAlt: The human labor does not disappear. It moves.
 pubDate: 2026-06-11
 dateModified: 2026-07-21
+lead: AI systems are accelerating output, transactions, discovery, and decision
+  support. All of this activity in Enterprise AI does not eliminate human labor.
+  It relocates the work into verification, correction, exception handling,
+  source validation, and liability review.
 featured: false
 draft: false
-lead: AI systems are accelerating output, transactions, discovery, and decision support. All of this activity in Enterprise AI does not eliminate human labor. It relocates the work into verification, correction, exception handling, source validation, and liability review.
-relatedSlugs: []
 ---
 Enterprise AI rarely eliminates work as cleanly as the business case suggests. It relocates that work into verification, quality assurance, exception handling, audit, and the [continuous human judgment](/frameworks/power-user-trap/) required to make automated output usable.
 
