@@ -1,15 +1,23 @@
 ---
-title: 'The Benefits Spend CFOs Cannot Interpret: Uncovering Hidden Healthcare Costs'
-description: Low employee benefit utilization isn't a sign of low need—it's an untracked financial liability. Discover how disclosure-dependent data skews your corporate ROI.
+title: "The Benefits Spend CFOs Cannot Interpret: Uncovering Hidden Healthcare Costs"
+seoTitle: CFO's-Uncovering Hidden Healthcare Costs
+description: Low employee benefit utilization isn't a sign of low need—it's an
+  untracked financial liability. Discover how disclosure-dependent data skews
+  your corporate ROI.
+metaDescription: Low employee benefit utilization isn't a sign of low need—it's
+  an untracked financial liability. Discover how disclosure-dependent data skews
+  your corporate ROI.
 category: CFO Insights
 image: /blog/cfo-benefits-spend-1.avif
 imageAlt: CFO analyzing visible benefit spend and hidden workforce risk
 pubDate: 2026-05-27
 dateModified: 2026-05-23
+lead: Health benefit costs are rising and CFO dashboards show low utilization.
+  Low utilization may not mean low need. It may mean the highest-risk employees
+  never entered the measurable system. Lozen Advisory examines the gap between
+  benefit availability and workforce risk that recorded data cannot show..
 featured: false
 draft: false
-lead: Health benefit costs are rising and CFO dashboards show low utilization. Low utilization may not mean low need. It may mean the highest-risk employees never entered the measurable system. Lozen Advisory examines the gap between benefit availability and workforce risk that recorded data cannot show..
-relatedSlugs: []
 ---
 Health benefit costs are a finance department problem now. Not an HR problem. Not a vendor performance problem. With employer healthcare line-items surging by 6.7% according to the Mercer CFO Perspective on Health, health inflation is officially outpacing general economic inflation. Today, a third of finance leaders view health benefits as a top-three enterprise operating expense, yet only 1 in 4 CFOs report that their organizations can absorb these hikes without directly impacting operations. 
 
