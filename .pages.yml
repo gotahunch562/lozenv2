@@ -18,6 +18,7 @@ content:
         - pubDate
         - dateModified
         - featured
+        - draft
       sort: pubDate
       order: desc
 
@@ -30,19 +31,32 @@ content:
       - name: seoTitle
         label: SEO title
         type: string
-        required: true
+        required: false
         description: Title used in search results and browser metadata.
 
       - name: description
-        label: Meta description
+        label: Article description
         type: text
         required: true
-        description: Search and social description.
+        description: Visible summary used on blog cards and listing pages.
+
+      - name: metaDescription
+        label: SEO meta description
+        type: text
+        required: false
+        description: Search-focused description used in page metadata.
 
       - name: category
         label: Category
-        type: string
+        type: select
         required: true
+        options:
+          values:
+            - AI Governance & Workforce Risk
+            - Legislation & Policy
+            - Disclosure & Measurement
+            - Women, Work & Leadership
+            - CFO Insights
 
       - name: image
         label: Hero image
@@ -69,7 +83,7 @@ content:
         label: Excerpt
         type: text
         required: true
-        description: Short excerpt used on blog cards and listing pages.
+        description: Short excerpt used on article pages and promotional displays.
 
       - name: relatedSlugs
         label: Related articles
@@ -81,6 +95,12 @@ content:
         label: Featured article
         type: boolean
         default: false
+
+      - name: draft
+        label: Draft
+        type: boolean
+        default: true
+        description: Keep enabled until the article is ready to publish.
 
       - name: body
         label: Article
