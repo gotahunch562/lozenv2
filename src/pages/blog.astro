@@ -1,48 +1,113 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import PostCard from '../components/PostCard.astro';
 import { formatPostDate, postHref, sortPostsByDate } from '../lib/blog';
 
-const posts = sortPostsByDate(await getCollection('blog'));
-const featured = posts.find((post) => post.data.featured) ?? posts[0];
-const latest = posts.filter((post) => post.id !== featured?.id);
+const allPosts = await getCollection('blog');
 
+const posts = sortPostsByDate(
+  allPosts.filter((post) => !post.data.draft)
+);
+
+const featured =
+  posts.find((post) => post.data.featured) ?? posts[0];
+
+const latest = posts.filter(
+  (post) => post.id !== featured?.id
+);
+
+const categories = [
+  'All',
+  'AI Governance & Workforce Risk',
+  'Legislation & Policy',
+  'Disclosure & Measurement',
+  'Women, Work & Leadership',
+  'CFO Insights',
+];
+
+const getPostCategory = (
+  post: (typeof posts)[number]
+) => post.data.category ?? post.data.tag ?? '';
 ---
 
-<BaseLayout title="Blog — Lozen Advisory Research & Analysis" description="Practical guides on Menopause at Work & AI Governance for Boards & CFO's.">
+<BaseLayout
+  title="Blog — Lozen Advisory Research & Analysis"
+  description="Research and analysis on AI governance, workforce risk, legislation, disclosure, measurement, and CFO oversight."
+>
   <section class="page-hero">
     <div class="grid-bg"></div>
-    <div class="wrap inner" style="text-align:center;margin:0 auto">
-      <span class="pill">AI Governance insights &amp; practical guides</span>
+
+    <div
+      class="wrap inner"
+      style="text-align:center;margin:0 auto"
+    >
+      <span class="pill">
+        AI governance insights &amp; practical guides
+      </span>
+
       <h1>Lozen Advisory Research Blog</h1>
-      <p class="sub" style="margin-left:auto;margin-right:auto">Actionable advice on  standards institutions need for a future shaped by algorithmic accountability, non-disclosure, and unmeasured human capacity.</p>
+
+      <p
+        class="sub"
+        style="margin-left:auto;margin-right:auto"
+      >
+        Actionable analysis on the standards institutions need for a
+        future shaped by algorithmic accountability, non-disclosure,
+        and unmeasured human capacity.
+      </p>
     </div>
   </section>
 
   <section style="padding-bottom:0">
     <div class="wrap">
       <div class="cat-bar" id="catBar">
-        {['All', 'Buyer Sourcing', 'Market Research', 'Logistics', 'Payments', 'Compliance'].map((tag) => (
-          <a href="#" class={tag === 'All' ? 'active' : ''} data-filter={tag}>{tag}</a>
-        ))}
+        {
+          categories.map((category) => (
+            <a
+              href="#"
+              class={category === 'All' ? 'active' : ''}
+              data-filter={category}
+            >
+              {category}
+            </a>
+          ))
+        }
       </div>
+
       {
         featured && (
-          <a href={postHref(featured.id)} class="feature-post reveal" data-tag={featured.data.tag}>
+          <a
+            href={postHref(featured.id)}
+            class="feature-post reveal"
+            data-category={getPostCategory(featured)}
+          >
             <div class="thumb">
               {featured.data.image ? (
-                <img src={featured.data.image} alt="" />
-              ) : (
+                <img
+                  src={featured.data.image}
+                  alt={featured.data.imageAlt ?? ''}
+                />
+              ) : featured.data.emoji ? (
                 <span>{featured.data.emoji}</span>
-              )}
+              ) : null}
             </div>
+
             <div class="body">
-              <span class="tag">Featured · {featured.data.tag}</span>
+              <span class="tag">
+                Featured · {getPostCategory(featured)}
+              </span>
+
               <h3>{featured.data.title}</h3>
+
               <p>{featured.data.description}</p>
+
               <div class="post-meta">
-                <span class="av">DC</span> Daniel Carter · {formatPostDate(featured.data.pubDate)} · {featured.data.readTime}
+                <span class="av">AK</span>
+                Akilah E. Kamaria ·{' '}
+                {formatPostDate(featured.data.pubDate)}
+                {featured.data.readTime
+                  ? ` · ${featured.data.readTime}`
+                  : ''}
               </div>
             </div>
           </a>
@@ -53,55 +118,58 @@ const latest = posts.filter((post) => post.id !== featured?.id);
 
   <section>
     <div class="wrap">
-      <div class="section-head"><span class="eyebrow">Latest articles</span><h2 class="h2">Fresh from the desk</h2></div>
-      <div class="post-grid" id="postGrid">
-        {latest.map((post) => (
-          <a href={postHref(post.id)} class="post-card reveal" data-tag={post.data.tag}>
-            <div class="thumb">
-              {post.data.image ? (
-                <img src={post.data.image} alt="" loading="lazy" />
-              ) : null}
-            </div>
-            <div class="body">
-              <span class="tag">{post.data.tag}</span>
-              <h3>{post.data.title}</h3>
-              <p>{post.data.description}</p>
-              <div class="post-meta">
-                <span class="av">DC</span> {formatPostDate(post.data.pubDate)} · {post.data.readTime}
-              </div>
-            </div>
-          </a>
-        ))}
-        <a href="#" class="post-card reveal" data-tag="Market Research">
-          <div class="thumb"><img src="/blog/market-ready-product.png" alt="" loading="lazy" /></div>
-          <div class="body">
-            <span class="tag">Market Research</span>
-            <h3>5 Signs a Market Is Ready for Your Product</h3>
-            <p>Before you spend a cent entering a country, check for these demand signals.</p>
-            <div class="post-meta"><span class="av">DC</span> May 6, 2026 · 6 min read</div>
-          </div>
-        </a>
-        <a href="#" class="post-card reveal" data-tag="Compliance">
-          <div class="thumb"><img src="/blog/export-license.png" alt="" loading="lazy" /></div>
-          <div class="body">
-            <span class="tag">Compliance</span>
-            <h3>Can You Legally Export Without Your Own License?</h3>
-            <p>Yes — in many cases. Here's how license-free export routes actually work.</p>
-            <div class="post-meta"><span class="av">DC</span> Apr 28, 2026 · 5 min read</div>
-          </div>
-        </a>
-        <a href="#" class="post-card reveal" data-tag="Logistics">
-          <div class="thumb"><img src="/blog/shipment-checklist.png" alt="" loading="lazy" /></div>
-          <div class="body">
-            <span class="tag">Logistics</span>
-            <h3>The First-Time Exporter's Shipment Checklist</h3>
-            <p>A step-by-step checklist to get your first shipment out the door cleanly.</p>
-            <div class="post-meta"><span class="av">DC</span> Apr 19, 2026 · 6 min read</div>
-          </div>
-        </a>
+      <div class="section-head">
+        <span class="eyebrow">Latest articles</span>
+        <h2 class="h2">Fresh from the desk</h2>
       </div>
-      <div id="noResults" style="display:none;text-align:center;padding:48px 0;color:var(--muted);font-size:16px">
-        No posts found in this category yet — check back soon.
+
+      <div class="post-grid" id="postGrid">
+        {
+          latest.map((post) => (
+            <a
+              href={postHref(post.id)}
+              class="post-card reveal"
+              data-category={getPostCategory(post)}
+            >
+              <div class="thumb">
+                {post.data.image ? (
+                  <img
+                    src={post.data.image}
+                    alt={post.data.imageAlt ?? ''}
+                    loading="lazy"
+                  />
+                ) : post.data.emoji ? (
+                  <span>{post.data.emoji}</span>
+                ) : null}
+              </div>
+
+              <div class="body">
+                <span class="tag">
+                  {getPostCategory(post)}
+                </span>
+
+                <h3>{post.data.title}</h3>
+
+                <p>{post.data.description}</p>
+
+                <div class="post-meta">
+                  <span class="av">AK</span>
+                  {formatPostDate(post.data.pubDate)}
+                  {post.data.readTime
+                    ? ` · ${post.data.readTime}`
+                    : ''}
+                </div>
+              </div>
+            </a>
+          ))
+        }
+      </div>
+
+      <div
+        id="noResults"
+        style="display:none;text-align:center;padding:48px 0;color:var(--muted);font-size:16px"
+      >
+        No posts found in this category yet.
       </div>
     </div>
   </section>
@@ -109,57 +177,102 @@ const latest = posts.filter((post) => post.id !== featured?.id);
   <section style="padding-top:0">
     <div class="wrap">
       <div class="news reveal">
-        <h2>Get governance tips in your inbox</h2>
-        <p>One practical email a week on AI governance. No spam.</p>
-        <form id="newsForm"><input type="email" required placeholder="you@email.com" /><button class="btn btn-dark" type="submit">Subscribe</button></form>
+        <h2>Get governance insights in your inbox</h2>
+
+        <p>
+          Research and analysis on AI governance, accountability,
+          and institutional risk.
+        </p>
+
+        <form id="newsForm">
+          <input
+            type="email"
+            required
+            placeholder="you@email.com"
+          />
+
+          <button
+            class="btn btn-dark"
+            type="submit"
+          >
+            Subscribe
+          </button>
+        </form>
       </div>
     </div>
   </section>
 </BaseLayout>
 
 <script>
-  // ---- Blog category filter ----
   const catBar = document.getElementById('catBar');
   const postGrid = document.getElementById('postGrid');
-  const featuredPost = document.querySelector('.feature-post') as HTMLElement | null;
+  const featuredPost =
+    document.querySelector<HTMLElement>('.feature-post');
   const noResults = document.getElementById('noResults');
 
   function filterPosts(activeFilter: string) {
     if (!postGrid) return;
 
-    const cards = postGrid.querySelectorAll<HTMLElement>('.post-card');
+    const cards =
+      postGrid.querySelectorAll<HTMLElement>('.post-card');
+
     let visibleCount = 0;
 
     cards.forEach((card) => {
-      const tag = card.dataset.tag ?? '';
-      const match = activeFilter === 'All' || tag === activeFilter;
-      card.style.display = match ? '' : 'none';
-      if (match) visibleCount++;
+      const category = card.dataset.category ?? '';
+
+      const matches =
+        activeFilter === 'All' ||
+        category === activeFilter;
+
+      card.style.display = matches ? '' : 'none';
+
+      if (matches) {
+        visibleCount += 1;
+      }
     });
 
-    // Show/hide featured post
     if (featuredPost) {
-      const ftag = featuredPost.dataset.tag ?? '';
-      const fmatch = activeFilter === 'All' || ftag === activeFilter;
-      featuredPost.style.display = fmatch ? '' : 'none';
+      const featuredCategory =
+        featuredPost.dataset.category ?? '';
+
+      const featuredMatches =
+        activeFilter === 'All' ||
+        featuredCategory === activeFilter;
+
+      featuredPost.style.display =
+        featuredMatches ? '' : 'none';
+
+      if (featuredMatches) {
+        visibleCount += 1;
+      }
     }
 
     if (noResults) {
-      noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      noResults.style.display =
+        visibleCount === 0 ? 'block' : 'none';
     }
   }
 
-  if (catBar) {
-    catBar.addEventListener('click', (e) => {
-      const link = (e.target as HTMLElement).closest('a[data-filter]') as HTMLElement | null;
-      if (!link) return;
-      e.preventDefault();
+  catBar?.addEventListener('click', (event) => {
+    const target = event.target as HTMLElement;
 
-      // Update active state
-      catBar.querySelectorAll('a').forEach((a) => a.classList.remove('active'));
-      link.classList.add('active');
+    const link = target.closest<HTMLElement>(
+      'a[data-filter]'
+    );
 
-      filterPosts(link.dataset.filter ?? 'All');
-    });
-  }
+    if (!link) return;
+
+    event.preventDefault();
+
+    catBar
+      .querySelectorAll('a')
+      .forEach((item) => {
+        item.classList.remove('active');
+      });
+
+    link.classList.add('active');
+
+    filterPosts(link.dataset.filter ?? 'All');
+  });
 </script>
