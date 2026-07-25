@@ -1,5 +1,5 @@
 media:
-  input: public/images/blog
+  input: src/images/blog
   output: /images/blog
 
 content:
