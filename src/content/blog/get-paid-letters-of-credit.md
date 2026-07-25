@@ -3,7 +3,7 @@ title: "Getting Paid Across Borders: A Practical Guide to Letters of Credit"
 description: "How letters of credit work, when to use them, and how to avoid the documentation mistakes that delay payment."
 tag: "Payments"
 emoji: "💳"
-image: "/blog/get-paid-letters-of-credit.png"
+image:
 pubDate: 2026-05-15
 readTime: "9 min read"
 featured: false
