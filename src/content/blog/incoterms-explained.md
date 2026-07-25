@@ -3,7 +3,7 @@ title: "Incoterms Explained: Which One Should You Actually Use?"
 description: "A plain-English guide to EXW, FOB, CIF and DDP — and how to choose the right incoterm for each deal."
 tag: "Logistics"
 emoji: "🚢"
-image: "/blog/incoterms-explained.png"
+image: "/blog/LozenAdvisoryLegalBlog.webp"
 pubDate: 2026-05-24
 readTime: "8 min read"
 featured: false
