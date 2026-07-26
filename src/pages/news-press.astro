@@ -1,0 +1,256 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const mediaEmail = 'media@lozenadvisory.com';
+
+const title = 'News & Press | Lozen Advisory';
+const description =
+  'Press releases, media materials, and public statements from Lozen Advisory on AI governance, algorithmic accountability, workforce governance, and market analysis.';
+
+const newsEntries = await getCollection('news');
+
+const releases = newsEntries
+  .filter((entry) => !entry.data.draft)
+  .sort(
+    (a, b) =>
+      b.data.pubDate.getTime() -
+      a.data.pubDate.getTime()
+  )
+  .map((entry) => ({
+    date: entry.data.pubDate.toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    }),
+    category: entry.data.category || 'Press Release',
+    releaseLabel:
+      entry.data.releaseLabel || 'For Immediate Release',
+    headline: entry.data.title,
+    description: entry.data.description,
+    href: `/news-press/${entry.id}/`,
+  }));
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: title,
+  description,
+  url: 'https://www.lozenadvisory.com/news-press/',
+  mainEntity: {
+    '@type': 'ItemList',
+    itemListElement: releases.map((release, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      url: new URL(
+        release.href,
+        'https://www.lozenadvisory.com'
+      ).toString(),
+      name: release.headline,
+    })),
+  },
+};
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+>
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(jsonLd)}
+  />
+
+  <section class="page-hero">
+    <div class="grid-bg"></div>
+
+    <div class="wrap inner">
+      <div class="crumb">
+        <a href="/">Home</a>
+        &nbsp;/&nbsp;
+        News &amp; Press
+      </div>
+
+      <span class="pill">Newsroom</span>
+
+      <h1>News &amp; Press</h1>
+
+      <p class="sub">
+        Press releases and media materials from Lozen Advisory.
+        For media inquiries, contact
+        <a href={`mailto:${mediaEmail}`}>{mediaEmail}</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="newsroom-section">
+    <div class="wrap newsroom-wrap">
+      {
+        releases.length > 0 ? (
+          <div class="release-list">
+            {releases.map((release) => (
+              <article class="release-item reveal">
+                <div class="release-meta">
+                  <time>{release.date}</time>
+
+                  <span>{release.category}</span>
+
+                  {
+                    release.releaseLabel !== release.category && (
+                      <span>{release.releaseLabel}</span>
+                    )
+                  }
+                </div>
+
+                <div class="release-content">
+                  <h2>
+                    <a href={release.href}>
+                      {release.headline}
+                    </a>
+                  </h2>
+
+                  <p>{release.description}</p>
+
+                  <a
+                    class="release-link"
+                    href={release.href}
+                  >
+                    Read the full release →
+                  </a>
+                </div>
+              </article>
+            ))}
+          </div>
+        ) : (
+          <div class="empty-state">
+            <h2>No releases published yet</h2>
+            <p>
+              New press releases and public statements will
+              appear here.
+            </p>
+          </div>
+        )
+      }
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-hero .sub a {
+    color: inherit;
+    font-weight: 700;
+    text-underline-offset: 0.2rem;
+  }
+
+  .newsroom-section {
+    padding: 4rem 0 5rem;
+  }
+
+  .newsroom-wrap {
+    max-width: 68rem;
+  }
+
+  .release-list {
+    border-top: 1px solid rgba(6, 23, 47, 0.16);
+  }
+
+  .release-item {
+    display: grid;
+    grid-template-columns: minmax(11rem, 0.7fr) minmax(0, 1.6fr);
+    gap: 2rem;
+    padding: 2.5rem 0;
+    border-bottom: 1px solid rgba(6, 23, 47, 0.16);
+  }
+
+  .release-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .release-meta time {
+    color: #06172f;
+    font-size: 0.88rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .release-meta span {
+    color: var(--muted);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .release-content h2 {
+    margin: 0;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: clamp(1.55rem, 3vw, 2.2rem);
+    line-height: 1.2;
+  }
+
+  .release-content h2 a {
+    color: #06172f;
+    text-decoration: none;
+  }
+
+  .release-content h2 a:hover {
+    text-decoration: underline;
+    text-decoration-color: #e3b82b;
+    text-underline-offset: 0.3rem;
+  }
+
+  .release-content p {
+    max-width: 46rem;
+    margin: 1rem 0 0;
+    color: var(--muted);
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.7;
+  }
+
+  .release-link {
+    display: inline-flex;
+    margin-top: 1.4rem;
+    color: #06172f;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .release-link:hover {
+    text-decoration: underline;
+    text-decoration-color: #e3b82b;
+    text-underline-offset: 0.25rem;
+  }
+
+  .empty-state {
+    padding: 3rem 0;
+    text-align: center;
+  }
+
+  .empty-state h2 {
+    margin-bottom: 0.75rem;
+  }
+
+  .empty-state p {
+    color: var(--muted);
+  }
+
+  @media (max-width: 760px) {
+    .newsroom-section {
+      padding-top: 3rem;
+    }
+
+    .release-item {
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+      padding: 2rem 0;
+    }
+  }
+</style>
