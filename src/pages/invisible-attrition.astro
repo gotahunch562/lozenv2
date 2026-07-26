@@ -1,0 +1,691 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CtaStrip from '../components/CtaStrip.astro';
+
+const pageTitle =
+  'Invisible Attrition℠: Leadership Capacity Before Retention Risk | Lozen Advisory';
+
+const pageDescription =
+  'Invisible Attrition℠ identifies the unmeasured erosion of leadership and performance capacity that occurs before traditional retention metrics detect risk.';
+
+const architectureItems = [
+  {
+    name: 'Disclosure-Independent Governance℠',
+    description:
+      'Invisible Attrition℠ is the workforce-risk foundation of Disclosure-Independent Governance℠. It shows why an organization cannot treat the absence of disclosure, utilization, visible distress, or performance decline as evidence that no risk exists.',
+    href: '/disclosure-independent-governance/',
+    linkLabel: 'Read the methodology →',
+  },
+  {
+    name: 'Tacere',
+    description:
+      'Tacere names the sustained, strategic practice of keeping one’s own counsel where disclosure carries professional risk. It explains why the signal conventional workforce systems require may never be created.',
+    href: 'https://zenodo.org/records/20370916',
+    linkLabel: 'Read the published research →',
+    external: true,
+  },
+  {
+    name: 'Power User Trap℠',
+    description:
+      'The Power User Trap℠ is one mechanism through which Invisible Attrition℠ can form during AI adoption. Verification, correction, and accountability work concentrates around trusted employees while ordinary productivity measures record only the visible output gain.',
+    href: '/frameworks/power-user-trap/',
+    linkLabel: 'Read the framework →',
+  },
+  {
+    name: 'Committee Ownership Map',
+    description:
+      'The Committee Ownership Map translates hidden workforce and AI-governance exposure into committee-level questions and producible evidence. It helps boards move from nominal responsibility to demonstrable oversight.',
+    href: '/frameworks/committee-ownership-map/',
+    linkLabel: 'View the map →',
+  },
+];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Invisible Attrition℠',
+  headline: 'Invisible Attrition℠',
+  description: pageDescription,
+  url: 'https://www.lozenadvisory.com/invisible-attrition/',
+  datePublished: '2026-02-15',
+  dateModified: '2026-05-14',
+  author: {
+    '@type': 'Person',
+    name: 'Akilah E. Kamaria',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Lozen Advisory',
+  },
+  about: {
+    '@type': 'DefinedTerm',
+    name: 'Invisible Attrition℠',
+    description:
+      'The unmeasured erosion of leadership and performance capacity that occurs before traditional, disclosure-dependent retention metrics detect risk.',
+  },
+};
+---
+
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+>
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(jsonLd)}
+  />
+
+  <section class="page-hero">
+    <div class="grid-bg"></div>
+
+    <div class="wrap inner">
+      <div class="crumb">
+        <a href="/">Home</a>
+        &nbsp;/&nbsp;
+        Frameworks
+      </div>
+
+      <span class="pill">Lozen Advisory Framework</span>
+
+      <h1>Invisible Attrition℠</h1>
+
+      <p class="sub">
+        How organizations lose leadership capacity before retention metrics
+        detect risk.
+      </p>
+
+      <div class="hero-cta">
+        <a
+          href="/request-briefing"
+          class="btn btn-accent"
+        >
+          Request Briefing →
+        </a>
+
+        <a
+          href="#framework"
+          class="btn btn-ghost"
+        >
+          Read the framework
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="framework">
+    <div class="wrap framework-wrap">
+      <article class="article-body framework-article">
+        <p class="article-lead">
+          Leadership exits that follow stable performance records are rarely as
+          sudden as they appear. The erosion that precedes them accumulates while
+          every metric signals continuity, every dashboard shows stability, and
+          every retention system registers no risk.
+        </p>
+
+        <p>
+          A woman in leadership continues delivering at full capacity. Her
+          performance reviews remain strong. Strategic targets are met. Nothing in
+          the data signals risk. Then she leaves. The exit is coded as voluntary,
+          but nothing in the system captured what produced it.
+        </p>
+
+        <blockquote>
+          <p>
+            <strong>Invisible Attrition℠</strong> is the unmeasured erosion of
+            leadership and performance capacity that occurs before traditional
+            retention metrics detect risk.
+          </p>
+        </blockquote>
+
+        <p>
+          Invisible Attrition℠ identifies a specific category of leadership
+          capacity loss. It occurs while performance indicators remain stable and
+          is not captured by standard retention or performance metrics. The
+          individual is present, performing, and compensating. The organization
+          registers continuity.
+        </p>
+
+        <p>
+          By the time departure is recorded, the deterioration that preceded it
+          has no entry in any system.
+        </p>
+
+        <h2>What Invisible Attrition℠ is</h2>
+
+        <p>
+          Invisible Attrition℠ is not another name for burnout, disengagement, or
+          voluntary turnover. Those conditions may coexist with it, but they do not
+          define it.
+        </p>
+
+        <p>
+          The framework classifies the period between the onset of leadership
+          capacity loss and the point at which that loss becomes visible to an
+          organizational data source. Two conditions define the period:
+        </p>
+
+        <ul>
+          <li>The individual continues sustaining visible performance.</li>
+          <li>No standard organizational data source detects the risk in progress.</li>
+        </ul>
+
+        <p>
+          Everything that occurs between those conditions and the eventual
+          departure is what Invisible Attrition℠ classifies.
+        </p>
+
+        <p>
+          The central distinction is between <strong>output stability</strong> and
+          <strong>capacity stability</strong>. An organization may accurately
+          measure continued output while incorrectly treating that output as proof
+          that the human capacity producing it remains intact.
+        </p>
+
+        <h2>The sequence organizations cannot see</h2>
+
+        <div
+          class="sequence"
+          aria-label="Invisible Attrition sequence"
+        >
+          <div class="sequence-item">
+            <span class="sequence-number">1</span>
+            <div>
+              <h3>Demand expands</h3>
+              <p>
+                Scope, complexity, verification work, caregiving, or health-related
+                cognitive load increases.
+              </p>
+            </div>
+          </div>
+
+          <div class="sequence-item">
+            <span class="sequence-number">2</span>
+            <div>
+              <h3>She absorbs</h3>
+              <p>
+                The leader compensates privately and becomes the operational
+                backstop for work that has no formal owner.
+              </p>
+            </div>
+          </div>
+
+          <div class="sequence-item">
+            <span class="sequence-number">3</span>
+            <div>
+              <h3>Performance holds</h3>
+              <p>
+                Visible output remains stable, so performance systems continue to
+                register reliability and continuity.
+              </p>
+            </div>
+          </div>
+
+          <div class="sequence-item">
+            <span class="sequence-number">4</span>
+            <div>
+              <h3>Capacity erodes</h3>
+              <p>
+                Strategic margin, reflection time, decision bandwidth, knowledge
+                transfer, and long-range judgment contract.
+              </p>
+            </div>
+          </div>
+
+          <div class="sequence-item">
+            <span class="sequence-number">5</span>
+            <div>
+              <h3>Exit becomes the first signal</h3>
+              <p>
+                The departure is recorded. The accumulation that produced it does
+                not appear in the institutional record.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <p>
+          Governance activates at the final stage because vacancy is the first
+          event the system was designed to recognize. The organization treats the
+          vacancy as the beginning of the disruption. It is the end of a process
+          that began during tenure.
+        </p>
+
+        <h2>What the leader is managing</h2>
+
+        <p>
+          The leader inside this pattern is not disengaged or underperforming. She
+          is managing.
+        </p>
+
+        <p>
+          She may have absorbed additional scope without formal expansion. More
+          work routes through her because routing it through her has become more
+          efficient than building the capability elsewhere. Her judgment fills
+          gaps that have no official owner. She sustains performance through
+          deliberate effort, not because the conditions support it.
+        </p>
+
+        <p>
+          Strategic thinking time compresses while output volume holds steady.
+          Decision cycles shorten as reflection margin thins. Knowledge transfer,
+          mentoring, internal relationship maintenance, and long-range planning
+          become easier to defer because visible deliverables must still be met.
+        </p>
+
+        <p>
+          From the outside, the output remains consistent. What the organization
+          cannot see is the narrowing required to produce that consistency.
+        </p>
+
+        <blockquote>
+          <p>
+            Stable performance does not confirm stable capacity. It confirms that
+            the compensation mechanism is still working.
+          </p>
+        </blockquote>
+
+        <h2>Why she does not create a signal</h2>
+
+        <p>
+          In hierarchical and intense environments, authority is tied to perceived
+          steadiness. A senior professional who discloses strain may introduce
+          ambiguity about succession positioning, compensation leverage, authority,
+          or long-term continuity while she is still performing the role.
+        </p>
+
+        <p>
+          She has already calculated what it would cost to say something, and she
+          has decided the cost is too high.
+        </p>
+
+        <p>
+          That decision is not a failure to communicate. It is a rational response
+          to how authority is evaluated and how risk is assigned.
+        </p>
+
+        <p>
+          Lozen Advisory names this behavioral mechanism <strong>Tacere</strong>:
+          the sustained, strategic practice of keeping one’s own counsel in a
+          professional environment where disclosure carries professional risk. She
+          was never silent. She decided.
+        </p>
+
+        <p>
+          Tacere removes the moment in which the leader would tell the organization
+          what she is managing. That is the same moment every disclosure-dependent
+          system requires before it can register the condition as existing.
+        </p>
+
+        <h2>Why the data tells the wrong story</h2>
+
+        <p>
+          From the organizational side, the data is coherent. It is also incomplete.
+        </p>
+
+        <p>
+          Performance reviews reflect stable output. Retention dashboards show no
+          alert. Succession plans remain unchanged because no exit has occurred.
+          Benefits utilization records only the people who entered the benefit
+          system. Engagement surveys record what employees were willing to say.
+          Exit interviews record what departing employees chose to disclose.
+        </p>
+
+        <p>
+          The systems are functioning against the wrong input. They interpret
+          sustained high performance as sustained capacity because they were
+          designed to detect dissatisfaction, performance decline, formal
+          utilization, or departure.
+        </p>
+
+        <p>
+          The people who managed privately, delivered fully, and left without
+          disclosing the cause are absent from the causal data. Their departures are
+          counted. What led to them is not.
+        </p>
+
+        <h2>The core measurement failures</h2>
+
+        <h3>Exit data failure</h3>
+
+        <p>
+          Exit interviews record what people are prepared to say at departure.
+          Labels such as personal reasons, caregiving, career transition, and
+          voluntary exit may be accurate while still failing to capture the
+          conditions that made the role unsustainable.
+        </p>
+
+        <h3>Performer masking</h3>
+
+        <p>
+          Top performers do not stop performing when capacity begins to contract.
+          They compensate. The same ability to prioritize under pressure and absorb
+          complexity that made them valuable also makes their erosion difficult to
+          detect.
+        </p>
+
+        <h3>Dashboard delay</h3>
+
+        <p>
+          Performance systems measure downstream output, not the condition that
+          produced it. By the time output begins to degrade, the erosion may have
+          been underway long enough that the decision to leave is already formed.
+        </p>
+
+        <h3>Succession blindness</h3>
+
+        <p>
+          Succession planning measures replacement readiness. It does not measure
+          whether the current leader is operating at the capacity the plan assumes.
+          A plan can identify who comes next while remaining blind to what is
+          deteriorating in the current role.
+        </p>
+
+        <h3>Late governance</h3>
+
+        <p>
+          Governance systems are designed to respond to measurable events. Invisible
+          Attrition℠ does not produce an event until exit. Oversight therefore
+          arrives after the condition it might have addressed has already resolved
+          into loss.
+        </p>
+
+        <h2>The Power User Trap℠ inside the framework</h2>
+
+        <p>
+          AI adoption creates a modern expression of the same pattern. The person
+          whose judgment was already trusted becomes the informal validation layer
+          for generated output.
+        </p>
+
+        <p>
+          Drafting becomes faster, but someone must still determine whether the
+          output is accurate, complete, appropriately framed, and safe to carry a
+          person’s name or institutional authority. That work requires domain
+          knowledge, context, judgment, and accountability.
+        </p>
+
+        <p>
+          When the organization measures generated output but not verification,
+          correction, escalation, and review, it can record productivity growth
+          while human capacity is being consumed in a new form.
+        </p>
+
+        <p>
+          The
+          <a href="/frameworks/power-user-trap/">
+            <strong> Power User Trap℠</strong>
+          </a>
+          is one mechanism through which Invisible Attrition℠ occurs. The
+          organization sees acceleration. The employee experiences accumulation.
+        </p>
+
+        <h2>Why more disclosure is not the answer</h2>
+
+        <p>
+          Organizations often respond to hidden strain by adding communication
+          channels, surveys, well-being programs, manager training, or benefits.
+          These responses assume the missing signal is a communication failure.
+        </p>
+
+        <p>
+          But a better disclosure channel does not change the professional
+          calculation that makes disclosure costly. More frequent measurement of
+          the same disclosure-dependent inputs produces more data about what people
+          were willing to present. It does not create a different class of evidence.
+        </p>
+
+        <p>
+          This is why Invisible Attrition℠ is a
+          <a href="/disclosure-independent-governance/">
+            <strong> Disclosure-Independent Governance℠</strong>
+          </a>
+          problem. The organization must be able to evaluate systemic exposure
+          without requiring an individual to reveal a private condition, report
+          distress, request support, or leave before the risk becomes legible.
+        </p>
+
+        <h2>What governance should examine instead</h2>
+
+        <p>
+          The answer is not more surveillance of employees. It is better examination
+          of the institutional conditions surrounding the work.
+        </p>
+
+        <ul>
+          <li>
+            Where is critical work repeatedly routed through the same trusted
+            individuals?
+          </li>
+          <li>
+            Where has responsibility expanded without formal role, workload, or
+            authority reclassification?
+          </li>
+          <li>
+            Where is stable output being used as the sole evidence of sustainable
+            capacity?
+          </li>
+          <li>
+            Where does knowledge transfer begin only after a vacancy is announced?
+          </li>
+          <li>
+            Where do benefits, surveys, or formal requests require disclosure before
+            the organization can recognize a need?
+          </li>
+          <li>
+            Where is AI verification, correction, and accountability work occurring
+            outside formal governance records?
+          </li>
+        </ul>
+
+        <p>
+          These questions move the analysis away from diagnosing individuals and
+          toward evaluating the architecture that concentrates, conceals, and
+          eventually loses capacity.
+        </p>
+
+        <h2>Published research foundation</h2>
+
+        <p>
+          Invisible Attrition℠ is grounded in Akilah E. Kamaria’s published working
+          paper,
+          <a
+            href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6397780"
+            rel="noopener noreferrer"
+          >
+            “Invisible Attrition℠: A Conceptual Framework for Leadership Capacity
+            Erosion Prior to Organizational Detection”
+          </a>
+          .
+        </p>
+
+        <p>
+          The paper establishes the framework’s central finding: leadership capacity
+          can erode before the organizational systems designed to detect retention
+          risk register any loss.
+        </p>
+
+        <p>
+          The related Zenodo preprint,
+          <a
+            href="https://zenodo.org/records/20370916"
+            rel="noopener noreferrer"
+          >
+            “Tacere: The Strategic Practice of Non-Disclosure in Professional
+            Environments”
+          </a>
+          , defines strategic non-disclosure as a governance condition rather than
+          merely a communications, culture, or psychological-safety problem.
+        </p>
+
+        <h2>How Lozen Advisory applies the framework</h2>
+
+        <p>
+          Lozen Advisory helps leadership teams evaluate where current workforce,
+          succession, AI-adoption, and board-governance systems may be treating
+          incomplete records as complete evidence.
+        </p>
+
+        <p>
+          The work focuses on the institutional questions that remain when
+          disclosure is absent: where capacity is concentrated, which indicators are
+          structurally late, what accountability work is unmeasured, and what
+          evidence leadership would need to demonstrate that the exposure was
+          actively governed.
+        </p>
+
+        <p>
+          Invisible Attrition℠ gives organizations language for a risk they often
+          recognize only after the person, judgment, and institutional knowledge
+          have already left.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="architecture-section">
+    <div class="wrap">
+      <div class="center section-head">
+        <span class="eyebrow">Lozen Advisory Architecture</span>
+        <h2 class="h2">How Invisible Attrition fits the framework</h2>
+      </div>
+
+      <div
+        class="faq"
+        aria-label="Lozen Advisory framework architecture"
+      >
+        {
+          architectureItems.map((item) => (
+            <details class="qa reveal">
+              <summary>
+                <h4>{item.name}</h4>
+              </summary>
+
+              <div class="qa-body">
+                <p>{item.description}</p>
+
+                <a
+                  href={item.href}
+                  rel={item.external ? 'noopener noreferrer' : undefined}
+                >
+                  {item.linkLabel}
+                </a>
+              </div>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <CtaStrip
+    title="Can your organization see leadership risk before the exit?"
+    description="Request a briefing to evaluate hidden capacity exposure, succession blind spots, and the evidence your leadership team or board would need to govern the risk earlier."
+    primaryHref="/request-briefing"
+    primaryLabel="Request Briefing →"
+    secondaryHref="/services"
+    secondaryLabel="View Advisory Services"
+    paddedTop={false}
+  />
+</BaseLayout>
+
+<style>
+  .framework-wrap {
+    max-width: 58rem;
+  }
+
+  .framework-article {
+    margin: 0 auto;
+  }
+
+  .framework-article h2 {
+    margin-top: 3.5rem;
+  }
+
+  .framework-article h3 {
+    margin-top: 2rem;
+  }
+
+  .sequence {
+    display: grid;
+    gap: 1rem;
+    margin: 2rem 0 2.5rem;
+  }
+
+  .sequence-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    align-items: start;
+    padding: 1.25rem;
+    border: 1px solid rgba(6, 23, 47, 0.12);
+    border-radius: 1rem;
+    background: #fff;
+  }
+
+  .sequence-number {
+    display: grid;
+    width: 2.25rem;
+    height: 2.25rem;
+    place-items: center;
+    border-radius: 50%;
+    background: #06172f;
+    color: #e3b82b;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.84rem;
+    font-weight: 800;
+  }
+
+  .sequence-item h3 {
+    margin: 0 0 0.35rem;
+  }
+
+  .sequence-item p {
+    margin: 0;
+  }
+
+  .architecture-section {
+    padding-top: 0;
+  }
+
+  .faq details.qa {
+    display: block;
+  }
+
+  .faq details.qa summary {
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .faq details.qa summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq details.qa summary h4 {
+    margin: 0;
+  }
+
+  .faq details.qa summary h4::after {
+    content: '+';
+    float: right;
+    margin-left: 1rem;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .faq details.qa[open] summary h4::after {
+    content: '−';
+  }
+
+  .qa-body {
+    padding-top: 1rem;
+  }
+
+  .qa-body p {
+    margin-top: 0;
+  }
+
+  .qa-body a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-weight: 700;
+  }
+</style>
