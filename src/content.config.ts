@@ -35,4 +35,32 @@ const blog = defineCollection({
   }),
 });
 
-export const collections = { blog };
+const news = defineCollection({
+  loader: glob({
+    base: './src/content/news',
+    pattern: '**/*.{md,mdx}',
+  }),
+
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    metaDescription: z.string().optional(),
+
+    pubDate: z.coerce.date(),
+    dateModified: z.coerce.date().optional(),
+
+    category: z.string().default('Press Release'),
+    releaseLabel: z.string().default('For Immediate Release'),
+
+    image: z.string().optional(),
+    imageAlt: z.string().optional(),
+    imageCaption: z.string().optional(),
+
+    draft: z.boolean().default(true),
+  }),
+});
+
+export const collections = {
+  blog,
+  news,
+};
