@@ -1,14 +1,15 @@
 ---
-dateModified: 2026-07-10
-title: "Lozen Advisory Launches \"When AI Carries Your Name\" for Leaders Using AI at Work"
-description: "New Name Standard℠ framework helps leaders evaluate whether AI oversight is real before it fails, not after."
-metaDescription: "Lozen Advisory launches When AI Carries Your Name, an executive briefing for leaders using AI at work, introducing the Name Standard℠ for AI oversight, accountability, and verification."
-pubDate: 2026-06-30
+dateModified: 2026-07-14
+title: "New Enterprise Data Reinforces the Need for Human Attribution in AI Governance"
+description: "JumpCloud research showing declining human review and rising AI autonomy reinforces the accountability gap addressed by The Name Standard℠."
+metaDescription: "New JumpCloud data shows human review declining as AI autonomy rises, reinforcing Lozen Advisory's case for traceable human accountability in AI-assisted decisions."
+pubDate: 2026-07-14
 category: "AI Governance"
-releaseLabel: "For Immediate Release"
-image: "/news/ai-name-standard-2026.webp"
-imageAlt: "Abstract AI governance image for the Name Standard briefing."
-imageCaption: "AI governance briefing image. Credit: Lozen Advisory LLC."
+releaseLabel: "Market Update"
+image: "/blog/ai-name-standard-2026.webp"
+imageAlt: "Abstract AI governance image representing human accountability in AI-assisted decisions."
+imageCaption: "Human accountability in AI-assisted decisions. Credit: Lozen Advisory LLC."
+draft: false
 ---
 
 **Richmond, VA, June 30, 2026** — Lozen Advisory LLC will host _When AI Carries Your Name: A Briefing for Leaders Using AI at Work_, an online executive briefing on Thursday, July 30, 2026, designed for executives, business owners, managers, consultants, and advisors who are beginning to use AI to move faster, but need a clearer way to think about judgment, approval, and reputation risk when AI-assisted work moves through their name or authority.
