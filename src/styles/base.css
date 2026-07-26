@@ -371,3 +371,42 @@ footer{background:var(--ink-2);color:rgba(255,255,255,.7);padding:80px 0 36px;bo
 @media(max-width:480px){
   .team{grid-template-columns:1fr}
 }
+/* ============================================================
+   SHARED ADDITIONS — append to base.css
+   (then DELETE the .stats-band/.stats-grid/.stat block from
+   home.css so it isn't defined twice)
+============================================================ */
+
+/* stat band — promoted from home.css; auto-fit makes it work
+   for any count of stats (4 on home, 5 on the tracker) */
+.stats-band{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:30px;margin-top:42px}
+.stat{padding:8px 0}
+.stat .num{font-family:var(--display);font-weight:700;font-size:clamp(34px,4vw,50px);color:var(--ink);line-height:1;letter-spacing:-.02em}
+.stat .num .plus{color:var(--accent)}
+.stat .cap{margin-top:10px;color:var(--muted);font-size:15px;font-weight:600}
+
+/* generic button row (usable outside heroes and CTA strips) */
+.btn-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+
+/* prose: lists, links, pull-quote (any long-form page benefits) */
+.prose ol,.prose ul{margin:0 0 16px;padding-left:22px}
+.prose li{font-size:16.5px;line-height:1.75;margin-bottom:10px}
+.prose li::marker{font-weight:700;color:var(--accent)}
+.prose a{font-weight:700;text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:4px}
+.prose blockquote{margin:28px 0;padding:4px 0 4px 24px;border-left:4px solid var(--accent)}
+.prose blockquote p{font-family:var(--display);font-size:clamp(20px,2.4vw,27px);line-height:1.4;margin:0}
+
+/* dark sections (.cta-sec): make prose readable on ink */
+.cta-sec .eyebrow{color:var(--accent-2)}
+.cta-sec .prose p,.cta-sec .prose li{color:rgba(255,255,255,.78)}
+.cta-sec .prose strong,.cta-sec .prose blockquote p{color:#fff}
+.cta-sec .prose a{color:#fff}
+
+/* faq: native accordion behavior for details.qa */
+.faq details.qa summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.faq details.qa summary::-webkit-details-marker{display:none}
+.faq details.qa summary h4{margin:0}
+.faq details.qa summary::after{content:'+';flex:0 0 auto;font-family:var(--display);font-size:24px;line-height:1;color:var(--accent)}
+.faq details.qa[open] summary::after{content:'\2212'}
+.faq details.qa[open] summary{margin-bottom:10px}
