@@ -75,27 +75,24 @@ const gridId = 'menopause-tracker-grid';
 const dataId = 'menopause-tracker-data';
 ---
 
-<div class="tracker-grid-shell">
-  <div class="tracker-grid-toolbar">
-    <label for="menopause-tracker-search">Search tracker</label>
-    <input
-      id="menopause-tracker-search"
-      type="search"
-      placeholder="Search jurisdiction, bill, status, focus, or classification"
-      autocomplete="off"
-    />
-  </div>
+<div>
+  <label for="menopause-tracker-search">Search tracker</label>
+
+  <input
+    id="menopause-tracker-search"
+    type="search"
+    placeholder="Search jurisdiction, bill, status, focus, or classification"
+    autocomplete="off"
+  />
 
   <div
     id={gridId}
-    class="tracker-grid"
     aria-label="Menopause legislation tracker"
+    style="width: 100%; height: 760px;"
   ></div>
 
   <noscript>
-    <p class="tracker-grid-notice">
-      JavaScript is required to use the interactive legislation tracker.
-    </p>
+    <p>JavaScript is required to use the interactive legislation tracker.</p>
   </noscript>
 </div>
 
@@ -109,6 +106,7 @@ const dataId = 'menopause-tracker-data';
   import {
     AllCommunityModule,
     ModuleRegistry,
+    colorSchemeLightCold,
     createGrid,
     themeQuartz,
   } from 'ag-grid-community';
@@ -125,43 +123,38 @@ const dataId = 'menopause-tracker-data';
   ) {
     const rowData = JSON.parse(dataElement.textContent || '[]');
 
-    const rootStyles = getComputedStyle(document.documentElement);
-    const readVariable = (name, fallback) =>
-      rootStyles.getPropertyValue(name).trim() || fallback;
+    const lozenTheme = themeQuartz
+      .withPart(colorSchemeLightCold)
+      .withParams({
+        fontFamily: 'DM Sans, sans-serif',
 
-    const lozenTheme = themeQuartz.withParams({
-      fontFamily: readVariable('--sans', 'system-ui, sans-serif'),
-      foregroundColor: readVariable('--ink', '#06172f'),
-      backgroundColor: readVariable('--paper-2', '#ffffff'),
-      headerForegroundColor: '#ffffff',
-      headerBackgroundColor: readVariable('--ink', '#06172f'),
-      oddRowBackgroundColor: readVariable('--paper', '#DBF3FE'),
-      rowHoverColor: readVariable('--paper', '#DBF3FE'),
-      borderColor: readVariable('--line', 'rgba(6,23,47,.12)'),
-      accentColor: readVariable('--accent', '#e6c84f'),
-      selectedRowBackgroundColor: readVariable('--paper', '#DBF3FE'),
-      wrapperBorderRadius: '22px',
-      headerFontWeight: 700,
-      cellHorizontalPadding: 16,
-      spacing: 8,
-    });
+        backgroundColor: '#ffffff',
+        foregroundColor: '#06172f',
+        accentColor: '#e6c84f',
+
+        headerBackgroundColor: '#06172f',
+        headerTextColor: '#ffffff',
+
+        oddRowBackgroundColor: '#DBF3FE',
+
+        borderColor: 'rgba(6, 23, 47, 0.15)',
+      });
 
     const linkRenderer = (params) => {
       const value = params.value ?? '';
       const url = params.data?.url;
 
       if (!url) {
-        const span = document.createElement('span');
-        span.textContent = value;
-        return span;
+        return value;
       }
 
       const link = document.createElement('a');
+
       link.href = url;
       link.target = '_blank';
       link.rel = 'noopener noreferrer';
       link.textContent = value;
-      link.className = 'tracker-grid-link';
+
       return link;
     };
 
@@ -169,63 +162,55 @@ const dataId = 'menopause-tracker-data';
       {
         field: 'recordGroup',
         headerName: 'Record Group',
-        minWidth: 170,
-        filter: 'agTextColumnFilter',
+        width: 190,
       },
       {
         field: 'jurisdiction',
         headerName: 'Jurisdiction',
-        minWidth: 150,
-        filter: 'agTextColumnFilter',
+        width: 170,
       },
       {
         field: 'item',
         headerName: 'Bill / Instrument',
-        minWidth: 210,
-        flex: 1,
+        width: 280,
         cellRenderer: linkRenderer,
+        tooltipField: 'item',
       },
       {
         field: 'focus',
         headerName: 'Focus',
-        minWidth: 150,
-        filter: 'agTextColumnFilter',
+        width: 210,
+        tooltipField: 'focus',
       },
       {
         field: 'status',
         headerName: 'Status',
-        minWidth: 190,
-        filter: 'agTextColumnFilter',
+        width: 220,
+        tooltipField: 'status',
       },
       {
         field: 'policyAssumption',
         headerName: 'Policy Assumption / Structural Role',
-        minWidth: 260,
-        flex: 1.25,
-        wrapText: true,
-        autoHeight: true,
+        width: 360,
+        tooltipField: 'policyAssumption',
       },
       {
         field: 'governanceBlindSpot',
         headerName: 'Governance Blind Spot / Failure Confirms',
-        minWidth: 280,
-        flex: 1.25,
-        wrapText: true,
-        autoHeight: true,
+        width: 380,
+        tooltipField: 'governanceBlindSpot',
       },
       {
         field: 'classification',
         headerName: 'Classification',
-        minWidth: 180,
-        filter: 'agTextColumnFilter',
+        width: 220,
+        tooltipField: 'classification',
       },
       {
         field: 'legislativeOutcome',
         headerName: 'Legislative Outcome',
-        minWidth: 300,
-        flex: 1.4,
-        wrapText: true,
-        autoHeight: true,
+        width: 400,
+        tooltipField: 'legislativeOutcome',
       },
     ];
 
@@ -233,22 +218,17 @@ const dataId = 'menopause-tracker-data';
       theme: lozenTheme,
       rowData,
       columnDefs,
+
       defaultColDef: {
         sortable: true,
         filter: true,
         resizable: true,
-        suppressHeaderMenuButton: false,
-        wrapHeaderText: true,
-        autoHeaderHeight: true,
       },
+
       pagination: true,
       paginationPageSize: 20,
       paginationPageSizeSelector: [10, 20, 50],
-      animateRows: false,
-      ensureDomOrder: true,
-      suppressCellFocus: true,
-      rowHeight: 54,
-      headerHeight: 58,
+
       getRowId: (params) =>
         [
           params.data.recordGroup,
@@ -264,66 +244,3 @@ const dataId = 'menopause-tracker-data';
     }
   }
 </script>
-
-<style>
-  .tracker-grid-shell {
-    width: 100%;
-  }
-
-  .tracker-grid-toolbar {
-    display: grid;
-    gap: 8px;
-    max-width: 720px;
-    margin-bottom: 22px;
-  }
-
-  .tracker-grid-toolbar label {
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--ink);
-  }
-
-  .tracker-grid-toolbar input {
-    width: 100%;
-    min-height: 48px;
-    padding: 12px 16px;
-    font: inherit;
-    color: var(--ink);
-    background: var(--paper-2);
-    border: 1px solid var(--line);
-    border-radius: 12px;
-  }
-
-  .tracker-grid-toolbar input:focus {
-    outline: none;
-    border-color: var(--accent);
-    box-shadow: 0 0 0 4px rgba(230, 200, 79, 0.22);
-  }
-
-  .tracker-grid {
-    width: 100%;
-    height: 760px;
-    min-height: 560px;
-  }
-
-  .tracker-grid-notice {
-    margin-top: 18px;
-    color: var(--muted);
-  }
-
-  :global(.tracker-grid-link) {
-    color: var(--brand);
-    font-weight: 700;
-    text-decoration: underline;
-    text-decoration-color: var(--accent);
-    text-underline-offset: 4px;
-  }
-
-  @media (max-width: 760px) {
-    .tracker-grid {
-      height: 680px;
-    }
-  }
-</style>
