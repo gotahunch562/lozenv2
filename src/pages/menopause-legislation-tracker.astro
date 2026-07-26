@@ -287,7 +287,8 @@ const faqJsonLd = {
       <div class="feature-grid">
         {
           columnDefinitions.map(([term, definition]) => (
-            <article class="fcard reveal">
+            <article class="fcard fcard-accent reveal">
+              <span class="tag-dot">{term.charAt(0)}</span>
               <h3>{term}</h3>
               <p>{definition}</p>
             </article>
