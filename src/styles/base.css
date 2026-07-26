@@ -411,6 +411,31 @@ footer{background:var(--ink-2);color:rgba(255,255,255,.7);padding:80px 0 36px;bo
 .fcard-accent:nth-child(even){background:var(--paper)}
 .fcard-accent .tag-dot{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;margin-bottom:16px;background:var(--ink);color:var(--accent-2);font-family:var(--display);font-weight:700;font-size:18px}
 
+/* metric chip — promoted from webinar.css's countdown timer. Same
+   bordered translucent card, big value + small label, for any dark
+   hero that needs to show numbers (countdowns, tracker stats, etc).
+   .stats modifier: auto width + wrap, for labels longer than "Days" */
+.countdown{display:flex;gap:12px;margin-top:8px}
+.cd{background:rgba(255,255,255,.07);border:1px solid var(--line-d);border-radius:14px;padding:12px 0;width:74px;text-align:center}
+.cd .v{font-family:var(--display);font-size:28px;font-weight:700;color:#fff;line-height:1}
+.cd .u{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-top:5px}
+.countdown.stats{flex-wrap:wrap}
+.countdown.stats .cd{width:auto;min-width:92px;padding:14px 18px}
+.countdown.stats .u{white-space:normal;letter-spacing:.06em}
+
+/* feature-grid modifier: 4 columns instead of the 3-column default —
+   for glossary/definition sets where items are short and numerous.
+   Existing .feature-grid responsive collapse (2-col at 980px, 1-col
+   at 760px) still applies since the base class stays on the element. */
+.feature-grid-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+
+/* fcard compact modifier — tighter padding and type for short,
+   glossary-style entries so the grid doesn't read as oversized */
+.fcard-compact{padding:24px}
+.fcard-compact h3{font-size:17px;margin-bottom:6px}
+.fcard-compact p{font-size:14px;line-height:1.55}
+.fcard-compact .tag-dot{width:36px;height:36px;font-size:15px;margin-bottom:12px}
+
 /* faq: native accordion behavior for details.qa */
 .faq details.qa summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
 .faq details.qa summary::-webkit-details-marker{display:none}
