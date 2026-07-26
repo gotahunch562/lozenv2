@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import CtaStrip from '../components/CtaStrip.astro';
 import MenopauseTrackerGrid from '../components/MenopauseTrackerGrid.astro';
+
 import {
   FEDERAL,
   ENACTED,
@@ -125,7 +126,6 @@ const faqJsonLd = {
     },
   })),
 };
-
 ---
 
 <BaseLayout
@@ -161,35 +161,43 @@ const faqJsonLd = {
         policy assumptions each instrument relies upon, and the populations or
         institutional risks its formal record cannot see.
       </p>
-
     </div>
   </section>
 
-  <section>
+  <section class="tracker-coverage">
     <div class="wrap">
-      <div class="section-head">
+      <div class="section-head tracker-coverage-heading">
         <span class="eyebrow">Tracker coverage</span>
 
         <h2 class="h2">Current menopause policy record</h2>
       </div>
 
-      <div class="steps" aria-label="Tracker record counts">
+      <dl
+        class="tracker-stat-grid"
+        aria-label="Tracker record counts"
+      >
         {
           trackerStats.map((stat) => (
-            <article class="step">
-              <span class="num">{stat.value}</span>
-              <h3>{stat.label}</h3>
-            </article>
+            <div class="tracker-stat-card">
+              <dd>{stat.value}</dd>
+              <dt>{stat.label}</dt>
+            </div>
           ))
         }
-      </div>
+      </dl>
 
-      <div class="hero-cta">
-        <a href="#tracker" class="btn btn-accent">
+      <div class="hero-cta tracker-actions">
+        <a
+          href="#tracker"
+          class="btn btn-accent"
+        >
           View the tracker →
         </a>
 
-        <a href="#methodology" class="btn btn-ghost">
+        <a
+          href="#methodology"
+          class="btn btn-ghost"
+        >
           Read the methodology
         </a>
       </div>
@@ -206,58 +214,96 @@ const faqJsonLd = {
 
       <div class="prose tracker-introduction-copy">
         <p>
-          This index applies Lozen Advisory’s <strong>Legislative Efficacy Audit (LEA) Framework</strong> to menopause-related legislation at the federal and state level.
+          This index applies Lozen Advisory’s
+          <strong>Legislative Efficacy Audit (LEA) Framework</strong>
+          to menopause-related legislation at the federal and state level.
         </p>
 
         <p>
-          While menopause at work has become a critical corporate governance issue, traditional legislative compliance models focus on legal visibility rather than operational architecture. The LEA Framework evaluates what a bill practically requires before employer protections, reporting, enforcement, or liability relief can occur.
+          While menopause at work has become a critical corporate governance
+          issue, traditional legislative compliance models focus on legal
+          visibility rather than operational architecture. The LEA Framework
+          evaluates what a bill practically requires before employer
+          protections, reporting, enforcement, or liability relief can occur.
         </p>
 
         <p>
-          This tracker is part of Lozen Advisory’s broader <a href="/disclosure-independent-governance/">Disclosure-Independent Governance℠</a> methodology for evaluating disclosure-dependent workforce policy design, retention risk, and institutional evidence gaps.
+          This tracker is part of Lozen Advisory’s broader
+          <a href="/disclosure-independent-governance/">
+            <strong>Disclosure-Independent Governance℠</strong>
+          </a>
+          methodology for evaluating disclosure-dependent workforce policy
+          design, retention risk, and institutional evidence gaps.
         </p>
 
-        <h3>The Audit Thesis: Measuring Participation vs. Unmet Need</h3>
+        <section class="tracker-copy-block">
+          <h3>The Audit Thesis: Measuring Participation vs. Unmet Need</h3>
 
-        <p>
-          Menopause legislation creates formal participation pathways, not a full measure of organizational need. Each state and federal bill modifies an employer or regulatory pathway. The record it produces depends on who enters that pathway through a request, claim, clinical encounter, study record, or reporting event.
-        </p>
+          <p>
+            Menopause legislation creates formal participation pathways, not a
+            full measure of organizational need. Each state and federal bill
+            modifies an employer or regulatory pathway. The record it produces
+            depends on who enters that pathway through a request, claim,
+            clinical encounter, study record, or reporting event.
+          </p>
+        </section>
 
-        <h3>The LEA Framework Core Pillars</h3>
+        <section class="tracker-copy-block">
+          <h3>The LEA Framework Core Pillars</h3>
 
-        <p>
-          Every entry in this index is cross-referenced using the Invisible Attrition℠ classification framework to evaluate:
-        </p>
+          <p>
+            Every entry in this index is cross-referenced using the Invisible
+            Attrition℠ classification framework to evaluate:
+          </p>
 
-        <ol>
-          <li><strong>The Intervention Pathway:</strong> The formal legal or regulatory channel established by the bill.</li>
-          <li><strong>The Activation Condition:</strong> The explicit action required by an employee, employer, or agency before the pathway can legally operate.</li>
-          <li><strong>The Excluded Cohorts:</strong> The workforce populations structurally left unmeasured when the activation condition goes unmet.</li>
-          <li><strong>The Workforce Attrition Risk:</strong> The corporate compliance and human capital costs left completely unpriced by standard risk assessments.</li>
-        </ol>
+          <ol>
+            <li>
+              <strong>The Intervention Pathway:</strong>
+              The formal legal or regulatory channel established by the bill.
+            </li>
+            <li>
+              <strong>The Activation Condition:</strong>
+              The explicit action required by an employee, employer, or agency
+              before the pathway can legally operate.
+            </li>
+            <li>
+              <strong>The Excluded Cohorts:</strong>
+              The workforce populations structurally left unmeasured when the
+              activation condition goes unmet.
+            </li>
+            <li>
+              <strong>The Workforce Attrition Risk:</strong>
+              The corporate compliance and human capital costs left completely
+              unpriced by standard risk assessments.
+            </li>
+          </ol>
+        </section>
       </div>
     </div>
   </section>
 
-  <section class="tracker-method">
+  <section class="tracker-definitions">
     <div class="wrap">
-      <div class="center section-head">
+      <div class="center section-head tracker-definitions-heading">
         <span class="eyebrow">Column Definitions</span>
 
         <h2 class="h2">How the Tracker Reads Menopause Legislation</h2>
       </div>
 
-      <div class="steps">
+      <dl class="tracker-definition-grid">
         {
           columnDefinitions.map(([term, definition], index) => (
-            <article class="step">
-              <span class="num">{String(index + 1).padStart(2, '0')}</span>
-              <h3>{term}</h3>
-              <p>{definition}</p>
-            </article>
+            <div class="tracker-definition-card">
+              <span class="num">
+                {String(index + 1).padStart(2, '0')}
+              </span>
+
+              <dt>{term}</dt>
+              <dd>{definition}</dd>
+            </div>
           ))
         }
-      </div>
+      </dl>
     </div>
   </section>
 
@@ -401,9 +447,7 @@ const faqJsonLd = {
       <div class="center section-head">
         <span class="eyebrow">Tracker FAQ</span>
 
-        <h2 class="h2">
-          How to read the legislation analysis
-        </h2>
+        <h2 class="h2">How to read the legislation analysis</h2>
       </div>
 
       <div
@@ -439,6 +483,51 @@ const faqJsonLd = {
 </BaseLayout>
 
 <style>
+  .tracker-coverage {
+    background: #DBF3FE;
+  }
+
+  .tracker-coverage-heading {
+    max-width: 52rem;
+    margin-bottom: clamp(1.75rem, 4vw, 2.75rem);
+  }
+
+  .tracker-stat-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 1rem;
+    margin: 0;
+  }
+
+  .tracker-stat-card {
+    min-width: 0;
+    padding: 1.25rem 1.35rem;
+    background: var(--paper-2);
+    border: 1px solid var(--ink);
+    border-radius: 1rem;
+  }
+
+  .tracker-stat-card dd {
+    margin: 0 0 0.45rem;
+    color: var(--ink);
+    font-family: var(--display);
+    font-size: clamp(1.75rem, 3vw, 2.35rem);
+    line-height: 1;
+  }
+
+  .tracker-stat-card dt {
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .tracker-actions {
+    margin-top: 1.5rem;
+  }
+
   .tracker-introduction-grid,
   .analysis-grid {
     display: grid;
@@ -455,6 +544,87 @@ const faqJsonLd = {
   .tracker-introduction-copy p:last-child,
   .analysis-copy p:last-child {
     margin-bottom: 0;
+  }
+
+  .tracker-copy-block {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .tracker-copy-block h3,
+  .tracker-copy-block p,
+  .tracker-copy-block ol {
+    margin: 0;
+  }
+
+  .tracker-copy-block ol {
+    display: grid;
+    gap: 0.75rem;
+    padding-left: 1.25rem;
+  }
+
+  .tracker-definitions {
+    background: var(--paper-2);
+  }
+
+  .tracker-definitions-heading {
+    max-width: 56rem;
+    margin-inline: auto;
+  }
+
+  .tracker-definition-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin: clamp(2rem, 5vw, 3.5rem) 0 0;
+  }
+
+  .tracker-definition-card {
+    position: relative;
+    min-height: 16rem;
+    padding: 2rem;
+    background: var(--paper-2);
+    border: 1px solid var(--ink);
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+
+  .tracker-definition-card::before {
+    content: '';
+    position: absolute;
+    inset: 0 0 auto;
+    height: 4px;
+    background: var(--accent);
+  }
+
+  .tracker-definition-card .num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.5rem;
+    min-height: 2.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0.35rem;
+    color: var(--paper-2);
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    font-weight: 700;
+    background: var(--ink);
+    border-radius: 0.65rem;
+  }
+
+  .tracker-definition-card dt {
+    margin-bottom: 0.75rem;
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 1.05rem;
+    font-weight: 700;
+  }
+
+  .tracker-definition-card dd {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.65;
   }
 
   .tracker-section,
@@ -542,11 +712,33 @@ const faqJsonLd = {
     margin: 0;
   }
 
+  @media (max-width: 980px) {
+    .tracker-stat-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .tracker-definition-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
   @media (max-width: 760px) {
+    .tracker-stat-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .tracker-introduction-grid,
     .analysis-grid {
       grid-template-columns: 1fr;
       gap: 2rem;
+    }
+
+    .tracker-definition-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .tracker-definition-card {
+      min-height: 0;
     }
   }
 </style>
