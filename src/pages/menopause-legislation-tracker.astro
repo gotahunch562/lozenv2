@@ -136,7 +136,7 @@ const faqJsonLd = {
     set:html={JSON.stringify(faqJsonLd)}
   />
 
-  <!-- HERO (dark ink) -->
+  <!-- HERO (dark ink) — headline, coverage stats, and CTAs together -->
   <section class="page-hero">
     <div class="grid-bg"></div>
 
@@ -156,27 +156,20 @@ const faqJsonLd = {
         policy assumptions each instrument relies upon, and the populations or
         institutional risks its formal record cannot see.
       </p>
-    </div>
-  </section>
 
-  <!-- COVERAGE (white stat band) -->
-  <section class="stats-band">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow">Tracker coverage</span>
-
-        <h2 class="h2">Current menopause policy record</h2>
-      </div>
+      <p style="color:rgba(255,255,255,.6);font-size:13.5px;font-weight:600;margin-top:22px">
+        Tracker coverage
+      </p>
 
       <div
-        class="stats-grid"
+        class="countdown stats"
         aria-label="Tracker record counts"
       >
         {
           trackerStats.map((stat) => (
-            <div class="stat">
-              <div class="num">{stat.value}</div>
-              <div class="cap">{stat.label}</div>
+            <div class="cd">
+              <div class="v">{stat.value}</div>
+              <div class="u">{stat.label}</div>
             </div>
           ))
         }
@@ -192,7 +185,7 @@ const faqJsonLd = {
 
         <a
           href="#methodology"
-          class="btn btn-primary"
+          class="btn btn-ghost"
         >
           Read the methodology
         </a>
@@ -284,10 +277,10 @@ const faqJsonLd = {
         <h2 class="h2">How the Tracker Reads Menopause Legislation</h2>
       </div>
 
-      <div class="feature-grid">
+      <div class="feature-grid feature-grid-4">
         {
           columnDefinitions.map(([term, definition]) => (
-            <article class="fcard fcard-accent reveal">
+            <article class="fcard fcard-accent fcard-compact reveal">
               <span class="tag-dot">{term.charAt(0)}</span>
               <h3>{term}</h3>
               <p>{definition}</p>
