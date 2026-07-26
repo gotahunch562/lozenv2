@@ -6,9 +6,10 @@ metaDescription: "The menopause-at-work market followed the playbook, but the pl
 pubDate: 2026-05-19
 category: "Market Correction"
 releaseLabel: "For Immediate Release"
-image: "/news/menopause-market-correction.jpg"
+image: "/blog/menopause-market-correction.jpg"
 imageAlt: "Navy silhouette of a professional woman raising one hand."
 imageCaption: "Navy silhouette of a professional woman raising one hand. Credit: Lozen Advisory LLC."
+draft: false
 ---
 
 **Richmond, VA — May 19, 2026** — PwC has now named menopause as a defining opportunity in women's health. That recognition matters, it confirms that the market is no longer perceived as niche. Menopause is now projected to be a $15B–$25B market by 2030. Approximately [$1.7 billion has already been deployed](https://www.pwc.com/us/en/industries/health-industries/library/unlocking-the-menopause-market.html) into menopause and midlife women's health platforms between 2020 and 2025, with funding events growing at roughly 15% annually, according to PwC.
