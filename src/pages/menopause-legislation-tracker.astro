@@ -2,6 +2,13 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import CtaStrip from '../components/CtaStrip.astro';
 import MenopauseTrackerGrid from '../components/MenopauseTrackerGrid.astro';
+import {
+  FEDERAL,
+  ENACTED,
+  ACTIVE,
+  DID_NOT_PASS,
+  ADVISORY,
+} from '../data/menopauseTracker';
 
 const pageTitle =
   'Menopause Legislation Tracker 2026 | Lozen Advisory';
@@ -11,6 +18,46 @@ const pageDescription =
 
 const canonicalUrl =
   'https://www.lozenadvisory.com/menopause-legislation-tracker/';
+
+const standardSections = [
+  { title: 'Federal', rows: FEDERAL, theme: 'federal' },
+  { title: 'Enacted / Passed', rows: ENACTED, theme: 'enacted' },
+  { title: 'Active / In Committee', rows: ACTIVE, theme: 'active' },
+];
+
+const trackerStats = [
+  { label: 'Federal', value: FEDERAL.length },
+  { label: 'Enacted', value: ENACTED.length },
+  { label: 'Active', value: ACTIVE.length },
+  { label: 'Did Not Pass', value: DID_NOT_PASS.length },
+  { label: 'Advisory', value: ADVISORY.length },
+];
+
+const columnDefinitions = [
+  ['State / Level', 'Jurisdiction.'],
+  ['Bill', 'Bill number and short title.'],
+  [
+    'Focus',
+    'Primary domain: Workplace, Insurance, Education, Omnibus, Military / Veteran, Veteran Care, or Advisory.',
+  ],
+  ['Status', 'Current legislative status.'],
+  [
+    'Policy Assumption',
+    'The disclosure or participation condition the law requires to activate.',
+  ],
+  [
+    'Governance Blind Spot',
+    'The population or condition outside the formal system the law produces.',
+  ],
+  [
+    'Lozen Classification',
+    'The Invisible Attrition℠ condition this gap represents.',
+  ],
+  [
+    'Legislative Outcome',
+    'Observations from the bill text or legislative record with strategic or analytical value beyond the core gap classification.',
+  ],
+];
 
 const faqItems = [
   {
@@ -115,18 +162,34 @@ const faqJsonLd = {
         institutional risks its formal record cannot see.
       </p>
 
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Tracker coverage</span>
+
+        <h2 class="h2">Current menopause policy record</h2>
+      </div>
+
+      <div class="steps" aria-label="Tracker record counts">
+        {
+          trackerStats.map((stat) => (
+            <article class="step">
+              <span class="num">{stat.value}</span>
+              <h3>{stat.label}</h3>
+            </article>
+          ))
+        }
+      </div>
+
       <div class="hero-cta">
-        <a
-          href="#tracker"
-          class="btn btn-accent"
-        >
+        <a href="#tracker" class="btn btn-accent">
           View the tracker →
         </a>
 
-        <a
-          href="#methodology"
-          class="btn btn-ghost"
-        >
+        <a href="#methodology" class="btn btn-ghost">
           Read the methodology
         </a>
       </div>
@@ -136,30 +199,64 @@ const faqJsonLd = {
   <section class="tracker-introduction">
     <div class="wrap tracker-introduction-grid">
       <div>
-        <span class="eyebrow">The legislative record</span>
+        <span class="eyebrow">Executive Summary</span>
 
-        <h2 class="h2">
-          Legislation can create action while leaving the underlying risk
-          unmeasured
-        </h2>
+        <h2 class="h2">Menopause Regulations</h2>
       </div>
 
       <div class="prose tracker-introduction-copy">
         <p>
-          Menopause legislation is expanding across research, healthcare,
-          insurance, workplace policy, education, and public awareness.
+          This index applies Lozen Advisory’s <strong>Legislative Efficacy Audit (LEA) Framework</strong> to menopause-related legislation at the federal and state level.
         </p>
 
         <p>
-          The existence of legislation is an important policy signal. It does
-          not, by itself, establish that the people named in the legislative
-          purpose will be reached by the mechanism the legislation creates.
+          While menopause at work has become a critical corporate governance issue, traditional legislative compliance models focus on legal visibility rather than operational architecture. The LEA Framework evaluates what a bill practically requires before employer protections, reporting, enforcement, or liability relief can occur.
         </p>
 
         <p>
-          This tracker examines both dimensions: what an instrument does and
-          what its operating structure still cannot reliably detect.
+          This tracker is part of Lozen Advisory’s broader <a href="/disclosure-independent-governance/">Disclosure-Independent Governance℠</a> methodology for evaluating disclosure-dependent workforce policy design, retention risk, and institutional evidence gaps.
         </p>
+
+        <h3>The Audit Thesis: Measuring Participation vs. Unmet Need</h3>
+
+        <p>
+          Menopause legislation creates formal participation pathways, not a full measure of organizational need. Each state and federal bill modifies an employer or regulatory pathway. The record it produces depends on who enters that pathway through a request, claim, clinical encounter, study record, or reporting event.
+        </p>
+
+        <h3>The LEA Framework Core Pillars</h3>
+
+        <p>
+          Every entry in this index is cross-referenced using the Invisible Attrition℠ classification framework to evaluate:
+        </p>
+
+        <ol>
+          <li><strong>The Intervention Pathway:</strong> The formal legal or regulatory channel established by the bill.</li>
+          <li><strong>The Activation Condition:</strong> The explicit action required by an employee, employer, or agency before the pathway can legally operate.</li>
+          <li><strong>The Excluded Cohorts:</strong> The workforce populations structurally left unmeasured when the activation condition goes unmet.</li>
+          <li><strong>The Workforce Attrition Risk:</strong> The corporate compliance and human capital costs left completely unpriced by standard risk assessments.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="tracker-method">
+    <div class="wrap">
+      <div class="center section-head">
+        <span class="eyebrow">Column Definitions</span>
+
+        <h2 class="h2">How the Tracker Reads Menopause Legislation</h2>
+      </div>
+
+      <div class="steps">
+        {
+          columnDefinitions.map(([term, definition], index) => (
+            <article class="step">
+              <span class="num">{String(index + 1).padStart(2, '0')}</span>
+              <h3>{term}</h3>
+              <p>{definition}</p>
+            </article>
+          ))
+        }
       </div>
     </div>
   </section>
