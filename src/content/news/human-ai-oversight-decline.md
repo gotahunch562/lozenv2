@@ -6,9 +6,10 @@ metaDescription: "New JumpCloud data shows human review declining as AI autonomy
 pubDate: 2026-07-14
 category: "AI Governance"
 releaseLabel: "Market Update"
-image: "/news/ai-name-standard-2026.webp"
+image: "/blog/ai-name-standard-2026.webp"
 imageAlt: "Abstract AI governance image representing human accountability in AI-assisted decisions."
 imageCaption: "Human accountability in AI-assisted decisions. Credit: Lozen Advisory LLC."
+draft: false
 ---
 
 **Chicago, Illinois, July 14, 2026** — Less than 90 minutes after [Lozen Advisory announced The Name Standard℠ for enterprise AI accountability](https://www.einpresswire.com/article/925287658/lozen-advisory-launches-the-name-standard-for-enterprise-ai-accountability), JumpCloud released new research reporting that human review before high-risk AI actions had fallen from 40% to 25% in six months, while full autonomy without human review had risen from 11% to 26%.
