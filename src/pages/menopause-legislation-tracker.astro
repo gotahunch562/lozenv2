@@ -1,0 +1,455 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CtaStrip from '../components/CtaStrip.astro';
+import MenopauseTrackerGrid from '../components/MenopauseTrackerGrid.astro';
+
+const pageTitle =
+  'Menopause Legislation Tracker 2026 | Lozen Advisory';
+
+const pageDescription =
+  'Track federal and state menopause legislation, policy assumptions, governance blind spots, Lozen classifications, and legislative outcomes.';
+
+const canonicalUrl =
+  'https://www.lozenadvisory.com/menopause-legislation-tracker/';
+
+const faqItems = [
+  {
+    question: 'What does the menopause legislation tracker measure?',
+    answer:
+      'The tracker records the legislative focus, current status, policy assumption, governance blind spot, Lozen classification, and legislative outcome associated with each federal, state, or advisory instrument.',
+  },
+  {
+    question: 'What is a policy assumption?',
+    answer:
+      'A policy assumption is the condition the legislation expects to produce change. Examples include employee disclosure, use of a formal benefit or accommodation process, provider education, insurance coverage, research funding, or participation in a public data system.',
+  },
+  {
+    question: 'What is a governance blind spot?',
+    answer:
+      'A governance blind spot is a population, condition, delay, or institutional risk that the policy mechanism cannot reliably detect or measure. An instrument may create a valid intervention while still leaving material exposure outside the resulting record.',
+  },
+  {
+    question: 'What do the Lozen classifications mean?',
+    answer:
+      'The classifications connect each instrument to the structural conditions identified through Lozen Advisory’s Invisible Attrition℠ analysis, including delayed detection, strategic non-disclosure, unmeasured attrition, and instruments outside the framework’s analytical scope.',
+  },
+  {
+    question: 'How often is the tracker updated?',
+    answer:
+      'Lozen Advisory updates the tracker when bill text, legislative status, enactment, committee action, or other material policy information changes.',
+  },
+];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Dataset',
+  name: 'Menopause Legislation Tracker 2026',
+  description: pageDescription,
+  url: canonicalUrl,
+  creator: {
+    '@type': 'Organization',
+    name: 'Lozen Advisory',
+    url: 'https://www.lozenadvisory.com/',
+  },
+  author: {
+    '@type': 'Person',
+    name: 'Akilah E. Kamaria',
+  },
+  isAccessibleForFree: true,
+  keywords: [
+    'menopause legislation',
+    'workplace menopause legislation',
+    'menopause policy',
+    'menopause benefits',
+    'Invisible Attrition',
+    'workforce governance',
+  ],
+};
+
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqItems.map((item) => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: item.answer,
+    },
+  })),
+};
+
+---
+
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+>
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(jsonLd)}
+  />
+
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(faqJsonLd)}
+  />
+
+  <section class="page-hero">
+    <div class="grid-bg"></div>
+
+    <div class="wrap inner">
+      <div class="crumb">
+        <a href="/">Home</a>
+        &nbsp;/&nbsp;
+        Menopause Legislation Tracker
+      </div>
+
+      <span class="pill">Lozen Advisory Policy Intelligence</span>
+
+      <h1>Menopause Legislation Tracker 2026</h1>
+
+      <p class="sub">
+        A governance audit of federal and state menopause legislation, the
+        policy assumptions each instrument relies upon, and the populations or
+        institutional risks its formal record cannot see.
+      </p>
+
+      <div class="hero-cta">
+        <a
+          href="#tracker"
+          class="btn btn-accent"
+        >
+          View the tracker →
+        </a>
+
+        <a
+          href="#methodology"
+          class="btn btn-ghost"
+        >
+          Read the methodology
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="tracker-introduction">
+    <div class="wrap tracker-introduction-grid">
+      <div>
+        <span class="eyebrow">The legislative record</span>
+
+        <h2 class="h2">
+          Legislation can create action while leaving the underlying risk
+          unmeasured
+        </h2>
+      </div>
+
+      <div class="prose tracker-introduction-copy">
+        <p>
+          Menopause legislation is expanding across research, healthcare,
+          insurance, workplace policy, education, and public awareness.
+        </p>
+
+        <p>
+          The existence of legislation is an important policy signal. It does
+          not, by itself, establish that the people named in the legislative
+          purpose will be reached by the mechanism the legislation creates.
+        </p>
+
+        <p>
+          This tracker examines both dimensions: what an instrument does and
+          what its operating structure still cannot reliably detect.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section
+    id="tracker"
+    class="tracker-section"
+  >
+    <div class="wrap tracker-wrap">
+      <div class="section-head tracker-heading">
+        <span class="eyebrow">Interactive tracker</span>
+
+        <h2 class="h2">
+          Federal, state, and advisory menopause policy
+        </h2>
+
+        <p class="lead">
+          Search, sort, filter, resize columns, and open the underlying
+          legislative sources directly from the table.
+        </p>
+      </div>
+
+      <MenopauseTrackerGrid />
+    </div>
+  </section>
+
+  <section
+    id="methodology"
+    class="tracker-method"
+  >
+    <div class="wrap">
+      <div class="center section-head">
+        <span class="eyebrow">Analytical process</span>
+
+        <h2 class="h2">
+          How Lozen Advisory evaluates each instrument
+        </h2>
+      </div>
+
+      <div class="steps">
+        <article class="step reveal">
+          <span class="num">01</span>
+
+          <h3>Identify the mechanism</h3>
+
+          <p>
+            Determine whether the instrument creates research, education,
+            insurance coverage, workplace accommodation, clinical training,
+            public awareness, data infrastructure, or advisory guidance.
+          </p>
+        </article>
+
+        <article class="step reveal">
+          <span class="num">02</span>
+
+          <h3>Locate the activation condition</h3>
+
+          <p>
+            Identify what must occur before the mechanism can operate,
+            including disclosure, diagnosis, provider recognition, formal
+            participation, appropriation, or implementation.
+          </p>
+        </article>
+
+        <article class="step reveal">
+          <span class="num">03</span>
+
+          <h3>Test the resulting record</h3>
+
+          <p>
+            Examine which experiences, delays, departures, or harms remain
+            outside the evidence produced by the legislative mechanism.
+          </p>
+        </article>
+
+        <article class="step reveal">
+          <span class="num">04</span>
+
+          <h3>Classify the structural gap</h3>
+
+          <p>
+            Connect the record to the relevant Lozen Advisory condition,
+            including Dashboard Delay, Tacere, Invisible Attrition℠, or Outside
+            Scope.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tracker-analysis">
+    <div class="wrap analysis-grid">
+      <div>
+        <span class="eyebrow">Why the distinction matters</span>
+
+        <h2 class="h2">
+          Legislative activity and institutional visibility are not the same
+          result
+        </h2>
+      </div>
+
+      <div class="prose analysis-copy">
+        <p>
+          A research mandate may produce findings without changing present
+          clinical practice. A workplace protection may apply after disclosure
+          without reaching employees who decide disclosure is professionally
+          unsafe. A public dashboard may measure formal healthcare encounters
+          without capturing career loss that occurs outside the clinical
+          system.
+        </p>
+
+        <blockquote>
+          <p>
+            A policy can accurately measure participation in the system it
+            created while remaining structurally blind to the people who never
+            enter that system.
+          </p>
+        </blockquote>
+
+        <p>
+          The tracker does not treat these limitations as proof that the
+          legislation has no value. It distinguishes the stated intervention
+          from the complete population and governance outcome the intervention
+          may be assumed to represent.
+        </p>
+
+        <p>
+          That distinction is central to
+          <a href="/disclosure-independent-governance/">
+            <strong>Disclosure-Independent Governance℠</strong>
+          </a>:
+          institutional risk should not become visible only after an individual
+          discloses, enters a formal process, experiences measurable
+          deterioration, or leaves.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="tracker-faq">
+    <div class="wrap">
+      <div class="center section-head">
+        <span class="eyebrow">Tracker FAQ</span>
+
+        <h2 class="h2">
+          How to read the legislation analysis
+        </h2>
+      </div>
+
+      <div
+        class="faq"
+        aria-label="Menopause legislation tracker frequently asked questions"
+      >
+        {
+          faqItems.map((item) => (
+            <details class="qa reveal">
+              <summary>
+                <h4>{item.question}</h4>
+              </summary>
+
+              <div class="qa-body">
+                <p>{item.answer}</p>
+              </div>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <CtaStrip
+    title="What does your current workforce record fail to show?"
+    description="Lozen Advisory examines the institutional gaps between formal policy, visible participation, workforce capacity, and the evidence used to govern risk."
+    primaryHref="/service-cfo-market-intelligence/"
+    primaryLabel="Explore CFO Market Intelligence →"
+    secondaryHref="/contact/"
+    secondaryLabel="Contact Lozen Advisory"
+    paddedTop={false}
+  />
+</BaseLayout>
+
+<style>
+  .tracker-introduction-grid,
+  .analysis-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+    gap: clamp(2.5rem, 7vw, 7rem);
+    align-items: start;
+  }
+
+  .tracker-introduction-copy,
+  .analysis-copy {
+    max-width: 48rem;
+  }
+
+  .tracker-introduction-copy p:last-child,
+  .analysis-copy p:last-child {
+    margin-bottom: 0;
+  }
+
+  .tracker-section,
+  .tracker-faq {
+    background: #DBF3FE;
+  }
+
+  .tracker-wrap {
+    max-width: 96rem;
+  }
+
+  .tracker-heading {
+    max-width: 52rem;
+    margin-bottom: clamp(2rem, 5vw, 3.5rem);
+  }
+
+  .tracker-method {
+    background: var(--paper-2);
+  }
+
+  .tracker-analysis {
+    background: #06172f;
+    color: var(--paper-2);
+  }
+
+  .tracker-analysis .eyebrow,
+  .tracker-analysis .h2,
+  .tracker-analysis .analysis-copy,
+  .tracker-analysis .analysis-copy p {
+    color: var(--paper-2);
+  }
+
+  .tracker-analysis .analysis-copy a {
+    color: var(--paper-2);
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-underline-offset: 4px;
+  }
+
+  .tracker-analysis .analysis-copy blockquote {
+    margin: 2rem 0;
+    padding-left: 1.5rem;
+    border-left: 4px solid var(--accent);
+  }
+
+  .tracker-analysis .analysis-copy blockquote p {
+    font-family: var(--display);
+    font-size: clamp(1.35rem, 2.5vw, 1.8rem);
+    line-height: 1.35;
+  }
+
+  .faq details.qa {
+    display: block;
+  }
+
+  .faq details.qa summary {
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .faq details.qa summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq details.qa summary h4 {
+    margin: 0;
+  }
+
+  .faq details.qa summary h4::after {
+    content: '+';
+    float: right;
+    margin-left: 1rem;
+    font-family: var(--sans);
+  }
+
+  .faq details.qa[open] summary h4::after {
+    content: '−';
+  }
+
+  .qa-body {
+    padding-top: 1rem;
+  }
+
+  .qa-body p {
+    margin: 0;
+  }
+
+  @media (max-width: 760px) {
+    .tracker-introduction-grid,
+    .analysis-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+</style>
