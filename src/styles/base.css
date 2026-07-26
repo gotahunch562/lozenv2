@@ -403,6 +403,14 @@ footer{background:var(--ink-2);color:rgba(255,255,255,.7);padding:80px 0 36px;bo
 .cta-sec .prose strong,.cta-sec .prose blockquote p{color:#fff}
 .cta-sec .prose a{color:#fff}
 
+/* fcard color variant — for glossary/definition grids that would
+   otherwise read as flat, identical white boxes. Reuses existing
+   tokens only (--accent, --ink, --accent-2, --paper). */
+.fcard-accent{position:relative;overflow:hidden}
+.fcard-accent::before{content:'';position:absolute;inset:0 0 auto;height:4px;background:var(--accent)}
+.fcard-accent:nth-child(even){background:var(--paper)}
+.fcard-accent .tag-dot{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;margin-bottom:16px;background:var(--ink);color:var(--accent-2);font-family:var(--display);font-weight:700;font-size:18px}
+
 /* faq: native accordion behavior for details.qa */
 .faq details.qa summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
 .faq details.qa summary::-webkit-details-marker{display:none}
