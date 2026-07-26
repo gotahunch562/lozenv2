@@ -1,0 +1,271 @@
+---
+export const prerender = true;
+
+import {
+  getCollection,
+  render,
+} from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const releases = await getCollection('news');
+
+  return releases
+    .filter((entry) => !entry.data.draft)
+    .map((entry) => ({
+      params: { slug: entry.id },
+      props: { entry },
+    }));
+}
+
+const { entry } = Astro.props;
+
+if (!entry || entry.data.draft) {
+  return Astro.redirect('/news-press');
+}
+
+const { Content } = await render(entry);
+
+const {
+  title,
+  description,
+  metaDescription,
+  pubDate,
+  dateModified,
+  category,
+  releaseLabel,
+  image,
+  imageAlt,
+  imageCaption,
+} = entry.data;
+
+const pageDescription =
+  metaDescription ?? description;
+
+const publishedDate = pubDate.toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+
+const modifiedDate = dateModified
+  ? dateModified.toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    })
+  : '';
+
+const canonical = `https://www.lozenadvisory.com/news-press/${entry.id}/`;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'NewsArticle',
+  headline: title,
+  description: pageDescription,
+  url: canonical,
+  mainEntityOfPage: canonical,
+  datePublished: pubDate.toISOString(),
+  dateModified: (
+    dateModified ?? pubDate
+  ).toISOString(),
+  ...(image
+    ? {
+        image: new URL(
+          image,
+          'https://www.lozenadvisory.com'
+        ).toString(),
+      }
+    : {}),
+  author: {
+    '@type': 'Organization',
+    name: 'Lozen Advisory LLC',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Lozen Advisory LLC',
+  },
+};
+---
+
+<BaseLayout
+  title={`${title} | Lozen Advisory`}
+  description={pageDescription}
+>
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(jsonLd)}
+  />
+
+  <section class="article-hero press-hero">
+    <div class="grid-bg"></div>
+
+    <div class="wrap inner">
+      <div class="crumb">
+        <a href="/">Home</a>
+        &nbsp;/&nbsp;
+        <a href="/news-press">News &amp; Press</a>
+      </div>
+
+      <div class="press-labels">
+        <span class="pill">
+          {releaseLabel}
+        </span>
+
+        <span class="press-category">
+          {category}
+        </span>
+      </div>
+
+      <h1>{title}</h1>
+
+      <p class="press-description">
+        {description}
+      </p>
+
+      <div class="press-date">
+        <time datetime={pubDate.toISOString()}>
+          {publishedDate}
+        </time>
+
+        {
+          modifiedDate && (
+            <>
+              <span aria-hidden="true">•</span>
+              <span>Updated {modifiedDate}</span>
+            </>
+          )
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="press-body-section">
+    <div class="wrap press-wrap">
+      {
+        image && (
+          <figure class="press-image">
+            <img
+              src={image}
+              alt={imageAlt ?? ''}
+            />
+
+            {
+              imageCaption && (
+                <figcaption>
+                  {imageCaption}
+                </figcaption>
+              )
+            }
+          </figure>
+        )
+      }
+
+      <article class="article-body press-body">
+        <Content />
+      </article>
+
+      <div class="press-back">
+        <a href="/news-press">
+          ← Back to News &amp; Press
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .press-hero .inner {
+    text-align: left;
+  }
+
+  .press-labels {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.8rem 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .press-category {
+    color: var(--muted);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .press-hero h1 {
+    max-width: 62rem;
+  }
+
+  .press-description {
+    max-width: 50rem;
+    margin: 1.25rem 0 0;
+    color: var(--muted);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+
+  .press-date {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    margin-top: 1.4rem;
+    color: var(--muted);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .press-body-section {
+    padding: 3.5rem 0 5rem;
+  }
+
+  .press-wrap {
+    max-width: 58rem;
+  }
+
+  .press-image {
+    margin: 0 0 2.75rem;
+  }
+
+  .press-image img {
+    display: block;
+    width: 100%;
+    border-radius: 1rem;
+  }
+
+  .press-image figcaption {
+    margin-top: 0.75rem;
+    color: var(--muted);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.82rem;
+    line-height: 1.5;
+  }
+
+  .press-body {
+    margin: 0 auto;
+  }
+
+  .press-back {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(6, 23, 47, 0.16);
+  }
+
+  .press-back a {
+    color: #06172f;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .press-back a:hover {
+    text-decoration: underline;
+    text-decoration-color: #e3b82b;
+    text-underline-offset: 0.25rem;
+  }
+</style>
