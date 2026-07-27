@@ -5,7 +5,7 @@
 :root{
   /* Lozen Advisory visual system */
   --ink:#06172f;
-  --ink-2:#06172f;
+  --ink-2:#06172f; 
 
   --paper:#E0EFFF; 
   --paper-2:#ffffff;
@@ -13,7 +13,7 @@
   --brand:#06172f;
   --brand-2:#06172f;
 
-  --accent:#e6c84f;
+  --accent:#FFDC00;
   --accent-2:#f0d866;
 
   --muted:rgba(6,23,47,.68);
