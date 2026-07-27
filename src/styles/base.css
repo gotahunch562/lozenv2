@@ -166,7 +166,12 @@ section{padding:100px 0}
 .form .btn{width:100%;justify-content:center;margin-top:6px}
 
 /* ---- FOOTER ---- */
-footer{background:var(--ink-2);color:rgba(255,255,255,.7);padding:80px 0 36px;border-top:4px solid var(--brand)}
+footer{
+  background:var(--ink-2);
+  color:rgba(255,255,255,.7);
+  padding:80px 0 36px;
+  border-top:4px solid var(--accent);
+}
 .foot-grid{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:48px}
 .foot-grid h5{color:#fff;font-size:13px;font-weight:700;letter-spacing:.08em;margin-bottom:18px;text-transform:uppercase;opacity:.5}
 .foot-grid a{display:block;font-size:14.5px;margin-bottom:12px;color:rgba(255,255,255,.65);transition:color .2s, padding-left .2s}
