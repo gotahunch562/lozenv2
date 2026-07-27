@@ -1,0 +1,234 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CtaStrip from '../components/CtaStrip.astro';
+import AiLegislationGrid from '../components/AiLegislationGrid.astro';
+import { AI_LEGISLATION } from '../data/aiLegislationTracker';
+
+const trackerLastUpdated = 'July 2, 2026';
+
+const trackerStats = [
+  { label: 'Records', value: AI_LEGISLATION.length },
+  { label: 'In Force / Final', value: AI_LEGISLATION.filter((row) => /already in effect|signed into law|final regulations adopted/i.test(row.status)).length },
+  { label: 'Discussion Draft', value: AI_LEGISLATION.filter((row) => /discussion draft/i.test(row.status)).length },
+  { label: 'Voluntary Standards', value: AI_LEGISLATION.filter((row) => /voluntary standard/i.test(row.status)).length },
+  { label: 'Pending Signature', value: AI_LEGISLATION.filter((row) => /sent to governor/i.test(row.status)).length },
+];
+
+const nameStandardStats = [
+  { label: 'Documentation Only', value: AI_LEGISLATION.filter((row) => /documentation \/ record retention only/i.test(row.nameStandardSignal)).length },
+  { label: 'No Human Accountability', value: AI_LEGISLATION.filter((row) => /no human accountability mechanism found/i.test(row.nameStandardSignal)).length },
+  { label: 'Explicit Human Review', value: AI_LEGISLATION.filter((row) => /explicit human review required/i.test(row.nameStandardSignal)).length },
+  { label: 'Undefined Oversight', value: AI_LEGISLATION.filter((row) => /human oversight mentioned but undefined/i.test(row.nameStandardSignal)).length },
+];
+
+const title = 'AI Regulations Tracker for Corporate Boards | Lozen Advisory';
+const description = 'Track AI legislation, regulation compliance, human accountability architecture, and governance risk. State-by-state and global AI regulations, organized for corporate boards.';
+
+const trackerJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Dataset',
+  name: title,
+  description,
+  url: 'https://www.lozenadvisory.com/ai-legislation-tracker/',
+  datePublished: '2026-06-23',
+  dateModified: '2026-07-02',
+  creator: { '@type': 'Organization', name: 'Lozen Advisory LLC' },
+  isAccessibleForFree: true,
+  keywords: [
+    'AI legislation',
+    'AI regulation compliance tracker',
+    'AI governance',
+    'AI accountability',
+    'human in the loop',
+    'Name Standard',
+    'board governance',
+    'human attribution',
+    'enterprise AI risk',
+  ],
+};
+---
+
+<BaseLayout title={title} description={description}>
+<script type="application/ld+json" set:html={JSON.stringify(trackerJsonLd)} />
+
+<section class="page-hero">
+  <div class="grid-bg"></div>
+  <div class="wrap inner">
+    <div class="crumb"><a href="/">Home</a> &nbsp;/&nbsp; AI Legislation Tracker</div>
+    <span class="pill">Name Standard℠ AI Regulations Tracker</span>
+    <h1>Has your board built oversight for AI? <span class="hl">Or just assumed the old processes cover it?</span></h1>
+    <p class="sub">Most AI rules name an entity — a provider, sponsor, agency, or covered organization — not a person. Can management identify the human-in-the-loop responsible for AI-assisted decisions, approvals, outputs, escalations, and sign-off? The Name Standard℠ tests whether that person actually exists.</p>
+    <div class="hero-cta">
+      <a href="#legislation-index" class="btn btn-accent">Explore AI Regulations</a>
+      <a href="/request-briefing/" class="btn btn-ghost">Request a governance briefing →</a>
+    </div>
+    <div class="hero-card reveal" style="max-width:320px;margin-top:34px">
+      <h4>Nasdaq Governance Pulse</h4>
+      <div class="mini-stats" style="grid-template-columns:1fr">
+        <div class="mini">
+          <div class="n">40%</div>
+          <div class="l">Expect AI to impact their organization in the next 12 months</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Name Standard℠ Classification: Human Attribution</span>
+      <h2 class="h2">Name Standard℠ Map</h2>
+      <p class="lead">Toggle between USA and global views to see state-by-state and global AI regulations, categorized by human accountability signal.</p>
+    </div>
+
+    <div class="cat-bar" data-map-tabs role="tablist" aria-label="AI legislation map views" style="justify-content:flex-start;margin-top:0">
+      <a href="#" class="active" data-map-tab="us" role="tab" aria-selected="true">United States</a>
+      <a href="#" data-map-tab="global" role="tab" aria-selected="false">Global</a>
+    </div>
+
+    <div class="fcard" style="margin-top:20px;padding:0;overflow:hidden">
+      <div data-map-panel="us">
+        <div style="min-height:527px" id="datawrapper-vis-UDISR">
+          <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/UDISR/embed.js" charset="utf-8" data-target="#datawrapper-vis-UDISR"></script>
+          <noscript>
+            <img src="https://datawrapper.dwcdn.net/UDISR/full.png" alt="A choropleth map of the United States evaluating state-level AI legislation against the Name Standard℠ framework." />
+          </noscript>
+        </div>
+      </div>
+
+      <div data-map-panel="global" hidden>
+        <iframe
+          title="The Name Standard℠ AI LegiRisk Global"
+          aria-label="Choropleth map"
+          data-src="https://datawrapper.dwcdn.net/Arwef/2/"
+          scrolling="no"
+          frameborder="0"
+          width="100%"
+          height="477"
+          style="display:block;width:100%;border:0"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="name-standard">
+  <div class="wrap">
+    <div class="center section-head">
+      <span class="eyebrow">The Name Standard℠</span>
+      <h2 class="h2">Lozen Advisory's Name Standard℠</h2>
+      <p class="lead">Every regulation in this tracker is read against the same five-pillar standard used to test whether human oversight of an AI-assisted decision is real — not ceremonial. The Name Standard℠ Signal column below reflects what each law actually requires against this standard.</p>
+    </div>
+
+    <div class="steps steps-5">
+      <div class="step reveal">
+        <span class="num">1</span>
+        <h3>Time Allocation</h3>
+        <p>Adequate time to verify outputs.</p>
+      </div>
+      <div class="step reveal">
+        <span class="num">2</span>
+        <h3>Review Capacity and Tools</h3>
+        <p>Tools and data to validate.</p>
+      </div>
+      <div class="step reveal">
+        <span class="num">3</span>
+        <h3>Information Access</h3>
+        <p>Visibility into provenance and models.</p>
+      </div>
+      <div class="step reveal">
+        <span class="num">4</span>
+        <h3>Documentation Infrastructure</h3>
+        <p>Logged evidence for compliance review.</p>
+      </div>
+      <div class="step reveal">
+        <span class="num">5</span>
+        <h3>Formal Right of Refusal</h3>
+        <p>Authority to halt or escalate.</p>
+      </div>
+    </div>
+
+    <p class="center" style="margin-top:28px">
+      <a href="/service-board-ai-name-standard-advisory/" style="font-weight:700;color:var(--ink);text-decoration:underline">Learn more about Name Standard℠ Advisory →</a>
+    </p>
+  </div>
+</section>
+
+<section id="legislation-index">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="h2">State-by-State &amp; Global AI Regulations</h2>
+      <p class="lead">The AI Regulations Index organizes selected AI laws and policy frameworks by jurisdiction, rule name, status, sector scope, effective date, source record, and Name Standard℠ classification — helping boards, legal teams, and compliance leaders identify where emerging AI regulation creates human-accountability gaps.</p>
+      <p class="lead" style="margin-top:8px">Search, sort, filter, and resize columns. Click a rule or regulation name to open its source document — click anywhere else on a row to view the full record.</p>
+      <p style="font-size:15px;color:var(--muted);margin-top:16px">This tracker is part of Lozen Advisory's broader <a href="/disclosure-independent-governance/" style="font-weight:700;color:var(--ink);text-decoration:underline">Disclosure-Independent Governance℠</a> methodology for evaluating board evidence, human accountability, and enterprise exposure.</p>
+    </div>
+
+    <div class="fcard reveal" style="margin-top:32px;padding:24px 28px">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px">
+        <span class="eyebrow" style="margin:0">Tracker Status</span>
+        <span style="font-size:13px;color:var(--muted);font-weight:600">Last updated: {trackerLastUpdated}</span>
+      </div>
+
+      <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:18px">
+        {trackerStats.map((stat) => (
+          <span style="display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border:1px solid var(--line);border-radius:100px;font-size:13px;font-weight:700;color:var(--ink)">
+            <strong style="font-family:var(--display);font-size:17px;color:var(--accent)">{stat.value}</strong> {stat.label}
+          </span>
+        ))}
+      </div>
+
+      <p style="margin-top:16px;font-size:14px;color:var(--muted);line-height:1.7">
+        <strong style="color:var(--ink)">Human Accountability Classification:</strong>{' '}
+        {nameStandardStats.map((s) => `${s.value} ${s.label}`).join(' · ')}
+      </p>
+    </div>
+
+    <div class="fcard" style="margin-top:20px;padding:0">
+      <AiLegislationGrid />
+    </div>
+  </div>
+</section>
+
+<CtaStrip
+  title="Does your team have the capacity to sign off on AI-assisted output?"
+  description="Do your reviewers have the explicit capacity, information, and formal right of refusal to legally and professionally sign off on AI-assisted corporate output?"
+  primaryHref="/request-briefing/"
+  primaryLabel="Request a Governance Readiness Briefing →"
+/>
+</BaseLayout>
+
+<script>
+  const mapTabGroups = document.querySelectorAll('[data-map-tabs]');
+
+  mapTabGroups.forEach((group) => {
+    const tabs = group.querySelectorAll('[data-map-tab]');
+    const panels = document.querySelectorAll('[data-map-panel]');
+
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', (event) => {
+        event.preventDefault();
+        const selected = tab.getAttribute('data-map-tab');
+
+        tabs.forEach((currentTab) => {
+          const isSelected = currentTab === tab;
+          currentTab.classList.toggle('active', isSelected);
+          currentTab.setAttribute('aria-selected', String(isSelected));
+        });
+
+        panels.forEach((panel) => {
+          const isSelected = panel.getAttribute('data-map-panel') === selected;
+          panel.toggleAttribute('hidden', !isSelected);
+
+          if (isSelected) {
+            const iframe = panel.querySelector('iframe[data-src]');
+            if (iframe && !iframe.getAttribute('src')) {
+              iframe.setAttribute('src', iframe.getAttribute('data-src'));
+            }
+            window.dispatchEvent(new Event('resize'));
+          }
+        });
+      });
+    });
+  });
+</script>
