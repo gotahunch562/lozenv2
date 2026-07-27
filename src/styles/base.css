@@ -86,7 +86,7 @@ section{padding:100px 0}
 .page-hero .inner{position:relative}
 .crumb{font-size:13.5px;color:rgba(255,255,255,.55);margin-bottom:24px;font-weight:600}
 .crumb a{color:rgba(255,255,255,.7)}.crumb a:hover{color:var(--accent-2)}
-.page-hero .pill{display:inline-flex;align-items:center;gap:9px;font-size:13px;font-weight:600;padding:8px 15px;border-radius:100px;background:color-mix(in srgb, var(--accent) 16%, transparent);border:1px solid color-mix(in srgb, var(--accent) 45%, transparent);color:var(--accent-2);margin-bottom:20px}
+.pill{display:inline-flex;align-items:center;gap:9px;font-size:13px;font-weight:600;padding:8px 15px;border-radius:100px;background:color-mix(in srgb, var(--accent) 16%, transparent);border:1px solid color-mix(in srgb, var(--accent) 45%, transparent);color:var(--accent-2);margin-bottom:20px}
 .page-hero .ic-lg{margin-bottom:18px;display:flex}
 .page-hero h1{font-family:var(--display);font-weight:700;font-size:clamp(32px,4.6vw,50px);line-height:1.1;letter-spacing:-.02em;margin-bottom:18px}
 .page-hero h1 .hl{color:var(--accent-2)}
