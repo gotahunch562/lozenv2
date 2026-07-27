@@ -432,8 +432,7 @@ footer{background:var(--ink-2);color:rgba(255,255,255,.7);padding:80px 0 36px;bo
 /* fcard compact modifier — tighter padding and type for short,
    glossary-style entries so the grid doesn't read as oversized */
 .fcard-compact{padding:24px}
-.fcard-compact h3{font-size:17px;margin-bottom:6px}
-.fcard-compact p{font-size:14px;line-height:1.55}
+.fcard-compact h3{margin-bottom:6px}
 .fcard-compact .tag-dot{width:36px;height:36px;font-size:15px;margin-bottom:12px}
 
 /* faq: native accordion behavior for details.qa */
