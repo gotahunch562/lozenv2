@@ -254,7 +254,13 @@ const dataId = 'menopause-tracker-data';
           params.data.item,
         ].join('::'),
 
-      onRowClicked: (params) => openDetailPanel(params.data),
+      onRowClicked: (params) => {
+        const target = params.event?.target;
+        if (target instanceof Element && target.closest('a')) {
+          return;
+        }
+        openDetailPanel(params.data);
+      },
     });
 
     if (searchInput instanceof HTMLInputElement) {
