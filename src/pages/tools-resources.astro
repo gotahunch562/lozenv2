@@ -1,0 +1,63 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const resources = [
+  {
+    label: 'AI Governance Workbook',
+    title: 'Human Accountability Trace (HAT)',
+    description: "A governance workbook that tests whether your AI-assisted decisions are still traceable to an accountable human — and flags the ones that are not. Built on The Name Standard℠, HAT classifies decisions as Attributed, Nominally Attributed, Fragmented, Unattributed, or Non-Verifiable and summarizes exposure in a remediation dashboard.",
+    meta: 'Excel workbook · Free download',
+    cta: 'Download Human Accountability Trace (HAT)',
+    href: '/download/name-standard-human-accountability-trace-v8.xlsx',
+    download: true,
+  },
+  {
+    label: 'Framework Brief',
+    title: 'The Power User Trap℠',
+    description: "AI adoption hides risk. The Power User Trap℠ begins when employees with technical proficiency and deep institutional knowledge become the informal validation layer for AI adoption. They learn the tools first, troubleshoot failures, verify outputs, train colleagues, and absorb the cognitive burden while standard productivity metrics show improvement. The organization sees adoption. It does not see the load. By the time the exit appears in retention data, the institutional knowledge is already gone.",
+    meta: 'PDF · Free download',
+    cta: 'Download the Power User Trap℠ Brief',
+    href: '#', // TODO: replace with the real download URL
+    download: true,
+  },
+  {
+    label: 'Personal Equity Tool',
+    title: 'The Replacement Value Auditor℠',
+    description: "You know what you produce. This is what it costs the firm to replace you. Replacement value is a standard workforce metric — benchmarked, documented, and used in leadership planning at the highest levels. This tool puts that data in your hands so you can audit your own economic leverage before you make your next move.",
+    meta: 'Interactive tool · Free',
+    cta: 'Open Calculator',
+    href: '/retention-calculator/',
+    download: false,
+  },
+];
+---
+
+<BaseLayout title="Tools & Resources | Lozen Advisory" description="Download AI governance workbooks, workforce-risk tools, executive resources, and performance-protection materials from Lozen Advisory.">
+<section class="page-hero">
+  <div class="grid-bg"></div>
+  <div class="wrap inner">
+    <div class="crumb"><a href="/">Home</a> &nbsp;/&nbsp; Tools &amp; Resources</div>
+    <span class="pill">Tools &amp; Resources</span>
+    <h1>Tools &amp; Resources</h1>
+    <p class="sub">Frameworks, briefings, and resources from Lozen Advisory for evaluating workforce risk, AI governance, and organizational capacity.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="feature-grid">
+      {resources.map((r) => (
+        <article class="fcard reveal" style="display:flex;flex-direction:column">
+          <span class="eyebrow" style="margin-bottom:6px">{r.label}</span>
+          <h3>{r.title}</h3>
+          <p style="flex:1">{r.description}</p>
+          <p style="font-size:13px;color:var(--muted);margin-top:14px">{r.meta}</p>
+          <a href={r.href} download={r.download ? true : undefined} class="btn btn-primary" style="margin-top:16px;align-self:flex-start">{r.cta}</a>
+        </article>
+      ))}
+    </div>
+
+    <p style="color:var(--muted);font-size:14px;line-height:1.7;margin-top:48px;max-width:760px">These tools and materials are provided for educational and informational purposes only. They do not constitute legal, medical, compliance, audit, or professional advice. Organizations and individuals should evaluate their specific circumstances and consult qualified professionals where appropriate.</p>
+  </div>
+</section>
+</BaseLayout>
