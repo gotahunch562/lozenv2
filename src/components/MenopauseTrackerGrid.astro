@@ -5,6 +5,8 @@ import {
   ACTIVE,
   DID_NOT_PASS,
   ADVISORY,
+  CLUSTER_LINKS,
+  IA_LINK,
 } from '../data/menopauseTracker';
 
 type TrackerRow = {
@@ -17,7 +19,14 @@ type TrackerRow = {
   policyAssumption: string;
   governanceBlindSpot: string;
   classification: string;
+  classificationUrl?: string;
   legislativeOutcome: string;
+};
+
+const resolveClassificationUrl = (classification: string): string | undefined => {
+  if (CLUSTER_LINKS[classification]) return CLUSTER_LINKS[classification];
+  if (classification === 'Invisible Attrition') return IA_LINK;
+  return undefined;
 };
 
 const standardRows = (
@@ -34,6 +43,7 @@ const standardRows = (
     policyAssumption: row.assumes,
     governanceBlindSpot: row.cannotMeasure,
     classification: row.classification,
+    classificationUrl: resolveClassificationUrl(row.classification),
     legislativeOutcome: row.notes,
   }));
 
@@ -47,6 +57,7 @@ const didNotPassRows: TrackerRow[] = DID_NOT_PASS.map((row) => ({
   policyAssumption: row.assumed,
   governanceBlindSpot: row.failureConfirms,
   classification: 'No Classification',
+  classificationUrl: undefined,
   legislativeOutcome: row.notes,
 }));
 
@@ -60,6 +71,7 @@ const advisoryRows: TrackerRow[] = ADVISORY.map((row) => ({
   policyAssumption: row.structuralRole,
   governanceBlindSpot: '',
   classification: row.classification,
+  classificationUrl: resolveClassificationUrl(row.classification),
   legislativeOutcome: row.notes,
 }));
 
@@ -176,6 +188,22 @@ const dataId = 'menopause-tracker-data';
       return link;
     };
 
+    const classificationRenderer = (params) => {
+      const value = params.value ?? '';
+      const url = params.data?.classificationUrl;
+
+      if (!url) {
+        return value;
+      }
+
+      const link = document.createElement('a');
+
+      link.href = url;
+      link.textContent = value;
+
+      return link;
+    };
+
     const columnDefs = [
       {
         field: 'recordGroup',
@@ -222,6 +250,7 @@ const dataId = 'menopause-tracker-data';
         field: 'classification',
         headerName: 'Classification',
         width: 220,
+        cellRenderer: classificationRenderer,
         tooltipField: 'classification',
       },
       {
@@ -315,10 +344,15 @@ const dataId = 'menopause-tracker-data';
         ? `<a href="${data.url}" target="_blank" rel="noopener noreferrer" style="display:inline-block;margin-top:6px;font-weight:700;color:var(--ink);text-decoration:underline">View source document →</a>`
         : '';
 
+      const classificationLink = data.classificationUrl
+        ? `<a href="${data.classificationUrl}" style="display:block;margin-top:10px;font-weight:700;color:var(--ink);text-decoration:underline">Read the ${escapeHtml(data.classification)} analysis →</a>`
+        : '';
+
       panelBody.innerHTML = `
         <h3 style="font-family:var(--display);font-size:22px;font-weight:700;margin:0 0 24px;padding-right:40px">${escapeHtml(data.item)}</h3>
         ${rows}
         ${sourceLink}
+        ${classificationLink}
       `;
 
       backdrop.style.display = 'block';
