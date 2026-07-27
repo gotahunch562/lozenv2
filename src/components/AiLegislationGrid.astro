@@ -1,0 +1,262 @@
+---
+import { AI_LEGISLATION } from '../data/aiLegislationTracker';
+
+const gridId = 'ai-legislation-grid';
+const dataId = 'ai-legislation-data';
+---
+
+<div>
+  <label for="ai-legislation-search">Search tracker</label>
+
+  <input
+    id="ai-legislation-search"
+    type="search"
+    placeholder="Search rule, region, status, sector, or Name Standard signal"
+    autocomplete="off"
+  />
+
+  <div
+    id={gridId}
+    aria-label="AI legislation tracker"
+    style="width: 100%; height: 760px;"
+  ></div>
+
+  <noscript>
+    <p>JavaScript is required to use the interactive legislation tracker.</p>
+  </noscript>
+</div>
+
+<div
+  id="ai-legislation-detail-backdrop"
+  style="display:none;position:fixed;inset:0;background:rgba(6,23,47,.45);z-index:90"
+></div>
+
+<aside
+  id="ai-legislation-detail-panel"
+  aria-hidden="true"
+  style="display:none;position:fixed;top:0;right:0;bottom:0;width:min(480px,100%);background:var(--paper-2);z-index:91;overflow-y:auto;box-shadow:-24px 0 60px -24px rgba(6,23,47,.35);padding:32px 28px"
+>
+  <button
+    type="button"
+    id="ai-legislation-detail-close"
+    aria-label="Close detail panel"
+    style="position:absolute;top:20px;right:20px;width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:var(--paper-2);cursor:pointer;font-size:16px;line-height:1;color:var(--ink)"
+  >×</button>
+
+  <div id="ai-legislation-detail-body"></div>
+</aside>
+
+<script
+  id={dataId}
+  type="application/json"
+  set:html={JSON.stringify(AI_LEGISLATION).replace(/</g, '\\u003c')}
+></script>
+
+<script>
+  import {
+    AllCommunityModule,
+    ModuleRegistry,
+    createGrid,
+    themeQuartz,
+  } from 'ag-grid-community';
+
+  ModuleRegistry.registerModules([AllCommunityModule]);
+
+  const gridElement = document.getElementById('ai-legislation-grid');
+  const dataElement = document.getElementById('ai-legislation-data');
+  const searchInput = document.getElementById('ai-legislation-search');
+
+  if (
+    gridElement instanceof HTMLDivElement &&
+    dataElement instanceof HTMLScriptElement
+  ) {
+    const rowData = JSON.parse(dataElement.textContent || '[]');
+
+    const lozenTheme = themeQuartz
+      .withParams({
+        accentColor: '#F28422',
+        backgroundColor: '#FFFFFF',
+        borderColor: '#000000',
+        browserColorScheme: 'inherit',
+        columnBorder: true,
+        fontFamily: {
+          googleFont: 'DM Sans',
+        },
+        foregroundColor: '#1B1212',
+        headerBackgroundColor: '#06172F',
+        headerFontWeight: 600,
+        headerTextColor: '#FFFFFF',
+      });
+
+    const linkRenderer = (params) => {
+      const value = params.value ?? '';
+      const url = params.data?.sourceUrl;
+
+      if (!url) {
+        return value;
+      }
+
+      const link = document.createElement('a');
+
+      link.href = url;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.textContent = value;
+
+      return link;
+    };
+
+    const columnDefs = [
+      {
+        field: 'ruleName',
+        headerName: 'Rule / Regulation',
+        width: 300,
+        cellRenderer: linkRenderer,
+        tooltipField: 'ruleName',
+      },
+      {
+        field: 'region',
+        headerName: 'Jurisdiction',
+        width: 170,
+      },
+      {
+        field: 'status',
+        headerName: 'Status',
+        width: 260,
+        tooltipField: 'status',
+      },
+      {
+        field: 'sectorScope',
+        headerName: 'Sector Scope',
+        width: 190,
+      },
+      {
+        field: 'impactArea',
+        headerName: 'Impact Area',
+        width: 380,
+        tooltipField: 'impactArea',
+      },
+      {
+        field: 'nameStandardSignal',
+        headerName: 'Name Standard℠ Signal',
+        width: 300,
+        tooltipField: 'nameStandardSignal',
+      },
+      {
+        field: 'liveDate',
+        headerName: 'Effective / Live Date',
+        width: 190,
+      },
+      {
+        field: 'updateNote',
+        headerName: 'Notes',
+        width: 260,
+        tooltipField: 'updateNote',
+        valueFormatter: (params) => (params.value ? params.value : ''),
+      },
+    ];
+
+    const gridApi = createGrid(gridElement, {
+      theme: lozenTheme,
+      rowData,
+      columnDefs,
+
+      defaultColDef: {
+        sortable: true,
+        filter: true,
+        resizable: true,
+      },
+
+      pagination: true,
+      paginationPageSize: 20,
+      paginationPageSizeSelector: [10, 20, 50],
+
+      getRowId: (params) => params.data.id,
+
+      onRowClicked: (params) => {
+        const target = params.event?.target;
+        if (target instanceof Element && target.closest('a')) {
+          return;
+        }
+        openDetailPanel(params.data);
+      },
+    });
+
+    if (searchInput instanceof HTMLInputElement) {
+      searchInput.addEventListener('input', () => {
+        gridApi.setGridOption('quickFilterText', searchInput.value);
+      });
+    }
+
+    // ---- Row detail panel ----
+    const detailFields = [
+      { key: 'ruleName', label: 'Rule / Regulation' },
+      { key: 'region', label: 'Jurisdiction' },
+      { key: 'status', label: 'Status' },
+      { key: 'sectorScope', label: 'Sector Scope' },
+      { key: 'impactArea', label: 'Impact Area' },
+      { key: 'nameStandardSignal', label: 'Name Standard℠ Signal' },
+      { key: 'liveDate', label: 'Effective / Live Date' },
+      { key: 'updateNote', label: 'Notes' },
+    ];
+
+    const backdrop = document.getElementById('ai-legislation-detail-backdrop');
+    const panel = document.getElementById('ai-legislation-detail-panel');
+    const panelBody = document.getElementById('ai-legislation-detail-body');
+    const closeBtn = document.getElementById('ai-legislation-detail-close');
+
+    function escapeHtml(value) {
+      const div = document.createElement('div');
+      div.textContent = value ?? '';
+      return div.innerHTML;
+    }
+
+    function openDetailPanel(data) {
+      if (!(panel instanceof HTMLElement) || !(panelBody instanceof HTMLElement) || !(backdrop instanceof HTMLElement)) {
+        return;
+      }
+
+      const rows = detailFields
+        .filter((field) => field.key !== 'ruleName' && data[field.key])
+        .map((field) => {
+          const value = escapeHtml(data[field.key]);
+          return `
+            <div style="margin-bottom:22px">
+              <div style="font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:6px">${field.label}</div>
+              <div style="font-size:15.5px;line-height:1.65;color:var(--ink)">${value}</div>
+            </div>
+          `;
+        })
+        .join('');
+
+      const sourceLink = data.sourceUrl
+        ? `<a href="${data.sourceUrl}" target="_blank" rel="noopener noreferrer" style="display:inline-block;margin-top:6px;font-weight:700;color:var(--ink);text-decoration:underline">View source document →</a>`
+        : '';
+
+      panelBody.innerHTML = `
+        <h3 style="font-family:var(--display);font-size:22px;font-weight:700;margin:0 0 24px;padding-right:40px">${escapeHtml(data.ruleName)}</h3>
+        ${rows}
+        ${sourceLink}
+      `;
+
+      backdrop.style.display = 'block';
+      panel.style.display = 'block';
+      panel.setAttribute('aria-hidden', 'false');
+    }
+
+    function closeDetailPanel() {
+      if (!(panel instanceof HTMLElement) || !(backdrop instanceof HTMLElement)) {
+        return;
+      }
+      backdrop.style.display = 'none';
+      panel.style.display = 'none';
+      panel.setAttribute('aria-hidden', 'true');
+    }
+
+    closeBtn?.addEventListener('click', closeDetailPanel);
+    backdrop?.addEventListener('click', closeDetailPanel);
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') closeDetailPanel();
+    });
+  }
+</script>
