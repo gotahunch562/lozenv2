@@ -1,0 +1,89 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CtaStrip from '../components/CtaStrip.astro';
+
+const events = [
+  {
+    label: 'Speaking Engagement',
+    date: '2026',
+    title: 'Akilah E. Kamaria at the 21st Annual LIWOCA CLE Leadership Conference',
+    context: '21st Annual LIWOCA CLE Leadership Conference',
+    description: 'Lozen Advisory founder Akilah E. Kamaria served as the sole presenter for the "Navigating Health Conditions Without Workplace Disclosure" Bold Breakout sessions at the 21st Annual LIWOCA CLE Leadership Conference.',
+    href: '/events/akilah-kamaria-presenting-at-2026-liwoca-cle-conference/',
+  },
+];
+
+const speakingTopics = [
+  'What Women Protect When They Do Not Disclose',
+  'Power Requires Privacy',
+  'Leadership, disclosure, workforce risk, AI implementation burden, and performance protection',
+];
+
+const pageJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Events | Lozen Advisory',
+  description: 'Speaking engagements, hosted sessions, conferences, and appearances from Lozen Advisory.',
+  url: 'https://www.lozenadvisory.com/events/',
+};
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.lozenadvisory.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Events', item: 'https://www.lozenadvisory.com/events/' },
+  ],
+};
+---
+
+<BaseLayout title="Events | Lozen Advisory" description="Speaking engagements, hosted sessions, conferences, and appearances from Lozen Advisory.">
+<script type="application/ld+json" set:html={JSON.stringify(pageJsonLd)} />
+<script type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd)} />
+
+<section class="page-hero">
+  <div class="grid-bg"></div>
+  <div class="wrap inner">
+    <div class="crumb"><a href="/">Home</a> &nbsp;/&nbsp; Events</div>
+    <span class="pill">Events</span>
+    <h1>Speaking, Sessions &amp; Appearances</h1>
+    <p class="sub">Lozen Advisory participates in events concerning leadership, disclosure, workforce risk, AI implementation burden, and performance protection.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="article-body">
+      <h2>Speaking Focus</h2>
+      <p>Akilah E. Kamaria speaks to ambitious women who have already built power, reputation, and authority, and who now face a different problem: how to protect what they have amassed in systems that still require visibility before support, recognition, or risk can be recorded.</p>
+      <p>Her work examines disclosure as a power decision, not a personal confession. Through Lozen Advisory, she helps audiences understand the professional cost of visibility, the limits of institutional support, and the private strategy required to protect performance, reputation, and career trajectory when no formal infrastructure exists for the ambition they are carrying.</p>
+      <p>She speaks to women lawyers and other women in high-profile careers.</p>
+
+      <h2>Topics</h2>
+      <ul>
+        {speakingTopics.map((topic) => <li>{topic}</li>)}
+      </ul>
+
+      <h2>Event Record</h2>
+      <div style="display:grid;gap:20px;margin-top:24px">
+        {events.map((event) => (
+          <a href={event.href} class="fcard reveal" style="display:block">
+            <span class="eyebrow" style="margin-bottom:4px">{event.label} · {event.date}</span>
+            <h3>{event.title}</h3>
+            <p style="font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin-bottom:10px">{event.context}</p>
+            <p>{event.description}</p>
+            <span class="go" style="margin-top:14px;display:inline-block;font-weight:700;color:var(--accent)">View event →</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<CtaStrip
+  title="Invite Lozen Advisory into the room."
+  description="For speaking invitations, hosted sessions, conferences, panels, or private leadership conversations, contact Lozen Advisory with the event context, audience, timing, and topic."
+  primaryHref="/contact/"
+  primaryLabel="Contact Lozen Advisory →"
+/>
+</BaseLayout>
