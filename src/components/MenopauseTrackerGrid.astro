@@ -106,7 +106,6 @@ const dataId = 'menopause-tracker-data';
   import {
     AllCommunityModule,
     ModuleRegistry,
-    colorSchemeLightCold,
     createGrid,
     themeQuartz,
   } from 'ag-grid-community';
@@ -124,20 +123,19 @@ const dataId = 'menopause-tracker-data';
     const rowData = JSON.parse(dataElement.textContent || '[]');
 
     const lozenTheme = themeQuartz
-      .withPart(colorSchemeLightCold)
       .withParams({
-        fontFamily: 'DM Sans, sans-serif',
-
-        backgroundColor: '#ffffff',
-        foregroundColor: '#06172f',
-        accentColor: '#e6c84f',
-
-        headerBackgroundColor: '#06172f',
-        headerTextColor: '#ffffff',
-
-        oddRowBackgroundColor: '#DBF3FE',
-
-        borderColor: 'rgba(6, 23, 47, 0.15)',
+        accentColor: '#F28422',
+        backgroundColor: '#FFFFFF',
+        borderColor: '#000000',
+        browserColorScheme: 'inherit',
+        columnBorder: true,
+        fontFamily: {
+          googleFont: 'DM Sans',
+        },
+        foregroundColor: '#1B1212',
+        headerBackgroundColor: '#06172F',
+        headerFontWeight: 600,
+        headerTextColor: '#FFFFFF',
       });
 
     const linkRenderer = (params) => {
