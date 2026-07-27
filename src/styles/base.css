@@ -3,22 +3,18 @@
    Edit :root to rebrand. Used by all pages.
 ============================================================ */
 :root{
-  /* Lozen Advisory visual system */
   --ink:#06172f;
-  --ink-2:#0b1f3d;
+  --ink-2:#0b2342;
 
-  --paper:#E0EFFF; 
-  --paper-2:#ffffff;
-
-  --brand:#173b63;
-  --brand-2:#24547f;
+  --brand:#143b63;
+  --brand-2:#24557f;
 
   --accent:#FF851B;
   --accent-2:#ff9342;
 
-  --muted:rgba(6,23,47,.68);
+  --muted:#6b6a86;
   --line:rgba(6,23,47,.12);
-  --line-d:rgba(255,255,255,.14);
+  --line-d:rgba(255,255,255,.12);
 
   --radius:22px;
   --maxw:1400px;
