@@ -5,7 +5,6 @@ interface Props {
 
 const { isHome = false } = Astro.props;
 const servicesHref = isHome ? '#services' : '/#services';
-const contactHref = isHome ? '#contact' : '/contact';
 ---
 
 <header class="nav" id="nav">
@@ -17,26 +16,28 @@ const contactHref = isHome ? '#contact' : '/contact';
           <path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"></path>
         </svg>
       </span>
-      <span class="word">Lozen<b>Advisory</b><small>Board Advisors</small></span>
+      <span class="word">Lozen<b>Advisory</b><small>Advisor to Board</small></span>
     </a>
     <nav class="nav-links">
       <a href={servicesHref}>Services</a>
-      <a href="/consultancy">Consultancy</a>
       <a href="/webinar">Webinar</a>
       <a href="/blog">Blog</a>
+      <a href="/news-press">News &amp; Press</a>
+      <a href="/events">Events</a>
       <a href="/about">About</a>
     </nav>
     <div class="nav-cta">
-      <a href={contactHref} class="btn btn-primary">Get a Free Consultation</a>
+      <a href="/request-briefing/" class="btn btn-primary">Request a Briefing</a>
     </div>
     <button class="menu-btn" id="menuBtn" aria-label="Menu"><span></span></button>
   </div>
 </header>
 <div class="mobile-panel" id="mobilePanel">
   <a href={servicesHref}>Services</a>
-  <a href="/consultancy">Consultancy</a>
   <a href="/webinar">Webinar</a>
   <a href="/blog">Blog</a>
+  <a href="/news-press">News &amp; Press</a>
+  <a href="/events">Events</a>
   <a href="/about">About</a>
-  <a href={contactHref} class="btn btn-primary" style="justify-content:center;margin-top:14px">Get a Free Consultation</a>
+  <a href="/request-briefing/" class="btn btn-primary" style="justify-content:center;margin-top:14px">Request a Briefing</a>
 </div>
