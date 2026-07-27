@@ -1,0 +1,211 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CtaStrip from '../components/CtaStrip.astro';
+
+const coreProblem = [
+  {
+    q: "Why can't organizations govern AI the way they governed traditional software?",
+    a: "Software is machinery: it stays substantially stable until someone changes it. An LLM environment behaves more like weather — its behavior emerges from the ongoing interaction of the model, the retrieval systems feeding it, enterprise data, user permissions, configurations, surrounding workflows, individual prompts, provider-side updates, and time itself. An organization can keep the same product name and license while the operating conditions underneath it change without any single approval event. Governing that as though it were a fixed executable product is the foundational mistake most enterprise AI governance still makes.",
+  },
+  {
+    q: 'What is "drift," and why does it matter for governance?',
+    a: "Drift is the way an AI environment changes over time even though the product name and license stay the same. We track at least eight distinct forms: content, model, retrieval, permission, context, workflow, economic, and evidence drift. Each one crosses a different institutional boundary — vendor governance, data governance, access control, legal and evidentiary readiness, management, and finance — which is exactly why no single department can own AI governance alone.",
+  },
+  {
+    q: 'What is the difference between "traceable" and "accountable"?',
+    a: "A system can log who used it, what was entered, and what response appeared — that's traceability. Accountability is different: it requires being able to reconstruct why a particular output occurred, and it requires a named person with real authority, information, time, and standing to have reviewed it. Logging preserves an event. It doesn't price it, contain it, or convert it into a decision someone can be held to.",
+  },
+  {
+    q: 'What is the difference between "task authorization" and "risk authorization"?',
+    a: "Authorizing an AI agent to complete a task is not the same as authorizing every method it might discover to complete it, and it is not the same as pre-approving the financial exposure that method creates. With traditional software, the action path is substantially defined in advance. With agentic AI, humans define the destination — the system determines the route, and the full cost of that route may not be visible until after it has already been taken.",
+  },
+  {
+    q: "Why does algorithmic accountability need its own field instead of living inside legal, technology, or business departments?",
+    a: "Each discipline sees a real piece of the problem, but none sees the whole of it. Legal tends to see liability, discrimination, and evidentiary duty. Business tends to see implementation, cost, and operating controls. Technology tends to see model performance and security. The actual governing questions — who relied on the system, who was qualified to catch a bad output, who had authority to intervene, what evidence survived, whose judgment carried the decision — sit in the space between those disciplines, not inside any one of them.",
+  },
+];
+
+const frameworks = [
+  {
+    q: 'What is the Name Standard℠?',
+    a: "The Name Standard℠ is Lozen Advisory's evidentiary standard for traceable human accountability in AI-assisted decisions. It evaluates risk across five pillars — Time Allocation, Review Capacity and Tools, Information Access, Documentation Infrastructure, and Formal Right of Refusal — to test whether human oversight of an AI-assisted decision is active rather than ceremonial. The core question it answers: when the AI gets it wrong, whose name is on it?",
+    link: { href: '/service-board-ai-name-standard-advisory/', label: 'Name Standard℠ Advisory' },
+  },
+  {
+    q: 'What is Disclosure-Independent Governance℠?',
+    a: "Disclosure-Independent Governance℠ is our methodology for identifying systemic risks that legacy measurement systems are structurally blind to — including disclosure-dependent risk, unmeasured human capacity, institutional opacity, vendor and deployer exposure, and the accountability questions raised by AI agents acting as enterprise actors. It exists because disclosure-dependent systems misread silence as absence and low utilization as low need, producing false institutional confidence.",
+    link: { href: '/disclosure-independent-governance/', label: 'Disclosure-Independent Governance℠' },
+  },
+  {
+    q: 'What is the Power User Trap℠?',
+    a: "The Power User Trap℠ describes what happens when employees with technical proficiency and deep institutional knowledge become the informal validation layer for AI adoption. They learn the tools first, troubleshoot failures, verify outputs, and train colleagues — absorbing a hidden cognitive burden while standard productivity metrics show improvement. The organization sees adoption. It does not see the load, and by the time the exit shows up in retention data, the institutional knowledge is already gone.",
+    link: { href: '/frameworks/power-user-trap/', label: 'Power User Trap℠' },
+  },
+  {
+    q: 'What is Invisible Attrition℠?',
+    a: "Invisible Attrition℠ is the unmeasured erosion of leadership and performance capacity that occurs before traditional retention metrics detect risk — prior to any observable signal in the data sources designed to measure it. It is peer-reviewed on SSRN.",
+    link: { href: '/invisible-attrition/', label: 'Invisible Attrition℠ series' },
+  },
+];
+
+const working = [
+  {
+    q: 'Who does Lozen Advisory work with?',
+    a: "Corporate boards are the core use case, and the buyers we work with prepare board materials and own the underlying governance, risk, and compliance functions: General Counsel, Corporate Secretaries, Risk and Compliance leaders, Internal Audit, D&O liability insurers and underwriters, private equity and portfolio governance teams, and CFOs. Separately, senior executives whose names, approvals, or professional judgment attach to AI-assisted work are served through the Name Standard℠ curriculum at Executive AI Skills, and senior women executives navigating disclosure, performance, and exit risk are served through a private advisory framework.",
+  },
+  {
+    q: 'What does Lozen Advisory not do?',
+    a: "Lozen Advisory is a strategic advisory firm. We do not audit, implement, provide HR administration, deliver benefits administration, perform employee surveillance, or provide employee-data analysis. We also do not provide legal, medical, financial, or tax advice, diagnosis, treatment, or therapy.",
+  },
+  {
+    q: 'Do you offer free consultations?',
+    a: "No. Lozen Advisory's engagements are paid advisory work. The way to start is to request a briefing — a short intake, followed by a scoped briefing built around the specific governance or accountability question your board, CFO, or risk function is facing.",
+    link: { href: '/request-briefing/', label: 'Request a Briefing' },
+  },
+  {
+    q: 'What happens after I request a briefing?',
+    a: "We review the request, and if there's a fit, follow up to scope a briefing around the accountability, governance, or exposure question you're facing. There's no obligation, and nothing is shared outside the inquiry.",
+  },
+  {
+    q: 'Is the information I submit confidential?',
+    a: "We treat business inquiries with care, but information submitted through public website forms or general email should not be treated as confidential, privileged, or protected unless a separate written agreement says otherwise. Do not submit sensitive personal, medical, legal, or financial information through a public form.",
+    link: { href: '/privacy-policy/', label: 'Privacy Policy' },
+  },
+];
+
+const aiUse = [
+  {
+    q: 'Does Lozen Advisory use AI to do the confidential advisory work itself?',
+    a: "No. Advisory sessions, client communications, and any information shared in the context of an engagement are handled exclusively by the humans involved. No session content is ever entered into AI systems, and no client data is used to train models. AI tools assist with the work that runs alongside the advisory relationship — research synthesis, content development, and pattern analysis in published data — not the advisory relationship itself.",
+    link: { href: '/about-ai/', label: 'How We Use AI at Lozen Advisory' },
+  },
+];
+
+const dualThesis = [
+  {
+    q: 'Why does an AI governance firm also work on menopause-at-work and legislation tracking?',
+    a: "Menopause-at-work and AI workforce materiality are not two separate offerings. They are two observations of one condition: institutions cannot govern what their systems were not designed to see. In disclosure-dependent systems, the population most likely to carry a risk is often the least likely to generate the records an organization uses to measure it — whether that's a senior employee absorbing the hidden verification burden of AI adoption, or an employee navigating a symptom their organization has no formal way to record. Menopause-at-work made that governance failure visible first. AI workforce risk is a second instance of the same structural blind spot.",
+    link: { href: '/menopause-legislation-tracker/', label: 'Menopause Legislation Tracker' },
+  },
+];
+
+const allFaqs = [...coreProblem, ...frameworks, ...working, ...aiUse, ...dualThesis];
+
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: allFaqs.map((item) => ({
+    '@type': 'Question',
+    name: item.q,
+    acceptedAnswer: { '@type': 'Answer', text: item.a },
+  })),
+};
+---
+
+<BaseLayout title="FAQ | Lozen Advisory" description="Answers to how AI governance actually works, what Lozen Advisory does, the Name Standard℠, Disclosure-Independent Governance℠, and why menopause-at-work and AI workforce risk are part of the same thesis.">
+<script type="application/ld+json" set:html={JSON.stringify(faqJsonLd)} />
+
+<section class="page-hero">
+  <div class="grid-bg"></div>
+  <div class="wrap inner">
+    <div class="crumb"><a href="/">Home</a> &nbsp;/&nbsp; FAQ</div>
+    <span class="pill">FAQ</span>
+    <h1>Frequently Asked Questions</h1>
+    <p class="sub">Answers to the questions we hear most about how AI governance actually works, what Lozen Advisory does, and why menopause-at-work and AI workforce risk are part of the same thesis.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">The Core Problem</span>
+      <h2 class="h2">Why software-era governance doesn't work on AI</h2>
+    </div>
+    <div class="faq">
+      {coreProblem.map((item) => (
+        <details class="qa reveal">
+          <summary><h4>{item.q}</h4></summary>
+          <p>{item.a}</p>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Our Frameworks</span>
+      <h2 class="h2">The Name Standard℠, Disclosure-Independent Governance℠, and related work</h2>
+    </div>
+    <div class="faq">
+      {frameworks.map((item) => (
+        <details class="qa reveal">
+          <summary><h4>{item.q}</h4></summary>
+          <p>{item.a} <a href={item.link.href}>{item.link.label} →</a></p>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Working With Lozen Advisory</span>
+      <h2 class="h2">Who we work with, and how engagements start</h2>
+    </div>
+    <div class="faq">
+      {working.map((item) => (
+        <details class="qa reveal">
+          <summary><h4>{item.q}</h4></summary>
+          <p>{item.a} {item.link && <a href={item.link.href}>{item.link.label} →</a>}</p>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">AI Use &amp; Editorial Standards</span>
+      <h2 class="h2">How we use AI ourselves</h2>
+    </div>
+    <div class="faq">
+      {aiUse.map((item) => (
+        <details class="qa reveal">
+          <summary><h4>{item.q}</h4></summary>
+          <p>{item.a} <a href={item.link.href}>{item.link.label} →</a></p>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Menopause &amp; AI Governance</span>
+      <h2 class="h2">One thesis, two observations</h2>
+    </div>
+    <div class="faq">
+      {dualThesis.map((item) => (
+        <details class="qa reveal">
+          <summary><h4>{item.q}</h4></summary>
+          <p>{item.a} <a href={item.link.href}>{item.link.label} →</a></p>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
+
+<CtaStrip
+  title="Still have a question?"
+  description="Request a briefing for board, CFO, legal, or risk-leadership on accountability gaps, human-attribution exposure, and what your operating record can actually prove."
+  primaryHref="/request-briefing/"
+  primaryLabel="Request a Briefing →"
+  secondaryHref="/contact/"
+  secondaryLabel="Contact Us"
+/>
+</BaseLayout>
