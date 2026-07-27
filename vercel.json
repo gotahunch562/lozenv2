@@ -44,12 +44,12 @@
     },
     {
       "source": "/leadership-pipeline-manager-drain/",
-      "destination": "/service-cfo-market-intelligence/",
+      "destination": "/service-cfo-ai-investment-advisory/",
       "permanent": true
     },
     {
       "source": "/succession-planning-retention-risk-data-gap/",
-      "destination": "/service-cfo-market-intelligence/",
+      "destination": "/service-cfo-ai-investment-advisory/",
       "permanent": true
     },
     {
@@ -84,7 +84,7 @@
     },
     {
       "source": "/retention-risk-analysis/",
-      "destination": "/service-cfo-market-intelligence/",
+      "destination": "/service-cfo-ai-investment-advisory/",
       "permanent": true
     },
     {
@@ -100,6 +100,11 @@
     {
       "source": "/menopause-and-the-law/",
       "destination": "/menopause-legislation-tracker/",
+      "permanent": true
+    },
+    {
+      "source": "/retention-calculator/",
+      "destination": "/service-cfo-ai-investment-advisory/",
       "permanent": true
     }
   ]
