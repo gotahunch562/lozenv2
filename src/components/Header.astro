@@ -2,9 +2,6 @@
 interface Props {
   isHome?: boolean;
 }
-
-const { isHome = false } = Astro.props;
-const servicesHref = isHome ? '#services' : '/#services';
 ---
 
 <header class="nav" id="nav">
@@ -19,7 +16,7 @@ const servicesHref = isHome ? '#services' : '/#services';
       <span class="word">Lozen<b>Advisory</b><small>Advisor to Boards</small></span>
     </a>
     <nav class="nav-links">
-      <a href={servicesHref}>Services</a>
+      <a href="/services">Services</a>
       <a href="/webinar">Webinar</a>
       <a href="/blog">Blog</a>
       <a href="/news-press">News &amp; Press</a>
@@ -33,7 +30,7 @@ const servicesHref = isHome ? '#services' : '/#services';
   </div>
 </header>
 <div class="mobile-panel" id="mobilePanel">
-  <a href={servicesHref}>Services</a>
+  <a href="/services">Services</a>
   <a href="/webinar">Webinar</a>
   <a href="/blog">Blog</a>
   <a href="/news-press">News &amp; Press</a>
