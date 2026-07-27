@@ -5,13 +5,13 @@
 :root{
   /* Lozen Advisory visual system */
   --ink:#06172f;
-  --ink-2:#06172f; 
+  --ink-2:#0b1f3d;
 
   --paper:#E0EFFF; 
   --paper-2:#ffffff;
 
-  --brand:#06172f;
-  --brand-2:#06172f;
+  --brand:#173b63;
+  --brand-2:#24547f;
 
   --accent:#FF851B;
   --accent-2:#ff9342;
