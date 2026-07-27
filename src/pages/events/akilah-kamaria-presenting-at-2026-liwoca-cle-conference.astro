@@ -1,0 +1,88 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CtaStrip from '../../components/CtaStrip.astro';
+
+const description = "Akilah E. Kamaria presented on navigating health conditions without workplace disclosure at the LIWOCA CLE Leadership Conference in Atlanta.";
+
+const eventJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Event',
+  name: 'Navigating Health Conditions Without Workplace Disclosure',
+  description,
+  startDate: '2026-03-26',
+  eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+  eventStatus: 'https://schema.org/EventCompleted',
+  location: {
+    '@type': 'Place',
+    name: 'Loews Atlanta Hotel',
+    address: 'Atlanta, GA, US',
+  },
+  organizer: {
+    '@type': 'Organization',
+    name: 'Leadership Institute for Women of Color Attorneys',
+    url: 'https://www.liwoca.org/',
+  },
+  performer: {
+    '@type': 'Person',
+    name: 'Akilah E. Kamaria',
+  },
+};
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.lozenadvisory.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Events', item: 'https://www.lozenadvisory.com/events/' },
+    { '@type': 'ListItem', position: 3, name: 'Akilah E. Kamaria at the 2026 LIWOCA CLE Conference', item: 'https://www.lozenadvisory.com/events/akilah-kamaria-presenting-at-2026-liwoca-cle-conference/' },
+  ],
+};
+---
+
+<BaseLayout title="Akilah E. Kamaria Presenting at the 2026 LIWOCA CLE Conference | Lozen Advisory" description={description}>
+<script type="application/ld+json" set:html={JSON.stringify(eventJsonLd)} />
+<script type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd)} />
+
+<section class="page-hero">
+  <div class="grid-bg"></div>
+  <div class="wrap inner">
+    <div class="crumb"><a href="/">Home</a> &nbsp;/&nbsp; <a href="/events/">Events</a> &nbsp;/&nbsp; LIWOCA CLE Conference</div>
+    <span class="pill">Speaking Engagement</span>
+    <h1>Akilah E. Kamaria Presenting at the 2026 LIWOCA CLE Conference</h1>
+    <p class="sub">{description}</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="article-body">
+      <h2>Navigating Health Conditions Without Workplace Disclosure</h2>
+
+      <p><strong>Conference:</strong> 21st Annual Leadership Institute for Women of Color Attorneys CLE Leadership Conference<br>
+      <strong>Date:</strong> March 26, 2026<br>
+      <strong>Location:</strong> Loews Atlanta Hotel</p>
+
+      <p>Lozen Advisory founder Akilah E. Kamaria served as the sole presenter for the <em>"Navigating Health Conditions Without Workplace Disclosure"</em> Bold Breakout sessions at the 21st Annual Leadership Institute for Women of Color Attorneys CLE Leadership Conference, held March 26, 2026 at the Loews Atlanta Hotel.</p>
+
+      <p>The session ran twice during the conference agenda, offered in both a group format and as private one-on-one advising sessions. Both required advance registration, reflecting the confidential nature of the conversation.</p>
+
+      <p>The session addressed workplace disclosure decisions facing women attorneys at the senior level, including the professional calculus involved when disclosure of a health transition carries career risk. Drawing on the Tacere framework and the Disclosure-Independent Performance Protection℠ methodology developed through Lozen Advisory, the session gave women in the legal profession a private space to examine their own situations and identify strategies that protect professional continuity without requiring organizational disclosure.</p>
+
+      <p>The 2026 LIWOCA conference was held under the theme <em>"Bold Steps, New Horizons"</em> and offered 8.5 CLE credits including 2 professionalism and 1 ethics credit.</p>
+
+      <h2>Session Focus</h2>
+      <p>Disclosure-Independent Strategy for Women Attorneys</p>
+      <p>A private advisory session on professional continuity, workplace disclosure risk, and career protection when a health transition cannot be safely named inside the workplace.</p>
+
+      <p><a href="https://www.liwoca.org/" target="_blank" rel="noopener noreferrer">Learn more about LIWOCA →</a></p>
+    </div>
+  </div>
+</section>
+
+<CtaStrip
+  title="Invite Lozen Advisory into the room."
+  description="For speaking invitations, hosted sessions, conferences, panels, or private leadership conversations, contact Lozen Advisory with the event context, audience, timing, and topic."
+  primaryHref="/contact/"
+  primaryLabel="Contact Lozen Advisory →"
+/>
+</BaseLayout>
