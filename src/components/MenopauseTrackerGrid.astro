@@ -96,6 +96,26 @@ const dataId = 'menopause-tracker-data';
   </noscript>
 </div>
 
+<div
+  id="menopause-detail-backdrop"
+  style="display:none;position:fixed;inset:0;background:rgba(6,23,47,.45);z-index:90"
+></div>
+
+<aside
+  id="menopause-detail-panel"
+  aria-hidden="true"
+  style="display:none;position:fixed;top:0;right:0;bottom:0;width:min(480px,100%);background:var(--paper-2);z-index:91;overflow-y:auto;box-shadow:-24px 0 60px -24px rgba(6,23,47,.35);padding:32px 28px"
+>
+  <button
+    type="button"
+    id="menopause-detail-close"
+    aria-label="Close detail panel"
+    style="position:absolute;top:20px;right:20px;width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:var(--paper-2);cursor:pointer;font-size:16px;line-height:1;color:var(--ink)"
+  >×</button>
+
+  <div id="menopause-detail-body"></div>
+</aside>
+
 <script
   id={dataId}
   type="application/json"
@@ -233,6 +253,8 @@ const dataId = 'menopause-tracker-data';
           params.data.jurisdiction,
           params.data.item,
         ].join('::'),
+
+      onRowClicked: (params) => openDetailPanel(params.data),
     });
 
     if (searchInput instanceof HTMLInputElement) {
@@ -240,5 +262,77 @@ const dataId = 'menopause-tracker-data';
         gridApi.setGridOption('quickFilterText', searchInput.value);
       });
     }
+
+    // ---- Row detail panel ----
+    const detailFields = [
+      { key: 'recordGroup', label: 'Record Group' },
+      { key: 'jurisdiction', label: 'Jurisdiction' },
+      { key: 'item', label: 'Bill / Instrument' },
+      { key: 'focus', label: 'Focus' },
+      { key: 'status', label: 'Status' },
+      { key: 'policyAssumption', label: 'Policy Assumption / Structural Role' },
+      { key: 'governanceBlindSpot', label: 'Governance Blind Spot / Failure Confirms' },
+      { key: 'classification', label: 'Classification' },
+      { key: 'legislativeOutcome', label: 'Legislative Outcome' },
+    ];
+
+    const backdrop = document.getElementById('menopause-detail-backdrop');
+    const panel = document.getElementById('menopause-detail-panel');
+    const panelBody = document.getElementById('menopause-detail-body');
+    const closeBtn = document.getElementById('menopause-detail-close');
+
+    function escapeHtml(value) {
+      const div = document.createElement('div');
+      div.textContent = value ?? '';
+      return div.innerHTML;
+    }
+
+    function openDetailPanel(data) {
+      if (!(panel instanceof HTMLElement) || !(panelBody instanceof HTMLElement) || !(backdrop instanceof HTMLElement)) {
+        return;
+      }
+
+      const rows = detailFields
+        .filter((field) => data[field.key])
+        .map((field) => {
+          const value = escapeHtml(data[field.key]);
+          return `
+            <div style="margin-bottom:22px">
+              <div style="font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:6px">${field.label}</div>
+              <div style="font-size:15.5px;line-height:1.65;color:var(--ink)">${value}</div>
+            </div>
+          `;
+        })
+        .join('');
+
+      const sourceLink = data.url
+        ? `<a href="${data.url}" target="_blank" rel="noopener noreferrer" style="display:inline-block;margin-top:6px;font-weight:700;color:var(--ink);text-decoration:underline">View source document →</a>`
+        : '';
+
+      panelBody.innerHTML = `
+        <h3 style="font-family:var(--display);font-size:22px;font-weight:700;margin:0 0 24px;padding-right:40px">${escapeHtml(data.item)}</h3>
+        ${rows}
+        ${sourceLink}
+      `;
+
+      backdrop.style.display = 'block';
+      panel.style.display = 'block';
+      panel.setAttribute('aria-hidden', 'false');
+    }
+
+    function closeDetailPanel() {
+      if (!(panel instanceof HTMLElement) || !(backdrop instanceof HTMLElement)) {
+        return;
+      }
+      backdrop.style.display = 'none';
+      panel.style.display = 'none';
+      panel.setAttribute('aria-hidden', 'true');
+    }
+
+    closeBtn?.addEventListener('click', closeDetailPanel);
+    backdrop?.addEventListener('click', closeDetailPanel);
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') closeDetailPanel();
+    });
   }
 </script>
