@@ -20,7 +20,7 @@ lead: The AI Kill Switch Act introduces technical control requirements, but
   gaps in human-attribution authority, escalation pathways, and board-facing
   evidence.
 featured: false
-draft: true
+draft: false
 ---
 *AI Governance Evidence for Board Reporting — a Lozen Advisory legislative mapping series*
 
