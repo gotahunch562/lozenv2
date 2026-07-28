@@ -1,12 +1,10 @@
 ---
 title: AI Investment Is Scaling Faster Than Human Capacity
-seoTitle: AI Investment Is Scaling Faster Than Human Capacity
+seoTitle: "AI Investment Is Scaling Faster Than Human Capacity"
 description: Is AI CapEx outpacing your workforce? Discover why AI productivity
   gains rely on unmeasured human verification labor and drive Invisible
   Attrition.
-metaDescription: Is AI CapEx outpacing your workforce? Discover why AI
-  productivity gains rely on unmeasured human verification labor and drive
-  Invisible Attrition.
+metaDescription: "Is AI CapEx outpacing your workforce? Discover why AI productivity gains rely on unmeasured human verification labor and drive Invisible Attrition."
 category: AI Governance & Workforce Risk
 image: /blog/ai-investment-is-scaling-faster.avif
 imageAlt: Senior leader balancing AI workload and human capacity

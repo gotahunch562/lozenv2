@@ -1,5 +1,7 @@
 ---
 title: What ISO 45010 Means for U.S. HR and Workforce Governance
+metaDescription: "Executive compliance advisory evaluating upcoming international occupational health and safety frameworks for menopause workplace standards within US jurisdictions. "
+seoTitle: "What ISO 45010 Means for U.S. HR and Workforce Governance"
 description: Executive compliance advisory evaluating upcoming international occupational health and safety frameworks for menopause workplace standards within US jurisdictions.
 category: Disclosure & Measurement
 image: /blog/womenstepping.avif

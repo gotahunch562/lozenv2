@@ -1,7 +1,8 @@
 ---
 title: Maryland SB 892 Enacted The Clinical vs Corporate Gap
+seoTitle: "Maryland SB 892 Enacted The Clinical vs Corporate Gap"
 description: Maryland SB892 (Chapter 605). Trace how clinical insurance expansions differ from direct employer-facing activation mechanisms.
-metaDescription: Maryland SB892 passed with near-unanimous support, but can training alone fix the menopause retention crisis? Explore why insurance mandates often miss the "Invisible Majority℠."
+metaDescription: "Maryland SB892 passed with near-unanimous support, but can training alone fix the menopause retention crisis? Explore why insurance mandates often miss the \"Invisible Majority℠.\""
 category: Legislation & Policy
 image: /blog/Maryland_SB892_and_menopause_healthcare.webp
 imageAlt: Maryland SB892 menopause legislation document on policy desk

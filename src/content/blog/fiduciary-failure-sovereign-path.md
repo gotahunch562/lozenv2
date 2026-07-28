@@ -1,6 +1,7 @@
 ---
 title: Fiduciary Failure and the Board Governance Gap
-seoTitle: Fiduciary Failure and the Board Governance Gap
+metaDescription: "Evaluate D&O exposure under the Caremark doctrine and identify where AI investments rely on human capacity the organization has not measured or protected."
+seoTitle: "Fiduciary Failure and the Board Governance Gap"
 description: Evaluate D&O exposure under the Caremark doctrine and identify where AI investments rely on human capacity the organization has not measured or protected.
 category: AI Governance & Workforce Risk
 image: /blog/the-sovereign-path.avif

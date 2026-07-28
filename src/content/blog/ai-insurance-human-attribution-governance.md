@@ -1,6 +1,7 @@
 ---
 title: 'AI Insurance and the Name Standard℠: Pricing Missing Human Attribution'
-seoTitle: 'AI Insurance: Pricing the Human Attribution Gap'
+metaDescription: "The AI insurance market is turning governance evidence into an underwriting issue. The Name Standard℠ tests whether human accountability behind AI-assisted decisions is real and traceable."
+seoTitle: "AI Insurance: Pricing the Human Attribution Gap"
 description: The AI insurance market is turning governance evidence into an underwriting issue. The Name Standard℠ tests whether human accountability behind AI-assisted decisions is real and traceable.
 category: AI Governance & Workforce Risk
 image: /blog/ai-insurance-human-attribution.avif

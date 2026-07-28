@@ -1,12 +1,10 @@
 ---
 title: "The Benefits Spend CFOs Cannot Interpret: Uncovering Hidden Healthcare Costs"
-seoTitle: CFO's-Uncovering Hidden Healthcare Costs
+seoTitle: "The Benefits Spend CFOs Cannot Interpret: Uncovering Hidden Healthcare Costs"
 description: Low employee benefit utilization isn't a sign of low need—it's an
   untracked financial liability. Discover how disclosure-dependent data skews
   your corporate ROI.
-metaDescription: Low employee benefit utilization isn't a sign of low need—it's
-  an untracked financial liability. Discover how disclosure-dependent data skews
-  your corporate ROI.
+metaDescription: "Low employee benefit utilization isn't a sign of low need—it's an untracked financial liability. Discover how disclosure-dependent data skews your corporate ROI.\n"
 category: CFO Insights
 image: /blog/cfo-benefits-spend-1.avif
 imageAlt: CFO analyzing visible benefit spend and hidden workforce risk

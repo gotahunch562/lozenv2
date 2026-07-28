@@ -1,6 +1,7 @@
 ---
 title: 'Why Boards Misunderstand AI Risk: The Errors of Agentic AI'
-seoTitle: 'Algorithmic Accountability: The Kiro Mandate & LLM Risk'
+metaDescription: "When an AI agent deletes a production environment, who is to blame? Discover why algorithmic accountability must replace traditional software governance."
+seoTitle: "Algorithmic Accountability: The Kiro Mandate & LLM Risk"
 description: When an AI agent deletes a production environment, who is to blame? Discover why algorithmic accountability must replace traditional software governance.
 category: AI Governance & Workforce Risk
 image: /blog/why-boards-misunderstand-ai-risk.avif

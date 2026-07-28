@@ -1,6 +1,7 @@
 ---
 title: How the Name Standard℠ Maps to the AI AGENT Act
-seoTitle: 'AI AGENT Act: AI Governance Evidence for Board Reporting'
+metaDescription: "A Lozen Advisory mapping of how the Name Standard℠ applies to the AI AGENT Act discussion draft's delegated authority, revocation, data access, and records requirements for board secretaries, governance officers, and reporting executives."
+seoTitle: "AI AGENT Act: AI Governance Evidence for Board Reporting"
 description: A Lozen Advisory mapping of how the Name Standard℠ applies to the AI AGENT Act discussion draft's delegated authority, revocation, data access, and records requirements for board secretaries, governance officers, and reporting executives.
 category: AI Governance & Workforce Risk
 image: /blog/name-standardsm-maps-to-the-ai-agent-act.avif

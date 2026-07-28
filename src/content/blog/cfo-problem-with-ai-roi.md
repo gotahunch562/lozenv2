@@ -1,6 +1,7 @@
 ---
 title: 'AI ROI & The CFO: The Hidden Costs of Correction and Rework'
-seoTitle: 'The CFO Problem With AI ROI: When Spending Outpaces Value'
+metaDescription: "AI spending is accelerating faster than enterprises can prove financial value. Learn why CFOs must measure the hidden costs of AI rework and human verification to find true ROI."
+seoTitle: "The CFO Problem With AI ROI: When Spending Outpaces Value"
 description: AI spending is accelerating faster than enterprises can prove financial value. Learn why CFOs must measure the hidden costs of AI rework and human verification to find true ROI.
 category: CFO Insights
 image: /blog/dollarfloat.avif

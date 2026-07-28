@@ -1,6 +1,7 @@
 ---
 title: The Menopause Benefit Market Is Running Into the CFO Problem
-seoTitle: Menopause Benefits Gaps & Employee Retention Risk for CFOs
+metaDescription: "Discover why low utilization in menopause benefits masks true retention risk. A strategic guide for CFOs navigating employee healthcare cost control and ROI."
+seoTitle: "Menopause Benefits Gaps & Employee Retention Risk for CFOs"
 description: Discover why low utilization in menopause benefits masks true retention risk. A strategic guide for CFOs navigating employee healthcare cost control and ROI.
 category: CFO Insights
 image: /blog/worried-cfo.avif

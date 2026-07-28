@@ -1,7 +1,8 @@
 ---
 title: 'Menopause at Work and Caregiving: The Cost of Tacere'
+seoTitle: "Menopause at Work and Caregiving: The Cost of Tacere"
 description: 'The "Sandwich Generation" faces a dual crisis: perimenopause and caregiving. Explore the organizational cost of "Tacere" and why current workplace benefits miss the mark.'
-metaDescription: 'The "Sandwich Generation" faces a dual crisis: perimenopause and caregiving. Explore the organizational cost of "Tacere" and why current workplace benefits miss the mark.'
+metaDescription: "The \"Sandwich Generation\" faces a dual crisis: perimenopause and caregiving. Explore the organizational cost of \"Tacere\" and why current workplace benefits miss the mark."
 category: Disclosure & Measurement
 image: /blog/caregiving_and_menopause.webp
 imageAlt: Business owner balancing menopause, caregiving, and executive responsibilities

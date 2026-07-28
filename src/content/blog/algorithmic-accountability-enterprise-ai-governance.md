@@ -1,6 +1,7 @@
 ---
 title: Algorithmic Accountability Needs a Room of Its Own
-seoTitle: 'Algorithmic Accountability: Governing Enterprise AI | Lozen Advisory'
+metaDescription: "Enterprise AI accountability spans law, business, and tech. Explore the eight forms of AI drift and why no single discipline can own governance alone."
+seoTitle: "Algorithmic Accountability: Governing Enterprise AI | Lozen Advisory"
 description: Enterprise AI accountability spans law, business, and tech. Explore the eight forms of AI drift and why no single discipline can own governance alone.
 category: AI Governance & Workforce Risk
 image: /blog/algorithmic-accountability1.avif

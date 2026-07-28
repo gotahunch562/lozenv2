@@ -1,6 +1,7 @@
 ---
 title: How the Name Standard℠ Maps to the Great American AI Act
-seoTitle: 'Great American AI Act: AI Governance Evidence for Board Reporting'
+metaDescription: "A Lozen Advisory mapping of how the Name Standard℠ applies to the Great American AI Act discussion draft’s AI documentation, verification, incident reporting, and workforce evidence provisions for board-facing governance teams."
+seoTitle: "Great American AI Act: AI Governance Evidence for Board Reporting"
 description: A Lozen Advisory mapping of how the Name Standard℠ applies to the Great American AI Act discussion draft’s AI documentation, verification, incident reporting, and workforce evidence provisions for board-facing governance teams.
 category: AI Governance & Workforce Risk
 image: /blog/name-standardsm-maps-to-the-great-american-ai-act-1.avif

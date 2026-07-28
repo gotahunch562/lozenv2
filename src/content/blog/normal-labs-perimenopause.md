@@ -1,7 +1,8 @@
 ---
 title: Why Your "Normal" Blood Tests Miss Perimenopause
+seoTitle: "Why Your \"Normal\" Blood Tests Miss Perimenopause"
 description: You feel exhausted, your joints ache, and your sleep is broken yet your labs are normal. Learn why standard tests can miss perimenopause.
-metaDescription: You feel exhausted, your joints ache, and your sleep is broken yet your labs are normal. Learn why standard tests can miss perimenopause.
+metaDescription: "You feel exhausted, your joints ache, and your sleep is broken yet your labs are normal. Learn why standard tests can miss perimenopause."
 category: Women, Work & Leadership
 image: /blog/body_changing.avif
 imageAlt: Woman in perimenopause standing in quiet reflection

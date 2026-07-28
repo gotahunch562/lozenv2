@@ -1,7 +1,8 @@
 ---
 title: New York S9247 Menopause Leave Mandate 2027 Legislative Outlook
+seoTitle: "New York S9247 Menopause Leave Mandate 2027 Legislative Outlook"
 description: An audit of New York Bill S9247 and A10296. Discover why a 5-day menopause leave mandate fails to protect key talent due to disclosure-dependent design.
-metaDescription: NY S9247 proposes five days of paid menopause leave, but a new entitlement doesn't solve the disclosure barrier. Learn why leave utilization data creates a "dashboard delay" and fails to measure Invisible Attrition℠.
+metaDescription: "NY S9247 proposes five days of paid menopause leave, but a new entitlement doesn't solve the disclosure barrier. Learn why leave utilization data creates a \"dashboard delay\" and fails to measure Invisible Attrition℠."
 category: Legislation & Policy
 image: /blog/NysenateBILL9247.webp
 imageAlt: Lady Justice with New York menopause workplace legislation documents

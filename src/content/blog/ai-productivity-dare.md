@@ -1,6 +1,7 @@
 ---
 title: The AI Productivity Hype
-seoTitle: Why Reducing Headcount Is Not an AI Governance Strategy
+metaDescription: "When executives cut human capacity to prove AI ROI, they are running an experiment, not a AI governance strategy. Lozen Advisory examines this rush to fire and the consequences"
+seoTitle: "Why Reducing Headcount Is Not an AI Governance Strategy"
 description: When executives cut human capacity to prove AI ROI, they are running an experiment, not a AI governance strategy. Lozen Advisory examines this rush to fire and the consequences
 category: AI Governance & Workforce Risk
 image: /blog/unwell-1.avif

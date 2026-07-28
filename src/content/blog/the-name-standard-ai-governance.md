@@ -1,6 +1,7 @@
 ---
 title: Whose Reputation Is It Anyway?
-seoTitle: The Name Standard℠ for AI Governance | Lozen Advisory
+metaDescription: "When AI work leaves your firm, it carries an employee's name—not the model's. Learn how Lozen Advisory's Name Standard℠ brings real AI accountability."
+seoTitle: "The Name Standard℠ for AI Governance | Lozen Advisory"
 description: When AI work leaves your firm, it carries an employee's name—not the model's. Learn how Lozen Advisory's Name Standard℠ brings real AI accountability.
 category: AI Governance & Workforce Risk
 image: /blog/the-name-standard-ai-governance-lozen-advisory-llc.avif

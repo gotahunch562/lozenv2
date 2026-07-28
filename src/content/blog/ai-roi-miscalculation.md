@@ -1,6 +1,7 @@
 ---
 title: 'AI ROI Miscalculation: Capital & Human Capacity Risk'
-seoTitle: 'AI ROI Miscalculation: Capital & Human Capacity Risk'
+metaDescription: "Deconstruct the financial fallacies of the software per-seat capacity model. Expose how reporting dashboards mask human capital erosion as productivity."
+seoTitle: "AI ROI Miscalculation: Capital & Human Capacity Risk"
 description: Deconstruct the financial fallacies of the software per-seat capacity model. Expose how reporting dashboards mask human capital erosion as productivity.
 category: AI Governance & Workforce Risk
 image: /blog/ai-roi-miscalculation.avif

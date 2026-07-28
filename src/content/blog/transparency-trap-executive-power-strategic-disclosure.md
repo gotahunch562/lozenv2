@@ -1,5 +1,7 @@
 ---
 title: 'The Transparency Trap: Why Executive Power Requires Strategic Disclosure'
+metaDescription: "Reject the total transparency trap. Learn why managing disclosure is a critical calculation of executive power, authority, and career protection for women leaders."
+seoTitle: "The Transparency Trap: Why Executive Power Requires Strategic Disclosure"
 description: Reject the total transparency trap. Learn why managing disclosure is a critical calculation of executive power, authority, and career protection for women leaders.
 category: Women, Work & Leadership
 image: /blog/power-requires-privacy-women-disclosure.avif

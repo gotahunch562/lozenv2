@@ -1,7 +1,8 @@
 ---
 title: Perimenopause Brain Fog Causes
+seoTitle: "Perimenopause Brain Fog Causes"
 description: Losing words or focus? Discover why perimenopause causes cognitive shifts that mimic ADHD or dementia—and why standard hormone tests often miss the transition.
-metaDescription: Losing words or focus? Discover why perimenopause causes cognitive shifts that mimic ADHD or dementia—and why standard hormone tests often miss the transition.
+metaDescription: "Losing words or focus? Discover why perimenopause causes cognitive shifts that mimic ADHD or dementia—and why standard hormone tests often miss the transition."
 category: Women, Work & Leadership
 image: /blog/brainfog-inline.avif
 imageAlt: Woman in quiet contemplation representing perimenopause brain fog
