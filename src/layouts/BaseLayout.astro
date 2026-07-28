@@ -93,10 +93,14 @@ const ogImageUrl = new URL(
     />
   </head>
 
-  <body>
-    <Header isHome={isHome} />
+<body>
+  <Header isHome={isHome} />
+
+  <main id="main-content">
     <slot />
-    <Footer />
-    <SiteScripts />
-  </body>
+  </main>
+
+  <Footer />
+  <SiteScripts />
+</body>
 </html>
