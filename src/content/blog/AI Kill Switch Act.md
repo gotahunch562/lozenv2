@@ -1,52 +1,48 @@
 ---
 title: How the AI Kill Switch Act Maps to the Name Standard℠
-seo_title: "AI Kill Switch Act: AI Governance Evidence for Board Reporting"
+seoTitle: How the AI Kill Switch Act Maps to the Name Standard℠
 slug: ai-kill-switch-act-name-standard
+description: A Lozen Advisory mapping of how the AI Kill Switch Act, the Agentic
+  AI Risk-Management Standards Profile, and the Name Standard℠ expose gaps in
+  shutdown authority, escalation, monitoring, override, and board-facing AI
+  governance evidence.
+metaDescription: How the AI Kill Switch Act Maps to the Name Standard℠
+category: Legislation & Policy
+image: /blog/ai-kill-switch-lozen-advisory.avif
+imageAlt: AI Kill Switch Act Maps to the Name Standard image
 pubDate: 2026-07-14
-datePublished: 2026-07-14
 dateModified: 2026-07-28
-category: AI Governance & Agentic Accountability
-excerpt: "The AI Kill Switch Act creates a technical shutdown requirement. The Agentic AI Risk-Management Standards Profile shows the broader governance system required to make that control usable. The Name Standard℠ identifies the institutional gap between possessing a kill switch and maintaining meaningful human authority to use it."
-description: A Lozen Advisory mapping of how the AI Kill Switch Act, the Agentic AI Risk-Management Standards Profile, and the Name Standard℠ expose gaps in shutdown authority, escalation, monitoring, override, and board-facing AI governance evidence.
-image:
-  url: /src/images/blog/blog-placeholder-blue.svg
-  alt: AI governance control and shutdown authority framework
-heroImage: /src/images/blog/blog-placeholder-blue.svg
-heroAlt: AI governance control and shutdown authority framework
-tags:
-  - AI Governance
-  - Name Standard
+lead: How the AI Kill Switch Act Maps to the Name Standard℠
+featured: false
 draft: true
-isFeatured: false
 ---
-
 *AI Governance Evidence for Board Reporting — a Lozen Advisory legislative mapping series*
 
 The AI Kill Switch Act moves AI governance from policy oversight to operational control. The bill would amend the Homeland Security Act of 2002 to require certain covered entities to maintain a technical capability to stop inference, terminate or suspend access, and shut down covered technology.
 
-For Lozen Advisory, the significance is direct: the bill doesn't just ask whether AI risk can be documented. It asks whether an AI system can be stopped.
+For Lozen Advisory, the significance is direct: the bill doesn't just ask whether AI risk can be documented. It asks [whether an AI system can be stopped.](/blog/algorithmic-accountability-agent-authorization/)
 
-But possessing a shutdown mechanism doesn't mean an organization can use it effectively.
+**But possessing a shutdown mechanism doesn't mean an organization can use it effectively.**
 
 The UC Berkeley Center for Long-Term Cybersecurity's *Agentic AI Risk-Management Standards Profile* supplies that operational context, calling for human control, clear roles, intervention points, escalation pathways, shutdown mechanisms, continuous monitoring, and documentation.
 
 That places the bill inside the [Name Standard℠](/blog/the-name-standard-ai-governance/): Lozen Advisory's human-attribution framework for testing whether AI-assisted decisions, outputs, and delegated actions remain traceable to a responsible human or institutional actor.
 
-A kill switch is not governance by itself. It is a control surface. The Name Standard℠ asks whether a named human has the authority, information, review capacity, documentation, time, and formal right of refusal required to use that control before harm scales.
+A kill switch is not governance by itself, it is a control surface. The Name Standard℠ asks whether a named human has the authority, information, review capacity, documentation, time, and formal right of refusal required to use that control before harm scales.
 
 ## Why this matters to board-facing AI governance teams
 
 Board-facing teams are rarely asked only whether an AI policy exists. They're asked to produce evidence: what system was operating, what authority it held, what controls existed, who saw risk escalating, who could act, and whether the organization can reconstruct what happened under scrutiny.
 
-The AI Kill Switch Act pushes federal AI policy toward that evidence layer, focusing on the operational question many governance programs avoid: if a covered system behaves dangerously, can the organization slow, restrict, suspend, roll back, or shut it down?
+[The AI Kill Switch Act](https://lieu.house.gov/media-center/press-releases/reps-lieu-and-moran-introduce-bill-require-kill-switch-ai-systems-can) pushes federal AI policy toward that evidence layer, focusing on the operational question many governance programs avoid: if a covered system behaves dangerously, can the organization slow, restrict, suspend, roll back, or shut it down?
 
-The Agentic AI Risk-Management Standards Profile raises the bar further. Agentic systems perform multi-step tasks, use tools, and operate with varying autonomy — traits that complicate model-centric risk management and make accountability harder to attribute.
+[The Agentic AI Risk-Management Standards Profile](https://cltc.berkeley.edu/publication/agentic-ai-risk-profile/) raises the bar further. Agentic systems perform multi-step tasks, use tools, and operate with varying autonomy — traits that complicate model-centric risk management and make accountability harder to attribute.
 
 The governance question, then, isn't just whether a technical control exists. It's whether the organization has built the human and institutional structure to use that control in time.
 
 ## The gap between shutdown capability and human control
 
-The AI Kill Switch Act creates a technical control requirement. The Agentic AI Risk-Management Standards Profile describes the governance system needed to make that control usable. The Name Standard℠ identifies the gap between the two.
+The AI Kill Switch Act creates a technical control requirement. The Agentic AI Risk-Management Standards Profile shows the broader governance system required to make that control usable. The Name Standard℠ identifies the gap between the two: whether a responsible human has the authority, information, capacity, documentation, and protected mandate to intervene before loss of control becomes a government-managed event.
 
 That gap surfaces whenever an organization can show a shutdown mechanism exists but can't answer: who owns the intervention decision, what evidence triggers action, who can see the system's active state, who can tell a recoverable anomaly from a loss-of-control event, or who is protected for refusing continued deployment.
 
@@ -54,8 +50,9 @@ A company can possess the technical ability to stop a system and still lack mean
 
 ## Mapping the Name Standard℠ to the AI Kill Switch Act and agentic AI standards
 
+
 | Name Standard℠ condition | AI Kill Switch Act control | Agentic AI standards expectation | Institutional gap to test |
-|---|---|---|---|
+| -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
 | **Time Allocation** | Covered entities must maintain shutdown capability and report covered incidents within 15 days. | Continuous monitoring and post-deployment oversight must account for behavior that may evolve across contexts. | Is anyone continuously assigned to evaluate whether intervention thresholds have been crossed before an incident becomes reportable? |
 | **Authority** | Covered entities must be able to stop inference, terminate access, suspend access, and shut down covered technology. | Human control requires clear role definitions, intervention points, escalation pathways, and shutdown mechanisms. | Which named role can invoke each control without waiting for an improvised chain of approval? |
 | **Information Access** | Graduated controls can affect inference rate, user access, compute allocation, system capabilities, suspension, shutdown, and backup systems. | Risk assessment must account for autonomy, authority, tool access, permissions, environment, and interaction effects. | Can the decision-maker see enough of the operating system to select the correct intervention? |
@@ -63,19 +60,18 @@ A company can possess the technical ability to stop a system and still lack mean
 | **Documentation Infrastructure** | Emergency orders require preservation of model weights and telemetry, confirmation, audit, inspection, or forensic review. | System boundaries, limitations, monitoring, risk decisions, override, incident response, recovery, and decommissioning must be documented. | Can the organization reconstruct not only what happened and what control was used, but why that intervention was selected? |
 | **Formal Right of Refusal** | The entity must be technically capable of restricting, suspending, or shutting down the technology. | Responsibilities must be assigned and understood for superseding, disengaging, deactivating, overriding, or decommissioning systems. | Does a named internal actor have protected standing authority to stop deployment or continued operation? |
 
+
 ## The control surface the bill creates
 
 The bill requires covered entities to maintain the technical capability to stop inference, terminate or suspend access, and shut down covered technology. It also directs the Secretary to consider a graduated deployment-corrections framework — throttling inference, altering user access, changing compute allocation, disabling a capability, suspending, shutting down, or transitioning to a backup system or earlier version.
 
 That structure matters because AI intervention isn't binary. The question isn't only whether a system can be turned off — it's whether the organization has usable intermediate controls before full shutdown becomes necessary.
 
-The Agentic AI Risk-Management Standards Profile treats human control as a system-level requirement, not a single technical feature: intervention points, escalation pathways, bounded autonomy, continuous monitoring, containment, and assigned responsibility for disengaging systems whose behavior is inconsistent with intended use.
-
-A graduated framework only works if someone has authority to choose the control, evidence to justify it, and a documented process for acting before the situation becomes an emergency.
+The Agentic AI Risk-Management Standards Profile treats human control as a system-level requirement, not a single technical feature. A graduated framework only works if someone has authority to choose the control, evidence to justify it, and a documented process for acting before the situation becomes an emergency.
 
 ## Gap one: control ownership and action authority
 
-The bill requires shutdown capability but doesn't identify who owns the intervention decision. Responsibility may be split across engineering, security, legal, compliance, and leadership — each function touching the control environment while none holds standing authority to use it. That gap widens with speed: agentic systems can execute rapidly and cascade across tools, so a monitoring team may spot a problem but lack authority to restrict the system, or an engineer may have technical access but no organizational standing to halt a commercially important deployment.
+**The bill requires shutdown capability but doesn't identify who owns the intervention decision.** [Responsibility may be split across engineering, security, legal, compliance, and leadership](/blog/algorithmic-accountability-enterprise-ai-governance/) — each function touching the control environment while none holds standing authority to use it. That gap widens with speed: agentic systems can execute rapidly and cascade across tools, so a monitoring team may spot a problem but lack authority to restrict the system, or an engineer may have technical access but no organizational standing to halt a commercially important deployment.
 
 The Name Standard℠ asks: which named role can stop inference, restrict a capability, suspend access, initiate rollback, or order full shutdown — and does that person have telemetry access, review capacity, an escalation path, and protection against retaliation for slowing the system? Without answers, the kill switch may exist technically while remaining institutionally unavailable.
 
@@ -119,4 +115,4 @@ For board-facing teams, the real question isn't what any single proposal require
 
 For the full framework behind this mapping, see [The Name Standard℠](/blog/the-name-standard-ai-governance/). For the methodology behind Lozen Advisory's evidence-based governance analysis, see [Disclosure-Independent Governance℠](/disclosure-independent-governance/).
 
-Board-facing teams evaluating whether their AI governance structure has a Name Standard℠ gap can review Lozen Advisory's [Board AI Governance Advisory](/service-board-ai-governance-advisory/).
+Board-facing teams evaluating whether their AI governance structure has a Name Standard℠ gap can review Lozen Advisory's [Board AI Governance Advisory](/services/board-ai-governance-advisory/).
