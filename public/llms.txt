@@ -383,41 +383,15 @@ https://natlawreview.com/press-releases/lozen-advisory-launches-name-standardsm-
 
 ## Core Site Pages
 
-Home:
-https://www.lozenadvisory.com/
-
-About:
-https://www.lozenadvisory.com/about/
-
-Services:
-https://www.lozenadvisory.com/services/
-
-Webinar:
-https://www.lozenadvisory.com/webinar/
-
-Blog:
-https://www.lozenadvisory.com/blog/
-
-News and Press:
-https://www.lozenadvisory.com/news-press/
-
-Events:
-https://www.lozenadvisory.com/events/
-
-Tools and Resources:
-https://www.lozenadvisory.com/tools-resources/
-
-About AI Use:
-https://www.lozenadvisory.com/about-ai/
-
-FAQ:
-https://www.lozenadvisory.com/faq/
-
-Contact:
-https://www.lozenadvisory.com/contact/
-
-Request a Briefing:
-https://www.lozenadvisory.com/request-briefing/
+- [Home](https://www.lozenadvisory.com/)
+- [About](https://www.lozenadvisory.com/about/)
+- [Services](https://www.lozenadvisory.com/services/)
+- [Blog](https://www.lozenadvisory.com/blog/)
+- [News and Press](https://www.lozenadvisory.com/news-press/)
+- [Events](https://www.lozenadvisory.com/events/)
+- [Tools and Resources](https://www.lozenadvisory.com/tools-resources/)
+- [Contact](https://www.lozenadvisory.com/contact/)
+- [Request a Briefing](https://www.lozenadvisory.com/request-briefing/)
 
 ## Disclaimers
 
