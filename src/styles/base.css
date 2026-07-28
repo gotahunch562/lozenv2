@@ -235,6 +235,7 @@ footer{
 .article-body li{font-size:17px;color:var(--ink);line-height:1.8;margin-bottom:10px}
 .article-body blockquote{margin:28px 0;padding:20px 26px;border-left:4px solid var(--accent);background:var(--paper-2);border-radius:0 14px 14px 0;font-size:18px;font-style:italic;color:var(--ink)}
 .article-body strong{color:var(--ink)}
+.article-body a{color:var(--brand);font-weight:700;text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:4px}.article-body a:hover{color:var(--ink);text-decoration-color:var(--brand)}
 .article-lead{font-size:20px!important;color:var(--muted)!important;line-height:1.7!important;font-weight:500}
 .author-box{display:flex;gap:20px;align-items:center;background:var(--paper-2);border:1px solid var(--line);border-radius:20px;padding:24px;max-width:740px;margin:48px auto 0}
 .author-box img{width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:center top;flex:0 0 auto;border:3px solid #fff;box-shadow:0 8px 20px -8px rgba(6,23,47,.4)}
