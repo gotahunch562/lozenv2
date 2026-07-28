@@ -31,7 +31,7 @@ content:
       - name: seoTitle
         label: SEO title
         type: string
-        required: false
+        required: true
         description: Title used in search results and browser metadata.
 
       - name: description
@@ -43,7 +43,7 @@ content:
       - name: metaDescription
         label: SEO meta description
         type: text
-        required: false
+        required: true
         description: Search-focused description used in page metadata.
 
       - name: category
