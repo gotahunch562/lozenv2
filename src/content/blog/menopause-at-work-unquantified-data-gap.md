@@ -14,7 +14,7 @@ draft: false
 lead: Standard HR metrics from leave requests to benefit engagement capture only what is disclosed. They cannot measure the calculated silence of a leader who views visibility as a professional liability. This analysis explores the "73-point perception gap"
 relatedSlugs: []
 ---
-Employers making decisions about menopause support are working from available data. Accommodation requests, leave utilization, healthcare benefit engagement, and manager escalations form the basis for what most organizations can measure. The [visibility constraint](/blog/blog/aba-study-women-lawyers-mental-health/) is the same across all of them: the system cannot measure what it has not been designed to collect. It reflects what employees report. It does not reflect what they do not.
+Employers making decisions about menopause support are working from available data. Accommodation requests, leave utilization, healthcare benefit engagement, and manager escalations form the basis for what most organizations can measure. The [visibility constraint](/blog/aba-study-women-lawyers-mental-health/) is the same across all of them: the system cannot measure what it has not been designed to collect. It reflects what employees report. It does not reflect what they do not.
 
 ---
 
