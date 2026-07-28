@@ -6,6 +6,19 @@ import vercel from '@astrojs/vercel';
 
 export default defineConfig({
   site: 'https://www.lozenadvisory.com',
-  integrations: [mdx(), sitemap()],
+
+  integrations: [
+    mdx(),
+    sitemap({
+      serialize(item) {
+        if (item.url === 'https://www.lozenadvisory.com/about/') {
+          item.lastmod = new Date('2026-07-20').toISOString();
+        }
+
+        return item;
+      },
+    }),
+  ],
+
   adapter: vercel(),
 });
