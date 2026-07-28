@@ -202,6 +202,18 @@ export const AI_LEGISLATION: AiLawRow[] = [
     updateNote: "Name Standard℠ relevance: the draft supports delegated-agent accountability through authorization, revocation, records, provider responsibility, and enforcement, but does not name an internal human owner for enterprise oversight.",
   },
   {
+    id: "ai-kill-switch-act-2026",
+    ruleName: "AI Kill Switch Act",
+    region: "USA (Federal)",
+    status: "Introduced",
+    sectorScope: "Private",
+    impactArea: "To require covered developers and operators of powerful AI systems to maintain technical capabilities to throttle, restrict, suspend, or shut down covered technology and to report covered incidents.",
+    nameStandardSignal: "Shutdown authority required; no named internal human owner",
+    liveDate: "Introduced Jul 23, 2026",
+    sourceUrl: "https://lieu.house.gov/sites/evo-subsites/lieu-evo.house.gov/files/evo-media-document/ai-kill-switch-act.pdf",
+    updateNote: "Name Standard℠ relevance: the bill requires an operational shutdown capability and graduated intervention controls, but does not assign a named internal human or role with standing authority to invoke them before a federal emergency order.",
+  },
+  {
     id: "georgia-sb-444-health-insurance",
     ruleName: "Georgia SB 444 (Health Insurance)",
     region: "Georgia, USA",
