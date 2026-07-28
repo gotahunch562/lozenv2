@@ -1,18 +1,25 @@
 ---
 title: Whose Reputation Is It Anyway?
-metaDescription: "When AI work leaves your firm, it carries an employee's name—not the model's. Learn how Lozen Advisory's Name Standard℠ brings real AI accountability."
-seoTitle: "The Name Standard℠ for AI Governance | Lozen Advisory"
+seoTitle: The Name Standard℠ for AI Governance | Lozen Advisory
 slug: the-name-standard-ai-governance
-description: When AI work leaves your firm, it carries an employee's name—not the model's. Learn how Lozen Advisory's Name Standard℠ brings real AI accountability.
+description: When AI work leaves your firm, it carries an employee's name—not
+  the model's. Learn how Lozen Advisory's Name Standard℠ brings real AI
+  accountability.
+metaDescription: When AI work leaves your firm, it carries an employee's
+  name—not the model's. Learn how Lozen Advisory's Name Standard℠ brings real AI
+  accountability.
 category: AI Governance & Workforce Risk
 image: /blog/the-name-standard-ai-governance-lozen-advisory-llc.avif
 imageAlt: The Name Standard℠ signature is an example of AI governance
 pubDate: 2026-06-12
 dateModified: 2026-07-14
+lead: When AI-assisted work leaves an organization, it does not leave under the
+  name of the large language model. It leaves under the name of a person. The
+  Name Standard℠ defines what must be true before AI-assisted output can carry
+  human authority, professional judgment, executive approval, or institutional
+  sign-off.
 featured: true
 draft: false
-lead: When AI-assisted work leaves an organization, it does not leave under the name of the large language model. It leaves under the name of a person. The Name Standard℠ defines what must be true before AI-assisted output can carry human authority, professional judgment, executive approval, or institutional sign-off.
-relatedSlugs: []
 ---
 When AI-assisted work product leaves an organization, it does not leave under the name of the large language model (LLM).
 
