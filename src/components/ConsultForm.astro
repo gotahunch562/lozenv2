@@ -8,53 +8,294 @@ const { serviceHighlight, selectedService } = Astro.props;
 
 const services = [
   'Board AI Governance Advisory',
-  'CFO Market Intelligence',
+  'CFO AI Investment Advisory',
   'Algorithmic Accountability Risk',
   'Name Standard℠ Advisory',
   'AI Workforce Materiality Briefing',
   'General inquiry',
 ];
+
+const activeService = services.includes(selectedService)
+  ? selectedService
+  : 'General inquiry';
 ---
 
 <section id="consult" class="cta-sec">
   <div class="wrap cta-wrap">
     <div>
       <span class="eyebrow">Get started</span>
+
       <h2 class="h2">Request a briefing</h2>
-      <p class="lead" set:html={`Talk to us about <strong>${serviceHighlight}</strong> for your organization — no obligation, and nothing shared outside this inquiry.`} />
+
+      <p class="lead">
+        Talk to us about <strong>{serviceHighlight}</strong> for your
+        organization — no obligation, and nothing shared outside this inquiry.
+      </p>
+
       <div class="contact-list">
-        <a href="mailto:hello@lozenadvisory.com"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span> hello@lozenadvisory.com</a>
-        <a href="#"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span> Lozen Advisory LLC · Richmond, VA</a>
+        <a href="mailto:hello@lozenadvisory.com">
+          <span class="ic">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1
+                0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+              />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </span>
+
+          hello@lozenadvisory.com
+        </a>
+
+        <a href="#">
+          <span class="ic">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+          </span>
+
+          Lozen Advisory LLC · Richmond, VA
+        </a>
       </div>
     </div>
+
     <div>
-      <form class="form" id="consultForm">
+      <form
+        class="form"
+        id="consultForm"
+        method="POST"
+        action="/api/inquiry"
+      >
+        <input type="hidden" name="type" value="briefing" />
+
+        <div
+          aria-hidden="true"
+          style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden"
+        >
+          <label>
+            Website
+            <input
+              type="text"
+              name="website"
+              tabindex="-1"
+              autocomplete="off"
+            />
+          </label>
+        </div>
+
         <h3>Request a Briefing</h3>
-        <p class="sub">Fill in your details — we'll reach out to scope the engagement.</p>
+
+        <p class="sub">
+          Fill in your details — we&apos;ll reach out to scope the engagement.
+        </p>
+
         <div class="row2">
-          <div class="field"><label>Your name</label><input type="text" required placeholder="Full name" /></div>
-          <div class="field"><label>Title</label><input type="text" placeholder="e.g. General Counsel, CFO" /></div>
+          <div class="field">
+            <label for="consult-name">Your name</label>
+
+            <input
+              id="consult-name"
+              name="name"
+              type="text"
+              required
+              autocomplete="name"
+              placeholder="Full name"
+            />
+          </div>
+
+          <div class="field">
+            <label for="consult-role">Title</label>
+
+            <input
+              id="consult-role"
+              name="role"
+              type="text"
+              autocomplete="organization-title"
+              placeholder="e.g. General Counsel, CFO"
+            />
+          </div>
         </div>
+
         <div class="row2">
-          <div class="field"><label>Email</label><input type="email" required placeholder="you@company.com" /></div>
-          <div class="field"><label>Company</label><input type="text" placeholder="Company name" /></div>
+          <div class="field">
+            <label for="consult-email">Email</label>
+
+            <input
+              id="consult-email"
+              name="email"
+              type="email"
+              required
+              autocomplete="email"
+              placeholder="you@company.com"
+            />
+          </div>
+
+          <div class="field">
+            <label for="consult-company">Company</label>
+
+            <input
+              id="consult-company"
+              name="company"
+              type="text"
+              autocomplete="organization"
+              placeholder="Company name"
+            />
+          </div>
         </div>
+
         <div class="field">
-          <label>Interested in</label>
-          <select>
+          <label for="consult-subject">Interested in</label>
+
+          <select id="consult-subject" name="subject" required>
             {services.map((service) => (
-              <option selected={service === selectedService}>{service}</option>
+              <option
+                value={`Briefing Request — ${service}`}
+                selected={service === activeService}
+              >
+                {service}
+              </option>
             ))}
           </select>
         </div>
-        <div class="field"><label>What are you trying to solve?</label><textarea rows="3" placeholder="Describe what you are seeing inside your organization"></textarea></div>
-        <button type="submit" class="btn btn-primary">Submit Request →</button>
+
+        <div class="field">
+          <label for="consult-message">What are you trying to solve?</label>
+
+          <textarea
+            id="consult-message"
+            name="message"
+            rows="3"
+            required
+            placeholder="Describe what you are seeing inside your organization"
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="btn btn-primary"
+          id="consultSubmit"
+        >
+          Submit Request →
+        </button>
+
+        <p
+          id="consultError"
+          role="alert"
+          hidden
+          style="margin-top:14px"
+        ></p>
       </form>
-      <div class="form-success" id="consultSuccess">
-        <div class="big"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:52px;height:52px;color:var(--accent)"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+
+      <div
+        class="form-success"
+        id="consultSuccess"
+        role="status"
+        aria-live="polite"
+        hidden
+      >
+        <div class="big">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            style="width:52px;height:52px;color:var(--accent)"
+          >
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+            <polyline points="22 4 12 14.01 9 11.01" />
+          </svg>
+        </div>
+
         <h3>Thank you!</h3>
-        <p>Your request has been received. We'll follow up to scope the briefing.</p>
+
+        <p>
+          Your request has been received. We&apos;ll follow up to scope the
+          briefing.
+        </p>
       </div>
     </div>
   </div>
 </section>
+
+<script>
+  const form = document.querySelector<HTMLFormElement>('#consultForm');
+  const success = document.querySelector<HTMLElement>('#consultSuccess');
+  const errorMessage = document.querySelector<HTMLElement>('#consultError');
+  const submitButton =
+    document.querySelector<HTMLButtonElement>('#consultSubmit');
+
+  form?.addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    if (!form.reportValidity()) {
+      return;
+    }
+
+    if (errorMessage) {
+      errorMessage.hidden = true;
+      errorMessage.textContent = '';
+    }
+
+    if (submitButton) {
+      submitButton.disabled = true;
+      submitButton.textContent = 'Sending…';
+    }
+
+    try {
+      const response = await fetch('/api/inquiry', {
+        method: 'POST',
+        body: new FormData(form),
+        headers: {
+          Accept: 'application/json',
+        },
+      });
+
+      const result = await response.json().catch(() => null);
+
+      if (!response.ok || !result?.ok) {
+        throw new Error(
+          result?.error || 'The briefing request could not be sent.',
+        );
+      }
+
+      form.reset();
+      form.hidden = true;
+
+      if (success) {
+        success.hidden = false;
+        success.classList.add('show');
+      }
+    } catch (error) {
+      if (errorMessage) {
+        errorMessage.textContent =
+          error instanceof Error
+            ? error.message
+            : 'The briefing request could not be sent.';
+
+        errorMessage.hidden = false;
+      }
+    } finally {
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.textContent = 'Submit Request →';
+      }
+    }
+  });
+</script>
