@@ -61,15 +61,6 @@
     });
   }
 
-  const consultForm = document.getElementById('consultForm');
-  if (consultForm) {
-    consultForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      consultForm.style.display = 'none';
-      document.getElementById('consultSuccess')?.classList.add('show');
-    });
-  }
-
   const regForm = document.getElementById('regForm');
   if (regForm) {
     regForm.addEventListener('submit', (e) => {
