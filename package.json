@@ -17,6 +17,7 @@
     "@astrojs/mdx": "^6.0.3",
     "@astrojs/sitemap": "^3.7.3",
     "@astrojs/vercel": "^10.0.8",
+    "@vercel/analytics": "^2.0.1",
     "ag-grid-community": "^36.0.2",
     "astro": "^6.4.7",
     "sharp": "^0.35.3"
