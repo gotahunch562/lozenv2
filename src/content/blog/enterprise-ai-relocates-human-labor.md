@@ -1,6 +1,7 @@
 ---
 title: Enterprise AI Does Not Replace Human Labor. It Relocates It.
 seoTitle: "Enterprise AI Does Not Replace Human Labor. It Relocates It."
+slug: enterprise-ai-relocates-human-labor
 description: Enterprise AI does not replace human labor. It relocates the work
   into verification, quality assurance, exception handling, and audit.
 metaDescription: "Enterprise AI does not replace human labor. It relocates the work into verification, quality assurance, exception handling, and audit."

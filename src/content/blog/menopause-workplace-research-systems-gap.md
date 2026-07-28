@@ -1,6 +1,7 @@
 ---
 title: 'Menopause Workplace Research: The Systems Gap'
 seoTitle: "Menopause Workplace Research: The Systems Gap"
+slug: menopause-workplace-research-systems-gap
 description: A new menopause research center signals progress, but health-based models cannot measure workplace systems. Discover why the field lacks the organizational disciplines to track Invisible Attrition℠.
 metaDescription: "A new menopause research center signals progress, but health-based models cannot measure workplace systems. Discover why the field lacks the organizational disciplines to track Invisible Attrition℠."
 category: Disclosure & Measurement

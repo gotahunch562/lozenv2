@@ -1,6 +1,7 @@
 ---
 title: "ABA 2026 Study: Women Lawyers & The Disclosure Gap"
 seoTitle: "Women Lawyers, Wellness & The Disclosure Gap"
+slug: aba-study-women-lawyers-mental-health
 description: The ABA 2026 study measures wellness data. Learn why non-disclosure
   is a strategic choice for women lawyers protecting their career trajectory.
 metaDescription: "The ABA 2026 study measures reported data. Learn why non-disclosure is a strategic choice for women leaders protecting their career trajectory."

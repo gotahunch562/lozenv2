@@ -2,6 +2,7 @@
 title: 'The Capacity Substitution Error℠: AI Governance and Talent Risk'
 metaDescription: "Discover how boards trigger the Capacity Substitution Error℠ by approving AI productivity solutions while the human capacity that investment depends on silently deteriorates."
 seoTitle: "Capacity Substitution Error℠: AI Governance and Talent Risk"
+slug: talent-attrition-cfo-risk
 description: Discover how boards trigger the Capacity Substitution Error℠ by approving AI productivity solutions while the human capacity that investment depends on silently deteriorates.
 category: AI Governance & Workforce Risk
 image: /blog/capacity-attrition-1.avif

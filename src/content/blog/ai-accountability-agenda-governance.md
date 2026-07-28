@@ -2,6 +2,7 @@
 title: How the AI Accountability Agenda Maps to Disclosure-Independent Governance℠
 metaDescription: "Map the AI Accountability Agenda to Disclosure-Independent Governance℠. Get actionable AI governance evidence for corporate board reporting."
 seoTitle: "AI Accountability Agenda: Board AI Governance Evidence"
+slug: ai-accountability-agenda-governance
 description: Map the AI Accountability Agenda to Disclosure-Independent Governance℠. Get actionable AI governance evidence for corporate board reporting.
 category: AI Governance & Workforce Risk
 image: /blog/ai-accountability-agenda.avif

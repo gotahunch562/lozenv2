@@ -2,6 +2,7 @@
 title: 4 AI Governance Gaps Boards Are Missing Right Now
 metaDescription: "Outdated board governance tools create critical AI compliance tracking gaps. Explore the 4 hidden compliance gaps putting directors and executive teams at risk right now."
 seoTitle: "Outdated Board Governance Tools Are Creating AI Compliance Tracking Gaps"
+slug: board-ai-governance-blind-spots
 description: Outdated board governance tools create critical AI compliance tracking gaps. Explore the 4 hidden compliance gaps putting directors and executive teams at risk right now.
 category: AI Governance & Workforce Risk
 image: /blog/futuristic-corporate-meeting-at-dusk.avif

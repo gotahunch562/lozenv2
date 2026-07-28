@@ -1,6 +1,7 @@
 ---
 title: 'The 73-Point Data Gap: Quantifying Invisible Attrition in Senior Leadership'
 seoTitle: "Menopause Benefits and Retention Risk"
+slug: menopause-at-work-unquantified-data-gap
 description: Employers measure benefit utilization but miss the decision not to utilize. Discover why the 73-point HR data gap leaves CFOs blind to the true cost of Invisible Attrition℠
 metaDescription: "Employers measure benefit utilization but miss the decision not to utilize. Discover why the 73-point data gap and the Power User Trap℠ leave organizations blind to the true cost of Invisible Attrition℠."
 category: Disclosure & Measurement

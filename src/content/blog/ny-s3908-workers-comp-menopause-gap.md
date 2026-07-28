@@ -1,6 +1,7 @@
 ---
 title: 'New York S3908: The Menopause Workers-Comp Policy Gap'
 seoTitle: "New York S3908: The Menopause Workers-Comp Policy Gap"
+slug: ny-s3908-workers-comp-menopause-gap
 description: NY Senate Bill S3908 routes menopause leave through workers' comp. This analysis examines the structural policy gap and why Invisible Attrition℠ remains unmeasured by state data.
 metaDescription: "NY Senate Bill S3908 routes menopause leave through workers' comp. This analysis examines the structural policy gap and why Invisible Attrition℠ remains unmeasured by state data."
 category: Legislation & Policy

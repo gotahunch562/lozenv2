@@ -1,6 +1,7 @@
 ---
 title: 'Menopause at Work: When Workplace Support Isn''t an Option'
 seoTitle: "Menopause at Work: When Workplace Support Isn't an Option"
+slug: menopause-at-work-study
 description: New research from The Fuchsia Tent aims to mainstream menopause support, but for senior leaders, visibility is a liability. Discover why organizational programs fail those who require a disclosure-independent path to protect their professional record.
 metaDescription: "New research from The Fuchsia Tent aims to mainstream menopause support, but for senior leaders, visibility is a liability. Discover why organizational programs fail those who require a disclosure-independent path to protect their professional record."
 category: Women, Work & Leadership

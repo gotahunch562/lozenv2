@@ -1,6 +1,7 @@
 ---
 title: Losing Your Mental Sharpness? Understanding Perimenopause & Loss of Self
 seoTitle: "Losing Your Mental Sharpness? Understanding Perimenopause & Loss of Self"
+slug: perimenopause-identity-loss
 description: Feeling like yourself again starts with understanding the shift. Explore how perimenopause impacts mental sharpness, identity, and performance for women in their 40s.
 metaDescription: "Feeling like yourself again starts with understanding the shift. Explore how perimenopause impacts mental sharpness, identity, and performance for women in their 40s."
 category: Women, Work & Leadership

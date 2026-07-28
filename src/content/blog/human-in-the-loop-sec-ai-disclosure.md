@@ -2,6 +2,7 @@
 title: What the SEC Presto Order Means for Human-in-the-Loop (HITL) AI Compliance
 metaDescription: "The SEC’s Presto order exposes the risk of hiding human-in-the-loop (HITL) labor. See how this compliance failure maps to the Name Standard℠, Disclosure-Independent Governance℠, and board committee ownership."
 seoTitle: "SEC Presto Order & Human-in-the-Loop AI Compliance"
+slug: human-in-the-loop-sec-ai-disclosure
 description: The SEC’s Presto order exposes the risk of hiding human-in-the-loop (HITL) labor. See how this compliance failure maps to the Name Standard℠, Disclosure-Independent Governance℠, and board committee ownership.
 category: AI Governance & Workforce Risk
 image: /blog/ai-the-name-standard.webp

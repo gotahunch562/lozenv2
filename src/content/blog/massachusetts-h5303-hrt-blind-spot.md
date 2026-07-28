@@ -2,6 +2,7 @@
 title: 'Massachusetts H5303: Closing the HRT Loophole, Keeping the Blind Spot'
 metaDescription: "Massachusetts H5303 expands menopause care by closing the HRT formulary loophole, but leaves a 24-year blind spot intact. Discover why this coverage pathway remains invisible by design and leaves patient access unmeasured."
 seoTitle: "Massachusetts H5303: A Pathway With No Data Requirement"
+slug: massachusetts-h5303-hrt-blind-spot
 description: Massachusetts H5303 expands menopause care by closing the HRT formulary loophole, but leaves a 24-year blind spot intact. Discover why this coverage pathway remains invisible by design and leaves patient access unmeasured.
 category: Legislation & Policy
 image: /blog/massachusetts-h5303-coverage-gap.avif

@@ -2,6 +2,7 @@
 title: 'Beyond the 10-K: Mitigating AI Governance & Workforce Risks'
 metaDescription: "Productivity metrics are hiding a massive corporate risk: verification labor. See why the SEC is watching and how to bridge the AI compliance gap."
 seoTitle: "Is AI Breaking Your Human Capital Data? | 10-K Readiness"
+slug: ai-human-capital-data-10-k
 description: 'Productivity metrics are hiding a massive corporate risk: verification labor. See why the SEC is watching and how to bridge the AI compliance gap.'
 category: AI Governance & Workforce Risk
 image: /blog/visibility_constraint_v2.avif

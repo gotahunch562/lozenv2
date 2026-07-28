@@ -1,6 +1,7 @@
 ---
 title: 'Virginia HB 1173 Veto: Menopause Risks & The Data Gap'
 seoTitle: "Virginia HB 1173 Veto: Menopause Risks & The Data Gap"
+slug: virginia-menopause-protected-class
 description: An executive analysis of the Virginia HB 1173/SB 258 and the veto on May 19, 2026. Audit the structural data gap behind the state-mandated 2028 workforce study.
 metaDescription: "Governor Spanberger executed a split decision on Virginia’s menopause bills: signing an insurance mandate while substituting two studies for proposed workplace protections. Analyze the legislative shift from legal mandates to research directives."
 category: Legislation & Policy

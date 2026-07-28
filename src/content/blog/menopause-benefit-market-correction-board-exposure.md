@@ -2,6 +2,7 @@
 title: Why PwC's Menopause Market Forecast Is Optimistic at Best
 metaDescription: " PwC says low menopause benefit utilization is an awareness problem. Lozen\nAdvisory's research says it's a disclosure problem. For boards and GC, the difference is material.\n\n"
 seoTitle: "Why PwC's Menopause Market Forecast Is Optimistic at Best"
+slug: menopause-benefit-market-correction-board-exposure
 description: 'PwC says low menopause benefit utilization is an awareness problem. Lozen
 
   Advisory''s research says it''s a disclosure problem. For boards and GC, the difference is material.'

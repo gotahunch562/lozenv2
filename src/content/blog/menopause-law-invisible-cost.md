@@ -1,6 +1,7 @@
 ---
 title: 'Menopause in Law: Visible Performance vs Invisible Cost'
 seoTitle: "Menopause in Law: Visible Performance vs Invisible Cost"
+slug: menopause-law-invisible-cost
 description: Women leave legal practice at higher rates during the associate-to-partner transition—the same window as perimenopause. Explore why traditional wellness programs fail women lawyers and the role of Tacere in the partnership pipeline.
 metaDescription: "Women leave legal practice at higher rates during the associate-to-partner transition—the same window as perimenopause. Explore why traditional wellness programs fail women lawyers and the role of Tacere in the partnership pipeline."
 category: Women, Work & Leadership

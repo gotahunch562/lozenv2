@@ -2,6 +2,7 @@
 title: 'Shadow AI: The AI Disclosure-Control Challenge'
 metaDescription: "Shadow AI, recruiting AI, and AI productivity claims are creating a governance evidence gap. Lozen Advisory explains why adoption metrics are not proof of accountability."
 seoTitle: "AI Productivity Claims Need an Accountability Record"
+slug: ai-productivity-vs-governance
 description: Shadow AI, recruiting AI, and AI productivity claims are creating a governance evidence gap. Lozen Advisory explains why adoption metrics are not proof of accountability.
 category: AI Governance & Workforce Risk
 image: /blog/ai-paper-trail-no-evidence.avif

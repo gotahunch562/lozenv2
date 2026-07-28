@@ -2,6 +2,7 @@
 title: 'NY Menopause Leave Bill: Four Structural Problems'
 metaDescription: "Analysis of NY S9247 and A10296 for CFOs. Learn how disclosure-dependent benefits distort capital allocation and talent risk modeling.\n\n"
 seoTitle: "NY Menopause Leave Bill: Four Structural Problems"
+slug: cfo-ny-menopause-leave-bill-risk
 description: Analysis of NY S9247 and A10296 for CFOs. Learn how disclosure-dependent benefits distort capital allocation and talent risk modeling.
 category: AI Governance & Workforce Risk
 image: /blog/cfo-worried-legislation.webp

@@ -2,6 +2,7 @@
 title: The OpenAI–Hugging Face Incident Was a Governance Failure, Not Rogue AI
 metaDescription: "True algorithmic accountability requires fixing agent authorization. Learn why AI agent risks stem from board-level governance failures, not rogue models."
 seoTitle: "Algorithmic Accountability: Why Agentic AI Authorization Fails"
+slug: algorithmic-accountability-agent-authorization
 description: True algorithmic accountability requires fixing agent authorization. Learn why AI agent risks stem from board-level governance failures, not rogue models.
 category: AI Governance & Workforce Risk
 image: /blog/rogueai.jpg

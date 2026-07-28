@@ -2,6 +2,7 @@
 title: LLM Generation Is Fast. Governance Is Not
 metaDescription: "The governance burden behind AI output is human and unmeasured. Discover how hidden verification labor drives institutional knowledge loss and unpriced key-person risk."
 seoTitle: "AI Generation Is Fast. Governance Is Not"
+slug: ai-generation-fast-governance-slow
 description: The governance burden behind AI output is human and unmeasured. Discover how hidden verification labor drives institutional knowledge loss and unpriced key-person risk.
 category: AI Governance & Workforce Risk
 image: /blog/late-governance.webp

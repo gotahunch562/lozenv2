@@ -2,6 +2,7 @@
 title: 'Decision Debt: The Hidden Liability Inside AI Speed'
 metaDescription: "Organizations accumulate governance risks when AI speed of output outpaces human decision making. AI risk debt increase the likelihood of operational failures and reputational damage."
 seoTitle: "AI Decision Debt Is Accumulating. Most Boards Cannot See It."
+slug: ai-decision-debt
 description: Organizations accumulate governance risks when AI speed of output outpaces human decision making. AI risk debt increase the likelihood of operational failures and reputational damage.
 category: AI Governance & Workforce Risk
 image: /blog/decision-debt-lozen-advisory.avif

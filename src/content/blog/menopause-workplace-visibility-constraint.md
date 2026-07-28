@@ -1,6 +1,7 @@
 ---
 title: 'Menopause Workplace Frameworks: The Visibility Constraint'
 seoTitle: "Menopause Workplace Frameworks: The Visibility Constraint"
+slug: menopause-workplace-visibility-constraint
 description: Modern menopause workplace policies rely on formal disclosure, but state-level data shows fewer than 1 in 5 women ever raise their hand. Discover why standard accommodation frameworks create a visibility gap and the rise of Invisible Attrition℠.
 metaDescription: "Modern menopause workplace policies rely on formal disclosure, but state-level data shows fewer than 1 in 5 women ever raise their hand. Discover why standard accommodation frameworks create a visibility gap and the rise of Invisible Attrition℠."
 category: Disclosure & Measurement

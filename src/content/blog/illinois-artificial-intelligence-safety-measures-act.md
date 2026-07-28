@@ -2,6 +2,7 @@
 title: 'Illinois Artificial Intelligence Safety Measures Act: The Audit Accountability Gap | Public Act 104-0538'
 metaDescription: "Illinois SB 315 mandates first-in-the-nation annual third-party AI audits. But who owns the risk when an audited model fails? Examining the law’s Name Standard℠ governance gap."
 seoTitle: "Illinois AI Safety Measures Act: The Audit Accountability Gap"
+slug: illinois-artificial-intelligence-safety-measures-act
 description: Illinois SB 315 mandates first-in-the-nation annual third-party AI audits. But who owns the risk when an audited model fails? Examining the law’s Name Standard℠ governance gap.
 category: AI Governance & Workforce Risk
 image: /blog/illinois-ai-safety-measures-act.avif

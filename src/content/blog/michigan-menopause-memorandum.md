@@ -1,6 +1,7 @@
 ---
 title: Michigan Menopause Memorandum
 seoTitle: "Michigan Menopause Memorandum"
+slug: michigan-menopause-memorandum
 description: 'The 2025 Michigan Menopause Memorandum reveals a staggering gap: while 79% of women want menopause-supportive workplaces, fewer than 1 in 5 will disclose their status. Explore why employer-led policies fail to address Tacere and the reality of Invisible Attrition℠.'
 metaDescription: "The 2025 Michigan Menopause Memorandum reveals a staggering gap: while 79% of women want menopause-supportive workplaces, fewer than 1 in 5 will disclose their status. Explore why employer-led policies fail to address Tacere and the reality of Invisible Attrition℠."
 category: Legislation & Policy

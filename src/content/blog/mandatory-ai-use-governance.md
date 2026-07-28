@@ -2,6 +2,7 @@
 title: Mandatory AI Use Is Not AI Governance
 metaDescription: "Corporate AI mandates can make adoption look like governance while hiding the verification burden, judgment work, and accountability risk behind AI output.\n"
 seoTitle: "Mandatory AI Use Is Not AI Governance"
+slug: mandatory-ai-use-governance
 description: Corporate AI mandates can make adoption look like governance while hiding the verification burden, judgment work, and accountability risk behind AI output.
 category: AI Governance & Workforce Risk
 image: /blog/mandatory-ai-use-1.webp

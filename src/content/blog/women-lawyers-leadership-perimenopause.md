@@ -1,6 +1,7 @@
 ---
 title: 'Menopause and Law Firm Leadership: The Disconnect'
 seoTitle: "Menopause and Law Firm Leadership: The Disconnect"
+slug: women-lawyers-leadership-perimenopause
 description: NAWL and the ABA are bringing menopause into the legal mainstream, but do these studies reach senior partners? Explore the tension between leadership visibility and perimenopause, and why discretion remains a strategic priority for women in law.
 metaDescription: "NAWL and the ABA are bringing menopause into the legal mainstream, but do these studies reach senior partners? Explore the tension between leadership visibility and perimenopause, and why discretion remains a strategic priority for women in law."
 category: Women, Work & Leadership

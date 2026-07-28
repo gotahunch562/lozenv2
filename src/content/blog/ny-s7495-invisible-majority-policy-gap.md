@@ -1,6 +1,7 @@
 ---
 title: 'New York S7495: Menopause Workforce Study and the Visibility Gap'
 seoTitle: "New York S7495: Menopause Workforce Study and the Visibility Gap"
+slug: ny-s7495-invisible-majority-policy-gap
 description: New York S7495 commissions a menopause workforce study, but its design measures only disclosed activity. This analysis examines the policy gap and the population the study cannot reach.
 metaDescription: "New York S7495 commissions a menopause workforce study, but its design measures only disclosed activity. This analysis examines the policy gap and the population the study cannot reach."
 category: Legislation & Policy

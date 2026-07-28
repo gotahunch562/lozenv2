@@ -2,6 +2,7 @@
 title: 'The AI Agent Act: The Board Evidence Gap in AI Loyalty'
 metaDescription: "The AI Agent Act mandates AI loyalty but lacks the evidentiary infrastructure to prove it. Discover why this creates a severe accountability and governance gap for corporate boards."
 seoTitle: "The AI Agent Act: The Board Evidence Gap in AI Loyalty"
+slug: ai-agent-act-loyalty-gap
 description: The AI Agent Act mandates AI loyalty but lacks the evidentiary infrastructure to prove it. Discover why this creates a severe accountability and governance gap for corporate boards.
 category: AI Governance & Workforce Risk
 image: /blog/ai-agent-act-draft-compliance.avif

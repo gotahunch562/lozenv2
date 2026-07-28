@@ -1,6 +1,7 @@
 ---
 title: Disclosure Day and the Workplace Meaning of Disclosure
 seoTitle: "Disclosure Day and the Workplace Meaning of Disclosure"
+slug: disclosure-day-workplace-disclosure-record-creation
 description: Steven Spielberg's Disclosure Day gives the word disclosure a cultural moment. At work, disclosure is not only revelation. It is HR Record Creation.
 metaDescription: "Disclosure Day, Steven Spielberg's 2026 film, gives the word disclosure a cultural moment. At work, disclosure is not only revelation. It is record creation."
 category: Women, Work & Leadership

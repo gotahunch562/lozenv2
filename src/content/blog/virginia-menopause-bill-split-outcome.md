@@ -1,6 +1,7 @@
 ---
 title: 'Virginia Menopause Bill Split Outcome: SB 790 & Study'
 seoTitle: "Virginia Menopause Bill Split Outcome: SB 790 & Study"
+slug: virginia-menopause-bill-split-outcome
 description: Virginia’s Governor signed targeted menopause protections but deferred broader workplace bills to a study. Learn how this split decision affects employer compliance and disclosure.
 metaDescription: "Virginia’s Governor signed targeted menopause protections but deferred broader workplace bills to a study. Learn how this split decision affects employer compliance and disclosure."
 category: Legislation & Policy

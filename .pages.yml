@@ -8,7 +8,9 @@ content:
     type: collection
     path: src/content/blog
     format: yaml-frontmatter
-    filename: "{primary}.md"
+    filename:
+      template: "{slug}.md"
+      field: create
 
     view:
       primary: title
@@ -34,6 +36,14 @@ content:
         required: true
         description: Title used in search results and browser metadata.
 
+      - name: slug
+        label: URL slug
+        type: string
+        required: true
+        description: Stable article URL. Use lowercase letters, numbers, and hyphens only.
+        pattern:
+          regex: "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          message: "Use lowercase letters, numbers, and hyphens only."
       - name: description
         label: Article description
         type: text
