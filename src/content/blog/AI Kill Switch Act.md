@@ -1,12 +1,12 @@
 ---
-title: How the AI Kill Switch Act Maps to the Name Standard℠
-seoTitle: How the AI Kill Switch Act Maps to the Name Standard℠
+title: "How the Name Standard℠ Maps to the AI Kill Switch Act "
+seoTitle: "How the Name Standard℠ Maps to the AI Kill Switch Act "
 slug: ai-kill-switch-act-name-standard
 description: A Lozen Advisory mapping of how the AI Kill Switch Act, the Agentic
   AI Risk-Management Standards Profile, and the Name Standard℠ expose gaps in
   shutdown authority, and board-facing AI governance evidence.
-metaDescription: Discover how the AI Kill Switch Act maps to the Name Standard℠
-  to uncover gaps in human attribution, intervention authority, and board-level
+metaDescription: Discover how the Name Standard℠ maps to the AI Kill Switch Act
+  and uncover gaps in human attribution, intervention authority, and board-level
   AI evidence.
 category: Legislation & Policy
 image: /blog/ai-kill-switch-lozen-advisory.avif
