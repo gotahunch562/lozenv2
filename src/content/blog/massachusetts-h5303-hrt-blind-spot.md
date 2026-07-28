@@ -70,4 +70,4 @@ Massachusetts may be expanding access to menopause care. But access without meas
 
 ## Board AI Market Intelligence
 
-Organizations evaluating legislation, benefit design, and the measurement gaps surrounding workforce policy can use Lozen Advisory’s [Board AI Market Intelligence](/services/board-ai-market-intelligence/) service to translate external developments into decision-ready analysis.
+Organizations evaluating legislation, benefit design, and the measurement gaps surrounding workforce policy can use Lozen Advisory’s [Board AI Market Intelligence](/services/cfo-ai-investment-advisory/) service to translate external developments into decision-ready analysis.

@@ -126,4 +126,4 @@ To track how these global standards align with unfolding state-by-state legislat
 
 ## Board AI Market Intelligence
 
-Organizations assessing how emerging standards may affect workforce governance, measurement, and executive oversight can use Lozen Advisory’s [Board AI Market Intelligence](/services/board-ai-market-intelligence/) service to translate external signals into decision-ready analysis.
+Organizations assessing how emerging standards may affect workforce governance, measurement, and executive oversight can use Lozen Advisory’s [Board AI Market Intelligence](/services/cfo-ai-investment-advisory/) service to translate external signals into decision-ready analysis.
