@@ -10,13 +10,7 @@ export default defineConfig({
   integrations: [
     mdx(),
     sitemap({
-      serialize(item) {
-        if (item.url === 'https://www.lozenadvisory.com/about/') {
-          item.lastmod = new Date('2026-07-20').toISOString();
-        }
-
-        return item;
-      },
+      lastmod: new Date('2026-07-28T00:00:00.000Z'),
     }),
   ],
 
