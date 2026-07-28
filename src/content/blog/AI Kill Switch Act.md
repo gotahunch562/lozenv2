@@ -11,7 +11,7 @@ metaDescription: Discover how the AI Kill Switch Act maps to the Name Standardâ„
 category: Legislation & Policy
 image: /blog/ai-kill-switch-lozen-advisory.avif
 imageAlt: AI Kill Switch Act Maps to the Name Standard image
-pubDate: 2026-07-14
+pubDate: 2026-07-28
 dateModified: 2026-07-28
 lead: The AI Kill Switch Act introduces technical control requirements, but
   possessing a shutdown mechanism doesnâ€™t guarantee an organization can use it
