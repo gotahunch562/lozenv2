@@ -67,7 +67,3 @@ This creates a class of stakeholders with aligned financial interest and limited
 The field is expanding into the workplace without incorporating the organizational disciplines required to study it effectively. The result is research that establishes importance without establishing measurement.
 
 Until that changes, menopause at work will remain visible, but not operational. The [Northeastern research center announcement](https://news.northeastern.edu/2026/04/08/menopause-workplace-research-center/) is an important marker of field expansion; the remaining question is whether research can move from health visibility into organizational measurement.
-
-## Board AI Market Intelligence
-
-Lozen Advisory’s [Board AI Market Intelligence](/services/cfo-ai-investment-advisory/) translates external legal, insurance, workforce, and governance signals into decision-ready analysis for boards and executive teams.

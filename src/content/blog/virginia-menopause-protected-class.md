@@ -65,7 +65,3 @@ For leadership, this creates a predictable distortion: policy effectiveness will
 The women who never entered the formal system are not an outlier. They are the population the study was designed to find. That cohort is not a footnote. It is not a gap Virginia's legislators failed to see. It is Invisible Attrition℠: the condition under which women remain fully present in the workforce, fully absorbed in managing what their employers cannot see, and entirely absent from every instrument the mandated study will use to find them. Virginia has established the most comprehensive formal workplace protections for menopause of any state in the country. The study will produce data about the women who used those protections. It will not describe the women who never did.
 
 [See the full menopause legislation tracker.](/menopause-legislation-tracker/)
-
-## Board AI Market Intelligence
-
-Lozen Advisory’s [Board AI Market Intelligence](/services/cfo-ai-investment-advisory/) translates external legal, insurance, workforce, and governance signals into decision-ready analysis for boards and executive teams.

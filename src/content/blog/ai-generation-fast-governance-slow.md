@@ -101,6 +101,6 @@ Although organizations often find it difficult to decide what is material. **Inf
 
 This is the third article in Lozen Advisory's [AI Workforce Materiality series.](/ai-workforce-materiality/) The next article, **The CFO Problem With AI ROI**, examines whether AI efficiency claims overstate returns when hidden verification labor is omitted from the calculation.
 
-## Board AI Name Standard Advisory
+## Board AI Governance Advisory
 
-Lozen Advisory’s [Board AI Name Standard Advisory](/services/board-ai-name-standard-advisory/) evaluates whether AI-assisted decisions remain attributable, reviewable, and supported by evidence the board can rely on.
+Lozen Advisory’s [Board AI Governance Advisory](/services/board-ai-governance-advisory/) helps boards and executive teams establish recurring oversight for AI implementation, escalation, accountability, and institutional capacity risk.

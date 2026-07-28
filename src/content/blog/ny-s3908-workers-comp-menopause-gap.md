@@ -45,7 +45,3 @@ Exit data does not resolve this gap either. Employees who leave without filing a
 That cohort does not appear in utilization, claims, or exit records. They appear only in retention patterns, and only after she has already left.
 
 That is exit data failure. Not a related concept or a deeper read, the governing condition that every data point in this analysis is an instance of. S3908 would extend formal protection to employees who enter the system. Invisible Attrition℠ names what happens to the ones who do not, and why no record will show it until they are already gone.
-
-## Board AI Market Intelligence
-
-Lozen Advisory’s [Board AI Market Intelligence](/services/cfo-ai-investment-advisory/) translates external legal, insurance, workforce, and governance signals into decision-ready analysis for boards and executive teams.

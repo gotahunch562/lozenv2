@@ -83,5 +83,3 @@ For women in hierarchical and intense professional environments, the workplace i
 You are not waiting to feel like yourself again. You are navigating something real, and you deserve a real path forward.
 
 The first step is having the right name for what is happening. You have that now. The next step is a private path built around your life, your schedule, and your body as it is right now, not the body the system expected you to have.
-
-Lozen Advisory’s [Board AI Market Intelligence](/services/cfo-ai-investment-advisory/) translates external legal, insurance, workforce, and governance signals into decision-ready analysis for boards and executive teams.

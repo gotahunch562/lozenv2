@@ -79,7 +79,3 @@ That problem requires something that operates outside the employer entirely. Som
 She needs a strategy that was built for the room she is actually in, not the room the policy is trying to create.
 
 That gap is why the [menopause legislation tracker](/menopause-legislation-tracker/) matters. It organizes the policy record around what formal systems can measure, and what they still cannot see.
-
-## Board AI Market Intelligence
-
-Lozen Advisory’s [Board AI Market Intelligence](/services/cfo-ai-investment-advisory/) translates external legal, insurance, workforce, and governance signals into decision-ready analysis for boards and executive teams.

@@ -47,7 +47,3 @@ This creates a gap between what is managed and what is measured.
 The legal framework functions as designed. It captures what enters it but misses a portion that does not. This is the condition underlying menopause at work policies: systems measure participation, while a significant share of the impact of those policies remain outside of the mechanisms required to observe it. This gap is Invisible Attrition℠: the impact that remains operationally present while absent from the systems used to measure it, and does not register in retention metrics until the exit occurs.
 
 [Read the Disclosure-Independent Performance Protection℠ infrastructure.](/disclosure-independence-performance/)
-
-## Board AI Market Intelligence
-
-Lozen Advisory’s [Board AI Market Intelligence](/services/cfo-ai-investment-advisory/) translates external legal, insurance, workforce, and governance signals into decision-ready analysis for boards and executive teams.

@@ -83,7 +83,3 @@ The record will show utilization. It will show that the conversation happened an
 Use the [Retention Calculator](/retention-calculator/) to estimate what that departure costs before it appears in the numbers.
 
 ---
-
-## Board AI Market Intelligence
-
-Lozen Advisory’s [Board AI Market Intelligence](/services/cfo-ai-investment-advisory/) translates external legal, insurance, workforce, and governance signals into decision-ready analysis for boards and executive teams.

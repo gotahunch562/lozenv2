@@ -71,7 +71,3 @@ A woman who anticipates dismissal or inequitable treatment has already made a ca
 The legislation improves training. It expands coverage. It strengthens the clinical system at the point of care. But it does not alter the condition that governs entry into that system. The decision to engage is not neutral. It is a cost calculation shaped by information, experience, and professional context. SB892 operates only after that calculation has been made.
 
 That pre-engagement condition is where Invisible Attrition℠ begins: the [erosion of performance and capacity that occurs before any formal system detects](/invisible-attrition/) risk, and before any legislative framework is able to respond.
-
-## Board AI Market Intelligence
-
-Lozen Advisory’s [Board AI Market Intelligence](/services/cfo-ai-investment-advisory/) translates external legal, insurance, workforce, and governance signals into decision-ready analysis for boards and executive teams.

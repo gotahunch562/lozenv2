@@ -65,7 +65,3 @@ These bills do not need to be repealed; they need to be redesigned. This can be 
 We must start by building the guidance framework around what the data cannot see, not just what it can. The women these bills were written to help deserve infrastructure that is designed to reach them.
 
 The awareness lobby is right that menopause belongs in workplace policy. The data is real, and the need is well documented. But as written, the bills will raise employer costs, produce incomplete data, and systematically exclude the women they want to help.
-
-## Board AI Market Intelligence
-
-Lozen Advisory’s [Board AI Market Intelligence](/services/cfo-ai-investment-advisory/) translates external legal, insurance, workforce, and governance signals into decision-ready analysis for boards and executive teams.

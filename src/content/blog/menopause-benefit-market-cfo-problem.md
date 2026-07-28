@@ -77,7 +77,3 @@ The investment case is strongest when menopause benefits are evaluated alongside
 The market is measuring availability. CFOs need to measure exposure. The [Retention Calculator](/retention-calculator/) estimates the replacement cost and fiscal exposure associated with senior leadership attrition, the number the benefits market is not giving you.
 
 ---
-
-## Board AI Market Intelligence
-
-Lozen Advisory’s [Board AI Market Intelligence](/services/cfo-ai-investment-advisory/) translates external legal, insurance, workforce, and governance signals into decision-ready analysis for boards and executive teams.

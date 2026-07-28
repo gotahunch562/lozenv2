@@ -73,7 +73,3 @@ The protection HB1173 and SB258 would have provided, the prohibition on discrimi
 That calculation has a name. The pattern it produces across the organizational record has a name too. Both are documented in the Invisible Attrition℠ framework.
 
 She was never silent. She decided.
-
-## Board AI Market Intelligence
-
-Lozen Advisory’s [Board AI Market Intelligence](/services/cfo-ai-investment-advisory/) translates external legal, insurance, workforce, and governance signals into decision-ready analysis for boards and executive teams.

@@ -126,4 +126,4 @@ For board-facing teams, the real question isn't what any single proposal require
 
 For the full framework behind this mapping, see [The Name Standard℠ **Human Accountability Trace (HAT) workbook**.](/tools-resources/) For the methodology behind Lozen Advisory's evidence-based governance analysis, see [Disclosure-Independent Governance℠](/disclosure-independent-governance/).
 
-Board-facing teams evaluating whether their AI governance structure has a Name Standard℠ gap can review Lozen Advisory's [Board AI Governance Advisory](/services/board-ai-governance-advisory/).
+Board-facing teams evaluating whether intervention, shutdown, restart, and risk-acceptance authority remain traceable can review Lozen Advisory's [Name Standard℠ Advisory](/services/board-ai-name-standard-advisory/).

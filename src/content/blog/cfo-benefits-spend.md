@@ -57,7 +57,3 @@ That is the gap Lozen Advisory is built to examine.
 We work with finance, people, and workforce analytics leaders to identify where employee benefits ROI depends on data that was never created. We help decision-makers distinguish between low need and unmeasured need, between benefit availability and benefit reach, and between recorded utilization and actual workforce risk.
 
 If utilization requires disclosure, the dashboard is incomplete by design.
-
-## Board AI Market Intelligence
-
-Lozen Advisory’s [Board AI Market Intelligence](/services/cfo-ai-investment-advisory/) translates external legal, insurance, workforce, and governance signals into decision-ready analysis for boards and executive teams.

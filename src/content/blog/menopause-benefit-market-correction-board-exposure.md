@@ -79,5 +79,3 @@ The question is whether they inherit it before or after the attrition it fails t
 - **Accounting for Structural Silence:** Does the risk model account for workers managing their health entirely outside the corporate viewport? If the enterprise has no mechanism to support the silent tier of senior talent, the organization's continuity tracking remains fundamentally incomplete.
 
 *This analysis applies Invisible Attrition℠ to the market conditions documented in [PwC's 2026](https://www.pwc.com/us/en/industries/health-industries/library/unlocking-the-menopause-market.html)* **[Unlocking The Menopause Market Forecast.](https://www.pwc.com/us/en/industries/health-industries/library/unlocking-the-menopause-market.html)**
-
-Lozen Advisory’s [Board AI Market Intelligence](/services/cfo-ai-investment-advisory/) translates external legal, insurance, workforce, and governance signals into decision-ready analysis for boards and executive teams.

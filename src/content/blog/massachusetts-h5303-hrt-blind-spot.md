@@ -67,7 +67,3 @@ Massachusetts may be expanding access to menopause care. But access without meas
 *[lozenadvisory.com/menopause-legislation-tracker](/menopause-legislation-tracker/)*
 
 ---
-
-## Board AI Market Intelligence
-
-Organizations evaluating legislation, benefit design, and the measurement gaps surrounding workforce policy can use Lozen Advisory’s [Board AI Market Intelligence](/services/cfo-ai-investment-advisory/) service to translate external developments into decision-ready analysis.

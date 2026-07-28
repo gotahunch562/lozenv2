@@ -101,7 +101,3 @@ The report will not reach:
 What is already observable is this. Women leave legal practice at measurably higher rates than men at the senior associate and early partner level. The departures are concentrated in the career stage that overlaps with perimenopause and menopause. The profession has no systematic way to distinguish between departures driven by life choice and departures driven by an unmanaged physiological transition that the environment made it professionally unsafe to discuss.
 
 That distinction matters. Not because it changes what happened, but because understanding it is the only way to change what happens next.
-
-## Board AI Governance Advisory
-
-Lozen Advisory’s [Board AI Governance Advisory](/services/board-ai-governance-advisory/) helps boards and executive teams establish recurring oversight for AI implementation, accountability, and institutional capacity risk.

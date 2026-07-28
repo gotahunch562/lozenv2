@@ -87,4 +87,4 @@ Human oversight is not enough if no one can explain who reviewed the output, wha
 
 ### **Prepare your board for AI accountability questions before the next meeting.**
 
-Lozen Advisory’s [Board AI Algorithmic Accountability](/services/board-ai-algorithmic-accountability/) supports organizations responding to activated AI incidents, disclosure failures, accountability gaps, and reputational exposure.
+Lozen Advisory’s [Name Standard℠ Advisory](/services/board-ai-name-standard-advisory/) evaluates whether AI-assisted decisions, approvals, escalations, and sign-offs remain attributable to a responsible human or institutional actor.

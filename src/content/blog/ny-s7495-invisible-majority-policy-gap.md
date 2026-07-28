@@ -59,7 +59,3 @@ The study will produce accurate findings for the population it can observe. Thos
 The women named in the bill's own legislative findings are not a data gap. They were counted before the study began but the study's categories then exclude them. They are present, performing, and structurally outside the methods the study will use to find them. Their performance is intact and the system has no classification for them. That is Invisible Attrition℠: the condition the study was commissioned to measure, operating in the population the study's methods cannot reach. This is the same population that S9247's leave entitlement cannot reach and that Virginia's accommodation framework will not see. Nothing in the study New York State S7495 directs will be designed to see them.
 
 [See the full menopause legislation tracker.](/menopause-legislation-tracker/)
-
-## Board AI Market Intelligence
-
-Lozen Advisory’s [Board AI Market Intelligence](/services/cfo-ai-investment-advisory/) translates external legal, insurance, workforce, and governance signals into decision-ready analysis for boards and executive teams.
