@@ -44,12 +44,12 @@
     },
     {
       "source": "/leadership-pipeline-manager-drain/",
-      "destination": "/service-cfo-ai-investment-advisory/",
+      "destination": "/services/cfo-ai-investment-advisory/",
       "permanent": true
     },
     {
       "source": "/succession-planning-retention-risk-data-gap/",
-      "destination": "/service-cfo-ai-investment-advisory/",
+      "destination": "/services/cfo-ai-investment-advisory/",
       "permanent": true
     },
     {
@@ -64,7 +64,7 @@
     },
     {
       "source": "/services/executive-briefing/",
-      "destination": "/service-board-ai-algorithmic-accountability/",
+      "destination": "/services/board-ai-algorithmic-accountability/",
       "permanent": true
     },
     {
@@ -79,12 +79,12 @@
     },
     {
       "source": "/ai-workforce-materiality/",
-      "destination": "/service-ai-workforce-materiality/",
+      "destination": "/services/ai-workforce-materiality/",
       "permanent": true
     },
     {
       "source": "/retention-risk-analysis/",
-      "destination": "/service-cfo-ai-investment-advisory/",
+      "destination": "/services/cfo-ai-investment-advisory/",
       "permanent": true
     },
     {
@@ -104,7 +104,7 @@
     },
     {
       "source": "/retention-calculator/",
-      "destination": "/service-cfo-ai-investment-advisory/",
+      "destination": "/services/cfo-ai-investment-advisory/",
       "permanent": true
     }
   ]
