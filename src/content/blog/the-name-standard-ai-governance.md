@@ -77,7 +77,7 @@ The common thread is evidence. Boards need to know:
 - what evidence survived;
 - where responsibility became fragmented.
 
-The Name Standard℠ sits within Lozen Advisory’s broader [Disclosure-Independent Governance℠](/disclosure-independent-governance/) methodology for evaluating whether AI-related work remains traceable to a responsible human or institutional actor. **Apply the Name Standard℠ to a live AI-assisted workflow with Lozen Advisory’s free [Human Accountability Trace (HAT)](/download/name-standard-human-accountability-trace-v8.xlsx) workbook.**
+The Name Standard℠ sits within Lozen Advisory’s broader [Disclosure-Independent Governance℠](/disclosure-independent-governance/) methodology for evaluating whether AI-related work remains traceable to a responsible human or institutional actor. **Apply the Name Standard℠ to a live AI-assisted workflow with Lozen Advisory’s free [Human Accountability Trace (HAT)](/download/name-standard-human-accountability-trace-v9.xlsx) workbook.**
 
 > Who authorized the agent, who supervises it, who can stop it, who documents its behavior, and who remains accountable when it exceeds its intended path?
 
