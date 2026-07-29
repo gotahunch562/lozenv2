@@ -1,18 +1,23 @@
 ---
-title: 'AI ROI & The CFO: The Hidden Costs of Correction and Rework'
-metaDescription: "AI spending is accelerating faster than enterprises can prove financial value. Learn why CFOs must measure the hidden costs of AI rework and human verification to find true ROI."
+title: "AI ROI & The CFO: The Hidden Costs of Correction and Rework"
 seoTitle: "The CFO Problem With AI ROI: When Spending Outpaces Value"
 slug: cfo-problem-with-ai-roi
-description: AI spending is accelerating faster than enterprises can prove financial value. Learn why CFOs must measure the hidden costs of AI rework and human verification to find true ROI.
+description: AI spending is accelerating faster than enterprises can prove
+  financial value. Learn why CFOs must measure the hidden costs of AI rework and
+  human verification to find true ROI.
+metaDescription: AI spending is accelerating faster than enterprises can prove
+  financial value. Learn why CFOs must measure the hidden costs of AI rework and
+  human verification to find true ROI.
 category: CFO Insights
 image: /blog/dollarfloat.avif
 imageAlt: dollars floating away on water
 pubDate: 2026-06-03
 dateModified: 2026-07-15
+lead: AI spending is accelerating faster than enterprises can prove financial
+  value. The missing costs include correction, rework, verification, and the
+  human judgment required to make AI output usable.
 featured: false
 draft: false
-lead: AI spending is accelerating faster than enterprises can prove financial value. The missing costs include correction, rework, verification, and the human judgment required to make AI output usable.
-relatedSlugs: []
 ---
 AI return on investment is becoming harder to defend because spending is accelerating faster than enterprises can prove financial value. The problem is not that AI lacks utility. The problem is that many ROI models count adoption, output volume, generation speed, and vendor-promised productivity while excluding correction, rework, verification, infrastructure, and the human judgment required to make AI output usable.
 
