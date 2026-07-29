@@ -1,6 +1,6 @@
 ---
 title: The CFO's AI ROI Debt Is Getting More Expensive
-seoTitle: The CFO's AI ROI Debt Is Getting More Expensive
+seoTitle: "CFO AI ROI Debt: Managing the Capital Cost of Unproven AI"
 slug: cfo-ai-roi-debt
 description: When enterprise AI fails to show returns, the default fix is more
   spending. Learn why AI ROI debt accumulates and the capital-stop rule CFOs
