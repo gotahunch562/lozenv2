@@ -169,7 +169,7 @@ Before the next AI funding request is approved, the organization should be able 
 
 ## CFO AI Investment Advisory
 
-Lozen Advisory's [CFO AI Investment Advisory](/services/cfo-ai-investment-advisory/) provides independent counsel for finance leaders deciding what to fund, defend, restructure, or kill — tied to no vendor and no adoption agenda. When the question is whether an unproven AI investment should be rescued or reconsidered, the answer should not come from anyone with a stake in the next tranche.
+Lozen Advisory's [CFO AI Investment Advisory](/services/cfo-ai-investment-advisory/) provides independent counsel for finance leaders. When the question is whether an unproven AI investment should be rescued or reconsidered, the answer should come from an independent advisor
 
 ---
 
