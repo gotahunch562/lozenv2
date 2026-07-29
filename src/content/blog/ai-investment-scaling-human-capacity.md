@@ -92,6 +92,14 @@ A board-level inquiry should begin with questions such as:
 
 These are not IT implementation questions. They are capital-governance questions. If leadership cannot answer them, the organization may be funding AI faster than it is governing the human capacity required to make that investment work.
 
+## Related AI Workforce Materiality Articles
+
+- [Mandatory AI Use Is Not AI Governance](/blog/mandatory-ai-use-governance/)
+- [LLM Generation Is Fast. Governance Is Not](/blog/ai-generation-fast-governance-slow/)
+- [AI ROI & The CFO: The Hidden Costs of Correction and Rework](/blog/cfo-problem-with-ai-roi/)
+- [Shadow AI: The AI Disclosure-Control Challenge](/blog/ai-productivity-vs-governance/)
+- [Beyond the 10-K: Mitigating AI Governance & Workforce Risks](/blog/ai-human-capital-data-10-k/)
+
 ### Board AI Governance Advisory
 
 Lozen Advisory’s [Board AI Governance Advisory](/services/board-ai-governance-advisory/) helps boards and executive teams establish recurring oversight for AI implementation, accountability, and institutional capacity risk.

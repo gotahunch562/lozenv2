@@ -126,9 +126,13 @@ Before the next board meeting or budget cycle, the organization should be able t
 - What evidence substantiates AI efficiency claims made to the board or investors beyond output volume, token consumption, or adoption rates?
 - What conditions would cause the organization to reduce, pause, or reallocate AI spending?
 
-## Series Context
+## Related AI Workforce Materiality Articles
 
-This article is part of Lozen Advisory’s [AI Workforce Materiality](/ai-workforce-materiality/) series, examining the workforce, financial, governance, and disclosure consequences of enterprise AI adoption.
+- [Mandatory AI Use Is Not AI Governance](/blog/mandatory-ai-use-governance/)
+- [AI Investment Is Scaling Faster Than Human Capacity](/blog/ai-investment-scaling-human-capacity/)
+- [LLM Generation Is Fast. Governance Is Not](/blog/ai-generation-fast-governance-slow/)
+- [Shadow AI: The AI Disclosure-Control Challenge](/blog/ai-productivity-vs-governance/)
+- [Beyond the 10-K: Mitigating AI Governance & Workforce Risks](/blog/ai-human-capital-data-10-k/)
 
 ## CFO AI Investment Advisory
 

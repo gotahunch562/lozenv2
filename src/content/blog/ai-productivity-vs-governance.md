@@ -105,12 +105,16 @@ That creates a timing problem. Quarterly governance cannot prove minute-to-minut
 
 That last question is the one disclosure-dependent systems cannot answer. If the organization cannot answer those questions, the issue is not messaging; it is control. This is the operating gap Disclosure-Independent Governance℠ is designed to identify: the distance between what the institution can document and what the institution is actually relying on.
 
-## Series Context
-
-This is the fifth article in Lozen Advisory's [AI Workforce Materiality series](/ai-workforce-materiality/). The next article, **The Materiality Overload Crisis in Form 10-K Human Capital Disclosures**, examines how human-capital disclosure is being asked to carry workforce risks that internal systems may not detect before loss appears.
-
 ---
 
 ## Board AI Algorithmic Accountability
+
+## Related AI Workforce Materiality Articles
+
+- [Mandatory AI Use Is Not AI Governance](/blog/mandatory-ai-use-governance/)
+- [AI Investment Is Scaling Faster Than Human Capacity](/blog/ai-investment-scaling-human-capacity/)
+- [LLM Generation Is Fast. Governance Is Not](/blog/ai-generation-fast-governance-slow/)
+- [AI ROI & The CFO: The Hidden Costs of Correction and Rework](/blog/cfo-problem-with-ai-roi/)
+- [Beyond the 10-K: Mitigating AI Governance & Workforce Risks](/blog/ai-human-capital-data-10-k/)
 
 Organizations confronting unsupported AI claims, evidence gaps, or activated disclosure scrutiny can use Lozen Advisory’s [Board AI Algorithmic Accountability](/services/board-ai-algorithmic-accountability/) service to reconstruct the record and clarify accountability.

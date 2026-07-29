@@ -112,13 +112,15 @@ Boards and General Counsel do not need another adoption dashboard. They need a s
 
 The material question is not only whether employees are using AI. It is whether operational leaders can answer what AI use has moved, who now carries the verification burden, and where risk remains unmeasured. 
 
-Series Context
-
-*This article opens Lozen Advisory’s [AI Workforce Materiality](/ai-workforce-materiality/) series, which examines how corporate AI adoption creates human-capital exposure when companies measure tool use before they measure the human judgment required to make AI output usable.*
-
-- **Next:** [[AI Investment Is Scaling Faster Than Human Capacity](/blog/ai-investment-scaling-human-capacity/)] topic urns from mandatory use to capital allocation, asking whether organizations are funding AI faster than the workforce systems required to convert that investment into durable operating value.
-
 ---
+
+## Related AI Workforce Materiality Articles
+
+- [AI Investment Is Scaling Faster Than Human Capacity](/blog/ai-investment-scaling-human-capacity/)
+- [LLM Generation Is Fast. Governance Is Not](/blog/ai-generation-fast-governance-slow/)
+- [AI ROI & The CFO: The Hidden Costs of Correction and Rework](/blog/cfo-problem-with-ai-roi/)
+- [Shadow AI: The AI Disclosure-Control Challenge](/blog/ai-productivity-vs-governance/)
+- [Beyond the 10-K: Mitigating AI Governance & Workforce Risks](/blog/ai-human-capital-data-10-k/)
 
 ## Board AI Governance Advisory
 

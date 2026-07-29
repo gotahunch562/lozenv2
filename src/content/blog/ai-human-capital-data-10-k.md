@@ -116,13 +116,15 @@ It examines where workforce data is producing incomplete evidence, where AI-assi
 
 The goal is not to draft the disclosure. The goal is to close the governance gap before the disclosure requirement arrives.
 
+## Related AI Workforce Materiality Articles
+
+- [Mandatory AI Use Is Not AI Governance](/blog/mandatory-ai-use-governance/)
+- [AI Investment Is Scaling Faster Than Human Capacity](/blog/ai-investment-scaling-human-capacity/)
+- [LLM Generation Is Fast. Governance Is Not](/blog/ai-generation-fast-governance-slow/)
+- [AI ROI & The CFO: The Hidden Costs of Correction and Rework](/blog/cfo-problem-with-ai-roi/)
+- [Shadow AI: The AI Disclosure-Control Challenge](/blog/ai-productivity-vs-governance/)
+
 Lozen Advisory’s [Board AI Governance Advisory](/services/board-ai-governance-advisory/) helps boards and executive teams establish recurring oversight for AI implementation, accountability, and institutional capacity risk.
-
----
-
-*This is Article 06 in Lozen Advisory’s series on [AI Workforce Materiality](/ai-workforce-materiality/), human accountability, and enterprise readiness.*
-
-*← [Article 05: AI Productivity Claims Are Becoming a Disclosure-Control Problem](/blog/ai-productivity-vs-governance/)*
 
 ---
 

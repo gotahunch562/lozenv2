@@ -22,7 +22,6 @@ Large language models generate output in seconds. Deciding whether to rely on th
 
 Most organizations are measuring the easier half of AI adoption by relying on software dashboards as the proxy for productivity.
 
-
 | What Your Dashboards Show | What Your Dashboards Miss |
 | ------------------------- | -------------------------------------------------- |
 | Time to generate a draft | Time to verify the draft is accurate |
@@ -30,7 +29,6 @@ Most organizations are measuring the easier half of AI adoption by relying on so
 | Tool adoption rate | Cognitive burden on the reviewer |
 | Workflow throughput | Senior expertise consumed by checking machine work |
 | Prompts completed | Accountability for what moves forward |
-
 
 **The column on the right is where the exposure forms.**
 
@@ -97,9 +95,13 @@ Although organizations often find it difficult to decide what is material. **Inf
 
 ---
 
-## Series Context
+## Related AI Workforce Materiality Articles
 
-This is the third article in Lozen Advisory's [AI Workforce Materiality series.](/ai-workforce-materiality/) The next article, **The CFO Problem With AI ROI**, examines whether AI efficiency claims overstate returns when hidden verification labor is omitted from the calculation.
+- [Mandatory AI Use Is Not AI Governance](/blog/mandatory-ai-use-governance/)
+- [AI Investment Is Scaling Faster Than Human Capacity](/blog/ai-investment-scaling-human-capacity/)
+- [AI ROI & The CFO: The Hidden Costs of Correction and Rework](/blog/cfo-problem-with-ai-roi/)
+- [Shadow AI: The AI Disclosure-Control Challenge](/blog/ai-productivity-vs-governance/)
+- [Beyond the 10-K: Mitigating AI Governance & Workforce Risks](/blog/ai-human-capital-data-10-k/)
 
 ## Board AI Governance Advisory
 
