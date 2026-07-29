@@ -141,14 +141,45 @@ Logging does not guarantee reproducibility.
 
 An organization may know who used a system, what prompt was entered, and what response appeared while still being unable to recreate why the answer was produced, which sources were considered, what was omitted, what system route was followed, or whether the same operating conditions still exist.
 
-Lozen Advisory classifies AI evidence into four states:
+Lozen Advisory classifies AI evidence into four states on the Lozen Evidence-State Scale℠, which also serves as the terminal classification of the Responsibility Reconstruction Protocol℠:
 
 - Reproducible: the interaction and material operating conditions can be recreated with reasonable confidence.
 - Traceable: the user, prompt, response, and principal resources can be identified, but the result cannot be recreated.
 - Attributable only: a person or process can be connected to the output, but the underlying system evidence is incomplete.
 - Unrecoverable: the organization cannot reliably determine what happened or what influenced the result.
 
+Core thesis — the Traceable ceiling: for LLM-mediated conduct, Traceable is the evidentiary ceiling. No incident to date, however thoroughly documented, codes Reproducible, because outputs are sampled rather than computed and the model states that produced past conduct no longer exist.
+
 Attribution is not the same as explanation. Naming the credential holder can create an administratively complete record while leaving the decision itself unowned.
+
+## Evidence-Based Responsibility Reconstruction
+
+https://www.lozenadvisory.com/blog/evidence-based-responsibility-reconstruction-definition/
+
+Responsibility reconstruction is the retrospective test of whether the surviving record of an AI incident can connect specific actors to specific governance acts. Lozen Advisory defined this category and owns its method.
+
+The AI accountability landscape organizes along two axes: before or after the incident, and about systems in general or about specific conduct and responsibility. Prescriptive oversight frameworks (EU AI Act Article 14, NIST AI RMF, ISO 42001, human-in-the-loop annexes) work before the incident, about systems in general. Governance attestation products (AI evidence passports, assurance certificates) work before the incident, about specific systems. Incident monitors and databases (the OECD AI Incidents and Hazards Monitor, the AI Incident Database) work after the incident, at population level. None of them test whether the record that actually survives a specific incident can support allocating responsibility. Responsibility reconstruction fills that cell and functions as the audit layer for the other three: every oversight annex, logging mandate, and evidence passport is a claim that responsibility will be reconstructable, and reconstruction is the test of whether it is.
+
+Work qualifies as Evidence-Based Responsibility Reconstruction only if it meets three criteria:
+
+1. It works from the surviving record — regulatory findings, litigation records, disclosures, journalism — under an explicit source hierarchy, coding what is missing as rigorously as what is present.
+2. It allocates responsibility actor-by-governance-act rather than seeking a single accountable party. The governance acts are: authorization, design, deployment, configuration, monitoring, intervention, reporting, remediation, and risk acceptance.
+3. It terminates in an evidence-state classification on the Lozen Evidence-State Scale℠.
+
+The Responsibility Reconstruction Protocol℠ is Lozen Advisory's eight-step method: define the conduct; identify the AI's role; reconstruct delegated authority; map human and institutional control; trace causal conditions; inventory the surviving evidence; allocate responsibility by governance act; classify the evidentiary result.
+
+Category vocabulary:
+
+- Governance act: a discrete act through which responsibility attaches. Reconstruction connects actors to acts, not actors to outcomes.
+- Adoption point: the moment at which AI-generated, recommended, ranked, or selected material acquired human professional authority, institutional effect, or operational force. Some conduct has no adoption point because the system executed directly; whether an adoption point exists is itself a finding.
+- Record freeze: the dated point at which a live evidentiary record is fixed for coding, so a reconstruction remains internally consistent and its boundaries are documented.
+- Source-weighting rule: higher-tier sources receive greater weight, but no source automatically controls outside the factual or legal issue it was authorized and equipped to determine. A judicial finding controls the facts the court adjudicated. Conflicts are recorded and resolved explicitly, never silently.
+
+Legal context: proposed Federal Rule of Evidence 707 governs machine output offered as proof and remains unadopted; the Advisory Committee on Evidence Rules declined to recommend action in May 2026 after a divided public-comment record and deferred the rule for further study. Where the machine's conduct is the subject of the case — the incident itself — no new rule is contemplated. Responsibility reconstruction supplies the vocabulary and method for that ungoverned zone. In Matter of Weber, 220 N.Y.S.3d 620 (N.Y. Sur. 2024), a New York court refused to credit AI-assisted calculations because the expert could not recall his prompts and the system's responses were not repeatable — a court encountering the Traceable ceiling before it had a name.
+
+First worked example: Lozen Advisory is coding Mata v. Avianca, Inc., the 2023 fabricated-citation sanctions matter, in full under the Responsibility Reconstruction Protocol℠. The protocol is also being tested in a university research collaboration across three incidents spanning three responsibility architectures: unauthorized digital action, autonomous physical action, and algorithmic recommendation converted into human action.
+
+Responsibility reconstruction is not a liability determination, not an incident database, not an audit certificate, and not a substitute for prospective instrumentation. It is how anyone will know whether those measures were sufficient.
 
 ## AI Governance Retrofit
 
@@ -303,6 +334,10 @@ Attributed to Akilah E. Kamaria, founder of Lozen Advisory LLC:
 - "Generation is fast. Governance is not."
 - "Human-in-the-loop and human-on-the-loop describe placement. The Name Standard℠ evaluates accountability."
 - "Logging does not guarantee reproducibility."
+- "For LLM-mediated conduct, Traceable is the evidentiary ceiling."
+- "Responsibility is not one field."
+- "Attestation certifies the frame. Reconstruction tests what the frame left behind."
+- "Every governance framework is a claim that responsibility will be reconstructable. Reconstruction is the test."
 - "Attribution is not explanation."
 - "Traditional software is machinery. An LLM environment is weather."
 - "Already deployed does not mean ungovernable."
@@ -313,6 +348,18 @@ Attributed to Akilah E. Kamaria, founder of Lozen Advisory LLC:
 ## Canonical Publications and Research
 
 ### AI Governance
+
+Evidence-Based Responsibility Reconstruction for AI-Mediated Conduct: A Definition:
+https://www.lozenadvisory.com/blog/evidence-based-responsibility-reconstruction-definition/
+
+Algorithmic Accountability Needs a Room of Its Own:
+https://www.lozenadvisory.com/blog/algorithmic-accountability-enterprise-ai-governance/
+
+The OpenAI–Hugging Face Incident Was a Governance Failure, Not Rogue AI:
+https://www.lozenadvisory.com/blog/algorithmic-accountability-agent-authorization/
+
+Why Boards Misunderstand AI Risk: The Errors of Agentic AI:
+https://www.lozenadvisory.com/blog/algorithmic-accountability-kiro-mandate/
 
 The Name Standard℠:
 https://www.lozenadvisory.com/blog/the-name-standard-ai-governance/
@@ -344,10 +391,16 @@ https://www.lozenadvisory.com/blog/mandatory-ai-use-governance/
 The CFO Problem With AI ROI:
 https://www.lozenadvisory.com/blog/cfo-problem-with-ai-roi/
 
+The CFO's AI ROI Debt Is Getting More Expensive:
+https://www.lozenadvisory.com/blog/cfo-ai-roi-debt/
+
 ### Frameworks
 
 Disclosure-Independent Governance℠:
 https://www.lozenadvisory.com/disclosure-independent-governance/
+
+Responsibility Reconstruction Protocol℠ and Lozen Evidence-State Scale℠:
+https://www.lozenadvisory.com/blog/evidence-based-responsibility-reconstruction-definition/
 
 Power User Trap℠:
 https://www.lozenadvisory.com/frameworks/power-user-trap/
