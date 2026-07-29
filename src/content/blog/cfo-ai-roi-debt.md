@@ -2,21 +2,21 @@
 title: The CFO's AI ROI Debt Is Getting More Expensive
 seoTitle: The CFO's AI ROI Debt Is Getting More Expensive
 slug: cfo-ai-roi-debt
-description: When AI investments fail to produce measurable returns, the remedy
-  offered is usually more spending. Lozen Advisory examines AI ROI debt — and
-  the capital-stop rule CFOs need before authorizing the rescue.
-metaDescription: When AI investments fail to produce measurable returns, the
-  remedy offered is usually more spending. Lozen Advisory examines AI ROI debt —
-  and the capital-stop rule CFOs need before authorizing the rescue.
+description: When enterprise AI fails to show returns, the default fix is more
+  spending. Learn why AI ROI debt accumulates and the capital-stop rule CFOs
+  must set.
+metaDescription: When enterprise AI fails to show returns, the default fix is
+  more spending. Learn why AI ROI debt accumulates and the capital-stop rule
+  CFOs must set.
 category: CFO Insights
 image: /blog/cfo ai debt worry.avif
 imageAlt: worried cfo looking at screen
 pubDate: 2026-07-29
 dateModified: 2026-07-29
-lead: "Companies are beginning to admit that enterprise AI returns remain
-  elusive. The next financial problem is more serious: what happens when an AI
-  investment fails to produce measurable value, and the proposed solution is
-  another round of spending?"
+lead: When an enterprise AI investment fails to produce measurable value, the
+  remedy offered is usually another round of spending. Here is how AI ROI debt
+  accumulates outside the business case—and why CFOs need a strict capital-stop
+  rule before funding the rescue.
 featured: false
 draft: true
 ---
