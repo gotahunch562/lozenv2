@@ -18,7 +18,7 @@ lead: When an enterprise AI investment fails to produce measurable value, the
   accumulates outside the business case—and why CFOs need a strict capital-stop
   rule before funding the rescue.
 featured: false
-draft: true
+draft: false
 ---
 Companies are beginning to admit that enterprise AI returns remain elusive. The next financial problem is more serious: what happens when an AI investment fails to produce measurable value, and the proposed solution is another round of spending?
 
@@ -28,7 +28,7 @@ That second cycle is AI ROI debt.
 
 It accumulates when an organization cannot prove that an AI investment has produced a return but continues committing capital to preserve the possibility that it eventually will. The original business case remains formally alive while the cost structure underneath it expands beyond recognition.
 
-[The CFO Problem With AI ROI](https://www.lozenadvisory.com/blog/cfo-problem-with-ai-roi/) examined why finance leaders cannot cleanly prove AI returns: adoption is counted while correction, verification, and hidden human judgment are not. This article addresses what comes after that failure of proof. For CFOs, the question is no longer simply whether AI can create value. It is how much additional capital should be committed before an unproven investment must be reconsidered rather than rescued.
+[The CFO Problem With AI ROI](/blog/cfo-problem-with-ai-roi/) examined why finance leaders cannot cleanly prove AI returns: adoption is counted while correction, verification, and hidden human judgment are not. This article addresses what comes after that failure of proof. For CFOs, the question is no longer simply whether AI can create value. It is how much additional capital should be committed before an unproven investment must be reconsidered rather than rescued.
 
 > **AI ROI debt begins when the organization must keep spending to preserve the possibility that the original AI investment may eventually prove worthwhile.**
 
@@ -42,9 +42,9 @@ Global Finance reports that only a minority of organizations can demonstrate tha
 
 **Hold those Deloitte numbers side by side: 85% spending more, 10% seeing significant return. The gap between them is not a measurement lag. It is the second spending cycle, captured in a single survey.**
 
-A use case can reduce time or cost locally while the total portfolio remains uneconomic. The department sees the benefit. The enterprise carries the cost. Finance is left holding a collection of encouraging anecdotes and an investment that does not clear its own hurdle rate.
+A use case can reduce time or cost locally and the department sees the benefit. However, the enterprise carries the cost. Finance is left holding a collection of encouraging anecdotes and an investment that does not clear its own hurdle rate.
 
-When benefits are presented as returns, the distinction that matters to a CFO disappears: a benefit is an observation; a return is a calculation. The calculation requires a full denominator, and the denominator keeps growing.
+**When benefits are presented as returns, the distinction that matters to a CFO disappears: a benefit is an observation; a return is a calculation.** The calculation requires a full denominator, and the denominator keeps growing.
 
 ## How Failed AI ROI Triggers a Second Spending Cycle
 
@@ -169,7 +169,7 @@ Before the next AI funding request is approved, the organization should be able 
 
 ## CFO AI Investment Advisory
 
-Lozen Advisory's [CFO AI Investment Advisory](https://www.lozenadvisory.com/services/cfo-ai-investment-advisory/) provides independent counsel for finance leaders deciding what to fund, defend, restructure, or kill — tied to no vendor and no adoption agenda. When the question is whether an unproven AI investment should be rescued or reconsidered, the answer should not come from anyone with a stake in the next tranche.
+Lozen Advisory's [CFO AI Investment Advisory](/services/cfo-ai-investment-advisory/) provides independent counsel for finance leaders deciding what to fund, defend, restructure, or kill — tied to no vendor and no adoption agenda. When the question is whether an unproven AI investment should be rescued or reconsidered, the answer should not come from anyone with a stake in the next tranche.
 
 ---
 
