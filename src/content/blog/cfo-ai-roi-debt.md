@@ -32,7 +32,7 @@ It accumulates when an organization cannot prove that an AI investment has produ
 
 > **AI ROI debt begins when the organization must keep spending to preserve the possibility that the original AI investment may eventually prove worthwhile.**
 
-## AI Benefits Are Being Mistaken for AI Returns
+## AI Benefits Are Being Mistaken for Enterprise AI Returns
 
 The reporting on enterprise AI is not uniformly negative, and that is part of the trap.
 
@@ -46,7 +46,7 @@ A use case can reduce time or cost locally while the total portfolio remains une
 
 When benefits are presented as returns, the distinction that matters to a CFO disappears: a benefit is an observation; a return is a calculation. The calculation requires a full denominator, and the denominator keeps growing.
 
-## Failed ROI Is Generating a Second Spending Cycle
+## How Failed AI ROI Triggers a Second Spending Cycle
 
 When an AI investment underperforms, the diagnosis rarely questions the investment. It questions the company.
 
@@ -95,7 +95,7 @@ This is economic drift: the operating cost structure moves steadily away from th
 
 No single line item triggers review, because no single line item is large enough. The debt accumulates in the gaps between budgets.
 
-## Headcount Reduction Is Not Proof of Savings
+## Why AI Headcount Reduction Is Not Proof of Cost Savings
 
 The workforce version of AI ROI debt is the most consequential, because it is the hardest to reverse.
 
@@ -111,7 +111,7 @@ This is the [Power User Trap℠](/frameworks/power-user-trap/) operating at port
 
 Removing payroll establishes that payroll was removed. It does not establish that the replacement system is cheaper, more reliable, or financially sustainable. And if the reduction later has to be reversed — rehiring, retraining, rebuilding institutional knowledge — that reconstruction cost belongs in the AI investment's denominator too. It rarely appears there.
 
-## CFOs Need a Capital-Stop Rule
+## Why CFOs Need an AI Capital-Stop Rule
 
 The discipline that is missing from most AI portfolios is not a better ROI formula. It is a refusal threshold.
 
@@ -129,7 +129,7 @@ A capital-stop rule should specify:
 
 The rule does not prohibit further investment. It prohibits further investment by default. That distinction is the entire discipline.
 
-## The Board Question: Who Can Say "No More Capital"?
+## AI Governance & The Board: Who Can Say "No More Capital"?
 
 Boards are beginning to ask how AI oversight should be structured, who owns accountability, and how agentic systems alter existing risk frameworks. Beneath those questions sits the governance question that AI ROI debt makes unavoidable:
 
@@ -150,7 +150,7 @@ This is why AI ROI debt is a governance problem, not only a finance problem. A r
 
 > **The measure of AI capital discipline is not how the organization funds success. It is whether anyone can stop the funding when success does not arrive.**
 
-## The Capital Discipline Question Set
+## The AI Capital Discipline Checklist for CFOs
 
 Before the next AI funding request is approved, the organization should be able to answer:
 
