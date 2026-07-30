@@ -50,7 +50,10 @@ The question of how responsibility for an AI system's actions is reconstructed f
 
 Evidence-Based Responsibility Reconstruction draws on records produced by AI governance, assurance, incident response, regulation, litigation, and investigation. Each of those fields contributes part of the evidentiary record, but each is organized around a different primary purpose.
 
-Prospective governance frameworks define the controls, roles, documentation, and oversight that organizations should establish before consequential conduct occurs. Governance attestation and assurance products document whether an authority structure, approval process, or control environment was in place. Incident databases and risk repositories identify patterns across reported harms. Regulatory investigations, litigation records, digital forensics, and root-cause analyses examine particular events from their own legal, technical, or supervisory perspectives.
+1. Prospective governance frameworks define the controls, roles, documentation, and oversight that organizations should establish before consequential conduct occurs. 
+2. Governance attestation and assurance products document whether an authority structure, approval process, or control environment was in place. 
+3. Incident databases and risk repositories identify patterns across reported harms. 
+4. Regulatory investigations, litigation records, digital forensics, and root-cause analyses examine particular events from their own legal, technical, or supervisory perspectives.
 
 Responsibility reconstruction uses those materials but asks a narrower question:
 
@@ -60,7 +63,7 @@ Answering that question requires more than confirming that controls were prescri
 
 An oversight framework, logging mandate, or evidence passport may be designed to make future accountability possible. Responsibility reconstruction tests whether the resulting record is actually sufficient to support it.
 
-Responsibility reconstruction is therefore a distinct evidentiary method applied across records produced by governance, assurance, incident response, regulation, litigation, and investigation.
+**Responsibility reconstruction is therefore a distinct evidentiary method applied across records produced by governance, assurance, incident response, regulation, litigation, and investigation.**
 
 ## What Qualifies as Responsibility Reconstruction
 
