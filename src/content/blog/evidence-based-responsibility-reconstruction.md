@@ -20,7 +20,7 @@ lead: When AI-mediated conduct becomes consequential, responsibility must be
 featured: true
 draft: false
 ---
-Something is missing from the AI algorithmic accountability landscape, and the gap becomes visible only after real harm has occurred.
+Something is missing from the algorithmic accountability landscape, and the gap becomes visible only after real harm has occurred.
 
 Incident databases classify what went wrong. Governance frameworks prescribe the controls that should have existed. Attestation products certify, in advance, that a governance structure is in place. All of that work is necessary. None of it provides answers that a board, a CFO, a court, or an insurer need to know after an AI system has done something adverse: *[who was responsible — and can the surviving record prove it?](/blog/algorithmic-accountability-kiro-mandate/)*
 
@@ -130,14 +130,14 @@ This page is the version of record. Subsequent versions will be dated and change
 
 **Version history:** v1.0 — July 2026 — initial definition published; Mata v. Avianca application in progress. v1.1 will add the completed worked example and its evidence-state determination.
 
-**Cite as:** Kamaria, A., "Evidence-Based Responsibility Reconstruction for AI-Mediated Conduct: A Definition," Lozen Advisory, v1.0, July 2026 lozenadvisory.com/blog/evidence-based-responsibility-reconstruction
+**Cite as:** Kamaria, A., "Evidence-Based Responsibility Reconstruction for AI-Mediated Conduct: A Definition," Lozen Advisory, v1.0, July 2026 [lozenadvisory.com/blog/evidence-based-responsibility-reconstruction](https://www.lozenadvisory.com/blog/evidence-based-responsibility-reconstruction/)
 
 ## Sources
 
 - Proposed Federal Rule of Evidence 707, Preliminary Draft of Proposed Amendments (Aug. 2025), Advisory Committee on Evidence Rules, U.S. Judicial Conference (published for public comment Aug. 15, 2025 – Feb. 16, 2026).  
 - Advisory Committee on Evidence Rules, Hearing on Proposed Amendments to Rule 609 and New Rule 707: Hearing Schedule & Testimony Packet (Jan. 15, 2026), uscourts.gov/sites/default/files/document/jan-15-hearing-schedule-and-testimony-packet-final.pdf.  
 - Advisory Committee on Evidence Rules, Agenda Book (May 2026), uscourts.gov/sites/default/files/document/2026-05evidencerulesagendabook.pdf.  
-- Report of the Advisory Committee on Evidence Rules to the Standing Committee on Rules of Practice and Procedure (May 17, 2026), with draft minutes of the Committee's May 7, 2026 meeting; considered by the Standing Committee June 3–4, 2026 uscourts.gov/sites/default/files/document/advisorycommitteeonevidencerulesmay2026.pdf.  
+- Report of the Advisory Committee on Evidence Rules to the Standing Committee on Rules of Practice and Procedure (May 17, 2026), with draft minutes of the Committee's May 7, 2026 meeting; considered by the Standing Committee June 3–4, 2026 [https://www.uscourts.gov/sites/default/files/document/advisorycommitteeonevidencerulesmay2026.pdf](https://www.uscourts.gov/sites/default/files/document/advisorycommitteeonevidencerulesmay2026.pdf).
 - *Matter of Weber*, 220 N.Y.S.3d 620 (N.Y. Sur. 2024).
 
 ## Working With Lozen Advisory
