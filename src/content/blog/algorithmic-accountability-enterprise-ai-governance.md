@@ -1,18 +1,26 @@
 ---
 title: Algorithmic Accountability Needs a Room of Its Own
-metaDescription: "Enterprise AI accountability spans law, business, and tech. Explore the eight forms of AI drift and why no single discipline can own governance alone."
 seoTitle: "Algorithmic Accountability: Governing Enterprise AI | Lozen Advisory"
 slug: algorithmic-accountability-enterprise-ai-governance
-description: Enterprise AI accountability spans law, business, and tech. Explore the eight forms of AI drift and why no single discipline can own governance alone.
+description: Enterprise AI accountability spans law, business, and tech. Explore
+  the eight forms of AI drift and why no single discipline can own governance
+  alone.
+metaDescription: Enterprise AI accountability spans law, business, and tech.
+  Explore the eight forms of AI drift and why no single discipline can own
+  governance alone.
 category: AI Governance & Workforce Risk
 image: /blog/algorithmic-accountability1.avif
 imageAlt: image of algorithmic-accountability-enterprise-ai-governance
 pubDate: 2026-07-18
 dateModified: 2026-07-18
-featured: true
+lead: Most enterprise AI governance treats large language models like
+  traditional software. But while software is machinery, an LLM environment is
+  weather. Its behavior emerges from a constantly shifting mix of data,
+  permissions, workflows, and updates—meaning a system can materially change
+  while the product name stays exactly the same. Managing this new reality
+  requires an entirely new approach to algorithmic accountability.
+featured: false
 draft: false
-lead: Most enterprise AI governance treats large language models like traditional software. But while software is machinery, an LLM environment is weather. Its behavior emerges from a constantly shifting mix of data, permissions, workflows, and updates—meaning a system can materially change while the product name stays exactly the same. Managing this new reality requires an entirely new approach to algorithmic accountability.
-relatedSlugs: []
 ---
 Enterprise AI accountability does not belong exclusively to law, business, technology, HR, audit, or risk. It exists in the space between them.
 
