@@ -46,18 +46,11 @@ The committee's own deliberations draw a boundary that matters even more. Rule 7
 
 The question of how responsibility for an AI system's actions is reconstructed from the surviving record has now been examined by the formal rule-making process twice over: once implicitly, when the rule's scope was drawn around it, and once practically, when even the narrower witness-side rule proved too contested to adopt. 
 
-## The Map: Where Reconstruction Sits
+## Where Responsibility Reconstruction Fits
 
 Evidence-Based Responsibility Reconstruction draws on records produced by AI governance, assurance, incident response, regulation, litigation, and investigation. Each of those fields contributes part of the evidentiary record, but each is organized around a different primary purpose.
 
 Prospective governance frameworks define the controls, roles, documentation, and oversight that organizations should establish before consequential conduct occurs. Governance attestation and assurance products document whether an authority structure, approval process, or control environment was in place. Incident databases and risk repositories identify patterns across reported harms. Regulatory investigations, litigation records, digital forensics, and root-cause analyses examine particular events from their own legal, technical, or supervisory perspectives.
-
-
-|  | About systems | About specific conduct and responsibility |
-| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Before the incident** | Prescriptive oversight frameworks: EU AI Act Article 14, NIST AI RMF, ISO 42001 controls, oversight accords and their human-in-the-loop annexes | Governance attestation: AI evidence passports and assurance certificates that seal a system's authority structure and approvals for buyers and auditors |
-| **After the incident** | Incident monitoring and classification: the OECD AI Incidents and Hazards Monitor, the AI Incident Database, harm taxonomies and risk repositories | **Evidence-Based Responsibility Reconstruction** |
-
 
 Responsibility reconstruction uses those materials but asks a narrower question:
 
