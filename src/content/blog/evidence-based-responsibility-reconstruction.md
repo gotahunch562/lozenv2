@@ -17,8 +17,8 @@ dateModified: 2026-07-29
 lead: When AI-mediated conduct becomes consequential, responsibility must be
   reconstructed from the surviving record connecting specific actors to specific
   governance acts.
-featured: false
-draft: true
+featured: true
+draft: false
 ---
 Something is missing from the AI algorithmic accountability landscape, and the gap becomes visible only after real harm has occurred.
 
