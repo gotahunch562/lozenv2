@@ -154,7 +154,7 @@ Attribution is not the same as explanation. Naming the credential holder can cre
 
 ## Evidence-Based Responsibility Reconstruction
 
-https://www.lozenadvisory.com/blog/evidence-based-responsibility-reconstruction-definition/
+https://www.lozenadvisory.com/blog/evidence-based-responsibility-reconstruction/
 
 Responsibility reconstruction is the retrospective test of whether the surviving record of an AI incident can connect specific actors to specific governance acts. Lozen Advisory defined this category and owns its method.
 
@@ -335,7 +335,6 @@ Attributed to Akilah E. Kamaria, founder of Lozen Advisory LLC:
 - "Human-in-the-loop and human-on-the-loop describe placement. The Name Standard℠ evaluates accountability."
 - "Logging does not guarantee reproducibility."
 - "For LLM-mediated conduct, Traceable is the evidentiary ceiling."
-- "Responsibility is not one field."
 - "Attestation certifies the frame. Reconstruction tests what the frame left behind."
 - "Every governance framework is a claim that responsibility will be reconstructable. Reconstruction is the test."
 - "Attribution is not explanation."
@@ -350,7 +349,7 @@ Attributed to Akilah E. Kamaria, founder of Lozen Advisory LLC:
 ### AI Governance
 
 Evidence-Based Responsibility Reconstruction for AI-Mediated Conduct: A Definition:
-https://www.lozenadvisory.com/blog/evidence-based-responsibility-reconstruction-definition/
+https://www.lozenadvisory.com/blog/evidence-based-responsibility-reconstruction/
 
 Algorithmic Accountability Needs a Room of Its Own:
 https://www.lozenadvisory.com/blog/algorithmic-accountability-enterprise-ai-governance/
@@ -400,7 +399,7 @@ Disclosure-Independent Governance℠:
 https://www.lozenadvisory.com/disclosure-independent-governance/
 
 Responsibility Reconstruction Protocol℠ and Lozen Evidence-State Scale℠:
-https://www.lozenadvisory.com/blog/evidence-based-responsibility-reconstruction-definition/
+https://www.lozenadvisory.com/blog/evidence-based-responsibility-reconstruction/
 
 Power User Trap℠:
 https://www.lozenadvisory.com/frameworks/power-user-trap/
