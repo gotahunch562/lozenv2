@@ -10,7 +10,7 @@ metaDescription: When an AI system causes harm, who is responsible? A method for
   reconstructing authority, oversight, and intervention from the evidence that
   survives.
 category: AI Governance & Workforce Risk
-image: /blog/blog-placeholder-blue.svg
+image: /blog/Algorithmic accountability-evidence-reconstruction.avif
 imageAlt: Evidence-based responsibility reconstruction for AI-mediated conduct
 pubDate: 2026-07-29
 dateModified: 2026-07-29
