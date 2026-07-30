@@ -20,9 +20,9 @@ lead: When AI-mediated conduct becomes consequential, responsibility must be
 featured: false
 draft: true
 ---
-Something is missing from the AI algorithmic accountability landscape, and the gap becomes visible only after real conduct has occurred.
+Something is missing from the AI algorithmic accountability landscape, and the gap becomes visible only after real harm has occurred.
 
-Incident databases classify what went wrong. Governance frameworks prescribe the controls that should have existed. Attestation products certify, in advance, that a governance structure is in place. All of that work is necessary. None of it answers the question that a board, a regulator, a court, an insurer, or a journalist actually faces after an AI system has done something consequential: *[who was responsible — and can the surviving record prove it?](/blog/algorithmic-accountability-kiro-mandate/)*
+Incident databases classify what went wrong. Governance frameworks prescribe the controls that should have existed. Attestation products certify, in advance, that a governance structure is in place. All of that work is necessary. None of it provides answers that a board, a CFO, a court, or an insurer need to know after an AI system has done something adverse: *[who was responsible — and can the surviving record prove it?](/blog/algorithmic-accountability-kiro-mandate/)*
 
 Answering that question requires a discipline, and the discipline begins with a definition:
 
