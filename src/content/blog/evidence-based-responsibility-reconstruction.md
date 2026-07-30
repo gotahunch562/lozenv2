@@ -26,7 +26,7 @@ Incident databases classify what went wrong. Governance frameworks prescribe the
 
 Answering that question requires a discipline, and the discipline begins with a definition:
 
-> **Responsibility reconstruction is the retrospective test of whether the surviving record of an AI incident can connect specific actors to specific governance acts.**
+> Responsibility Reconstruction for AI-Mediated Conduct is the disciplined process of determining what an AI system did, what authority it was given, which human and institutional actors controlled the conditions under which it acted, what evidence remains, and where responsibility can be established, divided, or no longer recovered.
 
 Responsibility reconstruction sits within the broader discipline of algorithmic accountability. [Algorithmic accountability](/blog/algorithmic-accountability-enterprise-ai-governance/) is the institutional obligation to answer for AI-mediated conduct. Responsibility reconstruction is the evidentiary method used to determine which actors can be connected to the governance acts surrounding that conduct. The method does not replace accountability; it establishes the factual foundation accountability requires.
 
