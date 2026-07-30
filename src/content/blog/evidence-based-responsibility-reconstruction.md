@@ -48,20 +48,26 @@ The question of how responsibility for an AI system's actions is reconstructed f
 
 ## The Map: Where Reconstruction Sits
 
-The existing accountability landscape organizes cleanly along two axes. The first is temporal: does the work happen **before** or **after** the incident? The second is scope: is the work about **systems in general** or about **specific conduct and the responsibility for it**?
+Evidence-Based Responsibility Reconstruction draws on records produced by AI governance, assurance, incident response, regulation, litigation, and investigation. Each of those fields contributes part of the evidentiary record, but each is organized around a different primary purpose.
+
+Prospective governance frameworks define the controls, roles, documentation, and oversight that organizations should establish before consequential conduct occurs. Governance attestation and assurance products document whether an authority structure, approval process, or control environment was in place. Incident databases and risk repositories identify patterns across reported harms. Regulatory investigations, litigation records, digital forensics, and root-cause analyses examine particular events from their own legal, technical, or supervisory perspectives.
 
 
-|  | About systems in general | About specific conduct and responsibility |
+|  | About systems | About specific conduct and responsibility |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Before the incident** | Prescriptive oversight frameworks: EU AI Act Article 14, NIST AI RMF, ISO 42001 controls, oversight accords and their human-in-the-loop annexes | Governance attestation: AI evidence passports and assurance certificates that seal a system's authority structure and approvals for buyers and auditors |
 | **After the incident** | Incident monitoring and classification: the OECD AI Incidents and Hazards Monitor, the AI Incident Database, harm taxonomies and risk repositories | **Evidence-Based Responsibility Reconstruction** |
 
 
-Each occupied cell does real work, and this map is not a criticism of any of them. Prescriptive frameworks define what oversight should exist. Attestation products certify that a governance frame was in place — who held authority, who approved deployment — sealed and dated in advance. Incident monitors tell us, at population level, what is going wrong and how often.
+Responsibility reconstruction uses those materials but asks a narrower question:
 
-**But look at what the three occupied cells share.** The prospective cells produce *hypotheses*: predictions that if these controls exist and these records are kept, responsibility will be answerable later. The occupied retrospective cell produces *classifications*: this incident was a privacy harm, that one was a physical harm. Nobody tests the hypotheses. Nobody takes a specific incident, gathers the record that actually survived, and determines whether that record can support allocating responsibility to the actors who held authority.
+> Can the evidence that actually survived connect specific actors to the governance acts surrounding the conduct?
 
-That fourth cell was empty. Responsibility reconstruction fills it — and in doing so, it becomes the audit function for everything in the other three. An oversight annex, a logging mandate, and an evidence passport are all claims that responsibility will be reconstructable. Reconstruction is the test of whether it is.
+Answering that question requires more than confirming that controls were prescribed, an agent was authenticated, an incident occurred, or a technical cause was identified. It requires reconstructing what the system did, what authority had been delegated, which human and institutional actors controlled the relevant conditions, and how strong the evidentiary connection is between each actor and each governance act.
+
+An oversight framework, logging mandate, or evidence passport may be designed to make future accountability possible. Responsibility reconstruction tests whether the resulting record is actually sufficient to support it.
+
+Responsibility reconstruction is therefore a distinct evidentiary method applied across records produced by governance, assurance, incident response, regulation, litigation, and investigation.
 
 ## What Qualifies as Responsibility Reconstruction
 
