@@ -2,15 +2,22 @@
 title: Whose Reputation Is It Anyway?
 seoTitle: The Name Standard℠ for AI Governance | Lozen Advisory
 slug: the-name-standard-ai-governance
-description: The Name Standard℠ evaluates who authorized an AI system to act, under what conditions, and who remains accountable when it selects an unauthorized path.
-metaDescription: The Name Standard℠ evaluates who authorized an AI system to act, under what conditions, and who remains accountable when it selects an unauthorized path.
+description: The Name Standard℠ evaluates who authorized an AI system to act,
+  under what conditions, and who remains accountable when it selects an
+  unauthorized path.
+metaDescription: The Name Standard℠ evaluates who authorized an AI system to
+  act, under what conditions, and who remains accountable when it selects an
+  unauthorized path.
 category: AI Governance & Workforce Risk
 image: /blog/the-name-standard-ai-governance-lozen-advisory-llc.avif
 imageAlt: The Name Standard℠ signature is an example of AI governance
 pubDate: 2026-06-12
 dateModified: 2026-07-29
-lead: The Name Standard℠ is not limited to whose name appears on AI-assisted output. It asks who authorized an AI system to act within a defined domain, under specific capabilities, permissions, objectives, and limits—and who remains accountable when the system selects an unauthorized path.
-featured: true
+lead: The Name Standard℠ is not limited to whose name appears on AI-assisted
+  output. It asks who authorized an AI system to act within a defined domain,
+  under specific capabilities, permissions, objectives, and limits—and who
+  remains accountable when the system selects an unauthorized path.
+featured: false
 draft: false
 ---
 When AI-assisted work product leaves an organization, it does not leave under the name of the large language model (LLM).
