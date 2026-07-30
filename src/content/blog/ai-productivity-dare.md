@@ -1,18 +1,23 @@
 ---
 title: The AI Productivity Hype
-metaDescription: "When executives cut human capacity to prove AI ROI, they are running an experiment, not a AI governance strategy. Lozen Advisory examines this rush to fire and the consequences"
-seoTitle: "Why Reducing Headcount Is Not an AI Governance Strategy"
+seoTitle: Why Reducing Headcount Is Not an AI Governance Strategy
 slug: ai-productivity-dare
-description: When executives cut human capacity to prove AI ROI, they are running an experiment, not a AI governance strategy. Lozen Advisory examines this rush to fire and the consequences
+description: When executives cut human capacity to prove AI ROI, they are
+  running an experiment, not a AI governance strategy. Lozen Advisory examines
+  this rush to fire and the consequences
+metaDescription: When executives cut human capacity to prove AI ROI, they are
+  running an experiment, not a AI governance strategy. Lozen Advisory examines
+  this rush to fire and the consequences
 category: AI Governance & Workforce Risk
 image: /blog/unwell-1.avif
 imageAlt: woman stress of reducing headcount
 pubDate: 2026-06-05
 dateModified: 2026-07-21
-featured: true
+lead: Language models simulate coherence, not truth. When executives eliminate
+  human capacity to prove AI ROI, they don't eliminate the work, they just force
+  it into a structural blind spot.
+featured: false
 draft: false
-lead: Language models simulate coherence, not truth. When executives eliminate human capacity to prove AI ROI, they don't eliminate the work, they just force it into a structural blind spot.
-relatedSlugs: []
 ---
 New workforce data reinforces the risk identified in this article. Adaptavist’s 2,500-person survey across the UK, US, Canada, Germany, and Spain found that one-third of knowledge workers are considering moving to a different industry because of AI concerns, while more than one-third said AI has made them think about retiring earlier. Separately, Jeff Bezos argued at VivaTech 2026 that AI may create labor scarcity rather than eliminate the need for human labor.
 
