@@ -1,11 +1,10 @@
 ---
-title: "Anthropic's Claude Incidents: A Configuration Error Is Not an AI
-  Governance Finding"
-seoTitle: "Anthropic Claude Evals: Configuration Error vs Governance"
+title: "Anthropic’s Claude Incidents: Naming the Error Is Not Owning Responsibility"
+seoTitle: "Anthropic Claude Evals: Configuration Error vs Governance Finding"
 slug: algorithmic-accountability-anthropic-reconstruction
-description: Anthropic's Claude cybersecurity evaluations breached real systems
+description: "Anthropic's Claude cybersecurity evaluations breached real systems
   due to a configuration error. Applying responsibility reconstruction reveals
-  why technical failure is not a governance finding.
+  why technical failure is not a "
 metaDescription: Applying responsibility reconstruction to Anthropic's Claude
   evals shows why a technical configuration error is not a completed governance
   finding.
