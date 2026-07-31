@@ -22,7 +22,7 @@ draft: true
 ---
 Anthropic's Claude models gained unauthorized access to the systems of three outside organizations during cybersecurity evaluations that were supposed to be isolated from the internet.
 
-The incidents provide a direct application of [Evidence-Based Responsibility Reconstruction for AI-Mediated Conduct](https://chatgpt.com/blog/evidence-based-responsibility-reconstruction/): the technical cause has been identified, but the surviving public record does not establish who was responsible for the governance acts that produced the failure.
+The incidents provide a direct application of [Evidence-Based Responsibility Reconstruction for AI-Mediated Conduct](https://chatgpt.com/blog/evidence-based-responsibility-reconstruction/): the technical cause has been identified, but the surviving public record does not establish who was responsible for the acts that produced the failure.
 
 Anthropic described the incidents as “closer to a harness and operational failure than a model alignment failure.” A misunderstanding with an evaluation partner had left an open path to the internet. The models had been told they were operating inside simulations without internet access, so they initially treated the real systems they encountered as part of their assigned exercises.
 
@@ -73,9 +73,9 @@ The public record does not answer those questions. “Misconfiguration,” “mi
 - **The evaluation environment is not an actor.**
 - **The model is not the institutional decision-maker.**
 
-That distinction is the purpose of [Evidence-Based Responsibility Reconstruction for AI-Mediated Conduct](/blog/evidence-based-responsibility-reconstruction/). Responsibility reconstruction does not ask one party to absorb every consequence. It tests whether the surviving record connects specific actors to specific governance acts.
+That distinction is the purpose of [Evidence-Based Responsibility Reconstruction for AI-Mediated Conduct](/blog/evidence-based-responsibility-reconstruction/). Responsibility reconstruction does not ask one party to absorb every consequence. It tests whether the surviving record connects specific actors to specific acts.
 
-## Anthropic Cannot Blame an Unprepared Client
+Anthropic Cannot Blame an Unprepared Client
 
 The standard explanation for an AI failure is that the adopting organization was not ready. The client lacked sufficient controls, training, technical maturity, workflow design, or human oversight.
 
