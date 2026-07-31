@@ -10,7 +10,7 @@ metaDescription: Applying responsibility reconstruction to Anthropic's Claude
   evals shows why a technical configuration error is not a completed governance
   finding.
 category: AI Governance & Workforce Risk
-image: /blog/anthropic-claude-configuration-error.avif
+image: /blog/anthropic-reconstruction-hack.avif
 imageAlt: Agentic Anthropic Claude AI cybersecurity evaluation crossing an
   unenforced containment boundary
 pubDate: 2026-07-31
