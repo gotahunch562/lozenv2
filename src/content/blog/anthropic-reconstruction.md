@@ -124,7 +124,7 @@ Anthropic did not discover the incidents when they occurred. It began its retros
 
 The earliest Claude incidents dated to April. Anthropic began reviewing its evaluation transcripts on July 23, stopped its cyber evaluations that day, and identified the three incidents the following day. It contacted the affected organizations on July 27. Two organizations Anthropic reached had not previously detected the activity.
 
-The logs preserved enough information to support later discovery. They did not produce contemporaneous detection.
+The logs preserved enough information to support later discovery. The traces supported retrospective discovery, but they did not function as a contemporaneous control.
 
 That is a monitoring failure.
 
