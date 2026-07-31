@@ -18,7 +18,7 @@ lead: A configuration error can explain how an agentic AI system crossed a
   technical boundary. It cannot establish who was responsible for creating,
   validating, monitoring, and relying upon the boundary that failed.
 featured: false
-draft: true
+draft: false
 ---
 Anthropic's Claude models gained unauthorized access to the systems of three outside organizations during cybersecurity evaluations that were supposed to be isolated from the internet.
 
