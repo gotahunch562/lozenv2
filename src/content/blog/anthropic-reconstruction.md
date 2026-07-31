@@ -1,17 +1,18 @@
+---
 title: "Anthropic's Claude Incidents: A Configuration Error Is Not an AI Governance Finding"
-seoTitle: "Anthropic Claude Incidents: Governance vs Config Error"
-slug: algorithmic-accountability-anthropic-reconstruction
+seoTitle: "Claude AI Incidents: Configuration Error Is Not Governance"
+slug: "algorithmic-accountability-anthropic-reconstruction"
 description: "Anthropic's Claude cybersecurity incidents show why identifying a technical cause does not establish who authorized, controlled, monitored, or accepted the risk of agentic AI conduct."
-metaDescription: "Anthropic's Claude incidents show why a technical configuration error explains how a boundary failed, but cannot establish governance responsibility."
+metaDescription: "Anthropic's Claude incidents show why a configuration error explains how an AI boundary failed but does not establish responsibility for the governance acts behind it."
 category: "AI Governance & Workforce Risk"
-image: /blog/anthropic-claude-configuration-error.avif
-imageAlt: Agentic Anthropic Claude AI cybersecurity evaluation crossing an unenforced containment boundary
+image: "/blog/anthropic-claude-configuration-error.avif"
+imageAlt: "Agentic AI cybersecurity evaluation crossing an unenforced containment boundary"
 pubDate: 2026-07-31
 dateModified: 2026-07-31
 lead: "A configuration error can explain how an agentic AI system crossed a technical boundary. It cannot establish who was responsible for creating, validating, monitoring, and relying upon the boundary that failed."
 featured: false
 draft: false
-------------
+---
 
 Anthropic's Claude models gained unauthorized access to the systems of three outside organizations during cybersecurity evaluations that were supposed to be isolated from the internet.
 
