@@ -19,13 +19,13 @@ lead: Executives facing new board AI oversight requirements need a practical
 featured: false
 draft: true
 ---
-New board oversight requirements can create immediate pressure to demonstrate control over AI use. Executives do not need to solve every governance problem at once. They need to establish who owns consequential decisions, what review actually occurred, and what the organization can prove.
+Executive AI governance is the assignment of decision ownership, oversight, intervention authority, evidence retention, and escalation around consequential AI use. When a board institutes new oversight requirements, those are the controls executives must establish first.
 
 If your board just instituted new AI oversight requirements, the instinct is to reach for the standard playbook: draft a set of AI principles, stand up a governance committee, roll out training. That sequence takes months. Your board wants an answer now, and "we're building a program" is not an answer — it's a delay dressed up as progress.
 
-The faster path is not a smaller version of the same program. It is a different sequence entirely: establish decision ownership, review authority, evidence retention, and escalation for the AI use already happening in your organization, before you attempt to inventory or govern everything else. You can move fast on accountability. You cannot move fast on maturity models.
+**The faster path is not a smaller version of the same program. It is a different sequence entirely:** establish decision ownership, review authority, evidence retention, and escalation for the AI use already happening in your organization, before you attempt to inventory or govern everything else. You can move fast on accountability. You cannot move fast on maturity models.
 
-Here is the operational sequence, not the principles-first one.
+Here is the operational sequence.
 
 ## 1. Name the Accountable Decision-Maker
 
@@ -53,9 +53,11 @@ A policy is not evidence that the policy was followed. A dashboard showing AI ad
 
 ## 5. Reconstruct Responsibility Where the Record Is Incomplete
 
-Some of what you find in step 3 will be incomplete — a workflow with no named reviewer, or a decision with review evidence that doesn't hold up. That's expected, not disqualifying. What matters is whether you can reconstruct what should have happened.
+Some of what you find in step 3 will be incomplete — a workflow with no identifiable reviewer, an intervention right that existed only on paper, or review evidence that does not support the governance claim. That is not unusual. The question is whether the surviving record can establish what happened and connect the relevant actors to the governance acts surrounding it.
 
-A [responsibility reconstruction protocol works backward from the gap](/blog/evidence-based-responsibility-reconstruction/): who authorized the AI use in the first place, who was supposed to review the output, who had the standing right to intervene, who effectively accepted the residual risk by letting the process continue, and what evidence survives to support any of those answers. Where the protocol turns up nothing, that's not a failure of the exercise — it's the exact information your board needs to prioritize remediation.
+[Evidence-Based Responsibility Reconstruction](/blog/evidence-based-responsibility-reconstruction/) works backward from the gap: who authorized the AI use in the first place, who was supposed to review the output, who had the standing right to intervene, who effectively accepted the residual risk by letting the process continue, and what evidence survives to support any of those answers. Where the protocol turns up nothing, that's not a failure of the exercise — it's the exact information your board needs to prioritize remediation.
+
+Where the record cannot connect an actor to a governance act, the answer is not “shared responsibility” or “the organization was not ready.” The act remains unresolved. That unresolved connection is the finding the board needs in order to prioritize remediation.
 
 ## 6. Give the Board a 30-Day Evidence Package
 
@@ -66,6 +68,7 @@ The deliverable your board actually wants isn't a governance philosophy. It's a 
 - A plain list of the accountability gaps you found, not softened
 - The escalation rules that should apply going forward
 - A prioritized remediation list, ranked by consequence, not by ease
+- Evidence showing whether the controls governing each selected workflow were actually validated
 
 This is achievable in 30 days because none of it requires building new infrastructure first. It requires applying a sequence to what already exists.
 
