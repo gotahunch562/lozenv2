@@ -1,15 +1,15 @@
 ---
-title: "AI Governance Guidelines for Executives Who Need to Move Fast"
+title: AI Governance Guidelines for Executives Who Need to Move Fast
 seoTitle: "AI Governance Guidelines for Executives: A 30-Day Plan"
 slug: ai-governance-guidelines-for-executives
 description: A practical executive guide to AI governance for leaders facing new
-  board oversight requirements, with a 30-day sequence for establishing
-  decision ownership, review authority, evidence, and escalation.
+  board oversight requirements, with a 30-day sequence for establishing decision
+  ownership, review authority, evidence, and escalation.
 metaDescription: New board AI oversight requirements? Use this 30-day executive
   AI governance plan to establish ownership, review authority, evidence, and
   escalation.
 category: AI Governance & Workforce Risk
-image: /blog/ai-governance-guidelines-executives.avif
+image: /blog/womenlawyerconference.avif
 imageAlt: Executive AI governance review prepared for board oversight
 pubDate: 2026-07-31
 dateModified: 2026-07-31
@@ -19,9 +19,6 @@ lead: Executives facing new board AI oversight requirements need a practical
 featured: false
 draft: true
 ---
---------
-# AI Governance Guidelines for Executives Who Need to Move Fast
-
 New board oversight requirements can create immediate pressure to demonstrate control over AI use. Executives do not need to solve every governance problem at once. They need to establish who owns consequential decisions, what review actually occurred, and what the organization can prove.
 
 If your board just instituted new AI oversight requirements, the instinct is to reach for the standard playbook: draft a set of AI principles, stand up a governance committee, roll out training. That sequence takes months. Your board wants an answer now, and "we're building a program" is not an answer — it's a delay dressed up as progress.
