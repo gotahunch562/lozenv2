@@ -154,4 +154,4 @@ This page is the version of record. Subsequent versions will be dated and change
 
 ## Working With Lozen Advisory
 
-Lozen Advisory [advises boards, CFOs, and general counsel on AI accountability](https://chatgpt.com/services/board-ai-algorithmic-accountability/) — including responsibility-reconstruction readiness: whether, if your AI conduct became the incident, your surviving record could connect your actors to their governance acts.
+Lozen Advisory [advises boards, CFOs, and general counsel on AI accountability](/services/board-ai-algorithmic-accountability/) — including responsibility-reconstruction readiness: whether, if your AI conduct became the incident, your surviving record could connect your actors to their governance acts.
