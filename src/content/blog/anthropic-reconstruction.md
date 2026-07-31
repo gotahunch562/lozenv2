@@ -26,7 +26,14 @@ The incidents provide a direct application of [Evidence-Based Responsibility Rec
 
 Anthropic described the incidents as “closer to a harness and operational failure than a model alignment failure.” A misunderstanding with an evaluation partner had left an open path to the internet. The models had been told they were operating inside simulations without internet access, so they initially treated the real systems they encountered as part of their assigned exercises.
 
-That account explains the mechanism of failure. However, **responsibility reconstruction asks what the explanation leaves unresolved**: who authorized the evaluations, who controlled containment, who verified the environment, who monitored execution, who could intervene, and who accepted the residual risk.
+That account explains the mechanism of failure. However, **responsibility reconstruction asks what the explanation leaves unresolved**: 
+
+- Who authorized the evaluations?
+- Who controlled containment?
+- Who verified the environment?
+- Who monitored execution?
+- Who could intervene?
+- Who determined that the controls were sufficient for the evaluations to proceed?  
 
 A configuration error is a technical condition. It is not an actor, an authorization, a control owner, or an accountable decision.
 
