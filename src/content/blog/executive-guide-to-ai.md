@@ -1,14 +1,24 @@
------
+---
 title: "AI Governance Guidelines for Executives Who Need to Move Fast"
 seoTitle: "AI Governance Guidelines for Executives: A 30-Day Plan"
 slug: ai-governance-guidelines-for-executives
-description: "A practical executive guide to AI governance for leaders facing new board oversight requirements, with a 30-day sequence for establishing decision ownership, review authority, evidence, and escalation."
-metaDescription: "New board AI oversight requirements? Use this 30-day executive AI governance plan to establish ownership, review authority, evidence, and escalation."
+description: A practical executive guide to AI governance for leaders facing new
+  board oversight requirements, with a 30-day sequence for establishing
+  decision ownership, review authority, evidence, and escalation.
+metaDescription: New board AI oversight requirements? Use this 30-day executive
+  AI governance plan to establish ownership, review authority, evidence, and
+  escalation.
 category: AI Governance & Workforce Risk
+image: /blog/ai-governance-guidelines-executives.avif
+imageAlt: Executive AI governance review prepared for board oversight
 pubDate: 2026-07-31
 dateModified: 2026-07-31
+lead: Executives facing new board AI oversight requirements need a practical
+  sequence for establishing decision ownership, review authority, evidence, and
+  escalation around consequential AI use.
 featured: false
 draft: true
+---
 --------
 # AI Governance Guidelines for Executives Who Need to Move Fast
 
