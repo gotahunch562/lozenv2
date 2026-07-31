@@ -88,7 +88,7 @@ The models were not independently roaming the internet in search of targets, [th
 
 The models then pursued the objective they had been given.
 
-The failure was not that an external organization used Claude incorrectly. The failure arose inside the institution developing, testing, controlling, and evaluating the models.
+> The failure was not that an external organization used Claude incorrectly. The failure arose inside the institution developing, testing, controlling, and evaluating the models.
 
 ## What the Surviving Record Connects
 
@@ -182,7 +182,7 @@ The models crossed a boundary that had been stated but not enforced. The institu
 
 Safety researchers and cybersecurity teams are examining how agentic systems escape containment. Responsibility reconstruction asks the question that follows: whether the surviving record can prove who was responsible for creating, validating, monitoring, and relying upon the containment that failed.
 
-Until those governance acts are connected to responsible actors, the technical cause is not the governance finding.
+[Until those governance acts are connected to responsible actors](/blog/algorithmic-accountability-kiro-mandate/), the technical cause is not the governance finding.
 
 ## Sources
 
