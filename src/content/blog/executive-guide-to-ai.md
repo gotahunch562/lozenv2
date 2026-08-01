@@ -78,4 +78,6 @@ The standard advice — principles, committee, training — isn't wrong, exactly
 
 ---
 
-Executives who need this 30-day sequence applied to their organization can review Lozen Advisory’s [Board AI Governance Advisory](/services/board-ai-governance-advisory/). The engagement applies The Name Standard℠, Committee Ownership Map, Disclosure-Independent Governance℠, and evidence-based responsibility reconstruction to consequential AI use already operating inside the organization.
+## How We Can Help.
+
+Executives who need this 30-day sequence applied to their organization can leverage Lozen Advisory’s **executive AI advisory services** through our [Board AI Governance Advisory](/services/board-ai-governance-advisory/). 
