@@ -33,7 +33,7 @@ That account explains the mechanism of failure. However, **responsibility recons
 - Who verified the environment?
 - Who monitored execution?
 - Who could intervene?
-- Who determined that the controls were sufficient for the evaluations to proceed?  
+- Who determined that the controls were sufficient for the evaluations to proceed?
 
 A configuration error is a technical condition. It is not an actor, an authorization, a control owner, or an accountable decision.
 
@@ -160,7 +160,7 @@ That is an institutional statement of ownership. It is not a completed responsib
 
 A blameless postmortem and responsibility reconstruction serve different purposes. A postmortem identifies weaknesses to correct. Responsibility reconstruction determines whether the surviving evidence connects consequential governance acts to the actors who performed or controlled them.
 
-Publicly accepting institutional responsibility does not reconstruct the internal decision chain.
+Publicly accepting institutional responsibility does not reconstruct the internal decision chain. Anthropic cannot be the only institution authorized to define what its failure means.
 
 ## The Evidence-State Determination
 
