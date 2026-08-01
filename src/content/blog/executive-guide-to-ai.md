@@ -70,7 +70,7 @@ The deliverable your board actually wants isn't a governance philosophy. It's a 
 - A prioritized remediation list, ranked by consequence, not by ease
 - Evidence showing whether the controls governing each selected workflow were actually validated
 
-This is achievable in 30 days because none of it requires building new infrastructure first. It requires applying a sequence to what already exists.
+*Many leadership teams present these deliverables to leadership during an intensive **executive AI workshop** to align stakeholders before presenting to the board.* This is achievable in 30 days because none of it requires building new infrastructure first. It requires applying a sequence to what already exists.
 
 ## The Sequence, Not the Program
 
@@ -80,4 +80,4 @@ The standard advice — principles, committee, training — isn't wrong, exactly
 
 ## How We Can Help.
 
-Executives who need this 30-day sequence applied to their organization can leverage Lozen Advisory’s **executive AI advisory services** through our [Board AI Governance Advisory](/services/board-ai-governance-advisory/). 
+Executives who need this 30-day sequence applied to their organization can partner with Lozen Advisory. Our **executive AI advisory services** center on the [Board AI Governance Advisory](/services/board-ai-governance-advisory/) program—applying The Name Standard℠, Committee Ownership Map, Disclosure-Independent Governance℠, and evidence-based responsibility reconstruction directly to consequential AI use already operating inside your enterprise.
