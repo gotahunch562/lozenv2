@@ -74,7 +74,7 @@ This is achievable in 30 days because none of it requires building new infrastru
 
 ## The Sequence, Not the Program
 
-The standard advice — principles, committee, training — isn't wrong, exactly. It's just the wrong first move under board pressure. Principles describe intent. A committee describes structure. [Training describes awareness](https://www.executiveaiskills.com/). None of the three produces a record that would survive a director asking, "prove it." Under a new board mandate, that's the only question that actually matters in the first 30 days.
+The standard advice — principles, committee, training — isn't wrong, exactly. It's just the wrong first move under board pressure. Principles describe intent. A committee describes structure. Training describes awareness. None of the three produces a record that would survive a director asking, "prove it." Under a new board mandate, that's the only question that actually matters in the first 30 days.
 
 ---
 
