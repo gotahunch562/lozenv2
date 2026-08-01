@@ -21,7 +21,7 @@ draft: true
 ---
 Executive AI governance is the assignment of decision ownership, oversight, intervention authority, evidence retention, and escalation around consequential AI use. When a board institutes new oversight requirements, those are the controls executives must establish first.
 
-If your board just instituted new AI oversight requirements, the instinct is to reach for the standard playbook: draft a set of AI principles, stand up a governance committee, roll out training. That sequence takes months. Your board wants an answer now, and "we're building a program" is not an answer — it's a delay dressed up as progress.
+If your board just instituted new AI oversight requirements, the instinct is to reach for the standard playbook: draft a set of AI principles, stand up a governance committee, roll out training. That sequence takes months. Your board wants an answer now, and "we're building a program" is not an answer — it's a delay dressed up as progress. **As an executive guide to AI governance, this protocol takes a different approach entirely.**
 
 **The faster path is not a smaller version of the same program. It is a different sequence entirely:** establish decision ownership, review authority, evidence retention, and escalation for the AI use already happening in your organization, before you attempt to inventory or govern everything else. You can move fast on accountability. You cannot move fast on maturity models.
 
