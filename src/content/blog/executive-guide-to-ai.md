@@ -35,9 +35,9 @@ This is the fastest possible governance action available to you, because it does
 
 ## 2. Assign Committee Ownership
 
-Your [board will ask which committee owns AI risk.](https://www.lozenadvisory.com/frameworks/committee-ownership-map/) Most executives don't have a clean answer, because AI risk doesn't map neatly onto existing committee charters — a single AI-assisted process can touch audit, risk, technology, and compliance simultaneously, with no committee having been assigned all of it.
+Your board will ask which committee owns AI risk. Most executives don't have a clean answer, because AI risk doesn't map neatly onto existing committee charters — a single AI-assisted process can touch audit, risk, technology, and compliance simultaneously, with no committee having been assigned all of it.
 
-A Committee Ownership Map fixes this without waiting for a charter rewrite. It assigns each category of AI risk to a specific board or management committee, and names the owner explicitly rather than leaving it implied. The output your board actually wants isn't a description of what your committees generally do — it's a map showing which one owns AI-related decisions, by category, starting now.
+[A Committee Ownership Map fixes this](/frameworks/committee-ownership-map/) without waiting for a charter rewrite. It assigns each category of AI risk to a specific board or management committee, and names the owner explicitly rather than leaving it implied. The output your board actually wants isn't a description of what your committees generally do — it's a map showing which one owns AI-related decisions, by category, starting now.
 
 ## 3. Trace One Live Workflow
 
