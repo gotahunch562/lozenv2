@@ -31,7 +31,7 @@ Here is the operational sequence.
 
 Every AI-assisted decision your board will ask about has, or should have, a specific person attached to it — not a department, not "the team," a person. The [Name Standard℠ tests whether that person actually had the authority](/blog/ai-kill-switch-act-name-standard/), the information, and sufficient review capacity to approve, correct, or reject the AI-assisted output before it became consequential.
 
-This is the fastest possible governance action available to you, because it doesn't require new infrastructure. It requires asking, for each AI-assisted process already in production: who is the named individual who could have stopped this, and did they have what they needed to actually exercise that judgment. Where the honest answer is "no one, really," you've found your first gap — and you've found it in days, not quarters.
+This is the fastest possible governance action available to you, because it doesn't require new infrastructure.It requires asking, for each AI-assisted process already in production: who is the named individual responsible for the decision, what authority did that person have, and could they actually approve, correct, reject, or stop it?
 
 ## 2. Assign Committee Ownership
 
