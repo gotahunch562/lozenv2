@@ -10,7 +10,7 @@ metaDescription: New board AI oversight requirements? Use this 30-day executive
   escalation.
 category: AI Governance & Workforce Risk
 image: /blog/women-executives.avif
-imageAlt: Executive AI governance review prepared for board oversight
+imageAlt: Executive AI governance executives prepared for board oversight
 pubDate: 2026-07-31
 dateModified: 2026-07-31
 lead: Executives facing new board AI oversight requirements need a practical
