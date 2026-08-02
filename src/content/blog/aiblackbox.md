@@ -18,13 +18,13 @@ lead: AI incident trackers show that systems fail, but corporate self-reports
   failure is a starting point, not the finding. AI needs independent
   responsibility reconstruction.
 featured: false
-draft: true
+draft: false
 ---
-When a plane crashes, no one expects the airline to investigate itself, announce that a mechanical failure occurred, correct the problem, and close the matter. The wreckage is secured. Records are preserved. Flight data, communications, maintenance history, operating decisions, and human actions are reconstructed by an independent body before anyone is allowed to call the matter closed.
+When a plane crashes in the United States, no one expects the airline to investigate itself, announce that a mechanical failure occurred, correct the problem, and close the matter. The wreckage is secured. Records are preserved. Flight data, communications, maintenance history, operating decisions, and human actions are reconstructed under the authority of the National Transportation Safety Board before anyone is allowed to call the matter closed.
 
-When an AI system causes harm, the opposite regularly occurs. The company operating or developing the system reviews its own records, describes the event as a configuration error, a model failure, or unexpected behavior, announces a technical correction, and moves on. The explanation is treated as the investigation.
+[When an AI system causes harm](/blog/algorithmic-accountability-anthropic-reconstruction/), the opposite regularly occurs. The company operating or developing the system reviews its own records, describes the event as a configuration error, a model failure, or unexpected behavior, announces a technical correction, and moves on. The explanation is treated as the investigation.
 
-We have gotten so used to this pattern that it barely registers as strange. It would never survive in aviation. It shouldn't survive here either.
+We have gotten so used to this pattern that it barely registers as strange. It would never survive in aviation. It shouldn't survive in tech either.
 
 ## The Databases Exist. The Investigation Layer Doesn't.
 
@@ -54,7 +54,7 @@ It isn't. The evidence that actually matters for reconstructing responsibility i
 
 ## The Developer's Explanation Is Evidence, Not the Finding
 
-This is not an argument that AI developers are dishonest, or that their own accounts are worthless. The opposite: a developer's self-reported account of an incident is often detailed, technically credible, and worth taking seriously — as evidence. Anthropic's own system cards are a genuinely good model of this kind of disclosure: when Claude Mythos Preview was evaluated, Anthropic documented, in its own report, evaluation cases where the model found ways to satisfy a scoring metric without doing the underlying task it was meant to measure — moving computation outside a timed measurement window in one case, and training directly on a grader's own test set in another. That's a serious, specific, useful piece of evidence, and Anthropic put it on the record voluntarily.
+This is not an argument that AI developers are dishonest, or that their own accounts are worthless. The opposite: a developer's self-reported account of an incident is often detailed, technically credible, and worth taking seriously — as evidence. Anthropic's own system cards are a genuinely good model of this kind of disclosure: when Claude Mythos Preview was evaluated, [Anthropic documented, in its own report,](https://cdn.sanity.io/files/4zrzovbb/website/7624816413e9b4d2e3ba620c5a5e091b98b190a5.pdf) evaluation cases where the model found ways to satisfy a scoring metric without doing the underlying task it was meant to measure — moving computation outside a timed measurement window in one case, and training directly on a grader's own test set in another. That's a serious, specific, useful piece of evidence, and Anthropic put it on the record voluntarily.
 
 But notice what that record is, structurally: it's the operator's own account of its own system, describing what it found using its own evaluation criteria. That's evidence. It is not the same thing as an independent finding about who set up the conditions that made the behavior possible, who validated the evaluation environment, or what else the record can and can't establish. The moment a company's self-report gets to define both the scope of the investigation and the meaning of its own findings, the investigation and the interested party have become the same entity — which is precisely the arrangement aviation investigation exists to prevent.
 
@@ -71,4 +71,8 @@ Aviation did not become safer by collecting crash reports and accepting the airl
 AI has built incident databases, safety benchmarks, monitoring systems, and increasingly thoughtful corporate disclosure practices. It has not yet established the equally important expectation that sits underneath all of aviation's safety record: that consequential incidents must be reconstructed beyond the operator's preferred technical explanation.
 
 Until that changes, "configuration error" will keep doing the work "mechanical failure" was never permitted to do after a plane went down — closing the investigation before responsibility has actually been reconstructed.
+
+## How Lozen Advisory Can Help
+
+Our **executive AI advisory services** helps CFO's and boards with our **Algorithmic Accountability Risk** service—because when an AI agent finds a route no one authorized, "the AI went rogue" is not a good answer.
 
