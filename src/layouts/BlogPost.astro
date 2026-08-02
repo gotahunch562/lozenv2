@@ -37,6 +37,9 @@ const pageDescription = metaDescription ?? description;
 <BaseLayout
   title={pageTitle}
   description={pageDescription}
+  ogImage={image}
+  ogImageAlt={imageAlt ?? title}
+  ogType="article"
 >
   <section class="article-hero">
     <div class="grid-bg"></div>
