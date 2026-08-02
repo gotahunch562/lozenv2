@@ -36,8 +36,6 @@ But a database of incidents is not an accident-investigation system. It can show
 
 **AI incident databases tell us that planes are crashing. [Evidence-Based Responsibility Reconstruction is the accident investigation.](/blog/evidence-based-responsibility-reconstruction/)**
 
-That single sentence is the whole argument. Everything below is just unpacking it.
-
 ## "Mechanical Failure" Would Never End an Aviation Investigation
 
 Imagine an airline, after a crash, issuing a statement that said only: *a mechanical failure occurred, and we've corrected it.* No cockpit voice recorder review. No maintenance record audit. No reconstruction of who approved the aircraft for flight, who signed off on the last inspection, or what the crew knew and did in the final minutes. The statement would be treated as exactly what it is — a conclusion offered by an interested party, not a finding.
