@@ -28,13 +28,13 @@ const dataId = 'ai-legislation-data';
 
 <div
   id="ai-legislation-detail-backdrop"
-  style="display:none;position:fixed;inset:0;background:rgba(6,23,47,.45);z-index:90"
+  style="display:none;position:fixed;inset:0;background:rgba(6,23,47,.45);z-index:90;opacity:0;transition:opacity .22s ease"
 ></div>
 
 <aside
   id="ai-legislation-detail-panel"
   aria-hidden="true"
-  style="display:none;position:fixed;top:0;right:0;bottom:0;width:min(480px,100%);background:var(--paper-2);z-index:91;overflow-y:auto;box-shadow:-24px 0 60px -24px rgba(6,23,47,.35);padding:32px 28px"
+  style="display:none;position:fixed;top:0;right:0;bottom:0;width:min(480px,100%);background:var(--paper-2);z-index:91;overflow-y:auto;box-shadow:-24px 0 60px -24px rgba(6,23,47,.35);padding:32px 28px;transform:translateX(100%);transition:transform .25s ease"
 >
   <button
     type="button"
@@ -68,8 +68,11 @@ const dataId = 'ai-legislation-data';
 
   if (
     gridElement instanceof HTMLDivElement &&
-    dataElement instanceof HTMLScriptElement
+    dataElement instanceof HTMLScriptElement &&
+    !gridElement.dataset.gridInitialized
   ) {
+    gridElement.dataset.gridInitialized = 'true';
+
     const rowData = JSON.parse(dataElement.textContent || '[]');
 
     const lozenTheme = themeQuartz
@@ -247,15 +250,36 @@ const dataId = 'ai-legislation-data';
       backdrop.style.display = 'block';
       panel.style.display = 'block';
       panel.setAttribute('aria-hidden', 'false');
+
+      // Force a reflow so the browser registers the "display:block" starting
+      // point before we change opacity/transform — otherwise the browser
+      // collapses the two style changes into one frame and there's nothing
+      // to transition, which is what caused the instant on/off flash.
+      void backdrop.offsetHeight;
+
+      backdrop.style.opacity = '1';
+      panel.style.transform = 'translateX(0)';
     }
 
     function closeDetailPanel() {
       if (!(panel instanceof HTMLElement) || !(backdrop instanceof HTMLElement)) {
         return;
       }
-      backdrop.style.display = 'none';
-      panel.style.display = 'none';
+
+      backdrop.style.opacity = '0';
+      panel.style.transform = 'translateX(100%)';
       panel.setAttribute('aria-hidden', 'true');
+
+      const hideWhenDone = (event) => {
+        if (event.target !== panel || event.propertyName !== 'transform') {
+          return;
+        }
+        backdrop.style.display = 'none';
+        panel.style.display = 'none';
+        panel.removeEventListener('transitionend', hideWhenDone);
+      };
+
+      panel.addEventListener('transitionend', hideWhenDone);
     }
 
     closeBtn?.addEventListener('click', closeDetailPanel);
@@ -263,5 +287,14 @@ const dataId = 'ai-legislation-data';
     document.addEventListener('keydown', (event) => {
       if (event.key === 'Escape') closeDetailPanel();
     });
+
+    document.addEventListener(
+      'astro:before-swap',
+      () => {
+        gridApi.destroy();
+        delete gridElement.dataset.gridInitialized;
+      },
+      { once: true }
+    );
   }
 </script>
