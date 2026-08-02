@@ -160,6 +160,7 @@ const dataId = 'ai-legislation-data';
       theme: lozenTheme,
       rowData,
       columnDefs,
+      animateRows: false,
 
       defaultColDef: {
         sortable: true,
@@ -183,8 +184,12 @@ const dataId = 'ai-legislation-data';
     });
 
     if (searchInput instanceof HTMLInputElement) {
+      let quickFilterDebounce;
       searchInput.addEventListener('input', () => {
-        gridApi.setGridOption('quickFilterText', searchInput.value);
+        clearTimeout(quickFilterDebounce);
+        quickFilterDebounce = setTimeout(() => {
+          gridApi.setGridOption('quickFilterText', searchInput.value);
+        }, 150);
       });
     }
 
