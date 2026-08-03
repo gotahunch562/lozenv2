@@ -13,7 +13,7 @@ category: AI Governance & Workforce Risk
 image: /blog/Algorithmic accountability-evidence-reconstruction.avif
 imageAlt: Evidence-based responsibility reconstruction for AI-mediated conduct
 pubDate: 2026-07-29
-dateModified: 2026-07-29
+dateModified: 2026-08-02
 lead: When AI-mediated conduct becomes consequential, responsibility must be
   reconstructed from the surviving record connecting specific actors to specific
   governance acts.
@@ -28,9 +28,9 @@ Answering that question requires a discipline, and the discipline begins with a 
 
 > **Evidence-Based Responsibility Reconstruction for AI-Mediated Conduct** is the disciplined process of determining what an AI system did, what authority it was given, which human and institutional actors controlled the conditions under which it acted, what evidence remains, and where responsibility can be established, divided, or no longer recovered.
 
-Responsibility reconstruction sits within the broader discipline of algorithmic accountability. [Algorithmic accountability](/blog/algorithmic-accountability-enterprise-ai-governance/) is the institutional obligation to answer for AI-mediated conduct. Responsibility reconstruction is the evidentiary method used to determine which actors can be connected to the governance acts surrounding that conduct. The method does not replace accountability; it establishes the factual foundation accountability requires.
+Responsibility reconstruction sits within the broader [discipline of algorithmic accountability](/blog/algorithmic-accountability-enterprise-ai-governance/), the institutional obligation to answer for AI-mediated conduct. Responsibility reconstruction does not treat an AI system as a legal or institutional decision-maker, and it does not determine liability. Instead, it reconstructs the evidentiary connections among system conduct, delegated authority, human and institutional governance acts, and the surviving record. Evidence-Based Responsibility Reconstruction is not model evaluation, AI forensics, red teaming, observability, or technical incident response. It is the evidence-based reconstruction of human and institutional responsibility surrounding AI-mediated conduct. **The method does not replace accountability; it establishes the factual foundation accountability requires.**
 
-That is the definition. This article establishes the category it names, the method it requires, and the standard against which every claim of AI accountability, including the ones sold as products, should be measured.
+This article establishes the category, the method it requires, and the standard against which every claim of AI accountability, including those sold as products—should be measured.
 
 ## Why This Category Must Exist Now
 
