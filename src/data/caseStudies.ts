@@ -845,7 +845,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     "indexSummary": "ElizaChat promises human escalation as a safeguard for students, but its system determines which students are classified as high risk and therefore reach a counselor. The safeguard begins only when ElizaChat’s threshold says it should.",
     "cardSummary": "ElizaChat promises human escalation as a safeguard for students, but its system determines which students are classified as high risk and therefore reach a counselor. The safeguard begins only when ElizaChat’s threshold says it should.",
     "aiUse": "Youth mental-health conversations",
-    "humanCheckpoint": "Risk-triggered clinical escalation",
+    "humanCheckpoint": "Risk-activated clinical escalation",
     "evidenceSource": "Company records after a report or complaint",
     "reconstructionFinding": "Provider controls the intervention threshold",
     "primaryRecord": "ElizaChat Utah AI pilot agreement",
