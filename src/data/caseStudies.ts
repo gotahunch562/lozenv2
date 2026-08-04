@@ -964,7 +964,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       },
       {
         "id": "elizachat-decides-when-a-student-reaches-a-human",
-        "label": "ElizaChat Decides When a Student Reaches a Human",
+        "label": "ElizaChat Decides When a Student is Connected to a Human",
         "blocks": [
           {
             "type": "subheading",
@@ -994,7 +994,7 @@ export const CASE_STUDIES: CaseStudy[] = [
           },
           {
             "type": "paragraph",
-            "text": "ElizaChat is not simply operating the communication system. It decides whether a student has crossed the threshold that brings outside human judgment into the interaction."
+            "text": "ElizaChat is not simply operating the communication system. It decides whether a student has crossed the threshold that brings outside human expertise and judgment into the interaction."
           },
           {
             "type": "matrix-table",
@@ -1031,7 +1031,7 @@ export const CASE_STUDIES: CaseStudy[] = [
           },
           {
             "type": "paragraph",
-            "text": "The existence of a human escalation process does not establish that students who need intervention will receive it. It establishes only that ElizaChat has a process for students whom ElizaChat identifies."
+            "text": "The existence of a human escalation process does not establish that students who need intervention will receive it. It establishes only that ElizaChat has a process."
           },
           {
             "type": "subheading",
@@ -1052,7 +1052,7 @@ export const CASE_STUDIES: CaseStudy[] = [
           },
           {
             "type": "subheading",
-            "text": "What the Public Record Does Not Validate",
+            "text": "What the Public Record Does Not Show",
             "level": 4
           },
           {
@@ -1067,7 +1067,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       },
       {
         "id": "disclosure-is-not-student-consent",
-        "label": "Disclosure Is Not Student Consent",
+        "label": "Disclosure Is Not The Same as Student Consent",
         "blocks": [
           {
             "type": "subheading",
@@ -1204,7 +1204,7 @@ export const CASE_STUDIES: CaseStudy[] = [
           },
           {
             "type": "paragraph",
-            "text": "If ElizaChat fails to classify a student as high risk, no escalation may occur. If the company does not learn of a later injury, does not connect it to the interaction, or does not classify the event as reportable harm, the 24-hour notice does not generate itself."
+            "text": "If ElizaChat fails to classify a student as high risk, no escalation may occur. If the company does not learn of a later injury, does not connect it to the interaction, or does not classify the event as reportable harm, the 24-hour notice does not generate."
           },
           {
             "type": "matrix-table",
