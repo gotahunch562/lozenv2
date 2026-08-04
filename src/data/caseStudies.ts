@@ -884,7 +884,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       },
       {
         "type": "paragraph",
-        "text": "The student does not design the system, approve the intervention threshold, select the underlying AI, authorize the Utah pilot, or negotiate the terms governing what happens after harm."
+        "text": "However, the student does not design the system, approve the intervention threshold, select the underlying AI, authorize the Utah pilot, or negotiate the terms governing what happens after harm."
       },
       {
         "type": "paragraph",
