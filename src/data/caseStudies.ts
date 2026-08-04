@@ -114,16 +114,15 @@ export const CASE_STUDIES: CaseStudy[] = [
     slug: 'doctronic-utah-ai-pilot',
     shortName: 'Doctronic',
     initials: 'DO',
-    title:
-      'Doctronic: The System Preserves a Physician’s Name, Not Physician Judgment',
+    title: 'Doctronic: A Name Is Not Evidence of Review',
     pageTitle:
       'Doctronic: The System Preserves a Physician’s Name, Not Physician Judgment',
     href: '/case-studies/doctronic-utah-ai-pilot/',
     indexSummary:
-      'Utah permits Doctronic’s AI to authorize qualifying prescription renewals while a physician remains the prescriber of record whether or not that physician reviews the individual decision. The name supplies attribution, not evidence of physician judgment.',
+      'A physician’s name remains attached to an AI-authorized prescription renewal even when the physician did not review the individual decision. The name makes the prescription attributable; it does not establish physician judgment.',
     cardSummary:
-      'Utah permits Doctronic’s AI to authorize qualifying prescription renewals while a physician remains the prescriber of record whether or not that physician reviews the individual decision. The name supplies attribution, not evidence of physician judgment.',
-    aiUse: 'AI prescription renewals',
+      'A physician’s name remains attached to an AI-authorized prescription renewal even when the physician did not review the individual decision. The name makes the prescription attributable; it does not establish physician judgment.',
+    aiUse: 'Prescription renewals',
     humanCheckpoint: 'Phased clinical review',
     evidenceSource: 'Provider reports and review samples',
     reconstructionFinding: 'Named responsibility not demonstrated',
@@ -313,19 +312,28 @@ export const CASE_STUDIES: CaseStudy[] = [
             text: 'What the Patient Did Not Decide',
           },
           {
-            type: 'paragraph',
-            text: 'The patient did not:',
-          },
-          {
-            type: 'list',
-            items: [
-              'Design the renewal criteria',
-              'Select the AI model',
-              'determine which clinical information the system would consider',
-              'Validate the system’s monitoring process',
-              'Decide when physician review could be reduced',
-              'Approve the percentage of decisions sampled after deployment',
-              'Decide that the remaining danger was acceptable',
+            type: 'comparison-table',
+            columns: [
+              {
+                heading: 'What the patient can do',
+                items: [
+                  'Acknowledge the AI disclosure',
+                  'Request physician review',
+                  'Submit complaints directly to Utah regulators',
+                ],
+              },
+              {
+                heading: 'What the patient did not decide',
+                items: [
+                  'Design the renewal criteria',
+                  'Select the AI model',
+                  'determine which clinical information the system would consider',
+                  'Validate the system’s monitoring process',
+                  'Decide when physician review could be reduced',
+                  'Approve the percentage of decisions sampled after deployment',
+                  'Decide that the remaining danger was acceptable',
+                ],
+              },
             ],
           },
           {
@@ -355,12 +363,27 @@ export const CASE_STUDIES: CaseStudy[] = [
             text: 'The rollout follows three stages:',
           },
           {
-            type: 'list',
-            ordered: true,
-            items: [
-              'A physician reviews the first 250 renewals before the prescription is issued.',
-              'Physicians review the next 1,000 renewals retrospectively.',
-              'During full operation, physicians review a monthly sample of approximately 5% to 10% of renewals.',
+            type: 'matrix-table',
+            headers: ['Stage', 'Physician review'],
+            rows: [
+              [
+                { text: '1' },
+                {
+                  text: 'A physician reviews the first 250 renewals before the prescription is issued.',
+                },
+              ],
+              [
+                { text: '2' },
+                {
+                  text: 'Physicians review the next 1,000 renewals retrospectively.',
+                },
+              ],
+              [
+                { text: '3' },
+                {
+                  text: 'During full operation, physicians review a monthly sample of approximately 5% to 10% of renewals.',
+                },
+              ],
             ],
           },
           {
@@ -515,57 +538,40 @@ export const CASE_STUDIES: CaseStudy[] = [
             text: 'The Utah arrangement distributes authority across several actors:',
           },
           {
-            type: 'subheading',
-            text: 'Utah',
-            level: 4,
-          },
-          {
-            type: 'paragraph',
-            text: 'Utah authorized the regulatory experiment but expressly denied that the agreement constituted an endorsement.',
-          },
-          {
-            type: 'subheading',
-            text: 'Doctronic',
-            level: 4,
-          },
-          {
-            type: 'paragraph',
-            text: 'Doctronic designed, operates, maintains, and monitors the system.',
-          },
-          {
-            type: 'subheading',
-            text: 'The AI Systems',
-            level: 4,
-          },
-          {
-            type: 'paragraph',
-            text: 'The AI evaluates the patient information and makes the renewal decision.',
-          },
-          {
-            type: 'paragraph',
-            text: 'A second AI monitors the first system’s interactions.',
-          },
-          {
-            type: 'subheading',
-            text: 'The Physician and Pharmacist',
-            level: 4,
-          },
-          {
-            type: 'paragraph',
-            text: 'A licensed physician remains the prescriber of record.',
-          },
-          {
-            type: 'paragraph',
-            text: 'The pharmacist receives and dispenses the authorized renewal.',
-          },
-          {
-            type: 'subheading',
-            text: 'The Patient',
-            level: 4,
-          },
-          {
-            type: 'paragraph',
-            text: 'The patient experiences the physical consequences.',
+            type: 'matrix-table',
+            headers: ['Actor', 'Role in the responsibility chain'],
+            rows: [
+              [
+                { text: 'Utah' },
+                {
+                  text: 'Utah authorized the regulatory experiment but expressly denied that the agreement constituted an endorsement.',
+                },
+              ],
+              [
+                { text: 'Doctronic' },
+                {
+                  text: 'Doctronic designed, operates, maintains, and monitors the system.',
+                },
+              ],
+              [
+                { text: 'The AI systems' },
+                {
+                  text: 'The AI evaluates the patient information and makes the renewal decision. A second AI monitors the first system’s interactions.',
+                },
+              ],
+              [
+                { text: 'The physician and pharmacist' },
+                {
+                  text: 'A licensed physician remains the prescriber of record. The pharmacist receives and dispenses the authorized renewal.',
+                },
+              ],
+              [
+                { text: 'The patient' },
+                {
+                  text: 'The patient experiences the physical consequences.',
+                },
+              ],
+            ],
           },
           {
             type: 'subheading',
@@ -654,21 +660,35 @@ export const CASE_STUDIES: CaseStudy[] = [
             text: 'What an Outside Reviewer May Not Be Able to Recover',
           },
           {
-            type: 'paragraph',
-            text: 'The public agreement also does not establish whether an outside reviewer could recover:',
-          },
-          {
-            type: 'list',
-            items: [
-              'The exact model and version used for a particular renewal',
-              'The governing system instructions',
-              'The complete patient interaction',
-              'Every tool call and external record consulted',
-              'The output of the monitoring model',
-              'Any corrections or changes made after the decision',
-              'The reason the system did or did not escalate',
-              'The information presented to a reviewing physician',
-              'The physician’s independent reasoning, if any',
+            type: 'comparison-table',
+            columns: [
+              {
+                heading: 'Evidence Doctronic creates and reports',
+                items: [
+                  'Logged and reviewable decision points',
+                  'Renewal volume',
+                  'Physician-review activity',
+                  'Physician agreement rates',
+                  'Complaints and known adverse outcomes',
+                  'Selected record excerpts',
+                  'Medical records and AI-generated summaries',
+                  'Prescription records and audit logs',
+                ],
+              },
+              {
+                heading: 'What an outside reviewer may not recover',
+                items: [
+                  'The exact model and version used for a particular renewal',
+                  'The governing system instructions',
+                  'The complete patient interaction',
+                  'Every tool call and external record consulted',
+                  'The output of the monitoring model',
+                  'Any corrections or changes made after the decision',
+                  'The reason the system did or did not escalate',
+                  'The information presented to a reviewing physician',
+                  'The physician’s independent reasoning, if any',
+                ],
+              },
             ],
           },
           {
@@ -710,39 +730,36 @@ export const CASE_STUDIES: CaseStudy[] = [
             text: 'For a disputed Doctronic renewal, the public record could help establish:',
           },
           {
-            type: 'list',
-            items: [
-              'That Utah authorized the AI renewal program',
-              'That Doctronic controlled the system and its operating conditions',
-              'That the AI was permitted to authorize qualifying renewals',
-              'That a physician was named as the prescriber of record',
-              'Whether the patient requested human review',
-              'Whether the system or pharmacist escalated the case',
-              'Whether a physician reviewed the renewal',
-              'What reports Doctronic provided to Utah',
-              'What complaints or adverse outcomes Doctronic recorded',
-            ],
-          },
-          {
-            type: 'subheading',
-            text: 'What the Public Record Does Not Establish',
-          },
-          {
-            type: 'paragraph',
-            text: 'The public record does not yet establish:',
-          },
-          {
-            type: 'list',
-            items: [
-              'Who approved the clinical thresholds used by the AI',
-              'Who determined that the automated monitoring system was sufficient',
-              'Who independently validated the “LLM as a judge”',
-              'Who approved reducing physician review to a 5%–10% sample',
-              'Whether physician reviewers formed judgments independently of AI-generated summaries',
-              'What evidence Utah possessed outside Doctronic’s reports',
-              'Who decided the remaining risk to patients was acceptable',
-              'Whether the weaknesses reported by Mindgard affected any component used in the Utah service',
-              'Whether those weaknesses were independently verified as resolved',
+            type: 'comparison-table',
+            columns: [
+              {
+                heading: 'What the public record could establish',
+                items: [
+                  'That Utah authorized the AI renewal program',
+                  'That Doctronic controlled the system and its operating conditions',
+                  'That the AI was permitted to authorize qualifying renewals',
+                  'That a physician was named as the prescriber of record',
+                  'Whether the patient requested human review',
+                  'Whether the system or pharmacist escalated the case',
+                  'Whether a physician reviewed the renewal',
+                  'What reports Doctronic provided to Utah',
+                  'What complaints or adverse outcomes Doctronic recorded',
+                ],
+              },
+              {
+                heading: 'What the public record does not establish',
+                items: [
+                  'Who approved the clinical thresholds used by the AI',
+                  'Who determined that the automated monitoring system was sufficient',
+                  'Who independently validated the “LLM as a judge”',
+                  'Who approved reducing physician review to a 5%–10% sample',
+                  'Whether physician reviewers formed judgments independently of AI-generated summaries',
+                  'What evidence Utah possessed outside Doctronic’s reports',
+                  'Who decided the remaining risk to patients was acceptable',
+                  'Whether the weaknesses reported by Mindgard affected any component used in the Utah service',
+                  'Whether those weaknesses were independently verified as resolved',
+                ],
+              },
             ],
           },
           {
@@ -860,12 +877,12 @@ export const CASE_STUDIES: CaseStudy[] = [
     "slug": "elizachat-utah-ai-pilot",
     "shortName": "ElizaChat",
     "initials": "EC",
-    "title": "ElizaChat: Institutional Authorization Is Not Student Consent",
+    "title": "ElizaChat: The Provider Controls When Human Intervention Begins",
     "pageTitle": "ElizaChat: Institutional Authorization Is Not Student Consent",
     "href": "/case-studies/elizachat-utah-ai-pilot/",
-    "indexSummary": "Utah and participating schools authorize generative AI mental-health conversations for students, while ElizaChat controls the threshold that determines whether a student reaches a human. Student acknowledgement does not transfer responsibility for those institutional decisions.",
-    "cardSummary": "Utah and participating schools authorize generative AI mental-health conversations for students, while ElizaChat controls the threshold that determines whether a student reaches a human. Student acknowledgement does not transfer responsibility for those institutional decisions.",
-    "aiUse": "Student mental-health conversations",
+    "indexSummary": "ElizaChat promises human escalation as a safeguard for students, but its system determines which students are classified as high risk and therefore reach a counselor. The safeguard begins only when ElizaChat’s threshold says it should.",
+    "cardSummary": "ElizaChat promises human escalation as a safeguard for students, but its system determines which students are classified as high risk and therefore reach a counselor. The safeguard begins only when ElizaChat’s threshold says it should.",
+    "aiUse": "Youth mental-health conversations",
     "humanCheckpoint": "Risk-triggered clinical escalation",
     "evidenceSource": "Company records after a report or complaint",
     "reconstructionFinding": "Provider controls the intervention threshold",
@@ -1627,12 +1644,12 @@ export const CASE_STUDIES: CaseStudy[] = [
     "slug": "dentacor-utah-ai-pilot",
     "shortName": "Dentacor",
     "initials": "DE",
-    "title": "Dentacor: Lack of Access Is Not Consent to Reduced Dentist Supervision",
+    "title": "Dentacor: Dual Verification Does Not Detect Shared Error",
     "pageTitle": "Dentacor: Lack of Access Is Not Consent to Reduced Dentist Supervision",
     "href": "/case-studies/dentacor-utah-ai-pilot/",
-    "indexSummary": "Utah permits treatment to proceed without dentist review when a hygienist and AI agree on a radiograph. Patients’ lack of dental access is used to justify reduced supervision, while agreement cannot detect an error shared by both reviewers.",
-    "cardSummary": "Utah permits treatment to proceed without dentist review when a hygienist and AI agree on a radiograph. Patients’ lack of dental access is used to justify reduced supervision, while agreement cannot detect an error shared by both reviewers.",
-    "aiUse": "AI-assisted dental radiographs",
+    "indexSummary": "A hygienist and AI can agree on a dental radiograph and allow treatment to proceed without a dentist. Agreement prevents escalation; it does not detect an error shared by both reviewers.",
+    "cardSummary": "A hygienist and AI can agree on a dental radiograph and allow treatment to proceed without a dentist. Agreement prevents escalation; it does not detect an error shared by both reviewers.",
+    "aiUse": "Dental radiograph assessment",
     "humanCheckpoint": "Dentist review after disagreement",
     "evidenceSource": "Provider reports and complaint-triggered review",
     "reconstructionFinding": "Technology actor missing from the responsibility record",
@@ -2331,12 +2348,12 @@ export const CASE_STUDIES: CaseStudy[] = [
     "slug": "legion-health-utah-ai-pilot",
     "shortName": "Legion Health",
     "initials": "LH",
-    "title": "Legion Health: The AI Decides Whether a Psychiatric Refill Reaches a Clinician",
+    "title": "Legion Health: The AI Controls Access to a Clinician",
     "pageTitle": "Legion Health: The AI Decides Whether a Psychiatric Refill Reaches a Clinician",
     "href": "/case-studies/legion-health-utah-ai-pilot/",
-    "indexSummary": "Legion’s AI can authorize a qualifying psychiatric refill and decide whether risk or ambiguity requires clinician review. A physician’s name remains attached, but the name does not prove case-level physician judgment.",
-    "cardSummary": "Legion’s AI can authorize a qualifying psychiatric refill and decide whether risk or ambiguity requires clinician review. A physician’s name remains attached, but the name does not prove case-level physician judgment.",
-    "aiUse": "AI psychiatric medication refills",
+    "indexSummary": "Legion Health’s AI can authorize qualifying psychiatric refills and determine whether risk or ambiguity requires clinician review. The automated system therefore decides when human judgment begins.",
+    "cardSummary": "Legion Health’s AI can authorize qualifying psychiatric refills and determine whether risk or ambiguity requires clinician review. The automated system therefore decides when human judgment begins.",
+    "aiUse": "Psychiatric medication renewals",
     "humanCheckpoint": "AI-triggered escalation and phased review",
     "evidenceSource": "Refill packets, review samples, and provider reports",
     "reconstructionFinding": "Attribution does not establish physician judgment",
