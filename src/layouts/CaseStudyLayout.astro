@@ -1,0 +1,392 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import '../styles/case-studies.css';
+import {
+  getCaseStudySections,
+  type CaseStudy,
+} from '../data/caseStudies';
+import { createArticleJsonLd } from '../lib/seo/jsonLd';
+
+interface Props {
+  study: CaseStudy;
+}
+
+const { study } = Astro.props;
+const sections = getCaseStudySections(study);
+const displayTitle = study.pageTitle ?? study.title;
+const sources = study.sources ?? [
+  { label: study.primaryRecord, href: study.sourceUrl },
+];
+
+const pageTitle = `${displayTitle} | Lozen Advisory`;
+const pageDescription = `An applied responsibility reconstruction of the ${study.shortName} Utah AI pilot: what the AI was allowed to do, where human judgment entered, and what the surviving record could prove.`;
+
+const jsonLd = createArticleJsonLd({
+  title: displayTitle,
+  description: pageDescription,
+  href: study.href,
+  type: 'Report',
+  section: 'AI Governance Case Studies',
+  keywords: [
+    'AI governance',
+    'The Name Standard',
+    'responsibility reconstruction',
+    'Utah AI pilot',
+    study.shortName,
+  ],
+  breadcrumbs: [
+    { name: 'Home', href: '/' },
+    { name: 'Case Studies', href: '/case-studies/' },
+    { name: displayTitle, href: study.href },
+  ],
+  isPartOf: {
+    name: 'AI Governance Case Studies',
+    href: '/case-studies/',
+    description:
+      'Evidence-based responsibility reconstructions of real-world AI governance cases.',
+  },
+});
+---
+
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  canonical={study.href}
+  ogType="article"
+>
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(jsonLd)}
+  />
+
+  <section class="article-hero case-study-hero">
+    <div class="wrap inner">
+      <div class="crumb">
+        <a href="/">Home</a>
+        &nbsp;/&nbsp;
+        <a href="/case-studies/">Case Studies</a>
+        &nbsp;/&nbsp;
+        {study.shortName}
+      </div>
+
+      <span class="tag">
+        Evidence-Based Responsibility Reconstruction for AI-Mediated Conduct
+      </span>
+
+      <h1>{displayTitle}</h1>
+    </div>
+  </section>
+
+  <section class="case-study-facts" aria-label="Case study summary">
+    <div class="wrap">
+      <div class="case-study-hero-meta" aria-label="Case study summary">
+        <div>
+          <span>AI use</span>
+          <strong>{study.aiUse}</strong>
+        </div>
+        <div>
+          <span>Human checkpoint</span>
+          <strong>{study.humanCheckpoint}</strong>
+        </div>
+        <div>
+          <span>Evidence source</span>
+          <strong>{study.evidenceSource}</strong>
+        </div>
+        <div>
+          <span>Reconstruction finding</span>
+          <strong>{study.reconstructionFinding}</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-study-section">
+    <div class="wrap">
+      <div class="case-study-layout">
+        <nav
+          class="case-study-nav"
+          aria-label={`${study.shortName} case-study sections`}
+        >
+          {
+            sections.map((section, index) => (
+              <a
+                href={`#${section.id}`}
+                class={`case-study-nav-item ${index === 0 ? 'active' : ''}`}
+              >
+                <span class="case-study-nav-num">
+                  {String(index + 1).padStart(2, '0')}
+                </span>
+                <span class="case-study-nav-label">{section.label}</span>
+              </a>
+            ))
+          }
+        </nav>
+
+        <div class="case-study-content prose">
+          {
+            study.introduction && (
+              <div class="case-study-pane">
+                <div class="case-study-pane-heading">
+                  <h2 class="h2">
+                    Evidence-Based Responsibility Reconstruction Case Study
+                  </h2>
+                </div>
+
+                {study.introduction.map((block) => (
+                  block.type === 'paragraph' ? (
+                    <p>{block.text}</p>
+                  ) : block.type === 'subheading' ? (
+                    block.level === 4 ? (
+                      <h4>{block.text}</h4>
+                    ) : (
+                      <h3>{block.text}</h3>
+                    )
+                  ) : block.type === 'list' ? (
+                    block.ordered ? (
+                      <ol>
+                        {block.items.map((item) => <li>{item}</li>)}
+                      </ol>
+                    ) : (
+                      <ul>
+                        {block.items.map((item) => <li>{item}</li>)}
+                      </ul>
+                    )
+                  ) : block.type === 'linked-paragraph' ? (
+                    <p>
+                      {block.before}<a href={block.href}>{block.linkLabel}</a>{block.after}
+                    </p>
+                  ) : block.type === 'rich-paragraph' ? (
+                    <p>
+                      {block.segments.map((segment) => (
+                        'text' in segment ? segment.text : 'strong' in segment ? <strong>{segment.strong}</strong> : <a href={segment.href}>{segment.linkLabel}</a>
+                      ))}
+                    </p>
+                  ) : block.type === 'comparison-table' ? (
+                    <div class="case-study-table-scroll">
+                      <table class={`case-study-comparison-table columns-${block.columns.length}`}>
+                        <thead>
+                          <tr>
+                            {block.columns.map((column) => (
+                              <th scope="col">
+                                {column.headingLevel === 3 ? (
+                                  <h3>{column.heading}</h3>
+                                ) : column.headingLevel === 4 ? (
+                                  <h4>{column.heading}</h4>
+                                ) : (
+                                  column.heading
+                                )}
+                              </th>
+                            ))}
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            {block.columns.map((column) => (
+                              <td>
+                                {column.lead && <p class="case-study-table-lead">{column.lead}</p>}
+                                <ul>
+                                  {column.items.map((item) => <li>{item}</li>)}
+                                </ul>
+                                {column.note && <p>{column.note}</p>}
+                              </td>
+                            ))}
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  ) : block.type === 'matrix-table' ? (
+                    <div class="case-study-table-scroll">
+                      <table class={`case-study-comparison-table columns-${block.headers.length}`}>
+                        <thead>
+                          <tr>
+                            {block.headers.map((header) => <th scope="col">{header}</th>)}
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {block.rows.map((row) => (
+                            <tr>
+                              {row.map((cell) => (
+                                <td>
+                                  {cell.label && <><strong>{cell.label}:</strong>{' '}</>}
+                                  {cell.text}
+                                </td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  ) : (
+                    <blockquote><p>{block.text}</p></blockquote>
+                  )
+                ))}
+              </div>
+            )
+          }
+
+          {
+            sections.map((section) => (
+              <section
+                id={section.id}
+                class="case-study-pane"
+              >
+                <div class="case-study-pane-heading">
+                  <h2>
+                    {section.label}
+                  </h2>
+                </div>
+
+                {section.blocks.map((block) => (
+                  block.type === undefined ? (
+                    <div class="case-study-block">
+                      <h3>{block.label}</h3>
+                      <p>{block.value}</p>
+                    </div>
+                  ) : block.type === 'paragraph' ? (
+                    <p>{block.text}</p>
+                  ) : block.type === 'subheading' ? (
+                    block.level === 4 ? (
+                      <h4>{block.text}</h4>
+                    ) : (
+                      <h3>{block.text}</h3>
+                    )
+                  ) : block.type === 'list' ? (
+                    block.ordered ? (
+                      <ol>
+                        {block.items.map((item) => <li>{item}</li>)}
+                      </ol>
+                    ) : (
+                      <ul>
+                        {block.items.map((item) => <li>{item}</li>)}
+                      </ul>
+                    )
+                  ) : block.type === 'linked-paragraph' ? (
+                    <p>
+                      {block.before}<a href={block.href}>{block.linkLabel}</a>{block.after}
+                    </p>
+                  ) : block.type === 'rich-paragraph' ? (
+                    <p>
+                      {block.segments.map((segment) => (
+                        'text' in segment ? segment.text : 'strong' in segment ? <strong>{segment.strong}</strong> : <a href={segment.href}>{segment.linkLabel}</a>
+                      ))}
+                    </p>
+                  ) : block.type === 'comparison-table' ? (
+                    <div class="case-study-table-scroll">
+                      <table class={`case-study-comparison-table columns-${block.columns.length}`}>
+                        <thead>
+                          <tr>
+                            {block.columns.map((column) => (
+                              <th scope="col">
+                                {column.headingLevel === 3 ? (
+                                  <h3>{column.heading}</h3>
+                                ) : column.headingLevel === 4 ? (
+                                  <h4>{column.heading}</h4>
+                                ) : (
+                                  column.heading
+                                )}
+                              </th>
+                            ))}
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            {block.columns.map((column) => (
+                              <td>
+                                {column.lead && <p class="case-study-table-lead">{column.lead}</p>}
+                                <ul>
+                                  {column.items.map((item) => <li>{item}</li>)}
+                                </ul>
+                                {column.note && <p>{column.note}</p>}
+                              </td>
+                            ))}
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  ) : block.type === 'matrix-table' ? (
+                    <div class="case-study-table-scroll">
+                      <table class={`case-study-comparison-table columns-${block.headers.length}`}>
+                        <thead>
+                          <tr>
+                            {block.headers.map((header) => <th scope="col">{header}</th>)}
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {block.rows.map((row) => (
+                            <tr>
+                              {row.map((cell) => (
+                                <td>
+                                  {cell.label && <><strong>{cell.label}:</strong>{' '}</>}
+                                  {cell.text}
+                                </td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  ) : (
+                    <blockquote><p>{block.text}</p></blockquote>
+                  )
+                ))}
+              </section>
+            ))
+          }
+        </div>
+      </div>
+
+      <div class="case-study-source-bar">
+        <div>
+          <h2>Primary Records Reviewed</h2>
+          <strong>{study.sourceSummary ?? study.primaryRecord}</strong>
+        </div>
+
+        <div class="case-study-source-actions">
+          {
+            sources.map((source) => (
+              <a
+                href={source.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {source.label} ↗
+              </a>
+            ))
+          }
+          <a href="/case-studies/">View all case studies →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  const navItems = Array.from(
+    document.querySelectorAll<HTMLAnchorElement>('.case-study-nav-item')
+  );
+
+  const sections = navItems
+    .map((item) => document.querySelector<HTMLElement>(item.hash))
+    .filter((section): section is HTMLElement => section !== null);
+
+  const setActiveSection = (id: string) => {
+    navItems.forEach((item) => {
+      item.classList.toggle('active', item.hash === `#${id}`);
+    });
+  };
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      const visibleSection = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
+
+      if (visibleSection) {
+        setActiveSection(visibleSection.target.id);
+      }
+    },
+    { rootMargin: '-18% 0px -68% 0px' }
+  );
+
+  sections.forEach((section) => observer.observe(section));
+</script>

@@ -1,0 +1,136 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/case-studies.css';
+import { CASE_STUDIES } from '../data/caseStudies';
+import { createCollectionPageJsonLd } from '../lib/seo/jsonLd';
+
+const pageTitle =
+  'Evidence-Based Responsibility Reconstruction Case Studies | Lozen Advisory';
+const pageDescription =
+  'Evidence-Based Responsibility Reconstruction Case Studies.';
+
+const jsonLd = createCollectionPageJsonLd({
+  title: pageTitle,
+  description: pageDescription,
+  href: '/case-studies/',
+  items: CASE_STUDIES.map((study) => ({
+    title: study.title,
+    href: study.href,
+    description: study.indexSummary,
+  })),
+  breadcrumbs: [
+    { name: 'Home', href: '/' },
+    { name: 'Case Studies', href: '/case-studies/' },
+  ],
+});
+---
+
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  canonical="/case-studies/"
+>
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(jsonLd)}
+  />
+
+  <section class="page-hero case-study-index-hero">
+    <div class="grid-bg"></div>
+
+    <div class="wrap inner">
+      <div class="crumb">
+        <a href="/">Home</a>
+        &nbsp;/&nbsp;
+        Case Studies
+      </div>
+
+      <span class="pill">Algorithmic Accountability</span>
+
+      <h1>
+        Evidence-Based Responsibility Reconstruction
+        <span class="hl">Case Studies</span>
+      </h1>
+    </div>
+  </section>
+
+  <section id="case-study-index">
+    <div class="wrap">
+      <div class="case-study-index-heading">
+        <div>
+          <h2 class="h2">
+            Four Utah AI Pilots Examined Through Responsibility Reconstruction
+          </h2>
+        </div>
+
+        <p>
+          These case studies apply Evidence-Based Responsibility Reconstruction
+          to four AI healthcare pilots authorized by Utah. Each case examines
+          what the AI was permitted to do, which institutions controlled its
+          operating conditions, what human review or intervention existed, who
+          controlled the evidence, and what the public record could establish
+          after harm. The purpose is to test whether responsibility for the
+          pilots’ design, authorization, operation, oversight, and consequences
+          can actually be reconstructed.
+        </p>
+      </div>
+
+      <div class="cs-grid" role="list">
+        {
+          CASE_STUDIES.map((study) => (
+            <a
+              href={study.href}
+              class="cs-card reveal"
+              role="listitem"
+              aria-label={`Open ${study.title} case study`}
+            >
+              <div class="top">
+                <div class="lg" aria-hidden="true">{study.initials}</div>
+                <div>
+                  <div class="ind">{study.aiUse}</div>
+                  <div class="co">{study.shortName}</div>
+                </div>
+              </div>
+
+              <div class="body">
+                <h2>{study.title}</h2>
+                <p>{study.indexSummary}</p>
+
+                <span class="case-study-card-link">Read case study →</span>
+              </div>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="article-body">
+        <h2>What the Four Cases Test</h2>
+
+        <p>
+          Each pilot distributes authority, system control, human intervention,
+          and evidence differently. The case studies examine whether the public
+          record connects those parts: who authorized the AI’s role, who
+          determined that its safeguards were sufficient, who monitored its
+          conduct, who could stop or change a decision, and who would control
+          the evidence after harm.
+        </p>
+
+        <p>
+          The result is not a checklist of safeguards. It is a reconstruction
+          of what can be established, what remains divided across institutions,
+          and what the surviving record cannot prove.
+        </p>
+
+        <p>
+          <a href="/blog/evidence-based-responsibility-reconstruction/">
+            Evidence-Based Responsibility Reconstruction
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
