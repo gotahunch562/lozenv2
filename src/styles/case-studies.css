@@ -4,7 +4,6 @@
 ============================================================ */
 
 /* ---- INDEX ---- */
-.case-study-index-hero{min-height:clamp(27rem,42vw,34rem)}
 .case-study-index-heading{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.72fr);gap:64px;align-items:end}
 .case-study-index-heading .h2{margin-bottom:0}
 .case-study-index-heading>p{font-size:16px;color:var(--muted);line-height:1.75}
