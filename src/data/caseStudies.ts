@@ -781,53 +781,15 @@ export const CASE_STUDIES: CaseStudy[] = [
             text: 'The Responsibility Chain',
           },
           {
-            type: 'subheading',
-            text: 'Utah Authorized',
-            level: 4,
-          },
-          {
-            type: 'paragraph',
-            text: 'Utah authorized the experiment.',
-          },
-          {
-            type: 'subheading',
-            text: 'Doctronic Designed and Operates',
-            level: 4,
-          },
-          {
-            type: 'paragraph',
-            text: 'Doctronic designed and operates the system.',
-          },
-          {
-            type: 'subheading',
-            text: 'The AI Decides and Monitors',
-            level: 4,
-          },
-          {
-            type: 'paragraph',
-            text: 'An AI system makes the renewal decision.',
-          },
-          {
-            type: 'paragraph',
-            text: 'Another AI system monitors the first.',
-          },
-          {
-            type: 'subheading',
-            text: 'The Physician Is Named',
-            level: 4,
-          },
-          {
-            type: 'paragraph',
-            text: 'A physician’s name remains attached whether or not the physician reviews the decision.',
-          },
-          {
-            type: 'subheading',
-            text: 'The Patient Receives the Outcome',
-            level: 4,
-          },
-          {
-            type: 'paragraph',
-            text: 'The patient receives the medical outcome.',
+            type: 'list',
+            ordered: true,
+            items: [
+              'Utah Authorized — Utah authorized the experiment.',
+              'Doctronic Designed and Operates — Doctronic designed and operates the system.',
+              'The AI Decides and Monitors — An AI system makes the renewal decision. Another AI system monitors the first.',
+              'The Physician Is Named — A physician’s name remains attached whether or not the physician reviews the decision.',
+              'The Patient Receives the Outcome — The patient receives the medical outcome.',
+            ],
           },
           {
             type: 'subheading',
