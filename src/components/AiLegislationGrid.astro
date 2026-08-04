@@ -213,6 +213,15 @@ const dataId = 'ai-legislation-data';
     const panelBody = document.getElementById('ai-legislation-detail-body');
     const closeBtn = document.getElementById('ai-legislation-detail-close');
 
+    let pendingHideHandler = null;
+
+    function cancelPendingHide() {
+      if (pendingHideHandler && panel instanceof HTMLElement) {
+        panel.removeEventListener('transitionend', pendingHideHandler);
+        pendingHideHandler = null;
+      }
+    }
+
     function escapeHtml(value) {
       const div = document.createElement('div');
       div.textContent = value ?? '';
@@ -223,6 +232,8 @@ const dataId = 'ai-legislation-data';
       if (!(panel instanceof HTMLElement) || !(panelBody instanceof HTMLElement) || !(backdrop instanceof HTMLElement)) {
         return;
       }
+
+      cancelPendingHide();
 
       const rows = detailFields
         .filter((field) => field.key !== 'ruleName' && data[field.key])
@@ -262,24 +273,32 @@ const dataId = 'ai-legislation-data';
     }
 
     function closeDetailPanel() {
-      if (!(panel instanceof HTMLElement) || !(backdrop instanceof HTMLElement)) {
+      if (
+        !(panel instanceof HTMLElement) ||
+        !(backdrop instanceof HTMLElement) ||
+        panel.getAttribute('aria-hidden') === 'true'
+      ) {
         return;
       }
+
+      cancelPendingHide();
 
       backdrop.style.opacity = '0';
       panel.style.transform = 'translateX(100%)';
       panel.setAttribute('aria-hidden', 'true');
 
-      const hideWhenDone = (event) => {
+      pendingHideHandler = (event) => {
         if (event.target !== panel || event.propertyName !== 'transform') {
           return;
         }
+
         backdrop.style.display = 'none';
         panel.style.display = 'none';
-        panel.removeEventListener('transitionend', hideWhenDone);
+
+        cancelPendingHide();
       };
 
-      panel.addEventListener('transitionend', hideWhenDone);
+      panel.addEventListener('transitionend', pendingHideHandler);
     }
 
     closeBtn?.addEventListener('click', closeDetailPanel);
