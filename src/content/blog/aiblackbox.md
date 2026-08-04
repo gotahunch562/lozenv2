@@ -3,8 +3,8 @@ title: AI Needs Accident Investigations, Not Just Incident Databases
 seoTitle: AI Has Incident Databases. It Doesn’t Have Accident Investigations
 slug: ai-needs-accident-investigation
 description: Corporate AI disclosures treat technical causes as complete
-  findings. Learn why AI governance requires evidence-based responsibility
-  reconstruction.
+  findings. Learn why AI governance requires Evidence-Based Responsibility
+  Reconstruction℠
 metaDescription: AI incident databases show when systems fail, but configuration
   errors don't explain who authorized the risk. Why AI needs real accident
   investigation.
@@ -34,7 +34,7 @@ Together, these projects establish something important: AI harms are not rare, n
 
 But a database of incidents is not an accident-investigation system. It can show that something happened, and that it has happened before. It cannot, by itself, establish who authorized the operating conditions, who validated the controls, who was supposed to be monitoring execution, who could have intervened, what they knew at the time, or what the surviving evidence can actually prove. Classification is not reconstruction. Knowing that a category of incident occurred fifty times tells you almost nothing about what happened, procedurally and institutionally, in incident number fifty-one.
 
-**AI incident databases tell us that planes are crashing. [Evidence-Based Responsibility Reconstruction is the accident investigation.](/blog/evidence-based-responsibility-reconstruction/)**
+**AI incident databases tell us that planes are crashing. [Evidence-Based Responsibility Reconstruction℠ is the accident investigation.](/blog/evidence-based-responsibility-reconstruction/)**
 
 ## "Mechanical Failure" Would Never End an Aviation Investigation
 
@@ -58,7 +58,7 @@ But notice what that record is, structurally: it's the operator's own account of
 
 ## AI Needs Responsibility Reconstruction
 
-None of this is an argument for skipping straight to blame. Evidence-Based Responsibility Reconstruction does not decide legal liability, and it isn't a verdict. What it does is narrower and more foundational: it establishes what actually happened, which people and institutions controlled the relevant governance decisions — who was told to do what, who was permitted to act where, who was supposed to be watching, who could have stopped it, who accepted the risk of proceeding — and, honestly, what the surviving evidence can and cannot still prove. Where the record doesn't answer a question, that gap is itself part of the finding, not a failure of the method.
+None of this is an argument for skipping straight to blame. **Evidence-Based Responsibility Reconstruction℠** does not decide legal liability, and it isn't a verdict. What it does is narrower and more foundational: it establishes what actually happened, which people and institutions controlled the relevant governance decisions — who was told to do what, who was permitted to act where, who was supposed to be watching, who could have stopped it, who accepted the risk of proceeding — and, honestly, what the surviving evidence can and cannot still prove. Where the record doesn't answer a question, that gap is itself part of the finding, not a failure of the method.
 
 That's a different kind of work than a database entry, and a different kind of work than a corporate disclosure. It's the work aviation has been doing, as a matter of settled expectation, for decades.
 
