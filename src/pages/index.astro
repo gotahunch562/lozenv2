@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import CtaStrip from '../components/CtaStrip.astro';
 import FounderPortrait from '../components/FounderPortrait.astro';
+import { CASE_STUDIES } from '../data/caseStudies';
 ---
 
 <BaseLayout title="Algorithmic Accountability Advisory for Boards & CFOs | Lozen Advisory" description="Lozen Advisory helps boards and CFOs define clear chains of human ownership and financial liability for AI-assisted decisions.">
@@ -144,6 +145,36 @@ import FounderPortrait from '../components/FounderPortrait.astro';
       <div class="gain reveal"><span class="ck">✓</span><p>Documentation Infrastructure — human validation logged as evidence that survives reconstruction</p></div>
       <div class="gain reveal"><span class="ck">✓</span><p>Formal Right of Refusal — real standing to halt, escalate, or document non-compliant AI outputs</p></div>
       <div class="gain reveal"><span class="ck">✓</span><p>A board-ready answer to one question: when the AI gets it wrong, whose name is on it?</p></div>
+    </div>
+
+    <div class="name-standard-cases">
+      <div class="name-standard-cases-head">
+        <div>
+          <span class="eyebrow">Case studies</span>
+          <h3>The Name Standard℠ applied to real governing records</h3>
+        </div>
+
+        <a href="/case-studies/">View all case studies →</a>
+      </div>
+
+      <div class="name-standard-case-list" role="list">
+        {CASE_STUDIES.map((study) => (
+          <a
+            href={study.href}
+            class="name-standard-case reveal"
+            role="listitem"
+          >
+            <span class="name-standard-case-mark" aria-hidden="true">
+              {study.initials}
+            </span>
+            <span class="name-standard-case-copy">
+              <strong>{study.title}</strong>
+              <small>{study.aiUse}</small>
+            </span>
+            <span class="name-standard-case-arrow" aria-hidden="true">→</span>
+          </a>
+        ))}
+      </div>
     </div>
   </div>
 </section>

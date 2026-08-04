@@ -452,6 +452,104 @@
   line-height:1.5;
 }
 
+.name-standard-cases{
+  margin-top:48px;
+  padding-top:40px;
+  border-top:1px solid var(--line);
+}
+
+.name-standard-cases-head{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:28px;
+  margin-bottom:22px;
+}
+
+.name-standard-cases-head .eyebrow{
+  margin-bottom:8px;
+}
+
+.name-standard-cases-head h3{
+  font-family:var(--display);
+  font-size:clamp(23px,2.6vw,31px);
+  font-weight:700;
+  line-height:1.25;
+}
+
+.name-standard-cases-head>a{
+  flex:0 0 auto;
+  padding-bottom:3px;
+  border-bottom:2px solid var(--accent);
+  font-size:13px;
+  font-weight:800;
+  color:var(--ink);
+}
+
+.name-standard-case-list{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+}
+
+.name-standard-case{
+  display:grid;
+  grid-template-columns:auto minmax(0,1fr) auto;
+  align-items:center;
+  gap:14px;
+  padding:17px 18px;
+  border:1px solid var(--line);
+  border-radius:16px;
+  background:var(--paper-2);
+  transition:transform .2s,border-color .2s,box-shadow .2s;
+}
+
+.name-standard-case:hover{
+  transform:translateY(-2px);
+  border-color:color-mix(in srgb,var(--accent) 52%,transparent);
+  box-shadow:0 16px 34px -28px rgba(6,23,47,.48);
+}
+
+.name-standard-case-mark{
+  width:40px;
+  height:40px;
+  border-radius:11px;
+  display:grid;
+  place-items:center;
+  background:var(--brand);
+  color:#fff;
+  font-family:var(--display);
+  font-size:13px;
+  font-weight:700;
+}
+
+.name-standard-case-copy{
+  min-width:0;
+}
+
+.name-standard-case-copy strong,
+.name-standard-case-copy small{
+  display:block;
+}
+
+.name-standard-case-copy strong{
+  font-size:15px;
+  line-height:1.35;
+}
+
+.name-standard-case-copy small{
+  margin-top:3px;
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.4;
+}
+
+.name-standard-case-arrow{
+  color:var(--accent);
+  font-size:18px;
+  font-weight:800;
+}
+
 /* ---- MENTOR ---- */
 .mentor-wrap{
   display:grid;
@@ -670,8 +768,15 @@
   }
 
   .pain-grid,
-  .gain-grid{
+  .gain-grid,
+  .name-standard-case-list{
     grid-template-columns:1fr;
+  }
+
+  .name-standard-cases-head{
+    align-items:flex-start;
+    flex-direction:column;
+    gap:14px;
   }
 
   .live .right{
