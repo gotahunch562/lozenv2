@@ -700,7 +700,7 @@ export const CASE_STUDIES: CaseStudy[] = [
           {
             type: 'linked-paragraph',
             before: '',
-            linkLabel: 'Evidence-Based Responsibility Reconstruction',
+            linkLabel: 'Evidence-Based Responsibility Reconstruction℠',
             href: '/blog/evidence-based-responsibility-reconstruction/',
             after:
               ' begins with the consequential conduct and follows the surviving record outward.',
@@ -914,7 +914,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       {
         "type": "linked-paragraph",
         "before": "This case applies ",
-        "linkLabel": "Evidence-Based Responsibility Reconstruction",
+        "linkLabel": "Evidence-Based Responsibility Reconstruction℠",
         "href": "/blog/evidence-based-responsibility-reconstruction/",
         "after": " to the public record surrounding ElizaChat: the state agreement authorizing the pilot, ElizaChat’s school-facing claims, its Terms of Service, and its Privacy Policy. No individual injury is needed to see the structure. The governing documents already establish where authority sits and where consequences are sent if harm occurs."
       }
@@ -1609,7 +1609,7 @@ export const CASE_STUDIES: CaseStudy[] = [
           },
           {
             "type": "paragraph",
-            "text": "Evidence-Based Responsibility Reconstruction is necessary because the agreement, the terms, the privacy policy, and the company’s incident report would each show only part of the responsibility chain. The process must reconstruct how authority, control, consent, evidence, and risk were distributed across Utah, ElizaChat, the school, the parents, and the student."
+            "text": "Evidence-Based Responsibility Reconstruction℠ is necessary because the agreement, the terms, the privacy policy, and the company’s incident report would each show only part of the responsibility chain. The process must reconstruct how authority, control, consent, evidence, and risk were distributed across Utah, ElizaChat, the school, the parents, and the student."
           },
           {
             "type": "paragraph",
@@ -2381,7 +2381,7 @@ export const CASE_STUDIES: CaseStudy[] = [
             "text": "This case applies "
           },
           {
-            "linkLabel": "Evidence-Based Responsibility Reconstruction",
+            "linkLabel": "Evidence-Based Responsibility Reconstruction℠",
             "href": "/blog/evidence-based-responsibility-reconstruction/"
           },
           {
