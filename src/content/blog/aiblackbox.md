@@ -12,7 +12,7 @@ category: AI Governance & Workforce Risk
 image: /blog/ia black box.avif
 imageAlt: airplane black box ai data logs
 pubDate: 2026-08-02
-dateModified: 2026-08-02
+dateModified: 2026-08-04
 lead: AI incident trackers show that systems fail, but corporate self-reports
   treat configuration errors as complete answers. In aviation, mechanical
   failure is a starting point, not the finding. AI needs independent
@@ -72,5 +72,5 @@ Until that changes, "configuration error" will keep doing the work "mechanical f
 
 ## How Lozen Advisory Can Help
 
-Our **executive AI advisory services** helps CFO's and boards with our **Algorithmic Accountability Risk** service—because when an AI agent finds a route no one authorized, "the AI went rogue" is not a good answer.
+Our **executive AI advisory services** helps CFO's and boards with our **[Algorithmic Accountability Risk** service](/services/board-ai-algorithmic-accountability/)—because when an AI agent finds a route no one authorized, "the AI went rogue" is not a good answer.
 
