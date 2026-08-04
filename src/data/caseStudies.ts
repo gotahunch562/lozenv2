@@ -895,7 +895,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "before": "This case applies ",
         "linkLabel": "Evidence-Based Responsibility Reconstruction℠",
         "href": "/blog/evidence-based-responsibility-reconstruction/",
-        "after": " to the public record surrounding ElizaChat: the state agreement authorizing the pilot, ElizaChat’s school-facing claims, its Terms of Service, and its Privacy Policy. No individual injury is needed to see the structure. The governing documents already establish where authority sits and where consequences are sent if harm occurs."
+        "after": " to the public record surrounding ElizaChat: the state agreement authorizing the pilot, ElizaChat’s school-facing claims, its Terms of Service, and its Privacy Policy. No individual injury is needed to see the structure. The governing documents already establish where authority sits, and who is the victim if harm occurs."
       }
     ],
     "sections": [
