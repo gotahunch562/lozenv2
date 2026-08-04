@@ -1210,7 +1210,7 @@ export const CASE_STUDIES: CaseStudy[] = [
             "type": "matrix-table",
             "headers": [
               "What the agreement requires",
-              "What remains unresolved"
+              "What issues remain unresolved"
             ],
             "rows": [
               [
@@ -3015,7 +3015,7 @@ export const CASE_STUDIES: CaseStudy[] = [
             "type": "matrix-table",
             "headers": [
               "Evidence the agreement creates",
-              "What remains uncertain after harm"
+              "What issues remain uncertain after harm"
             ],
             "rows": [
               [
@@ -3082,7 +3082,7 @@ export const CASE_STUDIES: CaseStudy[] = [
             "type": "matrix-table",
             "headers": [
               "What the public record establishes",
-              "What remains unresolved"
+              "What issues remain unresolved"
             ],
             "rows": [
               [
