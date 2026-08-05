@@ -157,12 +157,11 @@ import { CASE_STUDIES } from '../data/caseStudies';
         <a href="/case-studies/">View all case studies →</a>
       </div>
 
-      <div class="name-standard-case-list" role="list">
+      <div class="name-standard-case-list">
         {CASE_STUDIES.map((study) => (
           <a
             href={study.href}
             class="name-standard-case reveal"
-            role="listitem"
           >
             <span class="name-standard-case-mark" aria-hidden="true">
               {study.initials}

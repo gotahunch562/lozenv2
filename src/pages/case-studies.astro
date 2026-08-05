@@ -80,13 +80,12 @@ const jsonLd = createCollectionPageJsonLd({
         </p>
       </div>
 
-      <div class="cs-grid" role="list">
+      <div class="cs-grid">
         {
           CASE_STUDIES.map((study) => (
             <a
               href={study.href}
               class="cs-card reveal"
-              role="listitem"
               aria-label={`Open ${study.title} case study`}
             >
               <div class="top">
