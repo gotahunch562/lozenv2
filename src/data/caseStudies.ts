@@ -32,9 +32,7 @@ export type CaseStudyLinkedParagraphBlock = {
 export type CaseStudyRichParagraphBlock = {
   type: 'rich-paragraph';
   segments: Array<
-    | { text: string }
-    | { strong: string }
-    | { linkLabel: string; href: string }
+    { text: string } | { strong: string } | { linkLabel: string; href: string }
   >;
 };
 
@@ -137,7 +135,8 @@ export const CASE_STUDIES: CaseStudy[] = [
         href: 'https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf',
       },
       {
-        label: 'Utah and Doctronic Announce AI Prescription-Renewal Partnership',
+        label:
+          'Utah and Doctronic Announce AI Prescription-Renewal Partnership',
         href: 'https://commerce.utah.gov/2026/01/06/news-release-utah-and-doctronic-announce-groundbreaking-partnership-for-ai-prescription-medication-renewals/',
       },
       {
@@ -228,7 +227,8 @@ export const CASE_STUDIES: CaseStudy[] = [
       },
       {
         id: 'physician-attribution',
-        label: 'The Physician Can Own the Prescription Without Seeing the Decision',
+        label:
+          'The Physician Can Own the Prescription Without Seeing the Decision',
         blocks: [
           {
             type: 'subheading',
@@ -836,2399 +836,2411 @@ export const CASE_STUDIES: CaseStudy[] = [
     ],
   },
   {
-    "slug": "elizachat-utah-ai-pilot",
-    "shortName": "ElizaChat",
-    "initials": "EC",
-    "title": "ElizaChat: The Provider Controls When Human Intervention Begins",
-    "pageTitle": "ElizaChat: Institutional Authorization Is Not Student Consent",
-    "href": "/case-studies/elizachat-utah-ai-pilot/",
-    "indexSummary": "ElizaChat promises human escalation as a safeguard for students, but its system determines which students are classified as high risk and therefore reach a counselor. The safeguard begins only when ElizaChat’s threshold says it should.",
-    "cardSummary": "ElizaChat promises human escalation as a safeguard for students, but its system determines which students are classified as high risk and therefore reach a counselor. The safeguard begins only when ElizaChat’s threshold says it should.",
-    "aiUse": "Youth mental-health conversations",
-    "humanCheckpoint": "Risk-activated clinical escalation",
-    "evidenceSource": "Company records after a report or complaint",
-    "reconstructionFinding": "Provider controls the intervention threshold",
-    "primaryRecord": "ElizaChat Utah AI pilot agreement",
-    "sourceUrl": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
-    "sourceSummary": "Utah agreement, company terms, privacy policy, school-district materials, and state pilot description",
-    "sources": [
+    slug: 'elizachat-utah-ai-pilot',
+    shortName: 'ElizaChat',
+    initials: 'EC',
+    title: 'ElizaChat: The Provider Controls When Human Intervention Begins',
+    pageTitle: 'ElizaChat: Institutional Authorization Is Not Student Consent',
+    href: '/case-studies/elizachat-utah-ai-pilot/',
+    indexSummary:
+      'ElizaChat promises human escalation as a safeguard for students, but its system determines which students are classified as high risk and therefore reach a counselor. The safeguard begins only when ElizaChat’s threshold says it should.',
+    cardSummary:
+      'ElizaChat promises human escalation as a safeguard for students, but its system determines which students are classified as high risk and therefore reach a counselor. The safeguard begins only when ElizaChat’s threshold says it should.',
+    aiUse: 'Youth mental-health conversations',
+    humanCheckpoint: 'Risk-activated clinical escalation',
+    evidenceSource: 'Company records after a report or complaint',
+    reconstructionFinding: 'Provider controls the intervention threshold',
+    primaryRecord: 'ElizaChat Utah AI pilot agreement',
+    sourceUrl:
+      'https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf',
+    sourceSummary:
+      'Utah agreement, company terms, privacy policy, school-district materials, and state pilot description',
+    sources: [
       {
-        "label": "ElizaChat regulatory mitigation agreement",
-        "href": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf"
+        label: 'ElizaChat regulatory mitigation agreement',
+        href: 'https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf',
       },
       {
-        "label": "ElizaChat Terms of Service",
-        "href": "https://elizachat.com/terms"
+        label: 'ElizaChat Terms of Service',
+        href: 'https://elizachat.com/terms',
       },
       {
-        "label": "ElizaChat Privacy Policy",
-        "href": "https://elizachat.com/privacy"
+        label: 'ElizaChat Privacy Policy',
+        href: 'https://elizachat.com/privacy',
       },
       {
-        "label": "ElizaChat for School Districts",
-        "href": "https://www.elizachat.com/for-schools/school-districts"
+        label: 'ElizaChat for School Districts',
+        href: 'https://www.elizachat.com/for-schools/school-districts',
       },
       {
-        "label": "Utah’s ElizaChat pilot description",
-        "href": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/elizachat/"
-      }
+        label: 'Utah’s ElizaChat pilot description',
+        href: 'https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/elizachat/',
+      },
     ],
-    "introduction": [
+    introduction: [
       {
-        "type": "paragraph",
-        "text": "ElizaChat markets its platform to school districts as continuous AI mental-health support for students, including evenings, weekends, and holidays when counselors are unavailable. The company says students who need immediate help are automatically escalated to human counselors."
+        type: 'paragraph',
+        text: 'ElizaChat markets its platform to school districts as continuous AI mental-health support for students, including evenings, weekends, and holidays when counselors are unavailable. The company says students who need immediate help are automatically escalated to human counselors.',
       },
       {
-        "type": "paragraph",
-        "text": "Utah authorized ElizaChat to test that promise in participating school districts. Schools decide whether to provide the system. ElizaChat decides when a student’s behavior qualifies for human intervention. The company’s terms allow a school to accept the service on behalf of parents."
+        type: 'paragraph',
+        text: 'Utah authorized ElizaChat to test that promise in participating school districts. Schools decide whether to provide the system. ElizaChat decides when a student’s behavior qualifies for human intervention. The company’s terms allow a school to accept the service on behalf of parents.',
       },
       {
-        "type": "paragraph",
-        "text": "However, the student does not design the system, approve the intervention threshold, select the underlying AI, authorize the Utah pilot, or negotiate the terms governing what happens after harm."
+        type: 'paragraph',
+        text: 'However, the student does not design the system, approve the intervention threshold, select the underlying AI, authorize the Utah pilot, or negotiate the terms governing what happens after harm.',
       },
       {
-        "type": "paragraph",
-        "text": "Yet the student bears the consequences."
+        type: 'paragraph',
+        text: 'Yet the student bears the consequences.',
       },
       {
-        "type": "linked-paragraph",
-        "before": "This case applies ",
-        "linkLabel": "Evidence-Based Responsibility Reconstruction℠",
-        "href": "/blog/evidence-based-responsibility-reconstruction/",
-        "after": " to the public record surrounding ElizaChat: the state agreement authorizing the pilot, ElizaChat’s school-facing claims, its Terms of Service, and its Privacy Policy. No individual injury is needed to see the structure. The governing documents already establish where authority sits, and who is the victim if harm occurs."
-      }
+        type: 'linked-paragraph',
+        before: 'This case applies ',
+        linkLabel: 'Evidence-Based Responsibility Reconstruction℠',
+        href: '/blog/evidence-based-responsibility-reconstruction/',
+        after:
+          ' to the public record surrounding ElizaChat: the state agreement authorizing the pilot, ElizaChat’s school-facing claims, its Terms of Service, and its Privacy Policy. No individual injury is needed to see the structure. The governing documents already establish where authority sits, and who is the victim if harm occurs.',
+      },
     ],
-    "sections": [
+    sections: [
       {
-        "id": "what-utah-authorized",
-        "label": "What Utah Authorized",
-        "blocks": [
+        id: 'what-utah-authorized',
+        label: 'What Utah Authorized',
+        blocks: [
           {
-            "type": "subheading",
-            "text": "A Three-Phase Student Rollout"
+            type: 'subheading',
+            text: 'A Three-Phase Student Rollout',
           },
           {
-            "type": "paragraph",
-            "text": "Utah’s Office of Artificial Intelligence Policy authorized ElizaChat to make its AI mental-health application available through participating school districts."
+            type: 'paragraph',
+            text: 'Utah’s Office of Artificial Intelligence Policy authorized ElizaChat to make its AI mental-health application available through participating school districts.',
           },
           {
-            "type": "paragraph",
-            "text": "Section VI(H) establishes a three-phase rollout:"
+            type: 'paragraph',
+            text: 'Section VI(H) establishes a three-phase rollout:',
           },
           {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              "Utah receives access as a trusted tester.",
-              "ElizaChat provides the application to a limited group of students selected by the company and reviewed by the state.",
-              "With Utah’s written approval, ElizaChat expands access across participating Utah school districts."
-            ]
+            type: 'list',
+            ordered: true,
+            items: [
+              'Utah receives access as a trusted tester.',
+              'ElizaChat provides the application to a limited group of students selected by the company and reviewed by the state.',
+              'With Utah’s written approval, ElizaChat expands access across participating Utah school districts.',
+            ],
           },
           {
-            "type": "paragraph",
-            "text": "The state did not merely observe an existing commercial product. It authorized the conditions under which the system could be introduced to students and retained control over whether deployment could expand."
+            type: 'paragraph',
+            text: 'The state did not merely observe an existing commercial product. It authorized the conditions under which the system could be introduced to students and retained control over whether deployment could expand.',
           },
           {
-            "type": "subheading",
-            "text": "The Public Safety Promise"
+            type: 'subheading',
+            text: 'The Public Safety Promise',
           },
           {
-            "type": "paragraph",
-            "text": "ElizaChat describes the system as an AI-powered mental-health support platform for students. Its school-district page promises continuous access, clinically informed support, and automatic escalation to human counselors when students need immediate help."
+            type: 'paragraph',
+            text: 'ElizaChat describes the system as an AI-powered mental-health support platform for students. Its school-district page promises continuous access, clinically informed support, and automatic escalation to human counselors when students need immediate help.',
           },
           {
-            "type": "paragraph",
-            "text": "Utah describes the pilot as having built-in risk assessments, immediate escalation to trusted adults, parental consent, and ongoing oversight."
+            type: 'paragraph',
+            text: 'Utah describes the pilot as having built-in risk assessments, immediate escalation to trusted adults, parental consent, and ongoing oversight.',
           },
           {
-            "type": "paragraph",
-            "text": "The public promise is clear: the AI provides support, identifies danger, and brings in a human when necessary."
+            type: 'paragraph',
+            text: 'The public promise is clear: the AI provides support, identifies danger, and brings in a human when necessary.',
           },
           {
-            "type": "paragraph",
-            "text": "The responsibility problem begins with who decides that intervention is necessary."
+            type: 'paragraph',
+            text: 'The responsibility problem begins with who decides that intervention is necessary.',
           },
           {
-            "type": "subheading",
-            "text": "A Named Corporate Authorization"
+            type: 'subheading',
+            text: 'A Named Corporate Authorization',
           },
           {
-            "type": "paragraph",
-            "text": "ElizaChat CEO Dave Barney signed the agreement on November 15, 2024."
+            type: 'paragraph',
+            text: 'ElizaChat CEO Dave Barney signed the agreement on November 15, 2024.',
           },
           {
-            "type": "paragraph",
-            "text": "That signature identifies the executive who committed the company to the pilot. It does not establish who designed the risk threshold, who validated it, or who approved expansion at each phase. But the agreement was not an anonymous technical arrangement. It was an institutional act executed by a named corporate officer."
-          }
-        ]
+            type: 'paragraph',
+            text: 'That signature identifies the executive who committed the company to the pilot. It does not establish who designed the risk threshold, who validated it, or who approved expansion at each phase. But the agreement was not an anonymous technical arrangement. It was an institutional act executed by a named corporate officer.',
+          },
+        ],
       },
       {
-        "id": "elizachat-decides-when-a-student-reaches-a-human",
-        "label": "ElizaChat Decides When a Student is Connected to a Human",
-        "blocks": [
+        id: 'elizachat-decides-when-a-student-reaches-a-human',
+        label: 'ElizaChat Decides When a Student is Connected to a Human',
+        blocks: [
           {
-            "type": "subheading",
-            "text": "The Agreement Gives ElizaChat the Threshold"
+            type: 'subheading',
+            text: 'The Agreement Gives ElizaChat the Threshold',
           },
           {
-            "type": "paragraph",
-            "text": "Section XVI(A) states:"
+            type: 'paragraph',
+            text: 'Section XVI(A) states:',
           },
           {
-            "type": "quote",
-            "text": "“Users who demonstrate high risk behavior, as determined by Participant,” must be connected promptly with ElizaChat’s clinical team, emergency contacts, and a licensed psychologist or therapist."
+            type: 'quote',
+            text: '“Users who demonstrate high risk behavior, as determined by Participant,” must be connected promptly with ElizaChat’s clinical team, emergency contacts, and a licensed psychologist or therapist.',
           },
           {
-            "type": "rich-paragraph",
-            "segments": [
+            type: 'rich-paragraph',
+            segments: [
               {
-                "text": "The words "
+                text: 'The words ',
               },
               {
-                "strong": "“as determined by Participant”"
+                strong: '“as determined by Participant”',
               },
               {
-                "text": " control the safeguard."
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "text": "ElizaChat is not simply operating the communication system. It decides whether a student has crossed the threshold that brings outside human expertise and judgment into the interaction."
-          },
-          {
-            "type": "matrix-table",
-            "headers": [
-              "If ElizaChat classifies the student as high risk",
-              "If ElizaChat does not classify the student as high risk"
+                text: ' control the safeguard.',
+              },
             ],
-            "rows": [
-              [
-                {
-                  "text": "The escalation process activates."
-                },
-                {
-                  "text": "The escalation process does not activate."
-                }
-              ],
-              [
-                {
-                  "text": "Clinical personnel and emergency contacts may be notified."
-                },
-                {
-                  "text": "A counselor, parent, school official, or emergency contact may never be notified."
-                }
-              ],
-              [
-                {
-                  "text": "The system creates an escalation record."
-                },
-                {
-                  "text": "The missed student may leave no escalation record at all."
-                }
-              ]
-            ]
           },
           {
-            "type": "paragraph",
-            "text": "The existence of a human escalation process does not establish that students who need intervention will receive it. It establishes only that ElizaChat has a process."
+            type: 'paragraph',
+            text: 'ElizaChat is not simply operating the communication system. It decides whether a student has crossed the threshold that brings outside human expertise and judgment into the interaction.',
           },
           {
-            "type": "subheading",
-            "text": "The System Decides Whether Its Own Safeguard Begins"
-          },
-          {
-            "type": "subheading",
-            "text": "What the Agreement Identifies",
-            "level": 4
-          },
-          {
-            "type": "paragraph",
-            "text": "Schedule B identifies an NLU system that filters inputs and outputs and a training loop involving a clinical advisory board. That is more methodological information than a bare claim that safeguards exist."
-          },
-          {
-            "type": "paragraph",
-            "text": "It is not validation."
-          },
-          {
-            "type": "subheading",
-            "text": "What the Public Record Does Not Show",
-            "level": 4
-          },
-          {
-            "type": "paragraph",
-            "text": "The public record provides no demonstrated accuracy rate, false-negative rate, independent study, or evidence showing how the system performs when students express danger indirectly, ambiguously, sarcastically, or in language the system was not trained to recognize."
-          },
-          {
-            "type": "paragraph",
-            "text": "The central control therefore depends on the system correctly recognizing the condition that is supposed to trigger supervision."
-          }
-        ]
-      },
-      {
-        "id": "disclosure-is-not-student-consent",
-        "label": "Disclosure Is Not The Same as Student Consent",
-        "blocks": [
-          {
-            "type": "subheading",
-            "text": "What the Agreement Requires Students to Acknowledge"
-          },
-          {
-            "type": "paragraph",
-            "text": "Section VI(G) requires ElizaChat to disclose that:"
-          },
-          {
-            "type": "list",
-            "items": [
-              "The application uses generative AI.",
-              "The system is undergoing testing and may not function as intended.",
-              "Student data will be used in specified ways."
-            ]
-          },
-          {
-            "type": "paragraph",
-            "text": "A user must acknowledge receiving those disclosures before accessing the application."
-          },
-          {
-            "type": "paragraph",
-            "text": "That is a click-through acknowledgement. It is not evidence that the student meaningfully chose the institutional arrangement."
-          },
-          {
-            "type": "subheading",
-            "text": "What the Student Never Decided"
-          },
-          {
-            "type": "paragraph",
-            "text": "By the time the student sees the disclosure, Utah has authorized the pilot, the school has chosen to provide the system, ElizaChat has established the operating conditions, and the adults involved have determined that the student will encounter the technology."
-          },
-          {
-            "type": "matrix-table",
-            "headers": [
-              "What the student can acknowledge",
-              "What the student did not control"
+            type: 'matrix-table',
+            headers: [
+              'If ElizaChat classifies the student as high risk',
+              'If ElizaChat does not classify the student as high risk',
             ],
-            "rows": [
+            rows: [
               [
                 {
-                  "text": "That the application uses generative AI"
+                  text: 'The escalation process activates.',
                 },
                 {
-                  "text": "Whether the school adopted it"
-                }
+                  text: 'The escalation process does not activate.',
+                },
               ],
               [
                 {
-                  "text": "That the system is being tested"
+                  text: 'Clinical personnel and emergency contacts may be notified.',
                 },
                 {
-                  "text": "Whether students should be the test population"
-                }
+                  text: 'A counselor, parent, school official, or emergency contact may never be notified.',
+                },
               ],
               [
                 {
-                  "text": "That the system may not work as intended"
+                  text: 'The system creates an escalation record.',
                 },
                 {
-                  "text": "Which failures were considered acceptable"
-                }
+                  text: 'The missed student may leave no escalation record at all.',
+                },
               ],
-              [
-                {
-                  "text": "How the company says data will be used"
-                },
-                {
-                  "text": "Which model, threshold, monitoring process, and escalation design govern the interaction"
-                }
-              ]
-            ]
-          },
-          {
-            "type": "paragraph",
-            "text": "Disclosure is not choice. Acknowledging that an AI system may fail is not the same as authorizing its use in a school mental-health setting. Clicking a box does not transfer the institutional decision to the student."
-          },
-          {
-            "type": "paragraph",
-            "text": "ElizaChat’s Terms of Service also allow a school or district to accept the terms on behalf of students’ parents and provide consent for collecting student information. The terms assign parents responsibility for their minor children’s conduct whether or not the parent authorized that conduct."
-          },
-          {
-            "type": "paragraph",
-            "text": "The structure converts authorization by Utah, the school, and ElizaChat into purported consent by the person with the least control over the arrangement."
-          },
-          {
-            "type": "quote",
-            "text": "Institutional authorization is converted into purported student consent, while the consequences are transferred to the student."
-          }
-        ]
-      },
-      {
-        "id": "a-harm-reporting-duty-still-depends-on-elizachat-recognizing-the-harm",
-        "label": "A Harm-Reporting Duty Still Depends on ElizaChat Recognizing the Harm",
-        "blocks": [
-          {
-            "type": "subheading",
-            "text": "Utah Created a Broader 24-Hour Reporting Duty"
-          },
-          {
-            "type": "paragraph",
-            "text": "The agreement does not limit all reporting to whether ElizaChat crossed into the licensed practice of mental-health therapy."
-          },
-          {
-            "type": "paragraph",
-            "text": "Section VI(I)(3) separately requires ElizaChat to notify the Office within 24 hours of incidents that result in harm to a user’s health, safety, or financial well-being."
-          },
-          {
-            "type": "paragraph",
-            "text": "That broader duty matters. A student or parent also retains the right to bring a claim against ElizaChat. Schedule A(F) makes clear that Utah’s enforcement relief does not eliminate claims by individual users or their parents or guardians."
-          },
-          {
-            "type": "paragraph",
-            "text": "The agreement therefore does not erase every remedy after harm."
-          },
-          {
-            "type": "subheading",
-            "text": "ElizaChat Still Controls the First Classification"
-          },
-          {
-            "type": "subheading",
-            "text": "When ElizaChat Recognizes Harm",
-            "level": 4
-          },
-          {
-            "type": "paragraph",
-            "text": "The reporting obligation begins only when the event is recognized as harm."
-          },
-          {
-            "type": "subheading",
-            "text": "When ElizaChat Does Not Recognize Harm",
-            "level": 4
-          },
-          {
-            "type": "paragraph",
-            "text": "If ElizaChat fails to classify a student as high risk, no escalation may occur. If the company does not learn of a later injury, does not connect it to the interaction, or does not classify the event as reportable harm, the 24-hour notice does not generate."
-          },
-          {
-            "type": "matrix-table",
-            "headers": [
-              "What the agreement requires",
-              "What issues remain unresolved"
             ],
-            "rows": [
-              [
-                {
-                  "text": "ElizaChat must report known harm within 24 hours."
-                },
-                {
-                  "text": "How harm that ElizaChat failed to detect becomes known to Utah."
-                }
-              ],
-              [
-                {
-                  "text": "Utah may inspect records after a complaint or suspected incident."
-                },
-                {
-                  "text": "How Utah discovers students who were never escalated and never complained."
-                }
-              ],
-              [
-                {
-                  "text": "ElizaChat must address identified failures and attempt to prevent recurrence."
-                },
-                {
-                  "text": "Who independently determines whether the failure was identified completely."
-                }
-              ],
-              [
-                {
-                  "text": "Students and parents retain the right to seek a remedy."
-                },
-                {
-                  "text": "Whether they possess the records needed to prove what happened."
-                }
-              ]
-            ]
           },
           {
-            "type": "paragraph",
-            "text": "The error in the earlier framing would be to say a broader reporting duty does not exist. It does."
+            type: 'paragraph',
+            text: 'The existence of a human escalation process does not establish that students who need intervention will receive it. It establishes only that ElizaChat has a process.',
           },
           {
-            "type": "paragraph",
-            "text": "The actual failure is more important: the duty still depends on the same company-controlled recognition process that governs escalation."
+            type: 'subheading',
+            text: 'The System Decides Whether Its Own Safeguard Begins',
           },
           {
-            "type": "subheading",
-            "text": "A Separate Licensing Incident Is Not the Same as Student Harm"
+            type: 'subheading',
+            text: 'What the Agreement Identifies',
+            level: 4,
           },
           {
-            "type": "paragraph",
-            "text": "Schedule A also defines an incident around whether ElizaChat enters the licensed practice of mental-health therapy. When the Office or Division determines that the application crossed that professional boundary, ElizaChat receives time to correct the problem and must address resulting harm."
+            type: 'paragraph',
+            text: 'Schedule B identifies an NLU system that filters inputs and outputs and a training loop involving a clinical advisory board. That is more methodological information than a bare claim that safeguards exist.',
           },
           {
-            "type": "paragraph",
-            "text": "That process protects a licensing boundary. The 24-hour provision addresses broader harm. Neither provision establishes an independent mechanism for discovering an injured student whom ElizaChat never identified as high risk."
+            type: 'paragraph',
+            text: 'It is not validation.',
           },
           {
-            "type": "paragraph",
-            "text": "A missed escalation might later be called a classification error, an inaccurate output, a monitoring failure, or unexpected AI behavior. Each label could describe part of the event."
+            type: 'subheading',
+            text: 'What the Public Record Does Not Show',
+            level: 4,
           },
           {
-            "type": "paragraph",
-            "text": "None would establish who owned the decisions that produced it."
-          }
-        ]
+            type: 'paragraph',
+            text: 'The public record provides no demonstrated accuracy rate, false-negative rate, independent study, or evidence showing how the system performs when students express danger indirectly, ambiguously, sarcastically, or in language the system was not trained to recognize.',
+          },
+          {
+            type: 'paragraph',
+            text: 'The central control therefore depends on the system correctly recognizing the condition that is supposed to trigger supervision.',
+          },
+        ],
       },
       {
-        "id": "responsibility-moves-away-from-the-students-decision-makers",
-        "label": "Responsibility Moves Away From the Student’s Decision-Makers",
-        "blocks": [
+        id: 'disclosure-is-not-student-consent',
+        label: 'Disclosure Is Not The Same as Student Consent',
+        blocks: [
           {
-            "type": "subheading",
-            "text": "Authority and Consequences Are Distributed Differently"
+            type: 'subheading',
+            text: 'What the Agreement Requires Students to Acknowledge',
           },
           {
-            "type": "matrix-table",
-            "headers": [
-              "Actor",
-              "Authority or control",
-              "Position after harm"
+            type: 'paragraph',
+            text: 'Section VI(G) requires ElizaChat to disclose that:',
+          },
+          {
+            type: 'list',
+            items: [
+              'The application uses generative AI.',
+              'The system is undergoing testing and may not function as intended.',
+              'Student data will be used in specified ways.',
             ],
-            "rows": [
-              [
-                {
-                  "text": "Utah"
-                },
-                {
-                  "text": "Authorized the pilot, reviewed the rollout, and could approve expansion"
-                },
-                {
-                  "text": "Disclaims endorsement and receives protection from claims arising from ElizaChat’s operation"
-                }
-              ],
-              [
-                {
-                  "text": "School district"
-                },
-                {
-                  "text": "Chose whether to provide the system and could accept terms on behalf of parents"
-                },
-                {
-                  "text": "Did not design the AI or control its internal classifications"
-                }
-              ],
-              [
-                {
-                  "text": "ElizaChat"
-                },
-                {
-                  "text": "Designed and operated the system, controlled the intervention threshold, and held the operating evidence"
-                },
-                {
-                  "text": "Its terms attempt to limit responsibility for AI outputs and resulting losses"
-                }
-              ],
-              [
-                {
-                  "text": "Parent or guardian"
-                },
-                {
-                  "text": "May receive notice or be represented by the school’s acceptance"
-                },
-                {
-                  "text": "May not have directly authorized the arrangement and lacks control over the system"
-                }
-              ],
-              [
-                {
-                  "text": "Student"
-                },
-                {
-                  "text": "Supplies the sensitive information and experiences the system’s decision"
-                },
-                {
-                  "text": "Bears the consequences despite controlling none of the institutional conditions"
-                }
-              ]
-            ]
           },
           {
-            "type": "paragraph",
-            "text": "Authority remains institutional. Risk does not."
+            type: 'paragraph',
+            text: 'A user must acknowledge receiving those disclosures before accessing the application.',
           },
           {
-            "type": "subheading",
-            "text": "Utah’s Relief Is Narrower Than a Complete Immunity"
+            type: 'paragraph',
+            text: 'That is a click-through acknowledgement. It is not evidence that the student meaningfully chose the institutional arrangement.',
           },
           {
-            "type": "paragraph",
-            "text": "Utah’s agreement says the pilot is not a state endorsement or approval of ElizaChat’s technology. ElizaChat must protect the Office and the Division of Professional Licensing from claims, losses, and expenses arising from the work."
+            type: 'subheading',
+            text: 'What the Student Never Decided',
           },
           {
-            "type": "paragraph",
-            "text": "But Schedule A(F) preserves claims brought by students and their parents or guardians against ElizaChat. Utah’s regulatory relief concerns enforcement of the licensed-therapy boundary; it does not immunize ElizaChat from individual claims."
+            type: 'paragraph',
+            text: 'By the time the student sees the disclosure, Utah has authorized the pilot, the school has chosen to provide the system, ElizaChat has established the operating conditions, and the adults involved have determined that the student will encounter the technology.',
           },
           {
-            "type": "paragraph",
-            "text": "That precision strengthens the responsibility finding. Utah authorized the operating conditions. ElizaChat retained responsibility for the system. Students retained a possible remedy. None of those facts establishes that an injured family would possess enough evidence to reconstruct the failure."
-          },
-          {
-            "type": "subheading",
-            "text": "ElizaChat’s Terms Narrow the Practical Path"
-          },
-          {
-            "type": "paragraph",
-            "text": "ElizaChat’s terms describe the company as a technology platform rather than a healthcare provider. They say the service is not appropriate for emergencies, warn that AI outputs may be inaccurate, and place reliance on those outputs at the user’s risk."
-          },
-          {
-            "type": "paragraph",
-            "text": "The terms attempt to limit responsibility for AI inputs and outputs, exclude categories of damages, cap total responsibility under the terms, require individual arbitration, and prohibit class and representative proceedings."
-          },
-          {
-            "type": "paragraph",
-            "text": "The right to bring a claim is therefore not the same as a clear path to proving a claim."
-          }
-        ]
-      },
-      {
-        "id": "elizachat-controls-the-evidence-needed-to-explain-what-happened",
-        "label": "ElizaChat Controls the Evidence Needed to Explain What Happened",
-        "blocks": [
-          {
-            "type": "subheading",
-            "text": "The Company Holds the Interaction Record"
-          },
-          {
-            "type": "paragraph",
-            "text": "ElizaChat collects account information, conversations, device information, usage activity, emergency-contact information, and system interactions. Its Privacy Policy says relevant conversation context may be shared with school officials, parents, law enforcement, or other authorities when the company determines reporting is necessary."
-          },
-          {
-            "type": "paragraph",
-            "text": "The company also controls the operating evidence:"
-          },
-          {
-            "type": "list",
-            "items": [
-              "What the student entered.",
-              "What the AI returned.",
-              "How the conversation was classified.",
-              "Whether a safety threshold activated.",
-              "Whether an alert was generated.",
-              "Who received the alert.",
-              "Whether a clinician became involved.",
-              "What ElizaChat reported to Utah.",
-              "Which excerpts were selected as examples of successful or unsuccessful behavior."
-            ]
-          },
-          {
-            "type": "subheading",
-            "text": "The Evidence Rules Do Not Establish Independent Possession"
-          },
-          {
-            "type": "subheading",
-            "text": "Utah’s Access Begins After Visibility",
-            "level": 4
-          },
-          {
-            "type": "paragraph",
-            "text": "Utah may request records after a complaint or an action reasonably likely to qualify as an incident. That access begins after the potential failure becomes visible to Utah. The agreement does not give Utah an independent mechanism for discovering students whom ElizaChat failed to identify."
-          },
-          {
-            "type": "subheading",
-            "text": "The Retention Rule Is Not Clear",
-            "level": 4
-          },
-          {
-            "type": "paragraph",
-            "text": "The public documents also provide different descriptions of what evidence survives. ElizaChat’s Terms of Service say some user content and health information may remain after account termination or deletion. Its Privacy Policy says account deletion permanently erases associated data except for information previously disclosed through mandated reporting."
-          },
-          {
-            "type": "paragraph",
-            "text": "Those statements do not establish a reliable preservation rule for an investigation after harm."
-          },
-          {
-            "type": "subheading",
-            "text": "Private Disputes Can Conceal Patterns",
-            "level": 4
-          },
-          {
-            "type": "paragraph",
-            "text": "Individual arbitration can fragment the evidence further. A student’s dispute may remain private and separated from similar claims. That makes it harder for families, schools, researchers, or the public to identify a pattern that ElizaChat can see across its records."
-          },
-          {
-            "type": "paragraph",
-            "text": "ElizaChat’s explanation would be evidence. Utah’s review would be evidence. A school’s account would be evidence. None should be accepted as the responsibility finding."
-          }
-        ]
-      },
-      {
-        "id": "what-the-public-record-establishes-and-what-remains-unresolved",
-        "label": "What the Public Record Establishes—and What Remains Unresolved",
-        "blocks": [
-          {
-            "type": "matrix-table",
-            "headers": [
-              "What the public record establishes",
-              "What remains unresolved"
+            type: 'matrix-table',
+            headers: [
+              'What the student can acknowledge',
+              'What the student did not control',
             ],
-            "rows": [
+            rows: [
               [
                 {
-                  "text": "Utah authorized the pilot and controlled phased expansion."
+                  text: 'That the application uses generative AI',
                 },
                 {
-                  "text": "Which individual approved expansion at each phase and what evidence supported that decision."
-                }
+                  text: 'Whether the school adopted it',
+                },
               ],
               [
                 {
-                  "text": "Participating school districts determined whether students would receive access."
+                  text: 'That the system is being tested',
                 },
                 {
-                  "text": "Which school officials accepted the deployment conditions and what parents were told."
-                }
+                  text: 'Whether students should be the test population',
+                },
               ],
               [
                 {
-                  "text": "Dave Barney signed the agreement for ElizaChat."
+                  text: 'That the system may not work as intended',
                 },
                 {
-                  "text": "Who designed, validated, and approved the high-risk threshold."
-                }
+                  text: 'Which failures were considered acceptable',
+                },
               ],
               [
                 {
-                  "text": "ElizaChat controlled the threshold that determines when a student reaches a human."
+                  text: 'How the company says data will be used',
                 },
                 {
-                  "text": "The threshold’s false-negative rate and performance across different forms of student expression."
-                }
+                  text: 'Which model, threshold, monitoring process, and escalation design govern the interaction',
+                },
               ],
-              [
-                {
-                  "text": "The agreement identifies an NLU filter and clinical-advisory-board training loop."
-                },
-                {
-                  "text": "The model, model version, configuration, external services, validation record, and independent testing."
-                }
-              ],
-              [
-                {
-                  "text": "ElizaChat created and held the operating record."
-                },
-                {
-                  "text": "Whether an outside investigator could recover the complete record after harm."
-                }
-              ],
-              [
-                {
-                  "text": "Students and parents retained the right to bring claims against ElizaChat."
-                },
-                {
-                  "text": "Whether they could obtain enough evidence to prove the responsibility chain."
-                }
-              ],
-              [
-                {
-                  "text": "ElizaChat had a 24-hour duty to report harm."
-                },
-                {
-                  "text": "How Utah would discover harm that ElizaChat failed to recognize or report."
-                }
-              ],
-              [
-                {
-                  "text": "Utah, ElizaChat, and schools all exercised institutional authority before deployment."
-                },
-                {
-                  "text": "Who formally accepted the remaining risk to students."
-                }
-              ]
-            ]
+            ],
           },
           {
-            "type": "paragraph",
-            "text": "These are not peripheral questions. They are the connections required to establish who controlled the conditions under which the AI acted."
+            type: 'paragraph',
+            text: 'Disclosure is not choice. Acknowledging that an AI system may fail is not the same as authorizing its use in a school mental-health setting. Clicking a box does not transfer the institutional decision to the student.',
           },
           {
-            "type": "paragraph",
-            "text": "Where those connections cannot be recovered, responsibility remains unresolved by design."
-          }
-        ]
+            type: 'paragraph',
+            text: 'ElizaChat’s Terms of Service also allow a school or district to accept the terms on behalf of students’ parents and provide consent for collecting student information. The terms assign parents responsibility for their minor children’s conduct whether or not the parent authorized that conduct.',
+          },
+          {
+            type: 'paragraph',
+            text: 'The structure converts authorization by Utah, the school, and ElizaChat into purported consent by the person with the least control over the arrangement.',
+          },
+          {
+            type: 'quote',
+            text: 'Institutional authorization is converted into purported student consent, while the consequences are transferred to the student.',
+          },
+        ],
       },
       {
-        "id": "responsibility-reconstruction-finding",
-        "label": "Responsibility Reconstruction Finding",
-        "blocks": [
+        id: 'a-harm-reporting-duty-still-depends-on-elizachat-recognizing-the-harm',
+        label:
+          'A Harm-Reporting Duty Still Depends on ElizaChat Recognizing the Harm',
+        blocks: [
           {
-            "type": "paragraph",
-            "text": "ElizaChat presents human escalation as the safeguard protecting students. But ElizaChat controls the threshold that decides whether the safeguard begins."
+            type: 'subheading',
+            text: 'Utah Created a Broader 24-Hour Reporting Duty',
           },
           {
-            "type": "paragraph",
-            "text": "Utah authorized the pilot, approved the structure, and retained oversight authority. It did not accept responsibility for operating the technology."
+            type: 'paragraph',
+            text: 'The agreement does not limit all reporting to whether ElizaChat crossed into the licensed practice of mental-health therapy.',
           },
           {
-            "type": "paragraph",
-            "text": "Schools chose whether to introduce the system and could accept terms on behalf of parents. They did not design the AI or control its internal risk decisions."
+            type: 'paragraph',
+            text: 'Section VI(I)(3) separately requires ElizaChat to notify the Office within 24 hours of incidents that result in harm to a user’s health, safety, or financial well-being.',
           },
           {
-            "type": "paragraph",
-            "text": "ElizaChat operated the system, controlled the intervention threshold, and held the evidence. Its terms nevertheless attempted to narrow its responsibility for inaccurate outputs and resulting harm."
+            type: 'paragraph',
+            text: 'That broader duty matters. A student or parent also retains the right to bring a claim against ElizaChat. Schedule A(F) makes clear that Utah’s enforcement relief does not eliminate claims by individual users or their parents or guardians.',
           },
           {
-            "type": "paragraph",
-            "text": "Students controlled none of those institutional decisions."
+            type: 'paragraph',
+            text: 'The agreement therefore does not erase every remedy after harm.',
           },
           {
-            "type": "paragraph",
-            "text": "The structure does not produce a clear accountable owner after harm. It produces a sequence of institutions pointing to the next actor, a technical label describing the failure, and a student left with the consequences."
+            type: 'subheading',
+            text: 'ElizaChat Still Controls the First Classification',
           },
           {
-            "type": "quote",
-            "text": "Naming the event a missed escalation or classification error would explain the mechanism of failure. It would not establish who authorized the threshold, who validated it, who permitted deployment, or who accepted the risk to students. Naming the error is not owning responsibility."
+            type: 'subheading',
+            text: 'When ElizaChat Recognizes Harm',
+            level: 4,
           },
           {
-            "type": "paragraph",
-            "text": "Evidence-Based Responsibility Reconstruction℠ is necessary because the agreement, the terms, the privacy policy, and the company’s incident report would each show only part of the responsibility chain. The process must reconstruct how authority, control, consent, evidence, and risk were distributed across Utah, ElizaChat, the school, the parents, and the student."
+            type: 'paragraph',
+            text: 'The reporting obligation begins only when the event is recognized as harm.',
           },
           {
-            "type": "paragraph",
-            "text": "The final finding is not that no one participated."
+            type: 'subheading',
+            text: 'When ElizaChat Does Not Recognize Harm',
+            level: 4,
           },
           {
-            "type": "paragraph",
-            "text": "It is that the institutions with authority retained control, while the student who did not authorize or meaningfully consent to the system was left to absorb its failure."
-          }
-        ]
-      }
-    ]
+            type: 'paragraph',
+            text: 'If ElizaChat fails to classify a student as high risk, no escalation may occur. If the company does not learn of a later injury, does not connect it to the interaction, or does not classify the event as reportable harm, the 24-hour notice does not generate.',
+          },
+          {
+            type: 'matrix-table',
+            headers: [
+              'What the agreement requires',
+              'What issues remain unresolved',
+            ],
+            rows: [
+              [
+                {
+                  text: 'ElizaChat must report known harm within 24 hours.',
+                },
+                {
+                  text: 'How harm that ElizaChat failed to detect becomes known to Utah.',
+                },
+              ],
+              [
+                {
+                  text: 'Utah may inspect records after a complaint or suspected incident.',
+                },
+                {
+                  text: 'How Utah discovers students who were never escalated and never complained.',
+                },
+              ],
+              [
+                {
+                  text: 'ElizaChat must address identified failures and attempt to prevent recurrence.',
+                },
+                {
+                  text: 'Who independently determines whether the failure was identified completely.',
+                },
+              ],
+              [
+                {
+                  text: 'Students and parents retain the right to seek a remedy.',
+                },
+                {
+                  text: 'Whether they possess the records needed to prove what happened.',
+                },
+              ],
+            ],
+          },
+          {
+            type: 'paragraph',
+            text: 'The error in the earlier framing would be to say a broader reporting duty does not exist. It does.',
+          },
+          {
+            type: 'paragraph',
+            text: 'The actual failure is more important: the duty still depends on the same company-controlled recognition process that governs escalation.',
+          },
+          {
+            type: 'subheading',
+            text: 'A Separate Licensing Incident Is Not the Same as Student Harm',
+          },
+          {
+            type: 'paragraph',
+            text: 'Schedule A also defines an incident around whether ElizaChat enters the licensed practice of mental-health therapy. When the Office or Division determines that the application crossed that professional boundary, ElizaChat receives time to correct the problem and must address resulting harm.',
+          },
+          {
+            type: 'paragraph',
+            text: 'That process protects a licensing boundary. The 24-hour provision addresses broader harm. Neither provision establishes an independent mechanism for discovering an injured student whom ElizaChat never identified as high risk.',
+          },
+          {
+            type: 'paragraph',
+            text: 'A missed escalation might later be called a classification error, an inaccurate output, a monitoring failure, or unexpected AI behavior. Each label could describe part of the event.',
+          },
+          {
+            type: 'paragraph',
+            text: 'None would establish who owned the decisions that produced it.',
+          },
+        ],
+      },
+      {
+        id: 'responsibility-moves-away-from-the-students-decision-makers',
+        label: 'Responsibility Moves Away From the Student’s Decision-Makers',
+        blocks: [
+          {
+            type: 'subheading',
+            text: 'Authority and Consequences Are Distributed Differently',
+          },
+          {
+            type: 'matrix-table',
+            headers: ['Actor', 'Authority or control', 'Position after harm'],
+            rows: [
+              [
+                {
+                  text: 'Utah',
+                },
+                {
+                  text: 'Authorized the pilot, reviewed the rollout, and could approve expansion',
+                },
+                {
+                  text: 'Disclaims endorsement and receives protection from claims arising from ElizaChat’s operation',
+                },
+              ],
+              [
+                {
+                  text: 'School district',
+                },
+                {
+                  text: 'Chose whether to provide the system and could accept terms on behalf of parents',
+                },
+                {
+                  text: 'Did not design the AI or control its internal classifications',
+                },
+              ],
+              [
+                {
+                  text: 'ElizaChat',
+                },
+                {
+                  text: 'Designed and operated the system, controlled the intervention threshold, and held the operating evidence',
+                },
+                {
+                  text: 'Its terms attempt to limit responsibility for AI outputs and resulting losses',
+                },
+              ],
+              [
+                {
+                  text: 'Parent or guardian',
+                },
+                {
+                  text: 'May receive notice or be represented by the school’s acceptance',
+                },
+                {
+                  text: 'May not have directly authorized the arrangement and lacks control over the system',
+                },
+              ],
+              [
+                {
+                  text: 'Student',
+                },
+                {
+                  text: 'Supplies the sensitive information and experiences the system’s decision',
+                },
+                {
+                  text: 'Bears the consequences despite controlling none of the institutional conditions',
+                },
+              ],
+            ],
+          },
+          {
+            type: 'paragraph',
+            text: 'Authority remains institutional. Risk does not.',
+          },
+          {
+            type: 'subheading',
+            text: 'Utah’s Relief Is Narrower Than a Complete Immunity',
+          },
+          {
+            type: 'paragraph',
+            text: 'Utah’s agreement says the pilot is not a state endorsement or approval of ElizaChat’s technology. ElizaChat must protect the Office and the Division of Professional Licensing from claims, losses, and expenses arising from the work.',
+          },
+          {
+            type: 'paragraph',
+            text: 'But Schedule A(F) preserves claims brought by students and their parents or guardians against ElizaChat. Utah’s regulatory relief concerns enforcement of the licensed-therapy boundary; it does not immunize ElizaChat from individual claims.',
+          },
+          {
+            type: 'paragraph',
+            text: 'That precision strengthens the responsibility finding. Utah authorized the operating conditions. ElizaChat retained responsibility for the system. Students retained a possible remedy. None of those facts establishes that an injured family would possess enough evidence to reconstruct the failure.',
+          },
+          {
+            type: 'subheading',
+            text: 'ElizaChat’s Terms Narrow the Practical Path',
+          },
+          {
+            type: 'paragraph',
+            text: 'ElizaChat’s terms describe the company as a technology platform rather than a healthcare provider. They say the service is not appropriate for emergencies, warn that AI outputs may be inaccurate, and place reliance on those outputs at the user’s risk.',
+          },
+          {
+            type: 'paragraph',
+            text: 'The terms attempt to limit responsibility for AI inputs and outputs, exclude categories of damages, cap total responsibility under the terms, require individual arbitration, and prohibit class and representative proceedings.',
+          },
+          {
+            type: 'paragraph',
+            text: 'The right to bring a claim is therefore not the same as a clear path to proving a claim.',
+          },
+        ],
+      },
+      {
+        id: 'elizachat-controls-the-evidence-needed-to-explain-what-happened',
+        label:
+          'ElizaChat Controls the Evidence Needed to Explain What Happened',
+        blocks: [
+          {
+            type: 'subheading',
+            text: 'The Company Holds the Interaction Record',
+          },
+          {
+            type: 'paragraph',
+            text: 'ElizaChat collects account information, conversations, device information, usage activity, emergency-contact information, and system interactions. Its Privacy Policy says relevant conversation context may be shared with school officials, parents, law enforcement, or other authorities when the company determines reporting is necessary.',
+          },
+          {
+            type: 'paragraph',
+            text: 'The company also controls the operating evidence:',
+          },
+          {
+            type: 'list',
+            items: [
+              'What the student entered.',
+              'What the AI returned.',
+              'How the conversation was classified.',
+              'Whether a safety threshold activated.',
+              'Whether an alert was generated.',
+              'Who received the alert.',
+              'Whether a clinician became involved.',
+              'What ElizaChat reported to Utah.',
+              'Which excerpts were selected as examples of successful or unsuccessful behavior.',
+            ],
+          },
+          {
+            type: 'subheading',
+            text: 'The Evidence Rules Do Not Establish Independent Possession',
+          },
+          {
+            type: 'subheading',
+            text: 'Utah’s Access Begins After Visibility',
+            level: 4,
+          },
+          {
+            type: 'paragraph',
+            text: 'Utah may request records after a complaint or an action reasonably likely to qualify as an incident. That access begins after the potential failure becomes visible to Utah. The agreement does not give Utah an independent mechanism for discovering students whom ElizaChat failed to identify.',
+          },
+          {
+            type: 'subheading',
+            text: 'The Retention Rule Is Not Clear',
+            level: 4,
+          },
+          {
+            type: 'paragraph',
+            text: 'The public documents also provide different descriptions of what evidence survives. ElizaChat’s Terms of Service say some user content and health information may remain after account termination or deletion. Its Privacy Policy says account deletion permanently erases associated data except for information previously disclosed through mandated reporting.',
+          },
+          {
+            type: 'paragraph',
+            text: 'Those statements do not establish a reliable preservation rule for an investigation after harm.',
+          },
+          {
+            type: 'subheading',
+            text: 'Private Disputes Can Conceal Patterns',
+            level: 4,
+          },
+          {
+            type: 'paragraph',
+            text: 'Individual arbitration can fragment the evidence further. A student’s dispute may remain private and separated from similar claims. That makes it harder for families, schools, researchers, or the public to identify a pattern that ElizaChat can see across its records.',
+          },
+          {
+            type: 'paragraph',
+            text: 'ElizaChat’s explanation would be evidence. Utah’s review would be evidence. A school’s account would be evidence. None should be accepted as the responsibility finding.',
+          },
+        ],
+      },
+      {
+        id: 'what-the-public-record-establishes-and-what-remains-unresolved',
+        label: 'What the Public Record Establishes—and What Remains Unresolved',
+        blocks: [
+          {
+            type: 'matrix-table',
+            headers: [
+              'What the public record establishes',
+              'What remains unresolved',
+            ],
+            rows: [
+              [
+                {
+                  text: 'Utah authorized the pilot and controlled phased expansion.',
+                },
+                {
+                  text: 'Which individual approved expansion at each phase and what evidence supported that decision.',
+                },
+              ],
+              [
+                {
+                  text: 'Participating school districts determined whether students would receive access.',
+                },
+                {
+                  text: 'Which school officials accepted the deployment conditions and what parents were told.',
+                },
+              ],
+              [
+                {
+                  text: 'Dave Barney signed the agreement for ElizaChat.',
+                },
+                {
+                  text: 'Who designed, validated, and approved the high-risk threshold.',
+                },
+              ],
+              [
+                {
+                  text: 'ElizaChat controlled the threshold that determines when a student reaches a human.',
+                },
+                {
+                  text: 'The threshold’s false-negative rate and performance across different forms of student expression.',
+                },
+              ],
+              [
+                {
+                  text: 'The agreement identifies an NLU filter and clinical-advisory-board training loop.',
+                },
+                {
+                  text: 'The model, model version, configuration, external services, validation record, and independent testing.',
+                },
+              ],
+              [
+                {
+                  text: 'ElizaChat created and held the operating record.',
+                },
+                {
+                  text: 'Whether an outside investigator could recover the complete record after harm.',
+                },
+              ],
+              [
+                {
+                  text: 'Students and parents retained the right to bring claims against ElizaChat.',
+                },
+                {
+                  text: 'Whether they could obtain enough evidence to prove the responsibility chain.',
+                },
+              ],
+              [
+                {
+                  text: 'ElizaChat had a 24-hour duty to report harm.',
+                },
+                {
+                  text: 'How Utah would discover harm that ElizaChat failed to recognize or report.',
+                },
+              ],
+              [
+                {
+                  text: 'Utah, ElizaChat, and schools all exercised institutional authority before deployment.',
+                },
+                {
+                  text: 'Who formally accepted the remaining risk to students.',
+                },
+              ],
+            ],
+          },
+          {
+            type: 'paragraph',
+            text: 'These are not peripheral questions. They are the connections required to establish who controlled the conditions under which the AI acted.',
+          },
+          {
+            type: 'paragraph',
+            text: 'Where those connections cannot be recovered, responsibility remains unresolved by design.',
+          },
+        ],
+      },
+      {
+        id: 'responsibility-reconstruction-finding',
+        label: 'Responsibility Reconstruction Finding',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'ElizaChat presents human escalation as the safeguard protecting students. But ElizaChat controls the threshold that decides whether the safeguard begins.',
+          },
+          {
+            type: 'paragraph',
+            text: 'Utah authorized the pilot, approved the structure, and retained oversight authority. It did not accept responsibility for operating the technology.',
+          },
+          {
+            type: 'paragraph',
+            text: 'Schools chose whether to introduce the system and could accept terms on behalf of parents. They did not design the AI or control its internal risk decisions.',
+          },
+          {
+            type: 'paragraph',
+            text: 'ElizaChat operated the system, controlled the intervention threshold, and held the evidence. Its terms nevertheless attempted to narrow its responsibility for inaccurate outputs and resulting harm.',
+          },
+          {
+            type: 'paragraph',
+            text: 'Students controlled none of those institutional decisions.',
+          },
+          {
+            type: 'paragraph',
+            text: 'The structure does not produce a clear accountable owner after harm. It produces a sequence of institutions pointing to the next actor, a technical label describing the failure, and a student left with the consequences.',
+          },
+          {
+            type: 'quote',
+            text: 'Naming the event a missed escalation or classification error would explain the mechanism of failure. It would not establish who authorized the threshold, who validated it, who permitted deployment, or who accepted the risk to students. Naming the error is not owning responsibility.',
+          },
+          {
+            type: 'paragraph',
+            text: 'Evidence-Based Responsibility Reconstruction℠ is necessary because the agreement, the terms, the privacy policy, and the company’s incident report would each show only part of the responsibility chain. The process must reconstruct how authority, control, consent, evidence, and risk were distributed across Utah, ElizaChat, the school, the parents, and the student.',
+          },
+          {
+            type: 'paragraph',
+            text: 'The final finding is not that no one participated.',
+          },
+          {
+            type: 'paragraph',
+            text: 'It is that the institutions with authority retained control, while the student who did not authorize or meaningfully consent to the system was left to absorb its failure.',
+          },
+        ],
+      },
+    ],
   },
   {
-    "slug": "dentacor-utah-ai-pilot",
-    "shortName": "Dentacor",
-    "initials": "DE",
-    "title": "Dentacor: Dual Verification Does Not Detect Shared Error",
-    "pageTitle": "Dentacor: Lack of Access Is Not Consent to Reduced Dentist Supervision",
-    "href": "/case-studies/dentacor-utah-ai-pilot/",
-    "indexSummary": "A hygienist and AI can agree on a dental radiograph and allow treatment to proceed without a dentist. Agreement prevents escalation; it does not detect an error shared by both reviewers.",
-    "cardSummary": "A hygienist and AI can agree on a dental radiograph and allow treatment to proceed without a dentist. Agreement prevents escalation; it does not detect an error shared by both reviewers.",
-    "aiUse": "Dental radiograph assessment",
-    "humanCheckpoint": "Dentist review after disagreement",
-    "evidenceSource": "Provider reports and complaint-triggered review",
-    "reconstructionFinding": "Technology actor missing from the responsibility record",
-    "primaryRecord": "Dentacor Utah AI pilot agreement",
-    "sourceUrl": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf",
-    "sourceSummary": "Utah agreement and pilot materials, Dentacor materials, state reporting, and comparative FDA records",
-    "sources": [
+    slug: 'dentacor-utah-ai-pilot',
+    shortName: 'Dentacor',
+    initials: 'DE',
+    title: 'Dentacor: Dual Verification Does Not Detect Shared Error',
+    pageTitle:
+      'Dentacor: Lack of Access Is Not Consent to Reduced Dentist Supervision',
+    href: '/case-studies/dentacor-utah-ai-pilot/',
+    indexSummary:
+      'A hygienist and AI can agree on a dental radiograph and allow treatment to proceed without a dentist. Agreement prevents escalation; it does not detect an error shared by both reviewers.',
+    cardSummary:
+      'A hygienist and AI can agree on a dental radiograph and allow treatment to proceed without a dentist. Agreement prevents escalation; it does not detect an error shared by both reviewers.',
+    aiUse: 'Dental radiograph assessment',
+    humanCheckpoint: 'Dentist review after disagreement',
+    evidenceSource: 'Provider reports and complaint-triggered review',
+    reconstructionFinding:
+      'Technology actor missing from the responsibility record',
+    primaryRecord: 'Dentacor Utah AI pilot agreement',
+    sourceUrl:
+      'https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf',
+    sourceSummary:
+      'Utah agreement and pilot materials, Dentacor materials, state reporting, and comparative FDA records',
+    sources: [
       {
-        "label": "Dentacor Regulatory Mitigation Agreement",
-        "href": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf"
+        label: 'Dentacor Regulatory Mitigation Agreement',
+        href: 'https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf',
       },
       {
-        "label": "Utah’s Dentacor Pilot Description",
-        "href": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/"
+        label: 'Utah’s Dentacor Pilot Description',
+        href: 'https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/',
       },
       {
-        "label": "Nate Wilson’s Dentacor Pilot Announcement",
-        "href": "https://www.linkedin.com/posts/medicaid-advocate_dentacor-is-now-the-first-medical-provider-activity-7335519060719230979-lNGl"
+        label: 'Nate Wilson’s Dentacor Pilot Announcement',
+        href: 'https://www.linkedin.com/posts/medicaid-advocate_dentacor-is-now-the-first-medical-provider-activity-7335519060719230979-lNGl',
       },
       {
-        "label": "Dentacor Public Website",
-        "href": "https://dentacor.com/"
+        label: 'Dentacor Public Website',
+        href: 'https://dentacor.com/',
       },
       {
-        "label": "Dentacor Leadership Team",
-        "href": "https://dentacor.com/leadership-team/"
+        label: 'Dentacor Leadership Team',
+        href: 'https://dentacor.com/leadership-team/',
       },
       {
-        "label": "Utah Department of Commerce 2025 Year in Review",
-        "href": "https://commerce.utah.gov/2026/01/07/year-in-review-the-utah-department-of-commerces-2025-highlights/"
+        label: 'Utah Department of Commerce 2025 Year in Review',
+        href: 'https://commerce.utah.gov/2026/01/07/year-in-review-the-utah-department-of-commerces-2025-highlights/',
       },
       {
-        "label": "Videa FDA-Clearance Announcement",
-        "href": "https://www.videa.ai/news/videahealth-dental-ai-solution-receives-fda-510-k-clearance-establishing-industry-wide-benchmark-for-clinical-accuracy"
+        label: 'Videa FDA-Clearance Announcement',
+        href: 'https://www.videa.ai/news/videahealth-dental-ai-solution-receives-fda-510-k-clearance-establishing-industry-wide-benchmark-for-clinical-accuracy',
       },
       {
-        "label": "FDA 510(k) Record for Videa Dental AI",
-        "href": "https://www.accessdata.fda.gov/cdrh_docs/pdf25/K251002.pdf"
-      }
+        label: 'FDA 510(k) Record for Videa Dental AI',
+        href: 'https://www.accessdata.fda.gov/cdrh_docs/pdf25/K251002.pdf',
+      },
     ],
-    "introduction": [
+    introduction: [
       {
-        "type": "paragraph",
-        "text": "Dentacor is a mobile dental-care provider founded in 2021. Its public website describes a conventional clinical model: hygienists collect images and information, and a Dentacor dentist creates the patient’s diagnosis and treatment plan."
+        type: 'paragraph',
+        text: 'Dentacor is a mobile dental-care provider founded in 2021. Its public website describes a conventional clinical model: hygienists collect images and information, and a Dentacor dentist creates the patient’s diagnosis and treatment plan.',
       },
       {
-        "type": "paragraph",
-        "text": "Utah authorized a different model."
+        type: 'paragraph',
+        text: 'Utah authorized a different model.',
       },
       {
-        "type": "paragraph",
-        "text": "Under a 12-month regulatory mitigation agreement, Dentacor’s dental hygienists may diagnose specified conditions with the concurrence of an AI radiograph tool instead of working under the general supervision of a dentist. If the hygienist and AI agree, treatment can proceed without dentist review. If they disagree, the case is escalated."
+        type: 'paragraph',
+        text: 'Under a 12-month regulatory mitigation agreement, Dentacor’s dental hygienists may diagnose specified conditions with the concurrence of an AI radiograph tool instead of working under the general supervision of a dentist. If the hygienist and AI agree, treatment can proceed without dentist review. If they disagree, the case is escalated.',
       },
       {
-        "type": "paragraph",
-        "text": "The pilot is directed toward people experiencing homelessness, poverty, addiction, and limited access to Medicaid dentists. Patients must consent after being told that no dentist is supervising the procedure and that a hygienist does not have the same training or professional scope as a dentist."
+        type: 'paragraph',
+        text: 'The pilot is directed toward people experiencing homelessness, poverty, addiction, and limited access to Medicaid dentists. Patients must consent after being told that no dentist is supervising the procedure and that a hygienist does not have the same training or professional scope as a dentist.',
       },
       {
-        "type": "paragraph",
-        "text": "The AI system replacing that supervision is never identified."
+        type: 'paragraph',
+        text: 'The AI system replacing that supervision is never identified.',
       },
       {
-        "type": "paragraph",
-        "text": "The public agreement does not name its developer, vendor, product, model, version, validation study, or party responsible for retaining its technical records."
+        type: 'paragraph',
+        text: 'The public agreement does not name its developer, vendor, product, model, version, validation study, or party responsible for retaining its technical records.',
       },
       {
-        "type": "paragraph",
-        "text": "This is the responsibility problem: Utah used an access crisis to authorize reduced dentist supervision for patients with the fewest alternatives, while leaving the technology actor outside the public record."
-      }
+        type: 'paragraph',
+        text: 'This is the responsibility problem: Utah used an access crisis to authorize reduced dentist supervision for patients with the fewest alternatives, while leaving the technology actor outside the public record.',
+      },
     ],
-    "sections": [
+    sections: [
       {
-        "id": "what-utah-authorized",
-        "label": "What Utah Authorized",
-        "blocks": [
+        id: 'what-utah-authorized',
+        label: 'What Utah Authorized',
+        blocks: [
           {
-            "type": "subheading",
-            "text": "The AI Can Stand In for Dentist Supervision"
+            type: 'subheading',
+            text: 'The AI Can Stand In for Dentist Supervision',
           },
           {
-            "type": "linked-paragraph",
-            "before": "The ",
-            "linkLabel": "Dentacor regulatory mitigation agreement",
-            "href": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf",
-            "after": " permits Dentacor-employed hygienists to diagnose:"
+            type: 'linked-paragraph',
+            before: 'The ',
+            linkLabel: 'Dentacor regulatory mitigation agreement',
+            href: 'https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf',
+            after: ' permits Dentacor-employed hygienists to diagnose:',
           },
           {
-            "type": "list",
-            "items": [
-              "Periodontal disease",
-              "Complete edentulism",
-              "Complete anodontia"
-            ]
-          },
-          {
-            "type": "paragraph",
-            "text": "With the AI system’s concurrence, the hygienist may perform:"
-          },
-          {
-            "type": "list",
-            "items": [
-              "Scaling and root planing",
-              "Installation and fitting of full dentures"
-            ]
-          },
-          {
-            "type": "paragraph",
-            "text": "Dentacor calls this a dual-verification protocol."
-          },
-          {
-            "type": "subheading",
-            "text": "If the Hygienist and AI Disagree",
-            "level": 4
-          },
-          {
-            "type": "paragraph",
-            "text": "The case is escalated to a licensed dentist."
-          },
-          {
-            "type": "subheading",
-            "text": "If the Hygienist and AI Agree",
-            "level": 4
-          },
-          {
-            "type": "paragraph",
-            "text": "Treatment may proceed without a dentist reviewing the diagnosis."
-          },
-          {
-            "type": "paragraph",
-            "text": "The AI therefore helps determine whether a dentist enters the case. It is not merely organizing information for a professional. Its concurrence removes the escalation that would otherwise bring a dentist into the decision."
-          },
-          {
-            "type": "linked-paragraph",
-            "before": "Utah’s ",
-            "linkLabel": "public pilot description",
-            "href": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/",
-            "after": " says the AI supports rather than replaces professional judgment. The operative agreement permits AI concurrence in place of dentist supervision for the authorized work."
-          },
-          {
-            "type": "subheading",
-            "text": "Consent Does Not Identify the AI"
-          },
-          {
-            "type": "paragraph",
-            "text": "The agreement requires patients to consent after being told that no dentist is supervising the procedure and that the hygienist does not have the full training or professional scope of a dentist."
-          },
-          {
-            "type": "paragraph",
-            "text": "Separately, Dentacor must not misrepresent the use of the AI radiograph tool or its ability to diagnose a dental condition. That is a duty not to misrepresent the technology, not an express requirement to identify the system or explain its specific limitations."
-          },
-          {
-            "type": "paragraph",
-            "text": "The patient does not select the AI, validate its performance, establish the escalation threshold, or decide that the remaining risk is acceptable."
-          },
-          {
-            "type": "paragraph",
-            "text": "Disclosure does not transfer those institutional decisions to the patient."
-          }
-        ]
-      },
-      {
-        "id": "the-ai-has-no-public-identity",
-        "label": "The AI Has No Public Identity",
-        "blocks": [
-          {
-            "type": "subheading",
-            "text": "The Agreement Names a Function, Not a System"
-          },
-          {
-            "type": "paragraph",
-            "text": "The agreement repeatedly refers to an “AI-assisted radiograph diagnostic tool.” It does not identify:"
-          },
-          {
-            "type": "list",
-            "items": [
-              "The AI developer or vendor",
-              "The product, model, or version",
-              "Its regulatory status",
-              "Its diagnostic thresholds",
-              "Its validation evidence",
-              "Who controls software updates",
-              "Who retains the technical logs",
-              "How responsibility is divided between Dentacor and the technology provider"
-            ]
-          },
-          {
-            "type": "paragraph",
-            "text": "Dentacor’s proposal claims that AI radiograph tools have surpassed diagnostic benchmarks associated with junior dentists. It does not identify the benchmark, cite the supporting evidence, or establish that the system used in this pilot achieved that performance."
-          },
-          {
-            "type": "paragraph",
-            "text": "A general claim about dental AI cannot validate an unidentified product."
-          },
-          {
-            "type": "subheading",
-            "text": "The Silence Is Not an Industry Default"
-          },
-          {
-            "type": "paragraph",
-            "text": "Dental AI companies routinely identify their systems and regulatory status."
-          },
-          {
-            "type": "rich-paragraph",
-            "segments": [
-              {
-                "text": "Videa, for example, publicly identifies its dental AI products and FDA clearances and says its technology analyzes more than 500 million X-rays annually. FDA records identify the manufacturer, product, intended uses, supported image types, patient populations, and operating limitations. They also describe the system as an aid to trained professionals rather than a replacement for professional diagnosis. "
-              },
-              {
-                "linkLabel": "Videa’s FDA-clearance announcement",
-                "href": "https://www.videa.ai/news/videahealth-dental-ai-solution-receives-fda-510-k-clearance-establishing-industry-wide-benchmark-for-clinical-accuracy"
-              },
-              {
-                "text": ", "
-              },
-              {
-                "linkLabel": "FDA 510(k) record",
-                "href": "https://www.accessdata.fda.gov/cdrh_docs/pdf25/K251002.pdf"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "text": "The Dentacor record provides none of that information."
-          },
-          {
-            "type": "paragraph",
-            "text": "Because the tool is unnamed, the public cannot determine whether it was validated or cleared for the role Utah authorized—or whether that role exceeds its intended use."
-          },
-          {
-            "type": "subheading",
-            "text": "Dentacor Is Visible; the Technology Provider Is Not"
-          },
-          {
-            "type": "rich-paragraph",
-            "segments": [
-              {
-                "text": "Dentacor’s "
-              },
-              {
-                "linkLabel": "website",
-                "href": "https://dentacor.com/"
-              },
-              {
-                "text": " presents a mobile dental-care company. Its "
-              },
-              {
-                "linkLabel": "leadership page",
-                "href": "https://dentacor.com/leadership-team/"
-              },
-              {
-                "text": " identifies dental, provider-services, operations, and information-technology leadership. It does not identify an AI product, AI development team, clinical AI validation function, or outside technology partner."
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "text": "Utah may have reviewed private information about Dentacor’s technical capability. The public responsibility record does not show it."
-          },
-          {
-            "type": "paragraph",
-            "text": "A healthcare provider can license a third-party AI product. But when that system helps remove a dentist from a clinical decision, its developer becomes part of the responsibility chain."
-          },
-          {
-            "type": "paragraph",
-            "text": "Governance surrounds the deployment. It does not visibly reach the technology."
-          }
-        ]
-      },
-      {
-        "id": "lack-of-access-becomes-the-reason-to-reduce-supervision",
-        "label": "Lack of Access Becomes the Reason to Reduce Supervision",
-        "blocks": [
-          {
-            "type": "subheading",
-            "text": "The Same Need Justifies and Supplies the Test"
-          },
-          {
-            "type": "paragraph",
-            "text": "Dentacor describes untreated dental disease among vulnerable Utah residents as a moral and clinical emergency. It identifies homelessness, chronic pain, addiction, poverty, and the shrinking number of dentists accepting Medicaid."
-          },
-          {
-            "type": "linked-paragraph",
-            "before": "In his ",
-            "linkLabel": "public announcement",
-            "href": "https://www.linkedin.com/posts/medicaid-advocate_dentacor-is-now-the-first-medical-provider-activity-7335519060719230979-lNGl",
-            "after": ", Dentacor CEO Nate Wilson presented the pilot as using AI to restore access and dignity rather than optimize profits."
-          },
-          {
-            "type": "paragraph",
-            "text": "The need is real. The conflict lies in what that need is being used to justify."
-          },
-          {
-            "type": "paragraph",
-            "text": "The pilot does not add AI on top of ordinary dentist supervision. It permits AI concurrence to replace that supervision."
-          },
-          {
-            "type": "paragraph",
-            "text": "A patient with reliable access to a dentist can reject the arrangement and obtain care elsewhere. A patient experiencing pain, homelessness, or limited Medicaid access may effectively be choosing between AI-assisted care without dentist supervision and no treatment."
-          },
-          {
-            "type": "paragraph",
-            "text": "The patient’s lack of alternatives becomes:"
-          },
-          {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              "The problem Dentacor claims to solve.",
-              "The reason Utah relaxes the supervision requirement.",
-              "The condition making participation more likely.",
-              "The source of evidence used to evaluate the model."
-            ]
-          },
-          {
-            "type": "quote",
-            "text": "Lack of access is converted into consent to reduced supervision, while the patient bears the clinical consequences."
-          },
-          {
-            "type": "subheading",
-            "text": "The Evidence Is Intended to Support Expansion"
-          },
-          {
-            "type": "paragraph",
-            "text": "Dentacor estimates that the model could double the number of patients served without increasing staff. Its proposal describes the pilot as a possible national blueprint for shelters, rural communities, tribal communities, and other care deserts."
-          },
-          {
-            "type": "paragraph",
-            "text": "The patients receive access. Dentacor receives greater capacity and evidence supporting expansion."
-          },
-          {
-            "type": "paragraph",
-            "text": "Before that model can be treated as a blueprint, the record must establish which AI produced the results, whether the system changed during the pilot, how often dentists reviewed its decisions, and whether agreement between the AI and hygienists was independently verified."
-          }
-        ]
-      },
-      {
-        "id": "dual-verification-does-not-prove-independent-judgment",
-        "label": "Dual Verification Does Not Prove Independent Judgment",
-        "blocks": [
-          {
-            "type": "subheading",
-            "text": "The Control Detects Disagreement, Not Shared Error"
-          },
-          {
-            "type": "paragraph",
-            "text": "The agreement does not say whether the hygienist records a diagnosis before seeing the AI output or whether the AI can influence the hygienist’s conclusion."
-          },
-          {
-            "type": "paragraph",
-            "text": "It also does not establish whether:"
-          },
-          {
-            "type": "list",
-            "items": [
-              "The AI and hygienist can share the same image-quality failure",
-              "Confidence scores are preserved",
-              "Agreement is later reviewed by a dentist",
-              "False agreement is measured",
-              "The system distinguishes uncertainty from a negative finding"
-            ]
-          },
-          {
-            "type": "paragraph",
-            "text": "If the AI and hygienist disagree, the safeguard works as described: a dentist enters the case."
-          },
-          {
-            "type": "paragraph",
-            "text": "If they agree incorrectly, no escalation occurs."
-          },
-          {
-            "type": "paragraph",
-            "text": "Both could misread the same radiograph, miss the same condition, or reach agreement because the AI influenced the human reviewer. Counting agreement would not distinguish independent confirmation from shared error or automation bias."
-          },
-          {
-            "type": "paragraph",
-            "text": "“Dual verification” names the safeguard. It does not prove that two independent judgments occurred."
-          }
-        ]
-      },
-      {
-        "id": "dentacor-controls-the-initial-evidence",
-        "label": "Dentacor Controls the Initial Evidence",
-        "blocks": [
-          {
-            "type": "subheading",
-            "text": "Compliance Exists Around the Pilot"
-          },
-          {
-            "type": "paragraph",
-            "text": "Dentacor must use licensed hygienists, obtain patient consent, train participating staff, maintain privacy and cybersecurity protections, monitor the pilot, and report monthly to Utah."
-          },
-          {
-            "type": "paragraph",
-            "text": "The reports cover patient volume, demographics, AI efficacy, escalations, complaints, system errors, and adverse outcomes. Third-party researchers approved by Utah may review them, but independent review is not required."
-          },
-          {
-            "type": "paragraph",
-            "text": "Dentacor therefore operates the pilot, collects the evidence, evaluates the AI’s performance, and supplies the initial account to Utah."
-          },
-          {
-            "type": "subheading",
-            "text": "Utah Has Announced Success Without Publishing the Evidence"
-          },
-          {
-            "type": "linked-paragraph",
-            "before": "In its ",
-            "linkLabel": "2025 Year in Review",
-            "href": "https://commerce.utah.gov/2026/01/07/year-in-review-the-utah-department-of-commerces-2025-highlights/",
-            "after": ", the Utah Department of Commerce said early Dentacor data indicated that the care was of exceptionally high quality."
-          },
-          {
-            "type": "paragraph",
-            "text": "The public statement does not provide the underlying data, accuracy measure, disagreement rate, dentist-review rate, false-negative rate, adverse outcomes, or identity of an independent evaluator."
-          },
-          {
-            "type": "paragraph",
-            "text": "A favorable conclusion has entered the public record without the evidence needed to reconstruct how it was reached."
-          },
-          {
-            "type": "paragraph",
-            "text": "The agreement also says Utah may request records after a complaint or an action reasonably likely to constitute an incident “as described in Schedule A.” Schedule A does not appear to define an incident."
-          },
-          {
-            "type": "paragraph",
-            "text": "If a patient does not know that a diagnosis was wrong, no complaint may be filed. If no one recognizes the event as an incident, Dentacor’s internal record may remain the only account."
-          },
-          {
-            "type": "paragraph",
-            "text": "The unnamed AI provider may separately control the model version, confidence score, inference record, update history, and evidence of similar failures. The agreement does not establish whether Dentacor can compel that provider to preserve or produce those records."
-          }
-        ]
-      },
-      {
-        "id": "if-a-patient-is-harmed-responsibility-is-already-split",
-        "label": "If a Patient Is Harmed, Responsibility Is Already Split",
-        "blocks": [
-          {
-            "type": "subheading",
-            "text": "The Responsibility Chain"
-          },
-          {
-            "type": "subheading",
-            "text": "Utah",
-            "level": 4
-          },
-          {
-            "type": "paragraph",
-            "text": "Utah authorized the reduced-supervision model, approved the testing structure, and can terminate the mitigation. The agreement says the pilot is not a state endorsement."
-          },
-          {
-            "type": "subheading",
-            "text": "Dentacor",
-            "level": 4
-          },
-          {
-            "type": "paragraph",
-            "text": "Dentacor selected or integrated the AI, employs the hygienists, operates the pilot, monitors performance, and creates the reports."
-          },
-          {
-            "type": "paragraph",
-            "text": "The agreement explicitly preserves the patient’s right to seek available remedies from Dentacor if harm results from the AI tool. Dentacor must also protect Utah’s Office of Artificial Intelligence Policy and Division of Professional Licensing from claims and losses arising from the pilot."
-          },
-          {
-            "type": "paragraph",
-            "text": "The agreement therefore places the visible financial responsibility on Dentacor and away from Utah while leaving the unnamed AI provider outside that allocation."
-          },
-          {
-            "type": "subheading",
-            "text": "The Hygienist",
-            "level": 4
-          },
-          {
-            "type": "paragraph",
-            "text": "The hygienist performs the clinical assessment, confirms the diagnosis, and provides the treatment. The hygienist is named, licensed, and professionally visible."
-          },
-          {
-            "type": "subheading",
-            "text": "The AI Provider",
-            "level": 4
-          },
-          {
-            "type": "paragraph",
-            "text": "The AI provider may have developed, validated, updated, and logged the system whose concurrence allowed treatment to proceed. That organization does not appear in the public agreement."
-          },
-          {
-            "type": "subheading",
-            "text": "The Patient",
-            "level": 4
-          },
-          {
-            "type": "paragraph",
-            "text": "The patient experiences the clinical outcome without having selected the system, approved the supervision change, or evaluated the safeguards."
-          },
-          {
-            "type": "paragraph",
-            "text": "Calling a later failure an AI error, hygienist error, poor radiograph, or missed escalation would not establish who chose the system, validated it, controlled its updates, monitored shared errors, or accepted the remaining risk."
-          }
-        ]
-      },
-      {
-        "id": "what-the-public-record-establishes-vs-what-remains-unresolved",
-        "label": "What the Public Record Establishes vs. What Remains Unresolved",
-        "blocks": [
-          {
-            "type": "matrix-table",
-            "headers": [
-              "What the Public Record Establishes",
-              "What Remains Unresolved"
+            type: 'list',
+            items: [
+              'Periodontal disease',
+              'Complete edentulism',
+              'Complete anodontia',
             ],
-            "rows": [
-              [
-                {
-                  "label": "Authorization",
-                  "text": "Utah authorized Dentacor’s pilot and reduced the dentist-supervision requirement for specified diagnoses and procedures."
-                },
-                {
-                  "label": "Technology identity",
-                  "text": "The AI developer, product, model, and version are not named."
-                }
-              ],
-              [
-                {
-                  "label": "AI role",
-                  "text": "AI concurrence can allow diagnosis and treatment to proceed without dentist review."
-                },
-                {
-                  "label": "Regulatory status",
-                  "text": "The record does not show whether the tool was cleared or validated for the role Utah authorized."
-                }
-              ],
-              [
-                {
-                  "label": "Human role",
-                  "text": "A licensed hygienist performs the assessment, confirms the diagnosis, and provides the treatment."
-                },
-                {
-                  "label": "Independent judgment",
-                  "text": "The record does not show whether the hygienist reaches a conclusion before seeing the AI output."
-                }
-              ],
-              [
-                {
-                  "label": "Escalation",
-                  "text": "Disagreement or uncertainty sends the case to a licensed dentist."
-                },
-                {
-                  "label": "Shared error",
-                  "text": "The record does not show how agreement between the hygienist and AI is checked for accuracy."
-                }
-              ],
-              [
-                {
-                  "label": "Consent",
-                  "text": "Patients must consent after receiving disclosures about the absence of dentist supervision and the hygienist’s training gap."
-                },
-                {
-                  "label": "Meaningful choice",
-                  "text": "The record does not establish what alternatives are realistically available to patients unable to obtain conventional dental care."
-                }
-              ],
-              [
-                {
-                  "label": "Operation",
-                  "text": "Dentacor operates, monitors, and maintains the pilot."
-                },
-                {
-                  "label": "Technical control",
-                  "text": "The record does not identify who controls model updates, thresholds, validation, or technical logs."
-                }
-              ],
-              [
-                {
-                  "label": "Reporting",
-                  "text": "Dentacor submits monthly reports covering efficacy, escalations, complaints, errors, and adverse outcomes."
-                },
-                {
-                  "label": "Independent evidence",
-                  "text": "Independent review is not required, and the underlying performance data have not been published."
-                }
-              ],
-              [
-                {
-                  "label": "Financial responsibility",
-                  "text": "Patients retain available remedies against Dentacor, and Dentacor protects Utah from claims arising from the pilot."
-                },
-                {
-                  "label": "Technology-provider responsibility",
-                  "text": "The unnamed AI provider does not appear in the public allocation of responsibility."
-                }
-              ],
-              [
-                {
-                  "label": "Public conclusion",
-                  "text": "Utah has described the pilot’s early care as exceptionally high quality."
-                },
-                {
-                  "label": "Supporting proof",
-                  "text": "The public record does not provide the measures or evidence supporting that conclusion."
-                }
-              ],
-              [
-                {
-                  "label": "Intended expansion",
-                  "text": "Dentacor presents the model as a possible blueprint for other underserved communities."
-                },
-                {
-                  "label": "Risk acceptance",
-                  "text": "The record does not identify who determined that the remaining risk to patients was acceptable."
-                }
-              ]
-            ]
           },
           {
-            "type": "paragraph",
-            "text": "The institutional authorization is traceable."
+            type: 'paragraph',
+            text: 'With the AI system’s concurrence, the hygienist may perform:',
           },
           {
-            "type": "paragraph",
-            "text": "The technology responsibility is not."
-          }
-        ]
+            type: 'list',
+            items: [
+              'Scaling and root planing',
+              'Installation and fitting of full dentures',
+            ],
+          },
+          {
+            type: 'paragraph',
+            text: 'Dentacor calls this a dual-verification protocol.',
+          },
+          {
+            type: 'subheading',
+            text: 'If the Hygienist and AI Disagree',
+            level: 4,
+          },
+          {
+            type: 'paragraph',
+            text: 'The case is escalated to a licensed dentist.',
+          },
+          {
+            type: 'subheading',
+            text: 'If the Hygienist and AI Agree',
+            level: 4,
+          },
+          {
+            type: 'paragraph',
+            text: 'Treatment may proceed without a dentist reviewing the diagnosis.',
+          },
+          {
+            type: 'paragraph',
+            text: 'The AI therefore helps determine whether a dentist enters the case. It is not merely organizing information for a professional. Its concurrence removes the escalation that would otherwise bring a dentist into the decision.',
+          },
+          {
+            type: 'linked-paragraph',
+            before: 'Utah’s ',
+            linkLabel: 'public pilot description',
+            href: 'https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/',
+            after:
+              ' says the AI supports rather than replaces professional judgment. The operative agreement permits AI concurrence in place of dentist supervision for the authorized work.',
+          },
+          {
+            type: 'subheading',
+            text: 'Consent Does Not Identify the AI',
+          },
+          {
+            type: 'paragraph',
+            text: 'The agreement requires patients to consent after being told that no dentist is supervising the procedure and that the hygienist does not have the full training or professional scope of a dentist.',
+          },
+          {
+            type: 'paragraph',
+            text: 'Separately, Dentacor must not misrepresent the use of the AI radiograph tool or its ability to diagnose a dental condition. That is a duty not to misrepresent the technology, not an express requirement to identify the system or explain its specific limitations.',
+          },
+          {
+            type: 'paragraph',
+            text: 'The patient does not select the AI, validate its performance, establish the escalation threshold, or decide that the remaining risk is acceptable.',
+          },
+          {
+            type: 'paragraph',
+            text: 'Disclosure does not transfer those institutional decisions to the patient.',
+          },
+        ],
       },
       {
-        "id": "responsibility-reconstruction-finding",
-        "label": "Responsibility Reconstruction Finding",
-        "blocks": [
+        id: 'the-ai-has-no-public-identity',
+        label: 'The AI Has No Public Identity',
+        blocks: [
           {
-            "type": "paragraph",
-            "text": "Utah authorized reduced dentist supervision."
+            type: 'subheading',
+            text: 'The Agreement Names a Function, Not a System',
           },
           {
-            "type": "paragraph",
-            "text": "Dentacor designed and operates the workflow."
+            type: 'paragraph',
+            text: 'The agreement repeatedly refers to an “AI-assisted radiograph diagnostic tool.” It does not identify:',
           },
           {
-            "type": "paragraph",
-            "text": "A licensed hygienist supplies the visible human judgment."
+            type: 'list',
+            items: [
+              'The AI developer or vendor',
+              'The product, model, or version',
+              'Its regulatory status',
+              'Its diagnostic thresholds',
+              'Its validation evidence',
+              'Who controls software updates',
+              'Who retains the technical logs',
+              'How responsibility is divided between Dentacor and the technology provider',
+            ],
           },
           {
-            "type": "paragraph",
-            "text": "An unnamed AI provides the concurrence required for treatment to proceed."
+            type: 'paragraph',
+            text: 'Dentacor’s proposal claims that AI radiograph tools have surpassed diagnostic benchmarks associated with junior dentists. It does not identify the benchmark, cite the supporting evidence, or establish that the system used in this pilot achieved that performance.',
           },
           {
-            "type": "paragraph",
-            "text": "A dentist enters only when the hygienist and AI disagree or identify uncertainty."
+            type: 'paragraph',
+            text: 'A general claim about dental AI cannot validate an unidentified product.',
           },
           {
-            "type": "paragraph",
-            "text": "Dentacor creates the initial performance record. Utah receives that account and has already described the early care as exceptionally high quality."
+            type: 'subheading',
+            text: 'The Silence Is Not an Industry Default',
           },
           {
-            "type": "paragraph",
-            "text": "Patients with limited alternatives receive the treatment and bear the consequences."
+            type: 'paragraph',
+            text: 'Dental AI companies routinely identify their systems and regulatory status.',
           },
           {
-            "type": "paragraph",
-            "text": "Dentacor’s mission may be sincere, and the access crisis is real. Neither fact completes the responsibility record."
+            type: 'rich-paragraph',
+            segments: [
+              {
+                text: 'Videa, for example, publicly identifies its dental AI products and FDA clearances and says its technology analyzes more than 500 million X-rays annually. FDA records identify the manufacturer, product, intended uses, supported image types, patient populations, and operating limitations. They also describe the system as an aid to trained professionals rather than a replacement for professional diagnosis. ',
+              },
+              {
+                linkLabel: 'Videa’s FDA-clearance announcement',
+                href: 'https://www.videa.ai/news/videahealth-dental-ai-solution-receives-fda-510-k-clearance-establishing-industry-wide-benchmark-for-clinical-accuracy',
+              },
+              {
+                text: ', ',
+              },
+              {
+                linkLabel: 'FDA 510(k) record',
+                href: 'https://www.accessdata.fda.gov/cdrh_docs/pdf25/K251002.pdf',
+              },
+            ],
           },
           {
-            "type": "paragraph",
-            "text": "A moral purpose does not identify the AI."
+            type: 'paragraph',
+            text: 'The Dentacor record provides none of that information.',
           },
           {
-            "type": "paragraph",
-            "text": "A consent form does not validate the system."
+            type: 'paragraph',
+            text: 'Because the tool is unnamed, the public cannot determine whether it was validated or cleared for the role Utah authorized—or whether that role exceeds its intended use.',
           },
           {
-            "type": "paragraph",
-            "text": "A disagreement process does not detect shared error."
+            type: 'subheading',
+            text: 'Dentacor Is Visible; the Technology Provider Is Not',
           },
           {
-            "type": "paragraph",
-            "text": "A monthly report does not create independent evidence."
+            type: 'rich-paragraph',
+            segments: [
+              {
+                text: 'Dentacor’s ',
+              },
+              {
+                linkLabel: 'website',
+                href: 'https://dentacor.com/',
+              },
+              {
+                text: ' presents a mobile dental-care company. Its ',
+              },
+              {
+                linkLabel: 'leadership page',
+                href: 'https://dentacor.com/leadership-team/',
+              },
+              {
+                text: ' identifies dental, provider-services, operations, and information-technology leadership. It does not identify an AI product, AI development team, clinical AI validation function, or outside technology partner.',
+              },
+            ],
           },
           {
-            "type": "quote",
-            "text": "Utah authorized an unnamed AI to stand in for dentist supervision for patients least able to obtain a dentist. The patients are named as the beneficiaries, but the technology actor remains missing from the responsibility record."
+            type: 'paragraph',
+            text: 'Utah may have reviewed private information about Dentacor’s technical capability. The public responsibility record does not show it.',
           },
           {
-            "type": "paragraph",
-            "text": "Lack of access is not consent to reduced supervision."
+            type: 'paragraph',
+            text: 'A healthcare provider can license a third-party AI product. But when that system helps remove a dentist from a clinical decision, its developer becomes part of the responsibility chain.',
           },
           {
-            "type": "paragraph",
-            "text": "If a patient is harmed, naming the event an AI error, a hygienist error, or an unexpected outcome will not establish who authorized, validated, controlled, monitored, and permitted the conditions that produced it."
+            type: 'paragraph',
+            text: 'Governance surrounds the deployment. It does not visibly reach the technology.',
+          },
+        ],
+      },
+      {
+        id: 'lack-of-access-becomes-the-reason-to-reduce-supervision',
+        label: 'Lack of Access Becomes the Reason to Reduce Supervision',
+        blocks: [
+          {
+            type: 'subheading',
+            text: 'The Same Need Justifies and Supplies the Test',
           },
           {
-            "type": "paragraph",
-            "text": "Naming the error is not owning responsibility."
-          }
-        ]
-      }
-    ]
+            type: 'paragraph',
+            text: 'Dentacor describes untreated dental disease among vulnerable Utah residents as a moral and clinical emergency. It identifies homelessness, chronic pain, addiction, poverty, and the shrinking number of dentists accepting Medicaid.',
+          },
+          {
+            type: 'linked-paragraph',
+            before: 'In his ',
+            linkLabel: 'public announcement',
+            href: 'https://www.linkedin.com/posts/medicaid-advocate_dentacor-is-now-the-first-medical-provider-activity-7335519060719230979-lNGl',
+            after:
+              ', Dentacor CEO Nate Wilson presented the pilot as using AI to restore access and dignity rather than optimize profits.',
+          },
+          {
+            type: 'paragraph',
+            text: 'The need is real. The conflict lies in what that need is being used to justify.',
+          },
+          {
+            type: 'paragraph',
+            text: 'The pilot does not add AI on top of ordinary dentist supervision. It permits AI concurrence to replace that supervision.',
+          },
+          {
+            type: 'paragraph',
+            text: 'A patient with reliable access to a dentist can reject the arrangement and obtain care elsewhere. A patient experiencing pain, homelessness, or limited Medicaid access may effectively be choosing between AI-assisted care without dentist supervision and no treatment.',
+          },
+          {
+            type: 'paragraph',
+            text: 'The patient’s lack of alternatives becomes:',
+          },
+          {
+            type: 'list',
+            ordered: true,
+            items: [
+              'The problem Dentacor claims to solve.',
+              'The reason Utah relaxes the supervision requirement.',
+              'The condition making participation more likely.',
+              'The source of evidence used to evaluate the model.',
+            ],
+          },
+          {
+            type: 'quote',
+            text: 'Lack of access is converted into consent to reduced supervision, while the patient bears the clinical consequences.',
+          },
+          {
+            type: 'subheading',
+            text: 'The Evidence Is Intended to Support Expansion',
+          },
+          {
+            type: 'paragraph',
+            text: 'Dentacor estimates that the model could double the number of patients served without increasing staff. Its proposal describes the pilot as a possible national blueprint for shelters, rural communities, tribal communities, and other care deserts.',
+          },
+          {
+            type: 'paragraph',
+            text: 'The patients receive access. Dentacor receives greater capacity and evidence supporting expansion.',
+          },
+          {
+            type: 'paragraph',
+            text: 'Before that model can be treated as a blueprint, the record must establish which AI produced the results, whether the system changed during the pilot, how often dentists reviewed its decisions, and whether agreement between the AI and hygienists was independently verified.',
+          },
+        ],
+      },
+      {
+        id: 'dual-verification-does-not-prove-independent-judgment',
+        label: 'Dual Verification Does Not Prove Independent Judgment',
+        blocks: [
+          {
+            type: 'subheading',
+            text: 'The Control Detects Disagreement, Not Shared Error',
+          },
+          {
+            type: 'paragraph',
+            text: 'The agreement does not say whether the hygienist records a diagnosis before seeing the AI output or whether the AI can influence the hygienist’s conclusion.',
+          },
+          {
+            type: 'paragraph',
+            text: 'It also does not establish whether:',
+          },
+          {
+            type: 'list',
+            items: [
+              'The AI and hygienist can share the same image-quality failure',
+              'Confidence scores are preserved',
+              'Agreement is later reviewed by a dentist',
+              'False agreement is measured',
+              'The system distinguishes uncertainty from a negative finding',
+            ],
+          },
+          {
+            type: 'paragraph',
+            text: 'If the AI and hygienist disagree, the safeguard works as described: a dentist enters the case.',
+          },
+          {
+            type: 'paragraph',
+            text: 'If they agree incorrectly, no escalation occurs.',
+          },
+          {
+            type: 'paragraph',
+            text: 'Both could misread the same radiograph, miss the same condition, or reach agreement because the AI influenced the human reviewer. Counting agreement would not distinguish independent confirmation from shared error or automation bias.',
+          },
+          {
+            type: 'paragraph',
+            text: '“Dual verification” names the safeguard. It does not prove that two independent judgments occurred.',
+          },
+        ],
+      },
+      {
+        id: 'dentacor-controls-the-initial-evidence',
+        label: 'Dentacor Controls the Initial Evidence',
+        blocks: [
+          {
+            type: 'subheading',
+            text: 'Compliance Exists Around the Pilot',
+          },
+          {
+            type: 'paragraph',
+            text: 'Dentacor must use licensed hygienists, obtain patient consent, train participating staff, maintain privacy and cybersecurity protections, monitor the pilot, and report monthly to Utah.',
+          },
+          {
+            type: 'paragraph',
+            text: 'The reports cover patient volume, demographics, AI efficacy, escalations, complaints, system errors, and adverse outcomes. Third-party researchers approved by Utah may review them, but independent review is not required.',
+          },
+          {
+            type: 'paragraph',
+            text: 'Dentacor therefore operates the pilot, collects the evidence, evaluates the AI’s performance, and supplies the initial account to Utah.',
+          },
+          {
+            type: 'subheading',
+            text: 'Utah Has Announced Success Without Publishing the Evidence',
+          },
+          {
+            type: 'linked-paragraph',
+            before: 'In its ',
+            linkLabel: '2025 Year in Review',
+            href: 'https://commerce.utah.gov/2026/01/07/year-in-review-the-utah-department-of-commerces-2025-highlights/',
+            after:
+              ', the Utah Department of Commerce said early Dentacor data indicated that the care was of exceptionally high quality.',
+          },
+          {
+            type: 'paragraph',
+            text: 'The public statement does not provide the underlying data, accuracy measure, disagreement rate, dentist-review rate, false-negative rate, adverse outcomes, or identity of an independent evaluator.',
+          },
+          {
+            type: 'paragraph',
+            text: 'A favorable conclusion has entered the public record without the evidence needed to reconstruct how it was reached.',
+          },
+          {
+            type: 'paragraph',
+            text: 'The agreement also says Utah may request records after a complaint or an action reasonably likely to constitute an incident “as described in Schedule A.” Schedule A does not appear to define an incident.',
+          },
+          {
+            type: 'paragraph',
+            text: 'If a patient does not know that a diagnosis was wrong, no complaint may be filed. If no one recognizes the event as an incident, Dentacor’s internal record may remain the only account.',
+          },
+          {
+            type: 'paragraph',
+            text: 'The unnamed AI provider may separately control the model version, confidence score, inference record, update history, and evidence of similar failures. The agreement does not establish whether Dentacor can compel that provider to preserve or produce those records.',
+          },
+        ],
+      },
+      {
+        id: 'if-a-patient-is-harmed-responsibility-is-already-split',
+        label: 'If a Patient Is Harmed, Responsibility Is Already Split',
+        blocks: [
+          {
+            type: 'subheading',
+            text: 'The Responsibility Chain',
+          },
+          {
+            type: 'subheading',
+            text: 'Utah',
+            level: 4,
+          },
+          {
+            type: 'paragraph',
+            text: 'Utah authorized the reduced-supervision model, approved the testing structure, and can terminate the mitigation. The agreement says the pilot is not a state endorsement.',
+          },
+          {
+            type: 'subheading',
+            text: 'Dentacor',
+            level: 4,
+          },
+          {
+            type: 'paragraph',
+            text: 'Dentacor selected or integrated the AI, employs the hygienists, operates the pilot, monitors performance, and creates the reports.',
+          },
+          {
+            type: 'paragraph',
+            text: 'The agreement explicitly preserves the patient’s right to seek available remedies from Dentacor if harm results from the AI tool. Dentacor must also protect Utah’s Office of Artificial Intelligence Policy and Division of Professional Licensing from claims and losses arising from the pilot.',
+          },
+          {
+            type: 'paragraph',
+            text: 'The agreement therefore places the visible financial responsibility on Dentacor and away from Utah while leaving the unnamed AI provider outside that allocation.',
+          },
+          {
+            type: 'subheading',
+            text: 'The Hygienist',
+            level: 4,
+          },
+          {
+            type: 'paragraph',
+            text: 'The hygienist performs the clinical assessment, confirms the diagnosis, and provides the treatment. The hygienist is named, licensed, and professionally visible.',
+          },
+          {
+            type: 'subheading',
+            text: 'The AI Provider',
+            level: 4,
+          },
+          {
+            type: 'paragraph',
+            text: 'The AI provider may have developed, validated, updated, and logged the system whose concurrence allowed treatment to proceed. That organization does not appear in the public agreement.',
+          },
+          {
+            type: 'subheading',
+            text: 'The Patient',
+            level: 4,
+          },
+          {
+            type: 'paragraph',
+            text: 'The patient experiences the clinical outcome without having selected the system, approved the supervision change, or evaluated the safeguards.',
+          },
+          {
+            type: 'paragraph',
+            text: 'Calling a later failure an AI error, hygienist error, poor radiograph, or missed escalation would not establish who chose the system, validated it, controlled its updates, monitored shared errors, or accepted the remaining risk.',
+          },
+        ],
+      },
+      {
+        id: 'what-the-public-record-establishes-vs-what-remains-unresolved',
+        label: 'What the Public Record Establishes vs. What Remains Unresolved',
+        blocks: [
+          {
+            type: 'matrix-table',
+            headers: [
+              'What the Public Record Establishes',
+              'What Remains Unresolved',
+            ],
+            rows: [
+              [
+                {
+                  label: 'Authorization',
+                  text: 'Utah authorized Dentacor’s pilot and reduced the dentist-supervision requirement for specified diagnoses and procedures.',
+                },
+                {
+                  label: 'Technology identity',
+                  text: 'The AI developer, product, model, and version are not named.',
+                },
+              ],
+              [
+                {
+                  label: 'AI role',
+                  text: 'AI concurrence can allow diagnosis and treatment to proceed without dentist review.',
+                },
+                {
+                  label: 'Regulatory status',
+                  text: 'The record does not show whether the tool was cleared or validated for the role Utah authorized.',
+                },
+              ],
+              [
+                {
+                  label: 'Human role',
+                  text: 'A licensed hygienist performs the assessment, confirms the diagnosis, and provides the treatment.',
+                },
+                {
+                  label: 'Independent judgment',
+                  text: 'The record does not show whether the hygienist reaches a conclusion before seeing the AI output.',
+                },
+              ],
+              [
+                {
+                  label: 'Escalation',
+                  text: 'Disagreement or uncertainty sends the case to a licensed dentist.',
+                },
+                {
+                  label: 'Shared error',
+                  text: 'The record does not show how agreement between the hygienist and AI is checked for accuracy.',
+                },
+              ],
+              [
+                {
+                  label: 'Consent',
+                  text: 'Patients must consent after receiving disclosures about the absence of dentist supervision and the hygienist’s training gap.',
+                },
+                {
+                  label: 'Meaningful choice',
+                  text: 'The record does not establish what alternatives are realistically available to patients unable to obtain conventional dental care.',
+                },
+              ],
+              [
+                {
+                  label: 'Operation',
+                  text: 'Dentacor operates, monitors, and maintains the pilot.',
+                },
+                {
+                  label: 'Technical control',
+                  text: 'The record does not identify who controls model updates, thresholds, validation, or technical logs.',
+                },
+              ],
+              [
+                {
+                  label: 'Reporting',
+                  text: 'Dentacor submits monthly reports covering efficacy, escalations, complaints, errors, and adverse outcomes.',
+                },
+                {
+                  label: 'Independent evidence',
+                  text: 'Independent review is not required, and the underlying performance data have not been published.',
+                },
+              ],
+              [
+                {
+                  label: 'Financial responsibility',
+                  text: 'Patients retain available remedies against Dentacor, and Dentacor protects Utah from claims arising from the pilot.',
+                },
+                {
+                  label: 'Technology-provider responsibility',
+                  text: 'The unnamed AI provider does not appear in the public allocation of responsibility.',
+                },
+              ],
+              [
+                {
+                  label: 'Public conclusion',
+                  text: 'Utah has described the pilot’s early care as exceptionally high quality.',
+                },
+                {
+                  label: 'Supporting proof',
+                  text: 'The public record does not provide the measures or evidence supporting that conclusion.',
+                },
+              ],
+              [
+                {
+                  label: 'Intended expansion',
+                  text: 'Dentacor presents the model as a possible blueprint for other underserved communities.',
+                },
+                {
+                  label: 'Risk acceptance',
+                  text: 'The record does not identify who determined that the remaining risk to patients was acceptable.',
+                },
+              ],
+            ],
+          },
+          {
+            type: 'paragraph',
+            text: 'The institutional authorization is traceable.',
+          },
+          {
+            type: 'paragraph',
+            text: 'The technology responsibility is not.',
+          },
+        ],
+      },
+      {
+        id: 'responsibility-reconstruction-finding',
+        label: 'Responsibility Reconstruction Finding',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Utah authorized reduced dentist supervision.',
+          },
+          {
+            type: 'paragraph',
+            text: 'Dentacor designed and operates the workflow.',
+          },
+          {
+            type: 'paragraph',
+            text: 'A licensed hygienist supplies the visible human judgment.',
+          },
+          {
+            type: 'paragraph',
+            text: 'An unnamed AI provides the concurrence required for treatment to proceed.',
+          },
+          {
+            type: 'paragraph',
+            text: 'A dentist enters only when the hygienist and AI disagree or identify uncertainty.',
+          },
+          {
+            type: 'paragraph',
+            text: 'Dentacor creates the initial performance record. Utah receives that account and has already described the early care as exceptionally high quality.',
+          },
+          {
+            type: 'paragraph',
+            text: 'Patients with limited alternatives receive the treatment and bear the consequences.',
+          },
+          {
+            type: 'paragraph',
+            text: 'Dentacor’s mission may be sincere, and the access crisis is real. Neither fact completes the responsibility record.',
+          },
+          {
+            type: 'paragraph',
+            text: 'A moral purpose does not identify the AI.',
+          },
+          {
+            type: 'paragraph',
+            text: 'A consent form does not validate the system.',
+          },
+          {
+            type: 'paragraph',
+            text: 'A disagreement process does not detect shared error.',
+          },
+          {
+            type: 'paragraph',
+            text: 'A monthly report does not create independent evidence.',
+          },
+          {
+            type: 'quote',
+            text: 'Utah authorized an unnamed AI to stand in for dentist supervision for patients least able to obtain a dentist. The patients are named as the beneficiaries, but the technology actor remains missing from the responsibility record.',
+          },
+          {
+            type: 'paragraph',
+            text: 'Lack of access is not consent to reduced supervision.',
+          },
+          {
+            type: 'paragraph',
+            text: 'If a patient is harmed, naming the event an AI error, a hygienist error, or an unexpected outcome will not establish who authorized, validated, controlled, monitored, and permitted the conditions that produced it.',
+          },
+          {
+            type: 'paragraph',
+            text: 'Naming the error is not owning responsibility.',
+          },
+        ],
+      },
+    ],
   },
   {
-    "slug": "legion-health-utah-ai-pilot",
-    "shortName": "Legion Health",
-    "initials": "LH",
-    "title": "Legion Health: The AI Controls Access to a Clinician",
-    "pageTitle": "Legion Health: The AI Decides Whether a Psychiatric Refill Reaches a Clinician",
-    "href": "/case-studies/legion-health-utah-ai-pilot/",
-    "indexSummary": "Legion Health’s AI can authorize qualifying psychiatric refills and determine whether risk or ambiguity requires clinician review. The automated system therefore decides when human judgment begins.",
-    "cardSummary": "Legion Health’s AI can authorize qualifying psychiatric refills and determine whether risk or ambiguity requires clinician review. The automated system therefore decides when human judgment begins.",
-    "aiUse": "Psychiatric medication renewals",
-    "humanCheckpoint": "AI-triggered escalation and phased review",
-    "evidenceSource": "Refill packets, review samples, and provider reports",
-    "reconstructionFinding": "Attribution does not establish physician judgment",
-    "primaryRecord": "Legion Health AI Mitigation Agreement",
-    "sourceUrl": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
-    "sourceSummary": "Utah agreement, state pilot page, company terms, and partnered company interview",
-    "sources": [
+    slug: 'legion-health-utah-ai-pilot',
+    shortName: 'Legion Health',
+    initials: 'LH',
+    title: 'Legion Health: The AI Controls Access to a Clinician',
+    pageTitle:
+      'Legion Health: The AI Decides Whether a Psychiatric Refill Reaches a Clinician',
+    href: '/case-studies/legion-health-utah-ai-pilot/',
+    indexSummary:
+      'Legion Health’s AI can authorize qualifying psychiatric refills and determine whether risk or ambiguity requires clinician review. The automated system therefore decides when human judgment begins.',
+    cardSummary:
+      'Legion Health’s AI can authorize qualifying psychiatric refills and determine whether risk or ambiguity requires clinician review. The automated system therefore decides when human judgment begins.',
+    aiUse: 'Psychiatric medication renewals',
+    humanCheckpoint: 'AI-triggered escalation and phased review',
+    evidenceSource: 'Refill packets, review samples, and provider reports',
+    reconstructionFinding: 'Attribution does not establish physician judgment',
+    primaryRecord: 'Legion Health AI Mitigation Agreement',
+    sourceUrl:
+      'https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf',
+    sourceSummary:
+      'Utah agreement, state pilot page, company terms, and partnered company interview',
+    sources: [
       {
-        "label": "Legion Health AI Mitigation Agreement",
-        "href": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf"
+        label: 'Legion Health AI Mitigation Agreement',
+        href: 'https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf',
       },
       {
-        "label": "Utah’s Legion Health pilot page",
-        "href": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/ai-legion-health/"
+        label: 'Utah’s Legion Health pilot page',
+        href: 'https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/ai-legion-health/',
       },
       {
-        "label": "Legion Health Terms of Service",
-        "href": "https://legionhealth.com/terms-of-service/"
+        label: 'Legion Health Terms of Service',
+        href: 'https://legionhealth.com/terms-of-service/',
       },
       {
-        "label": "Healthcare AI Guy: Company Deep Dive—Legion Health",
-        "href": "https://www.healthcareaiguy.com/p/company-deep-dive-legion-health"
-      }
+        label: 'Healthcare AI Guy: Company Deep Dive—Legion Health',
+        href: 'https://www.healthcareaiguy.com/p/company-deep-dive-legion-health',
+      },
     ],
-    "introduction": [
+    introduction: [
       {
-        "type": "paragraph",
-        "text": "Legion Health is not building a clinical tool for physicians. It is building a clinic whose operating architecture assumes that work performed through software should eventually be executable by an LLM."
+        type: 'paragraph',
+        text: 'Legion Health is not building a clinical tool for physicians. It is building a clinic whose operating architecture assumes that work performed through software should eventually be executable by an LLM.',
       },
       {
-        "type": "paragraph",
-        "text": "Legion describes itself as putting its technology identity ahead of its care-delivery identity. Its internal rule is that “anything a human can do, an LLM has to be able to read and eventually do as well.”"
+        type: 'paragraph',
+        text: 'Legion describes itself as putting its technology identity ahead of its care-delivery identity. Its internal rule is that “anything a human can do, an LLM has to be able to read and eventually do as well.”',
       },
       {
-        "type": "paragraph",
-        "text": "Utah has now authorized one consequential step along that path. Legion’s AI may determine whether a patient qualifies for a psychiatric medication renewal, authorize the renewal, and transmit it to a pharmacy without a clinician reviewing the individual decision first."
+        type: 'paragraph',
+        text: 'Utah has now authorized one consequential step along that path. Legion’s AI may determine whether a patient qualifies for a psychiatric medication renewal, authorize the renewal, and transmit it to a pharmacy without a clinician reviewing the individual decision first.',
       },
       {
-        "type": "rich-paragraph",
-        "segments": [
+        type: 'rich-paragraph',
+        segments: [
           {
-            "text": "This case applies "
+            text: 'This case applies ',
           },
           {
-            "linkLabel": "Evidence-Based Responsibility Reconstruction℠",
-            "href": "/blog/evidence-based-responsibility-reconstruction/"
+            linkLabel: 'Evidence-Based Responsibility Reconstruction℠',
+            href: '/blog/evidence-based-responsibility-reconstruction/',
           },
           {
-            "text": " to the signed Utah agreement, Legion’s proposal, the state’s public description of the pilot, Legion’s Terms of Service, and a partnered company interview describing its AI architecture."
-          }
-        ]
+            text: ' to the signed Utah agreement, Legion’s proposal, the state’s public description of the pilot, Legion’s Terms of Service, and a partnered company interview describing its AI architecture.',
+          },
+        ],
       },
       {
-        "type": "paragraph",
-        "text": "The responsibility problem is not hidden:"
+        type: 'paragraph',
+        text: 'The responsibility problem is not hidden:',
       },
       {
-        "type": "quote",
-        "text": "The AI does not merely decide whether medication should be renewed. It decides whether the patient’s case reaches a clinician at all."
-      }
+        type: 'quote',
+        text: 'The AI does not merely decide whether medication should be renewed. It decides whether the patient’s case reaches a clinician at all.',
+      },
     ],
-    "sections": [
+    sections: [
       {
-        "id": "what-utah-authorized",
-        "label": "What Utah Authorized",
-        "blocks": [
+        id: 'what-utah-authorized',
+        label: 'What Utah Authorized',
+        blocks: [
           {
-            "type": "subheading",
-            "text": "The AI Can Complete the Renewal"
+            type: 'subheading',
+            text: 'The AI Can Complete the Renewal',
           },
           {
-            "type": "paragraph",
-            "text": "The signed agreement authorizes Legion’s “Mental Health Refill Autopilot” to renew a limited group of existing, non-controlled psychiatric medications."
+            type: 'paragraph',
+            text: 'The signed agreement authorizes Legion’s “Mental Health Refill Autopilot” to renew a limited group of existing, non-controlled psychiatric medications.',
           },
           {
-            "type": "paragraph",
-            "text": "The system may:"
+            type: 'paragraph',
+            text: 'The system may:',
           },
           {
-            "type": "list",
-            "items": [
-              "Verify the patient and prescription.",
-              "Collect information about efficacy, side effects, allergies, clinical changes, and symptoms.",
-              "Screen for conditions requiring escalation.",
-              "Determine whether the request is eligible.",
-              "Authorize the renewal.",
-              "Transmit it to the patient’s pharmacy."
-            ]
-          },
-          {
-            "type": "paragraph",
-            "text": "This is not an AI recommendation awaiting a physician’s decision. When the request falls within scope and the system detects no risk or ambiguity, the AI completes the renewal."
-          },
-          {
-            "type": "subheading",
-            "text": "The Scope Is Narrow but the Decision Is Consequential"
-          },
-          {
-            "type": "paragraph",
-            "text": "The pilot excludes controlled substances, benzodiazepines, antipsychotics, lithium, valproate, clozapine, new prescriptions, dose changes, medication switches, and renewals requiring new laboratory work or an ECG."
-          },
-          {
-            "type": "paragraph",
-            "text": "It includes commonly used medications for depression, anxiety, panic disorder, PTSD, OCD, insomnia, and related conditions. Automated renewals are limited to ten between provider reviews or six months, whichever occurs first."
-          },
-          {
-            "type": "paragraph",
-            "text": "Those boundaries reduce the number of eligible cases. They do not change who makes the decision inside those boundaries."
-          },
-          {
-            "type": "subheading",
-            "text": "Patients and Pharmacists Must Be Told AI Is Acting"
-          },
-          {
-            "type": "paragraph",
-            "text": "Before the AI engages with a Utah patient about a renewal, Legion must disclose that the patient is interacting with generative AI, explain how the patient’s information and correspondence will be used or shared, identify the temporary Utah program, and obtain an acknowledgement. Patients may request human review."
-          },
-          {
-            "type": "paragraph",
-            "text": "Pharmacists must be told that the renewal was generated by AI and receive a direct way to contact Legion and Utah."
-          },
-          {
-            "type": "paragraph",
-            "text": "Those are meaningful disclosures. They make the AI’s participation visible. They do not establish which model made the decision, who approved its operating rules, or who is responsible for the design. A patient’s acknowledgement authorizes participation; it does not transfer responsibility for the system."
-          },
-          {
-            "type": "subheading",
-            "text": "Utah Created a Named-Prescriber Structure"
-          },
-          {
-            "type": "paragraph",
-            "text": "Schedule A allows an affiliated professional entity or provider to rely on Legion’s AI “solely by being the named prescriber” without interacting directly with the patient or another healthcare provider."
-          },
-          {
-            "type": "rich-paragraph",
-            "segments": [
-              {
-                "text": "Utah’s public explanation says each refill is approved by a licensed physician, either directly or "
-              },
-              {
-                "strong": "“vicariously through the AI system’s protocol.”"
-              }
-            ]
-          },
-          {
-            "type": "rich-paragraph",
-            "segments": [
-              {
-                "text": "That word—"
-              },
-              {
-                "strong": "vicariously"
-              },
-              {
-                "text": "—carries the responsibility structure."
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "text": "The physician’s professional authority remains attached to the prescription even when the physician did not review the individual renewal."
-          }
-        ]
-      },
-      {
-        "id": "clinician-in-the-loop-does-not-mean-case-level-review",
-        "label": "“Clinician in the Loop” Does Not Mean Case-Level Review",
-        "blocks": [
-          {
-            "type": "subheading",
-            "text": "Human Review Declines as the Pilot Advances"
-          },
-          {
-            "type": "matrix-table",
-            "headers": [
-              "Phase",
-              "Human involvement",
-              "Advancement condition"
+            type: 'list',
+            items: [
+              'Verify the patient and prescription.',
+              'Collect information about efficacy, side effects, allergies, clinical changes, and symptoms.',
+              'Screen for conditions requiring escalation.',
+              'Determine whether the request is eligible.',
+              'Authorize the renewal.',
+              'Transmit it to the patient’s pharmacy.',
             ],
-            "rows": [
-              [
-                {
-                  "text": "Phase A"
-                },
-                {
-                  "text": "A Utah-licensed clinician reviews the first 250 requests before completion."
-                },
-                {
-                  "text": "Reported concordance must exceed 98%."
-                }
-              ],
-              [
-                {
-                  "text": "Phase B"
-                },
-                {
-                  "text": "The AI may send renewals before the next 1,000 requests receive retrospective review."
-                },
-                {
-                  "text": "Reported concordance must exceed 99%."
-                }
-              ],
-              [
-                {
-                  "text": "Phase C"
-                },
-                {
-                  "text": "Approximately 5%–10% of cases receive monthly sampling, with additional incident audits."
-                },
-                {
-                  "text": "Ongoing reporting and oversight."
-                }
-              ]
-            ]
           },
           {
-            "type": "paragraph",
-            "text": "During Phase A, a clinician can stop an individual renewal before it reaches the pharmacy."
+            type: 'paragraph',
+            text: 'This is not an AI recommendation awaiting a physician’s decision. When the request falls within scope and the system detects no risk or ambiguity, the AI completes the renewal.',
           },
           {
-            "type": "paragraph",
-            "text": "During Phase B, the review occurs after the AI has acted. During Phase C, most individual decisions are not scheduled for clinician review at all."
+            type: 'subheading',
+            text: 'The Scope Is Narrow but the Decision Is Consequential',
           },
           {
-            "type": "paragraph",
-            "text": "The phrase “clinician in the loop” therefore describes the operating system as a whole. It does not establish that a clinician participated in a particular patient’s renewal."
+            type: 'paragraph',
+            text: 'The pilot excludes controlled substances, benzodiazepines, antipsychotics, lithium, valproate, clozapine, new prescriptions, dose changes, medication switches, and renewals requiring new laboratory work or an ECG.',
           },
           {
-            "type": "subheading",
-            "text": "A Physician’s Name Is Not Evidence of Physician Judgment"
+            type: 'paragraph',
+            text: 'It includes commonly used medications for depression, anxiety, panic disorder, PTSD, OCD, insomnia, and related conditions. Automated renewals are limited to ten between provider reviews or six months, whichever occurs first.',
           },
           {
-            "type": "paragraph",
-            "text": "For an automated renewal, the named physician may not have:"
+            type: 'paragraph',
+            text: 'Those boundaries reduce the number of eligible cases. They do not change who makes the decision inside those boundaries.',
           },
           {
-            "type": "list",
-            "items": [
-              "Seen the patient’s answers.",
-              "Reviewed the refill packet.",
-              "Evaluated the safety flags.",
-              "Approved the individual renewal.",
-              "Had an opportunity to intervene before transmission."
-            ]
+            type: 'subheading',
+            text: 'Patients and Pharmacists Must Be Told AI Is Acting',
           },
           {
-            "type": "paragraph",
-            "text": "The name makes the prescription attributable to a licensed professional. It does not prove that the professional formed or adopted the judgment reflected in the prescription."
+            type: 'paragraph',
+            text: 'Before the AI engages with a Utah patient about a renewal, Legion must disclose that the patient is interacting with generative AI, explain how the patient’s information and correspondence will be used or shared, identify the temporary Utah program, and obtain an acknowledgement. Patients may request human review.',
           },
           {
-            "type": "rich-paragraph",
-            "segments": [
+            type: 'paragraph',
+            text: 'Pharmacists must be told that the renewal was generated by AI and receive a direct way to contact Legion and Utah.',
+          },
+          {
+            type: 'paragraph',
+            text: 'Those are meaningful disclosures. They make the AI’s participation visible. They do not establish which model made the decision, who approved its operating rules, or who is responsible for the design. A patient’s acknowledgement authorizes participation; it does not transfer responsibility for the system.',
+          },
+          {
+            type: 'subheading',
+            text: 'Utah Created a Named-Prescriber Structure',
+          },
+          {
+            type: 'paragraph',
+            text: 'Schedule A allows an affiliated professional entity or provider to rely on Legion’s AI “solely by being the named prescriber” without interacting directly with the patient or another healthcare provider.',
+          },
+          {
+            type: 'rich-paragraph',
+            segments: [
               {
-                "text": "Legion’s design exposes the difference between "
+                text: 'Utah’s public explanation says each refill is approved by a licensed physician, either directly or ',
               },
               {
-                "strong": "having a human name on the outcome"
+                strong: '“vicariously through the AI system’s protocol.”',
               },
-              {
-                "text": " and "
-              },
-              {
-                "strong": "having evidence that a human made the decision"
-              },
-              {
-                "text": "."
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "the-ai-decides-when-human-judgment-begins",
-        "label": "The AI Decides When Human Judgment Begins",
-        "blocks": [
-          {
-            "type": "subheading",
-            "text": "Safety Screens Control Access to a Clinician"
-          },
-          {
-            "type": "paragraph",
-            "text": "Legion’s proposal establishes hard stops for conditions including:"
-          },
-          {
-            "type": "list",
-            "items": [
-              "Suicidality or self-harm risk.",
-              "Mania or hypomania.",
-              "Pregnancy-related changes.",
-              "New or worsening symptoms.",
-              "Loss of medication efficacy.",
-              "Severe adverse effects.",
-              "Contraindications or prescription discrepancies."
-            ]
-          },
-          {
-            "type": "paragraph",
-            "text": "If the system detects one of those conditions, encounters ambiguity, or cannot verify the patient or prescription, the request enters a clinician queue. Patients and pharmacists may also request escalation."
-          },
-          {
-            "type": "paragraph",
-            "text": "If the system detects no qualifying condition, the renewal proceeds."
-          },
-          {
-            "type": "matrix-table",
-            "headers": [
-              "When the system detects risk or ambiguity",
-              "When the system does not detect risk or ambiguity"
             ],
-            "rows": [
-              [
-                {
-                  "text": "The case is sent for clinician review."
-                },
-                {
-                  "text": "The AI may authorize and transmit the renewal."
-                }
-              ],
-              [
-                {
-                  "text": "A clinician can examine the chat log and medical record."
-                },
-                {
-                  "text": "A clinician may never examine the individual case."
-                }
-              ],
-              [
-                {
-                  "text": "The escalation creates a review record."
-                },
-                {
-                  "text": "The absence of an escalation may be the only recorded safety result."
-                }
-              ]
-            ]
           },
           {
-            "type": "paragraph",
-            "text": "The human safeguard begins only after the automated system decides that human judgment is necessary."
-          },
-          {
-            "type": "subheading",
-            "text": "A Deterministic Rule Does Not Make Detection Deterministic"
-          },
-          {
-            "type": "paragraph",
-            "text": "The agreement says each hard stop is tested through deterministic unit tests and synthetic red-team scripts. Those tests can establish that a known trigger produces the expected action."
-          },
-          {
-            "type": "paragraph",
-            "text": "They do not establish that the system will correctly recognize every real patient statement that should activate the trigger."
-          },
-          {
-            "type": "paragraph",
-            "text": "A rule can reliably escalate a positive suicidality flag while the language system still fails to recognize that a patient’s words indicate suicidality. If the flag is never generated, the deterministic safeguard never begins."
-          },
-          {
-            "type": "paragraph",
-            "text": "Naming a missed escalation would identify the technical failure. It would not establish who designed the threshold, who validated it, who determined its performance was sufficient, or who accepted the risk of letting it control access to a clinician."
-          }
-        ]
-      },
-      {
-        "id": "utah-authorized-a-system-not-a-stable-model",
-        "label": "Utah Authorized a System, Not a Stable Model",
-        "blocks": [
-          {
-            "type": "subheading",
-            "text": "Legion’s Broader Architecture Uses Multiple Frontier Models"
-          },
-          {
-            "type": "paragraph",
-            "text": "In a November 2025 interview, Legion said its broader AI stack uses frontier models from OpenAI, Google, and Anthropic and switches among them as needed. The company said most of its performance comes from prompts and workflow design rather than a custom-trained model."
-          },
-          {
-            "type": "rich-paragraph",
-            "segments": [
+            type: 'rich-paragraph',
+            segments: [
               {
-                "text": "Legion also described an API-first architecture connecting LLMs to scheduling, billing, clinical records, patient support, and clinical workflows. The interview was presented in partnership with Legion, so it is evidence of the company’s stated design and strategy—not independent validation of its performance. "
+                text: 'That word—',
               },
               {
-                "linkLabel": "Legion Health interview",
-                "href": "https://www.healthcareaiguy.com/p/company-deep-dive-legion-health"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "text": "The agreement does not identify which model or model version powers the Utah refill workflow. It does not establish whether the workflow uses one provider consistently or can move among providers."
-          },
-          {
-            "type": "subheading",
-            "text": "The Regulated System Has Multiple Moving Parts"
-          },
-          {
-            "type": "paragraph",
-            "text": "The operating system is not merely “the AI.” It includes:"
-          },
-          {
-            "type": "quote",
-            "text": "model + model version + prompts + deterministic rails + workflow logic + APIs + clinical data + escalation thresholds + vendor systems"
-          },
-          {
-            "type": "subheading",
-            "text": "What the Agreement Allows to Change",
-            "level": 4
-          },
-          {
-            "type": "paragraph",
-            "text": "The agreement allows deterministic-rail updates and prompt or template revisions informed by internal quality review. Formal amendments to the approved proposal require written approval from the parties."
-          },
-          {
-            "type": "subheading",
-            "text": "What the Agreement Does Not Answer",
-            "level": 4
-          },
-          {
-            "type": "paragraph",
-            "text": "The public record does not clearly establish:"
-          },
-          {
-            "type": "list",
-            "items": [
-              "Whether replacing the underlying model counts as an amendment.",
-              "Whether every replacement model must repeat Phase A.",
-              "Who decides that two models are sufficiently equivalent.",
-              "How silent updates by a model vendor are identified.",
-              "How model-specific errors are separated from prompt, workflow, or data errors.",
-              "Whether Utah receives notice before or after a material system change."
-            ]
-          },
-          {
-            "type": "paragraph",
-            "text": "If the model changes while the named workflow remains the same, the regulated label may remain stable while the behavior beneath it changes."
-          }
-        ]
-      },
-      {
-        "id": "the-concordance-percentage-does-not-measure-every-disagreement-equally",
-        "label": "The Concordance Percentage Does Not Measure Every Disagreement Equally",
-        "blocks": [
-          {
-            "type": "subheading",
-            "text": "Legion Uses a Safety-Weighted Calculation"
-          },
-          {
-            "type": "paragraph",
-            "text": "The agreement classifies clinician comparisons as follows:"
-          },
-          {
-            "type": "matrix-table",
-            "headers": [
-              "AI decision",
-              "Clinician decision",
-              "Classification",
-              "Effect on advancement target"
-            ],
-            "rows": [
-              [
-                {
-                  "text": "Refill"
-                },
-                {
-                  "text": "Refill"
-                },
-                {
-                  "text": "Concordant"
-                },
-                {
-                  "text": "Included as agreement"
-                }
-              ],
-              [
-                {
-                  "text": "Refill"
-                },
-                {
-                  "text": "Escalate"
-                },
-                {
-                  "text": "Discordant"
-                },
-                {
-                  "text": "Counts against the target"
-                }
-              ],
-              [
-                {
-                  "text": "Escalate"
-                },
-                {
-                  "text": "Escalate"
-                },
-                {
-                  "text": "Concordant"
-                },
-                {
-                  "text": "Included as agreement"
-                }
-              ],
-              [
-                {
-                  "text": "Escalate"
-                },
-                {
-                  "text": "Refill"
-                },
-                {
-                  "text": "Discordant"
-                },
-                {
-                  "text": "Does not count against the target"
-                }
-              ]
-            ]
-          },
-          {
-            "type": "paragraph",
-            "text": "Excluding unnecessary escalations from the advancement penalty creates a conservative safety preference. That is a defensible design choice."
-          },
-          {
-            "type": "paragraph",
-            "text": "It also means that “98% concordance” or “99% concordance” is not ordinary agreement accuracy. One category of disagreement is omitted from the performance threshold."
-          },
-          {
-            "type": "subheading",
-            "text": "The Headline Percentage Cannot Stand Alone"
-          },
-          {
-            "type": "subheading",
-            "text": "Questions the Percentage Cannot Answer",
-            "level": 4
-          },
-          {
-            "type": "paragraph",
-            "text": "A decision-maker needs the full matrix:"
-          },
-          {
-            "type": "list",
-            "items": [
-              "How often did the AI renew when the clinician would have escalated?",
-              "How often did the AI escalate when the clinician would have renewed?",
-              "Which disagreements counted against advancement?",
-              "Were clinicians reviewing independently, or did they see the AI’s decision and rationale first?",
-              "Did the same disagreement pattern concentrate around a medication, symptom, model, or prompt version?"
-            ]
-          },
-          {
-            "type": "paragraph",
-            "text": "The percentage describes a scoring rule. It does not by itself establish that the AI and clinicians agreed in 98% or 99% of all reviewed cases."
-          }
-        ]
-      },
-      {
-        "id": "responsibility-is-split-across-the-clinic-the-platform-and-the-state",
-        "label": "Responsibility Is Split Across the Clinic, the Platform, and the State",
-        "blocks": [
-          {
-            "type": "subheading",
-            "text": "The Agreement Combines Entities That the Terms Separate"
-          },
-          {
-            "type": "paragraph",
-            "text": "Legion’s Terms of Service distinguish between two organizations:"
-          },
-          {
-            "type": "matrix-table",
-            "headers": [
-              "Entity",
-              "Publicly described role"
-            ],
-            "rows": [
-              [
-                {
-                  "text": "Legion Health Inc."
-                },
-                {
-                  "text": "Operates the platform and provides administrative and management services. It says it does not provide medical care or control clinical judgment."
-                }
-              ],
-              [
-                {
-                  "text": "Legion Health PA"
-                },
-                {
-                  "text": "Provides medical services through licensed clinicians."
-                }
-              ]
-            ]
-          },
-          {
-            "type": "paragraph",
-            "text": "The Utah agreement takes a stronger approach by naming Legion Health Inc. and Legion Health PA jointly as the “Participant.” Both are therefore parties to the state agreement. Jonathan Kole, M.D., signed for Legion Health PA, and Yash Patel signed for Legion Health Inc."
-          },
-          {
-            "type": "paragraph",
-            "text": "That prevents the pilot from being presented to Utah as the responsibility of only one side of the corporate structure. It still does not establish which entity performed each act after a specific failure."
-          },
-          {
-            "type": "subheading",
-            "text": "The Current Public Terms Describe a Different Prescription Sequence"
-          },
-          {
-            "type": "paragraph",
-            "text": "Legion’s Terms of Service, last updated in October 2025, say a prescription requires a provider consultation, a provider determination that the medication is appropriate, and a prescription written by that provider. The Utah agreement signed in March 2026 allows an AI-authorized renewal under a named prescriber who may not interact with the patient."
-          },
-          {
-            "type": "rich-paragraph",
-            "segments": [
-              {
-                "text": "The terms predate the pilot and may be revised before patients participate. As currently published, however, they do not explain the individual authority Utah has authorized the AI to exercise. "
+                strong: 'vicariously',
               },
               {
-                "linkLabel": "Legion Health Terms of Service",
-                "href": "https://legionhealth.com/terms-of-service/"
-              }
-            ]
-          },
-          {
-            "type": "subheading",
-            "text": "Utah Remains in the Responsibility Chain"
-          },
-          {
-            "type": "paragraph",
-            "text": "Utah granted regulatory relief that makes the automated renewal structure possible. The agreement says Utah does not endorse Legion, requires Legion to protect the state from claims, and preserves legally available remedies for patients and third parties."
-          },
-          {
-            "type": "paragraph",
-            "text": "Those provisions allocate legal and financial positions after harm. They do not erase Utah’s authorizing act."
-          },
-          {
-            "type": "paragraph",
-            "text": "Utah decided that a physician could supply professional authority through an approved AI protocol without reviewing every prescription. Responsibility Reconstruction must retain that decision in the record."
-          }
-        ]
-      },
-      {
-        "id": "legion-creates-evidence-and-plans-to-purge-some-of-it",
-        "label": "Legion Creates Evidence—and Plans to Purge Some of It",
-        "blocks": [
-          {
-            "type": "subheading",
-            "text": "The Refill Packet Creates Traceability"
-          },
-          {
-            "type": "paragraph",
-            "text": "Every AI decision is supposed to produce a structured refill packet containing:"
-          },
-          {
-            "type": "list",
-            "items": [
-              "Patient inputs.",
-              "Rule checks.",
-              "Safety flags.",
-              "A decision rationale."
-            ]
-          },
-          {
-            "type": "paragraph",
-            "text": "Legion must report volumes, dispositions, escalation reasons, clinician agreement, complaints, adverse outcomes, safety signals, and selected case excerpts to Utah. This is a stronger evidence design than a system that produces only a final prescription."
-          },
-          {
-            "type": "paragraph",
-            "text": "The packet may help establish what the system recorded and why it reported making the decision."
-          },
-          {
-            "type": "paragraph",
-            "text": "It is not necessarily the complete evidence needed to reconstruct the decision."
-          },
-          {
-            "type": "subheading",
-            "text": "The Audit Record Has an Expiration Problem"
-          },
-          {
-            "type": "subheading",
-            "text": "What Legion Plans to Preserve",
-            "level": 4
-          },
-          {
-            "type": "paragraph",
-            "text": "The proposal says clinical records will follow Legion’s standard medical-record retention policy. Pilot-specific audit artifacts will be retained through the pilot and Utah’s closeout, then moved to reduced retention and purged."
-          },
-          {
-            "type": "paragraph",
-            "text": "The agreement does not state a precise public retention period for those audit artifacts."
-          },
-          {
-            "type": "subheading",
-            "text": "What Utah Receives",
-            "level": 4
-          },
-          {
-            "type": "paragraph",
-            "text": "Utah’s monthly reports are treated as protected records. The state ordinarily receives de-identified data and redacted excerpts rather than complete chat logs. Legion therefore remains central to holding, selecting, explaining, and preserving much of the evidence."
-          },
-          {
-            "type": "matrix-table",
-            "headers": [
-              "Evidence the agreement creates",
-              "What issues remain uncertain after harm"
+                text: '—carries the responsibility structure.',
+              },
             ],
-            "rows": [
-              [
-                {
-                  "text": "Structured refill packet"
-                },
-                {
-                  "text": "Whether it preserves the original inputs or only the system’s processed account of them"
-                }
-              ],
-              [
-                {
-                  "text": "Model decision and rationale"
-                },
-                {
-                  "text": "Whether the exact model and version can be identified later"
-                }
-              ],
-              [
-                {
-                  "text": "Safety flags and rule checks"
-                },
-                {
-                  "text": "Whether missed signals can be reconstructed from the complete interaction"
-                }
-              ],
-              [
-                {
-                  "text": "Clinician comparison"
-                },
-                {
-                  "text": "Whether the clinician formed an independent judgment"
-                }
-              ],
-              [
-                {
-                  "text": "Monthly state report"
-                },
-                {
-                  "text": "Whether Utah received full records or selected excerpts"
-                }
-              ],
-              [
-                {
-                  "text": "Pilot audit artifacts"
-                },
-                {
-                  "text": "Whether they still exist when a later injury or pattern becomes visible"
-                }
-              ]
-            ]
           },
           {
-            "type": "paragraph",
-            "text": "Traceability exists only as long as the necessary record survives."
-          }
-        ]
+            type: 'paragraph',
+            text: 'The physician’s professional authority remains attached to the prescription even when the physician did not review the individual renewal.',
+          },
+        ],
       },
       {
-        "id": "what-the-public-record-establishes-and-what-remains-unresolved",
-        "label": "What the Public Record Establishes—and What Remains Unresolved",
-        "blocks": [
+        id: 'clinician-in-the-loop-does-not-mean-case-level-review',
+        label: '“Clinician in the Loop” Does Not Mean Case-Level Review',
+        blocks: [
           {
-            "type": "matrix-table",
-            "headers": [
-              "What the public record establishes",
-              "What issues remain unresolved"
+            type: 'subheading',
+            text: 'Human Review Declines as the Pilot Advances',
+          },
+          {
+            type: 'matrix-table',
+            headers: ['Phase', 'Human involvement', 'Advancement condition'],
+            rows: [
+              [
+                {
+                  text: 'Phase A',
+                },
+                {
+                  text: 'A Utah-licensed clinician reviews the first 250 requests before completion.',
+                },
+                {
+                  text: 'Reported concordance must exceed 98%.',
+                },
+              ],
+              [
+                {
+                  text: 'Phase B',
+                },
+                {
+                  text: 'The AI may send renewals before the next 1,000 requests receive retrospective review.',
+                },
+                {
+                  text: 'Reported concordance must exceed 99%.',
+                },
+              ],
+              [
+                {
+                  text: 'Phase C',
+                },
+                {
+                  text: 'Approximately 5%–10% of cases receive monthly sampling, with additional incident audits.',
+                },
+                {
+                  text: 'Ongoing reporting and oversight.',
+                },
+              ],
             ],
-            "rows": [
-              [
-                {
-                  "text": "Utah authorized Legion’s AI to determine eligibility and complete qualifying psychiatric renewals."
-                },
-                {
-                  "text": "Which individual approved the AI’s decision thresholds and determined they were sufficient."
-                }
-              ],
-              [
-                {
-                  "text": "A named prescriber may supply authority without reviewing the patient’s individual case."
-                },
-                {
-                  "text": "What the named physician knew, reviewed, or could have stopped."
-                }
-              ],
-              [
-                {
-                  "text": "Human review declines from pre-issuance review to retrospective review and sampling."
-                },
-                {
-                  "text": "Who authorized each transition and what complete evidence supported it."
-                }
-              ],
-              [
-                {
-                  "text": "Safety flags determine whether the patient reaches a clinician."
-                },
-                {
-                  "text": "The system’s false-negative rate for suicidality, mania, pregnancy changes, adverse effects, and other risks."
-                }
-              ],
-              [
-                {
-                  "text": "Legion’s broader architecture uses frontier models, prompts, workflows, APIs, and vendor systems."
-                },
-                {
-                  "text": "Which model and version power the Utah workflow and how substitutions or vendor updates are governed."
-                }
-              ],
-              [
-                {
-                  "text": "The concordance calculation excludes one category of disagreement from the advancement penalty."
-                },
-                {
-                  "text": "Whether decision-makers receive the full matrix rather than only the headline percentage."
-                }
-              ],
-              [
-                {
-                  "text": "Legion Health Inc. and Legion Health PA are jointly bound by the agreement."
-                },
-                {
-                  "text": "Which entity designed, operated, monitored, changed, and preserved each component."
-                }
-              ],
-              [
-                {
-                  "text": "Every AI decision generates a refill packet."
-                },
-                {
-                  "text": "Whether the surviving packet and underlying records are sufficient for an independent reconstruction."
-                }
-              ],
-              [
-                {
-                  "text": "Utah receives monthly reports and may request further information."
-                },
-                {
-                  "text": "What evidence Utah possesses independently of Legion’s reporting and classification."
-                }
-              ],
-              [
-                {
-                  "text": "Legally available patient remedies remain intact."
-                },
-                {
-                  "text": "Whether an injured patient can obtain the technical and institutional evidence needed to prove the responsibility chain."
-                }
-              ],
-              [
-                {
-                  "text": "Pilot audit artifacts are eventually moved to reduced retention and purged."
-                },
-                {
-                  "text": "Who determines when responsibility evidence is no longer worth preserving."
-                }
-              ]
-            ]
           },
           {
-            "type": "paragraph",
-            "text": "These are the questions that matter after a patient is harmed. “AI error,” “prompt failure,” “physician oversight,” or “missed escalation” would describe possible mechanisms. None would establish the responsibility chain."
-          }
-        ]
+            type: 'paragraph',
+            text: 'During Phase A, a clinician can stop an individual renewal before it reaches the pharmacy.',
+          },
+          {
+            type: 'paragraph',
+            text: 'During Phase B, the review occurs after the AI has acted. During Phase C, most individual decisions are not scheduled for clinician review at all.',
+          },
+          {
+            type: 'paragraph',
+            text: 'The phrase “clinician in the loop” therefore describes the operating system as a whole. It does not establish that a clinician participated in a particular patient’s renewal.',
+          },
+          {
+            type: 'subheading',
+            text: 'A Physician’s Name Is Not Evidence of Physician Judgment',
+          },
+          {
+            type: 'paragraph',
+            text: 'For an automated renewal, the named physician may not have:',
+          },
+          {
+            type: 'list',
+            items: [
+              'Seen the patient’s answers.',
+              'Reviewed the refill packet.',
+              'Evaluated the safety flags.',
+              'Approved the individual renewal.',
+              'Had an opportunity to intervene before transmission.',
+            ],
+          },
+          {
+            type: 'paragraph',
+            text: 'The name makes the prescription attributable to a licensed professional. It does not prove that the professional formed or adopted the judgment reflected in the prescription.',
+          },
+          {
+            type: 'rich-paragraph',
+            segments: [
+              {
+                text: 'Legion’s design exposes the difference between ',
+              },
+              {
+                strong: 'having a human name on the outcome',
+              },
+              {
+                text: ' and ',
+              },
+              {
+                strong: 'having evidence that a human made the decision',
+              },
+              {
+                text: '.',
+              },
+            ],
+          },
+        ],
       },
       {
-        "id": "responsibility-reconstruction-finding",
-        "label": "Responsibility Reconstruction Finding",
-        "blocks": [
+        id: 'the-ai-decides-when-human-judgment-begins',
+        label: 'The AI Decides When Human Judgment Begins',
+        blocks: [
           {
-            "type": "paragraph",
-            "text": "Legion designed a clinic around progressively transferring software-mediated work from humans to LLMs."
+            type: 'subheading',
+            text: 'Safety Screens Control Access to a Clinician',
           },
           {
-            "type": "paragraph",
-            "text": "Utah authorized the AI to determine whether a psychiatric medication renewal can proceed and whether the patient’s circumstances require clinician involvement."
+            type: 'paragraph',
+            text: 'Legion’s proposal establishes hard stops for conditions including:',
           },
           {
-            "type": "paragraph",
-            "text": "A physician’s name remains attached to the prescription. That name does not establish that the physician reviewed or adopted the individual decision."
+            type: 'list',
+            items: [
+              'Suicidality or self-harm risk.',
+              'Mania or hypomania.',
+              'Pregnancy-related changes.',
+              'New or worsening symptoms.',
+              'Loss of medication efficacy.',
+              'Severe adverse effects.',
+              'Contraindications or prescription discrepancies.',
+            ],
           },
           {
-            "type": "paragraph",
-            "text": "The safety process contains deterministic rules, but those rules depend on the system first recognizing the condition that should activate them."
+            type: 'paragraph',
+            text: 'If the system detects one of those conditions, encounters ambiguity, or cannot verify the patient or prescription, the request enters a clinician queue. Patients and pharmacists may also request escalation.',
           },
           {
-            "type": "paragraph",
-            "text": "The performance thresholds use a concordance calculation that does not count every disagreement equally."
+            type: 'paragraph',
+            text: 'If the system detects no qualifying condition, the renewal proceeds.',
           },
           {
-            "type": "paragraph",
-            "text": "The broader Legion architecture can use models from multiple outside providers, while the public agreement does not identify the model and version governing the refill workflow."
+            type: 'matrix-table',
+            headers: [
+              'When the system detects risk or ambiguity',
+              'When the system does not detect risk or ambiguity',
+            ],
+            rows: [
+              [
+                {
+                  text: 'The case is sent for clinician review.',
+                },
+                {
+                  text: 'The AI may authorize and transmit the renewal.',
+                },
+              ],
+              [
+                {
+                  text: 'A clinician can examine the chat log and medical record.',
+                },
+                {
+                  text: 'A clinician may never examine the individual case.',
+                },
+              ],
+              [
+                {
+                  text: 'The escalation creates a review record.',
+                },
+                {
+                  text: 'The absence of an escalation may be the only recorded safety result.',
+                },
+              ],
+            ],
           },
           {
-            "type": "paragraph",
-            "text": "Legion creates a structured operating record, but some pilot-specific evidence is scheduled for reduced retention and eventual deletion."
+            type: 'paragraph',
+            text: 'The human safeguard begins only after the automated system decides that human judgment is necessary.',
           },
           {
-            "type": "paragraph",
-            "text": "Utah’s pilot therefore preserves a familiar human name on the prescription while permitting the clinical act beneath that name to be performed by a changing AI system."
+            type: 'subheading',
+            text: 'A Deterministic Rule Does Not Make Detection Deterministic',
           },
           {
-            "type": "quote",
-            "text": "If a patient is harmed, the presence of a physician’s name will make the prescription attributable. It will not prove that a physician made the decision. Responsibility Reconstruction must determine who designed the decision, who authorized the system, who validated its controls, who could have intervened, whether anyone did, and what evidence survives to prove each connection."
+            type: 'paragraph',
+            text: 'The agreement says each hard stop is tested through deterministic unit tests and synthetic red-team scripts. Those tests can establish that a known trigger produces the expected action.',
           },
           {
-            "type": "paragraph",
-            "text": "Naming the error is not owning responsibility."
-          }
-        ]
-      }
-    ]
-  }
+            type: 'paragraph',
+            text: 'They do not establish that the system will correctly recognize every real patient statement that should activate the trigger.',
+          },
+          {
+            type: 'paragraph',
+            text: 'A rule can reliably escalate a positive suicidality flag while the language system still fails to recognize that a patient’s words indicate suicidality. If the flag is never generated, the deterministic safeguard never begins.',
+          },
+          {
+            type: 'paragraph',
+            text: 'Naming a missed escalation would identify the technical failure. It would not establish who designed the threshold, who validated it, who determined its performance was sufficient, or who accepted the risk of letting it control access to a clinician.',
+          },
+        ],
+      },
+      {
+        id: 'utah-authorized-a-system-not-a-stable-model',
+        label: 'Utah Authorized a System, Not a Stable Model',
+        blocks: [
+          {
+            type: 'subheading',
+            text: 'Legion’s Broader Architecture Uses Multiple Frontier Models',
+          },
+          {
+            type: 'paragraph',
+            text: 'In a November 2025 interview, Legion said its broader AI stack uses frontier models from OpenAI, Google, and Anthropic and switches among them as needed. The company said most of its performance comes from prompts and workflow design rather than a custom-trained model.',
+          },
+          {
+            type: 'rich-paragraph',
+            segments: [
+              {
+                text: 'Legion also described an API-first architecture connecting LLMs to scheduling, billing, clinical records, patient support, and clinical workflows. The interview was presented in partnership with Legion, so it is evidence of the company’s stated design and strategy—not independent validation of its performance. ',
+              },
+              {
+                linkLabel: 'Legion Health interview',
+                href: 'https://www.healthcareaiguy.com/p/company-deep-dive-legion-health',
+              },
+            ],
+          },
+          {
+            type: 'paragraph',
+            text: 'The agreement does not identify which model or model version powers the Utah refill workflow. It does not establish whether the workflow uses one provider consistently or can move among providers.',
+          },
+          {
+            type: 'subheading',
+            text: 'The Regulated System Has Multiple Moving Parts',
+          },
+          {
+            type: 'paragraph',
+            text: 'The operating system is not merely “the AI.” It includes:',
+          },
+          {
+            type: 'quote',
+            text: 'model + model version + prompts + deterministic rails + workflow logic + APIs + clinical data + escalation thresholds + vendor systems',
+          },
+          {
+            type: 'subheading',
+            text: 'What the Agreement Allows to Change',
+            level: 4,
+          },
+          {
+            type: 'paragraph',
+            text: 'The agreement allows deterministic-rail updates and prompt or template revisions informed by internal quality review. Formal amendments to the approved proposal require written approval from the parties.',
+          },
+          {
+            type: 'subheading',
+            text: 'What the Agreement Does Not Answer',
+            level: 4,
+          },
+          {
+            type: 'paragraph',
+            text: 'The public record does not clearly establish:',
+          },
+          {
+            type: 'list',
+            items: [
+              'Whether replacing the underlying model counts as an amendment.',
+              'Whether every replacement model must repeat Phase A.',
+              'Who decides that two models are sufficiently equivalent.',
+              'How silent updates by a model vendor are identified.',
+              'How model-specific errors are separated from prompt, workflow, or data errors.',
+              'Whether Utah receives notice before or after a material system change.',
+            ],
+          },
+          {
+            type: 'paragraph',
+            text: 'If the model changes while the named workflow remains the same, the regulated label may remain stable while the behavior beneath it changes.',
+          },
+        ],
+      },
+      {
+        id: 'the-concordance-percentage-does-not-measure-every-disagreement-equally',
+        label:
+          'The Concordance Percentage Does Not Measure Every Disagreement Equally',
+        blocks: [
+          {
+            type: 'subheading',
+            text: 'Legion Uses a Safety-Weighted Calculation',
+          },
+          {
+            type: 'paragraph',
+            text: 'The agreement classifies clinician comparisons as follows:',
+          },
+          {
+            type: 'matrix-table',
+            headers: [
+              'AI decision',
+              'Clinician decision',
+              'Classification',
+              'Effect on advancement target',
+            ],
+            rows: [
+              [
+                {
+                  text: 'Refill',
+                },
+                {
+                  text: 'Refill',
+                },
+                {
+                  text: 'Concordant',
+                },
+                {
+                  text: 'Included as agreement',
+                },
+              ],
+              [
+                {
+                  text: 'Refill',
+                },
+                {
+                  text: 'Escalate',
+                },
+                {
+                  text: 'Discordant',
+                },
+                {
+                  text: 'Counts against the target',
+                },
+              ],
+              [
+                {
+                  text: 'Escalate',
+                },
+                {
+                  text: 'Escalate',
+                },
+                {
+                  text: 'Concordant',
+                },
+                {
+                  text: 'Included as agreement',
+                },
+              ],
+              [
+                {
+                  text: 'Escalate',
+                },
+                {
+                  text: 'Refill',
+                },
+                {
+                  text: 'Discordant',
+                },
+                {
+                  text: 'Does not count against the target',
+                },
+              ],
+            ],
+          },
+          {
+            type: 'paragraph',
+            text: 'Excluding unnecessary escalations from the advancement penalty creates a conservative safety preference. That is a defensible design choice.',
+          },
+          {
+            type: 'paragraph',
+            text: 'It also means that “98% concordance” or “99% concordance” is not ordinary agreement accuracy. One category of disagreement is omitted from the performance threshold.',
+          },
+          {
+            type: 'subheading',
+            text: 'The Headline Percentage Cannot Stand Alone',
+          },
+          {
+            type: 'subheading',
+            text: 'Questions the Percentage Cannot Answer',
+            level: 4,
+          },
+          {
+            type: 'paragraph',
+            text: 'A decision-maker needs the full matrix:',
+          },
+          {
+            type: 'list',
+            items: [
+              'How often did the AI renew when the clinician would have escalated?',
+              'How often did the AI escalate when the clinician would have renewed?',
+              'Which disagreements counted against advancement?',
+              'Were clinicians reviewing independently, or did they see the AI’s decision and rationale first?',
+              'Did the same disagreement pattern concentrate around a medication, symptom, model, or prompt version?',
+            ],
+          },
+          {
+            type: 'paragraph',
+            text: 'The percentage describes a scoring rule. It does not by itself establish that the AI and clinicians agreed in 98% or 99% of all reviewed cases.',
+          },
+        ],
+      },
+      {
+        id: 'responsibility-is-split-across-the-clinic-the-platform-and-the-state',
+        label:
+          'Responsibility Is Split Across the Clinic, the Platform, and the State',
+        blocks: [
+          {
+            type: 'subheading',
+            text: 'The Agreement Combines Entities That the Terms Separate',
+          },
+          {
+            type: 'paragraph',
+            text: 'Legion’s Terms of Service distinguish between two organizations:',
+          },
+          {
+            type: 'matrix-table',
+            headers: ['Entity', 'Publicly described role'],
+            rows: [
+              [
+                {
+                  text: 'Legion Health Inc.',
+                },
+                {
+                  text: 'Operates the platform and provides administrative and management services. It says it does not provide medical care or control clinical judgment.',
+                },
+              ],
+              [
+                {
+                  text: 'Legion Health PA',
+                },
+                {
+                  text: 'Provides medical services through licensed clinicians.',
+                },
+              ],
+            ],
+          },
+          {
+            type: 'paragraph',
+            text: 'The Utah agreement takes a stronger approach by naming Legion Health Inc. and Legion Health PA jointly as the “Participant.” Both are therefore parties to the state agreement. Jonathan Kole, M.D., signed for Legion Health PA, and Yash Patel signed for Legion Health Inc.',
+          },
+          {
+            type: 'paragraph',
+            text: 'That prevents the pilot from being presented to Utah as the responsibility of only one side of the corporate structure. It still does not establish which entity performed each act after a specific failure.',
+          },
+          {
+            type: 'subheading',
+            text: 'The Current Public Terms Describe a Different Prescription Sequence',
+          },
+          {
+            type: 'paragraph',
+            text: 'Legion’s Terms of Service, last updated in October 2025, say a prescription requires a provider consultation, a provider determination that the medication is appropriate, and a prescription written by that provider. The Utah agreement signed in March 2026 allows an AI-authorized renewal under a named prescriber who may not interact with the patient.',
+          },
+          {
+            type: 'rich-paragraph',
+            segments: [
+              {
+                text: 'The terms predate the pilot and may be revised before patients participate. As currently published, however, they do not explain the individual authority Utah has authorized the AI to exercise. ',
+              },
+              {
+                linkLabel: 'Legion Health Terms of Service',
+                href: 'https://legionhealth.com/terms-of-service/',
+              },
+            ],
+          },
+          {
+            type: 'subheading',
+            text: 'Utah Remains in the Responsibility Chain',
+          },
+          {
+            type: 'paragraph',
+            text: 'Utah granted regulatory relief that makes the automated renewal structure possible. The agreement says Utah does not endorse Legion, requires Legion to protect the state from claims, and preserves legally available remedies for patients and third parties.',
+          },
+          {
+            type: 'paragraph',
+            text: 'Those provisions allocate legal and financial positions after harm. They do not erase Utah’s authorizing act.',
+          },
+          {
+            type: 'paragraph',
+            text: 'Utah decided that a physician could supply professional authority through an approved AI protocol without reviewing every prescription. Responsibility Reconstruction must retain that decision in the record.',
+          },
+        ],
+      },
+      {
+        id: 'legion-creates-evidence-and-plans-to-purge-some-of-it',
+        label: 'Legion Creates Evidence—and Plans to Purge Some of It',
+        blocks: [
+          {
+            type: 'subheading',
+            text: 'The Refill Packet Creates Traceability',
+          },
+          {
+            type: 'paragraph',
+            text: 'Every AI decision is supposed to produce a structured refill packet containing:',
+          },
+          {
+            type: 'list',
+            items: [
+              'Patient inputs.',
+              'Rule checks.',
+              'Safety flags.',
+              'A decision rationale.',
+            ],
+          },
+          {
+            type: 'paragraph',
+            text: 'Legion must report volumes, dispositions, escalation reasons, clinician agreement, complaints, adverse outcomes, safety signals, and selected case excerpts to Utah. This is a stronger evidence design than a system that produces only a final prescription.',
+          },
+          {
+            type: 'paragraph',
+            text: 'The packet may help establish what the system recorded and why it reported making the decision.',
+          },
+          {
+            type: 'paragraph',
+            text: 'It is not necessarily the complete evidence needed to reconstruct the decision.',
+          },
+          {
+            type: 'subheading',
+            text: 'The Audit Record Has an Expiration Problem',
+          },
+          {
+            type: 'subheading',
+            text: 'What Legion Plans to Preserve',
+            level: 4,
+          },
+          {
+            type: 'paragraph',
+            text: 'The proposal says clinical records will follow Legion’s standard medical-record retention policy. Pilot-specific audit artifacts will be retained through the pilot and Utah’s closeout, then moved to reduced retention and purged.',
+          },
+          {
+            type: 'paragraph',
+            text: 'The agreement does not state a precise public retention period for those audit artifacts.',
+          },
+          {
+            type: 'subheading',
+            text: 'What Utah Receives',
+            level: 4,
+          },
+          {
+            type: 'paragraph',
+            text: 'Utah’s monthly reports are treated as protected records. The state ordinarily receives de-identified data and redacted excerpts rather than complete chat logs. Legion therefore remains central to holding, selecting, explaining, and preserving much of the evidence.',
+          },
+          {
+            type: 'matrix-table',
+            headers: [
+              'Evidence the agreement creates',
+              'What issues remain uncertain after harm',
+            ],
+            rows: [
+              [
+                {
+                  text: 'Structured refill packet',
+                },
+                {
+                  text: 'Whether it preserves the original inputs or only the system’s processed account of them',
+                },
+              ],
+              [
+                {
+                  text: 'Model decision and rationale',
+                },
+                {
+                  text: 'Whether the exact model and version can be identified later',
+                },
+              ],
+              [
+                {
+                  text: 'Safety flags and rule checks',
+                },
+                {
+                  text: 'Whether missed signals can be reconstructed from the complete interaction',
+                },
+              ],
+              [
+                {
+                  text: 'Clinician comparison',
+                },
+                {
+                  text: 'Whether the clinician formed an independent judgment',
+                },
+              ],
+              [
+                {
+                  text: 'Monthly state report',
+                },
+                {
+                  text: 'Whether Utah received full records or selected excerpts',
+                },
+              ],
+              [
+                {
+                  text: 'Pilot audit artifacts',
+                },
+                {
+                  text: 'Whether they still exist when a later injury or pattern becomes visible',
+                },
+              ],
+            ],
+          },
+          {
+            type: 'paragraph',
+            text: 'Traceability exists only as long as the necessary record survives.',
+          },
+        ],
+      },
+      {
+        id: 'what-the-public-record-establishes-and-what-remains-unresolved',
+        label: 'What the Public Record Establishes—and What Remains Unresolved',
+        blocks: [
+          {
+            type: 'matrix-table',
+            headers: [
+              'What the public record establishes',
+              'What issues remain unresolved',
+            ],
+            rows: [
+              [
+                {
+                  text: 'Utah authorized Legion’s AI to determine eligibility and complete qualifying psychiatric renewals.',
+                },
+                {
+                  text: 'Which individual approved the AI’s decision thresholds and determined they were sufficient.',
+                },
+              ],
+              [
+                {
+                  text: 'A named prescriber may supply authority without reviewing the patient’s individual case.',
+                },
+                {
+                  text: 'What the named physician knew, reviewed, or could have stopped.',
+                },
+              ],
+              [
+                {
+                  text: 'Human review declines from pre-issuance review to retrospective review and sampling.',
+                },
+                {
+                  text: 'Who authorized each transition and what complete evidence supported it.',
+                },
+              ],
+              [
+                {
+                  text: 'Safety flags determine whether the patient reaches a clinician.',
+                },
+                {
+                  text: 'The system’s false-negative rate for suicidality, mania, pregnancy changes, adverse effects, and other risks.',
+                },
+              ],
+              [
+                {
+                  text: 'Legion’s broader architecture uses frontier models, prompts, workflows, APIs, and vendor systems.',
+                },
+                {
+                  text: 'Which model and version power the Utah workflow and how substitutions or vendor updates are governed.',
+                },
+              ],
+              [
+                {
+                  text: 'The concordance calculation excludes one category of disagreement from the advancement penalty.',
+                },
+                {
+                  text: 'Whether decision-makers receive the full matrix rather than only the headline percentage.',
+                },
+              ],
+              [
+                {
+                  text: 'Legion Health Inc. and Legion Health PA are jointly bound by the agreement.',
+                },
+                {
+                  text: 'Which entity designed, operated, monitored, changed, and preserved each component.',
+                },
+              ],
+              [
+                {
+                  text: 'Every AI decision generates a refill packet.',
+                },
+                {
+                  text: 'Whether the surviving packet and underlying records are sufficient for an independent reconstruction.',
+                },
+              ],
+              [
+                {
+                  text: 'Utah receives monthly reports and may request further information.',
+                },
+                {
+                  text: 'What evidence Utah possesses independently of Legion’s reporting and classification.',
+                },
+              ],
+              [
+                {
+                  text: 'Legally available patient remedies remain intact.',
+                },
+                {
+                  text: 'Whether an injured patient can obtain the technical and institutional evidence needed to prove the responsibility chain.',
+                },
+              ],
+              [
+                {
+                  text: 'Pilot audit artifacts are eventually moved to reduced retention and purged.',
+                },
+                {
+                  text: 'Who determines when responsibility evidence is no longer worth preserving.',
+                },
+              ],
+            ],
+          },
+          {
+            type: 'paragraph',
+            text: 'These are the questions that matter after a patient is harmed. “AI error,” “prompt failure,” “physician oversight,” or “missed escalation” would describe possible mechanisms. None would establish the responsibility chain.',
+          },
+        ],
+      },
+      {
+        id: 'responsibility-reconstruction-finding',
+        label: 'Responsibility Reconstruction Finding',
+        blocks: [
+          {
+            type: 'paragraph',
+            text: 'Legion designed a clinic around progressively transferring software-mediated work from humans to LLMs.',
+          },
+          {
+            type: 'paragraph',
+            text: 'Utah authorized the AI to determine whether a psychiatric medication renewal can proceed and whether the patient’s circumstances require clinician involvement.',
+          },
+          {
+            type: 'paragraph',
+            text: 'A physician’s name remains attached to the prescription. That name does not establish that the physician reviewed or adopted the individual decision.',
+          },
+          {
+            type: 'paragraph',
+            text: 'The safety process contains deterministic rules, but those rules depend on the system first recognizing the condition that should activate them.',
+          },
+          {
+            type: 'paragraph',
+            text: 'The performance thresholds use a concordance calculation that does not count every disagreement equally.',
+          },
+          {
+            type: 'paragraph',
+            text: 'The broader Legion architecture can use models from multiple outside providers, while the public agreement does not identify the model and version governing the refill workflow.',
+          },
+          {
+            type: 'paragraph',
+            text: 'Legion creates a structured operating record, but some pilot-specific evidence is scheduled for reduced retention and eventual deletion.',
+          },
+          {
+            type: 'paragraph',
+            text: 'Utah’s pilot therefore preserves a familiar human name on the prescription while permitting the clinical act beneath that name to be performed by a changing AI system.',
+          },
+          {
+            type: 'quote',
+            text: 'If a patient is harmed, the presence of a physician’s name will make the prescription attributable. It will not prove that a physician made the decision. Responsibility Reconstruction must determine who designed the decision, who authorized the system, who validated its controls, who could have intervened, whether anyone did, and what evidence survives to prove each connection.',
+          },
+          {
+            type: 'paragraph',
+            text: 'Naming the error is not owning responsibility.',
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 export const getCaseStudySections = (study: CaseStudy) => study.sections;
