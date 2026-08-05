@@ -123,7 +123,7 @@ Before additional funding is approved for an underperforming AI initiative, mana
 
 The rule does not prohibit further investment. It prohibits further investment by default.
 
-That distinction matters because every pressure surrounding an AI program pushes in the opposite direction: sunk cost, executive mandates, vendor promises, workforce commitments, public strategy, and fear of appearing uncompetitive.
+That distinction matters because every [pressure surrounding an AI program](/blog/ai-governance-guidelines-for-executives/) pushes in the opposite direction: sunk cost, executive mandates, vendor promises, workforce commitments, public strategy, and fear of appearing uncompetitive.
 
 > **The measure of AI capital discipline is not how the organization funds success. It is whether anyone can stop the funding when success does not arrive.**
 
@@ -138,11 +138,3 @@ The board should know who can challenge the next funding tranche, what evidence 
 ## CFO AI Investment Advisory
 
 Lozen Advisory's [CFO AI Investment Advisory](/services/cfo-ai-investment-advisory/) provides independent counsel for boards and finance leaders. When the question is whether an unproven AI investment should be rescued or reconsidered, the answer should come from an independent advisor.
-
----
-
-**Sources:**
-
-- [Global Finance Magazine — AI Return on Investment: Looking for Elusive Returns](https://gfmag.com/features/ai-return-on-investment-elusive/)
-- [AWS — Generative AI Application Builder Cost](https://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/cost.html)
-
