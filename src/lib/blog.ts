@@ -11,7 +11,7 @@ export function formatPostDate(date: Date): string {
 }
 
 export function postHref(slug: string): string {
-  return `/blog/${slug}`;
+  return `/blog/${slug}/`;
 }
 
 export function sortPostsByDate(
