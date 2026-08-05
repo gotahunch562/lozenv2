@@ -5,17 +5,17 @@ slug: cfo-ai-roi-debt
 description: AI ROI cannot be calculated without a defensible total cost of
   ownership. Learn why agent costs escape the business case and how AI ROI debt
   accumulates.
-metaDescription: AI ROI requires a defensible total cost of ownership. Learn
-  why agent costs escape the business case and create AI ROI debt.
+metaDescription: AI ROI requires a defensible total cost of ownership. Learn why
+  agent costs escape the business case and create AI ROI debt.
 category: CFO Insights
 image: /blog/cfo ai debt worry.avif
 imageAlt: worried cfo looking at screen
 pubDate: 2026-07-29
 dateModified: 2026-08-05
 lead: AI ROI cannot be proved when the enterprise cannot reconstruct total cost
-  of ownership. Agent execution, cloud consumption, integration, correction,
-  and retained human work escape the original business case. That is where AI
-  ROI debt begins.
+  of ownership. Agent execution, cloud consumption, integration, correction, and
+  retained human work escape the original business case. That is where AI ROI
+  debt begins.
 featured: false
 draft: false
 ---
@@ -25,7 +25,7 @@ The answer begins with a denominator problem. An organization cannot determine A
 
 The first expenditure buys the model, platform, pilot, or enterprise license. The second pays for the data preparation, cloud infrastructure, integrations, governance, workflow redesign, employee training, and human review required to make the first expenditure work.
 
-That second cycle is AI ROI debt.
+That second cycle is [AI ROI debt](/blog/cfo-problem-with-ai-roi/).
 
 > **AI ROI debt begins when the organization must keep spending to preserve the possibility that the original AI investment may eventually prove worthwhile.**
 
@@ -131,7 +131,7 @@ That distinction matters because every pressure surrounding an AI program pushes
 
 AI ROI debt is a governance problem as much as a finance problem. A CFO may see weak economics clearly and still face executive adoption mandates, sunk-cost pressure, vendor promises, workforce commitments, and board expectations that the company remain competitive.
 
-The board's role is not to select models or manage token consumption. It is to ensure that material AI investments are governed like other capital allocations: with an accountable owner, a reconstructable economic record, and an escalation path when the original assumptions no longer hold.
+[The board's role is not to select models](/blog/algorithmic-accountability-kiro-mandate/) or manage token consumption. It is to ensure that material AI investments are governed like other capital allocations: with an accountable owner, a reconstructable economic record, and an escalation path when the original assumptions no longer hold.
 
 The board should know who can challenge the next funding tranche, what evidence brings the investment back for review, and who has authority to say no. If no one has standing to invoke the capital-stop rule, the control exists only on paper.
 
@@ -145,3 +145,4 @@ Lozen Advisory's [CFO AI Investment Advisory](/services/cfo-ai-investment-adviso
 
 - [Global Finance Magazine — AI Return on Investment: Looking for Elusive Returns](https://gfmag.com/features/ai-return-on-investment-elusive/)
 - [AWS — Generative AI Application Builder Cost](https://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/cost.html)
+
