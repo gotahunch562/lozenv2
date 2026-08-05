@@ -9,7 +9,7 @@ metaDescription: AI incident databases show when systems fail, but configuration
   errors don't explain who authorized the risk. Why AI needs real accident
   investigation.
 category: AI Governance & Workforce Risk
-image: /blog/ia-black-box.avif..avif
+image: /blog/ia-black-box.avif
 imageAlt: airplane black box ai data logs
 pubDate: 2026-08-02
 dateModified: 2026-08-04
