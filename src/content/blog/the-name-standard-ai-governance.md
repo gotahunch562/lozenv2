@@ -1,5 +1,5 @@
 ---
-title: Whose Reputation Is It Anyway?
+title: The Name Standard℠ for AI Governance
 seoTitle: The Name Standard℠ for AI Governance | Lozen Advisory
 slug: the-name-standard-ai-governance
 description: The Name Standard℠ evaluates who authorized an AI system to act,
@@ -20,6 +20,8 @@ lead: The Name Standard℠ is not limited to whose name appears on AI-assisted
 featured: false
 draft: false
 ---
+## Whose Reputation Is It Anyway?
+
 When AI-assisted work product leaves an organization, it does not leave under the name of the large language model (LLM).
 
 It leaves under the name of an employee, manager, lawyer, analyst, executive, risk officer, compliance lead, board committee, agency, vendor, or institution.
