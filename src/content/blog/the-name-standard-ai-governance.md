@@ -12,7 +12,7 @@ category: AI Governance & Workforce Risk
 image: /blog/the-name-standard-ai-governance-lozen-advisory-llc.avif
 imageAlt: The Name Standard℠ signature is an example of AI governance
 pubDate: 2026-06-12
-dateModified: 2026-07-29
+dateModified: 2026-08-06
 lead: The Name Standard℠ is not limited to whose name appears on AI-assisted
   output. It asks who authorized an AI system to act within a defined domain,
   under specific capabilities, permissions, objectives, and limits—and who
