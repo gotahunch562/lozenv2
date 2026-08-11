@@ -83,18 +83,98 @@
 
   const cdD = document.getElementById('cd-d');
   if (cdD) {
-    function nextFriday9pm() {
+    const webinarTimeZone = 'America/New_York';
+
+    function zonedParts(date) {
+      return Object.fromEntries(
+        new Intl.DateTimeFormat('en-US', {
+          timeZone: webinarTimeZone,
+          year: 'numeric',
+          month: '2-digit',
+          day: '2-digit',
+          weekday: 'short',
+          hour: '2-digit',
+          minute: '2-digit',
+          second: '2-digit',
+          hourCycle: 'h23',
+        })
+          .formatToParts(date)
+          .filter((part) => part.type !== 'literal')
+          .map((part) => [part.type, part.value])
+      );
+    }
+
+    function zoneOffsetAt(date) {
+      const parts = zonedParts(date);
+
+      return (
+        Date.UTC(
+          Number(parts.year),
+          Number(parts.month) - 1,
+          Number(parts.day),
+          Number(parts.hour),
+          Number(parts.minute),
+          Number(parts.second)
+        ) - Math.floor(date.getTime() / 1000) * 1000
+      );
+    }
+
+    function easternThursdayAt11(calendarDate) {
+      const wallClock = Date.UTC(
+        calendarDate.getUTCFullYear(),
+        calendarDate.getUTCMonth(),
+        calendarDate.getUTCDate(),
+        11
+      );
+
+      let result = wallClock - zoneOffsetAt(new Date(wallClock));
+      result = wallClock - zoneOffsetAt(new Date(result));
+
+      return new Date(result);
+    }
+
+    function nextThursday11am() {
       const now = new Date();
-      const d = new Date(now);
-      d.setHours(21, 0, 0, 0);
-      let day = (5 - d.getDay() + 7) % 7;
-      if (day === 0 && now > d) day = 7;
-      d.setDate(d.getDate() + day);
-      return d;
+      const parts = zonedParts(now);
+      const weekday = [
+        'Sun',
+        'Mon',
+        'Tue',
+        'Wed',
+        'Thu',
+        'Fri',
+        'Sat',
+      ].indexOf(parts.weekday);
+
+      const daysUntilThursday = (4 - weekday + 7) % 7;
+
+      let calendarDate = new Date(
+        Date.UTC(
+          Number(parts.year),
+          Number(parts.month) - 1,
+          Number(parts.day) + daysUntilThursday
+        )
+      );
+
+      let target = easternThursdayAt11(calendarDate);
+
+      if (target <= now) {
+        calendarDate = new Date(
+          Date.UTC(
+            Number(parts.year),
+            Number(parts.month) - 1,
+            Number(parts.day) + daysUntilThursday + 7
+          )
+        );
+
+        target = easternThursdayAt11(calendarDate);
+      }
+
+      return target;
     }
 
     function tick() {
-      const t = nextFriday9pm().getTime() - Date.now();
+      const t = nextThursday11am().getTime() - Date.now();
       const s = Math.max(0, Math.floor(t / 1000));
       const dEl = document.getElementById('cd-d');
       const hEl = document.getElementById('cd-h');
