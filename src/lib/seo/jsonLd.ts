@@ -35,9 +35,17 @@ export interface BasePageInput {
 }
 
 export interface ArticleJsonLdInput extends BasePageInput {
-  type?: "Article" | "BlogPosting" | "ScholarlyArticle" | "Report";
+  type?:
+    | "Article"
+    | "BlogPosting"
+    | "ScholarlyArticle"
+    | "Report"
+    | "TechArticle";
   section?: string;
   isPartOf?: SeriesInput;
+  mainEntity?: JsonLdObject;
+  about?: JsonLdObject | JsonLdObject[];
+  mentions?: JsonLdObject | JsonLdObject[];
 }
 
 export interface NewsArticleJsonLdInput extends BasePageInput {
@@ -197,7 +205,7 @@ const SITE_HOME_URL = `${SITE_URL}/`;
 const SITE_NAME = "Lozen Advisory";
 const ORGANIZATION_NAME = "Lozen Advisory LLC";
 const DEFAULT_AUTHOR_NAME = "Akilah E. Kamaria";
-const DEFAULT_FRAMEWORK_TERM_SET_ID = `${SITE_URL}/#lozen-frameworks`;
+export const DEFAULT_FRAMEWORK_TERM_SET_ID = `${SITE_URL}/#lozen-frameworks`;
 const DEFAULT_FRAMEWORK_TERM_SET_NAME = "Lozen Advisory Frameworks";
 const DEFAULT_FRAMEWORK_TERM_SET_DESCRIPTION =
   "Proprietary analytical frameworks developed by Lozen Advisory for disclosure-dependent workforce risk, AI governance accountability, board evidence, human attribution, and leadership capacity erosion — the governance architecture for institutional risk that legacy systems were not built to detect.";
@@ -241,6 +249,11 @@ export const createOrganizationJsonLd = (): JsonLdObject => ({
   "@id": `${SITE_URL}/#organization`,
   name: ORGANIZATION_NAME,
   url: SITE_HOME_URL,
+  logo: {
+    "@type": "ImageObject",
+    "@id": `${SITE_URL}/#logo`,
+    url: absoluteUrl("/logo.png"),
+  },
   email: "hello@lozenadvisory.com",
   founder: {
     "@type": "Person",
@@ -552,22 +565,37 @@ export const createArticleJsonLd = ({
   type = "Article",
   section,
   isPartOf,
+  mainEntity,
+  about,
+  mentions,
 }: ArticleJsonLdInput): JsonLdObject | JsonLdObject[] => {
+  const pageUrl = absoluteUrl(href);
   const article: JsonLdObject = {
     "@context": "https://schema.org",
     "@type": type,
+    "@id": `${pageUrl}#article`,
     headline: title,
     description,
-    url: absoluteUrl(href),
-    mainEntityOfPage: absoluteUrl(href),
+    url: pageUrl,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${pageUrl}#webpage`,
+      url: pageUrl,
+    },
+    mainEntity,
+    about,
+    mentions,
     image: image ? absoluteUrl(image) : undefined,
     datePublished,
     dateModified: dateModified ?? datePublished,
     articleSection: section,
     keywords: keywords?.join(", "),
+    inLanguage: "en-US",
+    isAccessibleForFree: true,
     author: {
       "@type": "Person",
       name: authorName,
+      url: absoluteUrl("/about/"),
     },
     publisher: {
       "@id": `${SITE_URL}/#organization`,

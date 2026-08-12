@@ -1,0 +1,117 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import {
+  absoluteUrl,
+  createArticleJsonLd,
+  createDefinedTermSetJsonLd,
+  createJsonLdGraph,
+  createOrganizationJsonLd,
+  DEFAULT_FRAMEWORK_TERM_SET_ID,
+  serializeJsonLd,
+  type JsonLdObject,
+} from '../lib/seo/jsonLd';
+
+interface Props {
+  post: CollectionEntry<'blog'>;
+  href: string;
+}
+
+const { post, href } = Astro.props;
+const { data } = post;
+const options = data.jsonLd;
+const pageUrl = absoluteUrl(href);
+
+type SchemaEntity =
+  | NonNullable<typeof options>['about'][number]
+  | NonNullable<typeof options>['mentions'][number];
+
+const entityNode = (
+  entity: SchemaEntity
+): JsonLdObject => {
+  const entityUrl = absoluteUrl(entity.url);
+
+  return {
+    '@type': entity.type,
+    ...(entity.type === 'DefinedTerm' && entityUrl
+      ? { '@id': `${entityUrl}#term` }
+      : {}),
+    name: entity.name,
+    alternateName: entity.alternateName,
+    description: entity.description,
+    url: entityUrl,
+  };
+};
+
+const definedTerm = options?.definedTerm;
+const definedTermUrl = absoluteUrl(definedTerm?.url ?? href);
+const definedTermId = definedTerm
+  ? `${definedTermUrl}#term`
+  : undefined;
+
+const mainEntity: JsonLdObject | undefined = definedTerm
+  ? {
+      '@type': 'DefinedTerm',
+      '@id': definedTermId,
+      name: definedTerm.name,
+      alternateName: definedTerm.alternateName,
+      description: definedTerm.description,
+      url: definedTermUrl,
+      inDefinedTermSet: {
+        '@id': DEFAULT_FRAMEWORK_TERM_SET_ID,
+      },
+    }
+  : undefined;
+
+const about = [
+  ...(mainEntity ? [{ '@id': definedTermId }] : []),
+  ...(options?.about?.map(entityNode) ?? []),
+];
+
+const mentions = options?.mentions?.map(entityNode) ?? [];
+
+const termSetJsonLd = definedTerm
+  ? createDefinedTermSetJsonLd({
+      terms: [
+        {
+          name: definedTerm.name,
+          alternateName: definedTerm.alternateName,
+          description: definedTerm.description,
+          href: definedTermUrl ?? href,
+          termId: definedTermId,
+        },
+      ],
+    })
+  : undefined;
+
+const articleJsonLd = createArticleJsonLd({
+  title: data.title,
+  description: data.metaDescription ?? data.description,
+  href: pageUrl ?? href,
+  image: data.image,
+  datePublished: data.pubDate.toISOString(),
+  dateModified: (data.dateModified ?? data.pubDate).toISOString(),
+  type: options?.type ?? 'Article',
+  section: data.category ?? data.tag,
+  keywords: options?.keywords,
+  mainEntity,
+  about: about.length ? about : undefined,
+  mentions: mentions.length ? mentions : undefined,
+  breadcrumbs: [
+    { name: 'Home', href: '/' },
+    { name: 'Blog', href: '/blog/' },
+    { name: data.title, href: pageUrl ?? href },
+  ],
+});
+
+const jsonLd = createJsonLdGraph([
+  createOrganizationJsonLd(),
+  termSetJsonLd,
+  articleJsonLd,
+]);
+---
+
+<script
+  is:inline
+  type="application/ld+json"
+  set:html={serializeJsonLd(jsonLd)}
+/>

@@ -1,6 +1,7 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
+import ArticleJsonLd from '../components/ArticleJsonLd.astro';
 import AuthorBox from '../components/AuthorBox.astro';
 import CtaStrip from '../components/CtaStrip.astro';
 import FounderPortrait from '../components/FounderPortrait.astro';
@@ -41,6 +42,8 @@ const pageDescription = metaDescription ?? description;
   ogImageAlt={imageAlt ?? title}
   ogType="article"
 >
+  <ArticleJsonLd post={post} href={Astro.url.pathname} />
+
   <section class="article-hero">
     <div class="grid-bg"></div>
 
