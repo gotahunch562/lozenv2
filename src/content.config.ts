@@ -2,6 +2,41 @@ import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
+const schemaAboutEntity = z.object({
+  type: z
+    .enum(['DefinedTerm', 'Organization', 'Person', 'Thing'])
+    .default('DefinedTerm'),
+  name: z.string(),
+  url: z.string(),
+  description: z.string().optional(),
+  alternateName: z.string().optional(),
+});
+
+const schemaMentionEntity = z.object({
+  type: z
+    .enum(['DefinedTerm', 'Organization', 'Person', 'Thing'])
+    .default('Organization'),
+  name: z.string(),
+  url: z.string().optional(),
+  description: z.string().optional(),
+  alternateName: z.string().optional(),
+});
+
+const articleJsonLd = z.object({
+  type: z.enum(['Article', 'TechArticle']).default('Article'),
+  keywords: z.array(z.string()).default([]),
+  definedTerm: z
+    .object({
+      name: z.string(),
+      description: z.string(),
+      alternateName: z.string().optional(),
+      url: z.string().optional(),
+    })
+    .optional(),
+  about: z.array(schemaAboutEntity).default([]),
+  mentions: z.array(schemaMentionEntity).default([]),
+});
+
 const blog = defineCollection({
   loader: glob({
     base: './src/content/blog',
@@ -32,6 +67,8 @@ const blog = defineCollection({
 
     emoji: z.string().optional(),
     readTime: z.string().optional(),
+
+    jsonLd: articleJsonLd.optional(),
   }),
 });
 
