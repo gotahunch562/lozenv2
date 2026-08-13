@@ -1,9 +1,9 @@
 ---
-title: "Evidence-Based Responsibility Reconstruction for AI-Mediated Conduct: A
+title: "Evidence-Based Responsibility Reconstruction℠ for AI-Mediated Conduct: A
   Definition"
 seoTitle: "AI Responsibility Reconstruction: A Definitional Framework"
 slug: evidence-based-responsibility-reconstruction
-description: Evidence-Based Responsibility Reconstruction is Lozen Advisory's
+description: Evidence-Based Responsibility Reconstruction℠ is Lozen Advisory's
   retrospective method for testing whether the surviving record of an AI
   incident can connect specific actors to specific governance acts.
 metaDescription: When an AI system causes harm, who is responsible? A method for
@@ -11,9 +11,9 @@ metaDescription: When an AI system causes harm, who is responsible? A method for
   survives.
 category: AI Governance & Workforce Risk
 image: /blog/Algorithmic accountability-evidence-reconstruction.avif
-imageAlt: Evidence-based responsibility reconstruction for AI-mediated conduct
+imageAlt: Evidence-Based Responsibility Reconstruction℠ for AI-mediated conduct book
 pubDate: 2026-07-29
-dateModified: 2026-08-02
+dateModified: 2026-08-04
 lead: When AI-mediated conduct becomes consequential, responsibility must be
   reconstructed from the surviving record connecting specific actors to specific
   governance acts.
@@ -29,10 +29,10 @@ jsonLd:
     - AI governance evidence
     - human attribution
   definedTerm:
-    name: Evidence-Based Responsibility Reconstruction for AI-Mediated Conduct
+    name: Evidence-Based Responsibility Reconstruction℠ for AI-Mediated Conduct
     alternateName: Responsibility Reconstruction
     description: >-
-      Evidence-Based Responsibility Reconstruction for AI-Mediated Conduct is
+      Evidence-Based Responsibility Reconstruction℠ for AI-Mediated Conduct is
       the disciplined process of determining what an AI system did, what
       authority it was given, which human and institutional actors controlled
       the conditions under which it acted, what evidence remains, and where
@@ -44,9 +44,9 @@ Incident databases classify what went wrong. Governance frameworks prescribe the
 
 Answering that question requires a discipline, and the discipline begins with a definition:
 
-> **Evidence-Based Responsibility Reconstruction for AI-Mediated Conduct** is the disciplined process of determining what an AI system did, what authority it was given, which human and institutional actors controlled the conditions under which it acted, what evidence remains, and where responsibility can be established, divided, or no longer recovered.
+> **Evidence-Based Responsibility Reconstruction℠ for AI-Mediated Conduct** is the disciplined process of determining what an AI system did, what authority it was given, which human and institutional actors controlled the conditions under which it acted, what evidence remains, and where responsibility can be established, divided, or no longer recovered.
 
-Responsibility reconstruction sits within the broader [discipline of algorithmic accountability](/blog/algorithmic-accountability-enterprise-ai-governance/), the institutional obligation to answer for AI-mediated conduct. Responsibility reconstruction does not treat an AI system as a legal or institutional decision-maker, and it does not determine liability. Instead, it reconstructs the evidentiary connections among system conduct, delegated authority, human and institutional governance acts, and the surviving record. Evidence-Based Responsibility Reconstruction is not model evaluation, AI forensics, red teaming, observability, or technical incident response. It is the evidence-based reconstruction of human and [institutional responsibility surrounding AI-mediated conduct.](/blog/algorithmic-accountability-anthropic-reconstruction/) **The method does not replace accountability; it establishes the factual foundation accountability requires.**
+Responsibility reconstruction sits within the broader [discipline of algorithmic accountability](/blog/algorithmic-accountability-enterprise-ai-governance/), the institutional obligation to answer for AI-mediated conduct. Responsibility reconstruction does not treat an AI system as a legal or institutional decision-maker, and it does not determine liability. Instead, it reconstructs the evidentiary connections among system conduct, delegated authority, human and institutional governance acts, and the surviving record. **Evidence-Based Responsibility Reconstruction℠**  is not model evaluation, AI forensics, red teaming, observability, or technical incident response. It is the evidence-based reconstruction of human and [institutional responsibility surrounding AI-mediated conduct.](/blog/algorithmic-accountability-anthropic-reconstruction/) **The method does not replace accountability; it establishes the factual foundation accountability requires.**
 
 This article establishes the category, the method it requires, and the standard against which every claim of AI accountability, including those sold as products—should be measured.
 
@@ -56,7 +56,7 @@ Three shifts have converged to make responsibility reconstruction a discipline r
 
 **[First, AI systems now perform consequential conduct directly.](https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/doctronic/)** Earlier AI harms commonly involved human conduct informed by an algorithm. Increasingly, AI systems select means, use tools, move through infrastructure, and execute actions without a separate human approval at each step. The objective may have been authorized while the method, target, or resulting conduct was not. When the system executes directly, responsibility cannot be read from an org chart. It must be reconstructed from the objective assigned, the authority delegated, the permissions granted, the operating conditions established, the controls validated, the monitoring performed, and the intervention that did or did not occur.
 
-**Second, reproducibility has collapsed.** Classical digital forensics depends heavily on stable artifacts, preservable system states, repeatable analysis, and evidence whose integrity can be established through hashing and chain of custody. LLM-mediated conduct disrupts those conditions. Outputs are sampled rather than deterministically computed. Model checkpoints are updated, deprecated, and retired. System prompts and safety layers change server-side. Agentic conduct depends on tool environments, permissions, external systems, and context states that were never captured. Even with the complete prompt, the system state and operating environment that produced the conduct may no longer exist. For an expanding class of consequential AI conduct, the traditional bit-stream image cannot preserve the whole event because the event was distributed across model state, infrastructure, tools, and institutional decisions.
+**Second, reproducibility has collapsed.** Classical digital forensics depends heavily on stable artifacts, preservable system states, repeatable analysis, and evidence whose integrity can be established through hashing and chain of custody. LLM-mediated conduct disrupts those conditions. Outputs are sampled rather than deterministically computed. Model checkpoints are updated, deprecated, and retired. System prompts and safety layers change server-side. However, agentic conduct depends on tool environments, permissions, external systems, and context states that were never captured. Even with the complete prompt, the system state and operating environment that produced the conduct may no longer exist. For an expanding class of consequential AI conduct, the traditional bit-stream image cannot preserve the whole event because the event was distributed across model state, infrastructure, tools, and institutional decisions.
 
 **Third, the legal system is arriving at the same problem from the other side — and has demonstrated how hard the problem is.** In 2025, the [U.S. Judicial Conference's Advisory Committee on Evidence Rules](https://www.uscourts.gov/sites/default/files/document/advisory_committee_on_evidence_rules_may_2026.pdf) proposed Federal Rule of Evidence 707, which would subject machine-generated evidence offered without an expert witness to the reliability standards Rule 702 applies to human expert testimony — a companion effort to a working draft amending Rule 901's authentication requirements for suspected deepfakes. The committee drafted the rule precisely because the traditional guarantors of reliability — a chain of custody and a human witness who can explain the evidence's origin — are often absent for machine output. The rule was published for public comment in August 2025. When the comment period closed in February 2026, it had drawn fifty-nine written comments: three in unqualified support, twenty-seven supporting only with revisions, and twenty-seven opposed. In May 2026, the Advisory Committee declined to recommend action on the rule, substantially revised the draft, and deferred it for further study and expert vetting at its Fall 2026 meeting, reporting that decision to the Standing Committee in June. **The first federal attempt to write evidence rules for AI output went out for comment and came back unadopted.**
 
@@ -66,7 +66,7 @@ The question of how responsibility for an AI system's actions is reconstructed f
 
 ## Where Responsibility Reconstruction Fits
 
-Evidence-Based Responsibility Reconstruction draws on records produced by AI governance, assurance, incident response, regulation, litigation, and investigation. Each of those fields contributes part of the evidentiary record, but each is organized around a different primary purpose.
+**Evidence-Based Responsibility Reconstruction℠**  draws on records produced by AI governance, assurance, incident response, regulation, litigation, and investigation. Each of those fields contributes part of the evidentiary record, but each is organized around a different primary purpose.
 
 1. Prospective governance frameworks define the controls, roles, documentation, and oversight that organizations should establish before consequential conduct occurs.
 2. Governance attestation and assurance products document whether an authority structure, approval process, or control environment was in place.
@@ -91,7 +91,7 @@ The existence of a log does not establish that monitoring occurred. Logging pres
 
 ## What Qualifies as Responsibility Reconstruction
 
-A category is only useful if it has boundaries. Work qualifies as Evidence-Based Responsibility Reconstruction only if it meets three criteria:
+A category is only useful if it has boundaries. Work qualifies as **Evidence-Based Responsibility Reconstruction℠** only if it meets three criteria:
 
 1. **It works from a frozen surviving record.** Reconstruction fixes the available evidence at a stated date, then evaluates the records that actually exist — regulatory findings, litigation records, disclosures, journalism, technical artifacts, and other preserved evidence — under an explicit source hierarchy. Later-emerging facts are logged but do not silently alter the coded reconstruction. Evidence that should exist, but does not survive or has not been released, is coded as missing. Analysis built on records that a framework merely requires to exist is prescription, not reconstruction.
 2. **It allocates responsibility actor-by-governance-act.** Reconstruction never asks, “Who is the accountable party?” It asks which actor can be connected, on the evidence, to each specific governance act: authorization, design, deployment, configuration, control validation, monitoring, intervention, escalation, reporting, remediation, risk acceptance, or a determination that existing controls were sufficient for the activity to proceed. Responsibility is not one field. Forcing an incident to produce a single responsible name is how accountability theater replaces accountability.
