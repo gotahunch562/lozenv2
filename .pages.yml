@@ -95,12 +95,6 @@ content:
         required: true
         description: Short excerpt used on article pages and promotional displays.
 
-      - name: relatedSlugs
-        label: Related articles
-        type: string
-        list: true
-        description: Enter each related article slug without /blog/ or .md.
-
       - name: featured
         label: Featured article
         type: boolean
@@ -111,6 +105,119 @@ content:
         type: boolean
         default: true
         description: Keep enabled until the article is ready to publish.
+
+      - name: jsonLd
+        label: Article structured data
+        type: object
+        description: Optional JSON-LD enrichment for AI and accountability articles.
+        fields:
+          - name: type
+            label: Article schema type
+            type: select
+            default: Article
+            options:
+              values:
+                - Article
+                - TechArticle
+
+          - name: keywords
+            label: Schema keywords
+            type: string
+            list: true
+            description: Use terms that are visibly discussed in the article.
+
+          - name: definedTerm
+            label: Authoritative definition
+            type: object
+            description: Use only when this URL is the authoritative definition page.
+            fields:
+              - name: name
+                label: Term name
+                type: string
+                required: true
+
+              - name: alternateName
+                label: Alternate term name
+                type: string
+
+              - name: description
+                label: Exact visible definition
+                type: text
+                required: true
+                description: Copy the definition stated visibly in the article.
+
+              - name: url
+                label: Canonical term URL override
+                type: string
+                description: Leave blank to use the current article URL.
+
+          - name: about
+            label: Canonical topics
+            type: object
+            list: true
+            fields:
+              - name: type
+                label: Entity type
+                type: select
+                default: DefinedTerm
+                options:
+                  values:
+                    - DefinedTerm
+                    - Organization
+                    - Person
+                    - Thing
+
+              - name: name
+                label: Entity name
+                type: string
+                required: true
+
+              - name: url
+                label: Canonical URL
+                type: string
+                required: true
+
+              - name: alternateName
+                label: Alternate name
+                type: string
+
+              - name: description
+                label: Description
+                type: text
+
+          - name: mentions
+            label: Mentioned entities
+            type: object
+            list: true
+            description: Add only organizations, people, or terms visibly mentioned in the article.
+            fields:
+              - name: type
+                label: Entity type
+                type: select
+                default: Organization
+                options:
+                  values:
+                    - Organization
+                    - Person
+                    - DefinedTerm
+                    - Thing
+
+              - name: name
+                label: Entity name
+                type: string
+                required: true
+
+              - name: url
+                label: Canonical URL
+                type: string
+
+              - name: alternateName
+                label: Alternate name
+                type: string
+
+              - name: description
+                label: Description
+                type: text
 
       - name: body
         label: Article

@@ -19,6 +19,24 @@ lead: When AI-mediated conduct becomes consequential, responsibility must be
   governance acts.
 featured: true
 draft: false
+jsonLd:
+  type: TechArticle
+  keywords:
+    - responsibility reconstruction
+    - Evidence-Based Responsibility Reconstruction
+    - AI accountability
+    - algorithmic accountability
+    - AI governance evidence
+    - human attribution
+  definedTerm:
+    name: Evidence-Based Responsibility Reconstruction℠ for AI-Mediated Conduct
+    alternateName: Responsibility Reconstruction
+    description: >-
+      Evidence-Based Responsibility Reconstruction℠ for AI-Mediated Conduct is
+      the disciplined process of determining what an AI system did, what
+      authority it was given, which human and institutional actors controlled
+      the conditions under which it acted, what evidence remains, and where
+      responsibility can be established, divided, or no longer recovered.
 ---
 Something is missing from the algorithmic accountability landscape, and the gap becomes visible only after real harm has occurred.
 
