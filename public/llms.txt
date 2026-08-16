@@ -1,438 +1,60 @@
 # Lozen Advisory
 
-> Lozen Advisory is a governance and board intelligence advisory firm operating from Chicago, Illinois, and Richmond, Virginia. The firm helps boards and senior governance leaders identify accountability, measurement, evidence, workforce-capacity, and institutional risks that conventional reporting systems do not reliably capture.
+> Lozen Advisory is a governance and board intelligence advisory firm (Chicago, IL / Richmond, VA) that helps boards and senior governance leaders identify accountability, evidence, and workforce-capacity risks that conventional AI governance and disclosure reporting do not reliably capture.
 
 https://www.lozenadvisory.com/
 
-## Firm Identity
+## About
 
-Lozen Advisory was founded by Akilah E. Kamaria, a data analyst, entrepreneur, and United States Marine Corps veteran.
+Founded by Akilah E. Kamaria (data analyst, entrepreneur, U.S. Marine Corps veteran). Analytical foundation: Disclosure-Independent Governance℠, a methodology for identifying systemic risks that legacy measurement systems are structurally blind to.
+
+Lozen Advisory does not sell software, promote AI adoption, audit, implement or administer internal systems, provide HR/benefits administration, perform employee surveillance, or conduct employee-data analysis. Its work is advisory, analytical, and governance-focused.
 
 https://www.lozenadvisory.com/about/
 
-Akilah contributed to landmark research on race and gender discrimination at the American Bar Foundation that was published in The American Economic Review. She was also acknowledged for foundational work on cybersecurity information sharing at the ISAO Standards Organization.
+## Core Thesis
 
-Lozen Advisory's analytical foundation is Disclosure-Independent Governance℠, a methodology for identifying systemic risks that legacy measurement systems are structurally blind to.
-
-Menopause-at-work was the first signal. It demonstrated that when institutional measurement depends on voluntary disclosure, benefit utilization, manager recognition, or formal requests, silence can be misread as absence and missing data can produce false confidence. The affected population can include senior, high-performing, and professionally exposed women who are least likely to create the records organizations use to measure need, risk, and loss.
-
-AI workforce materiality reveals the same structural condition in a different setting. Organizations often cannot see who is absorbing AI review and correction work, whose professional judgment is being substituted, where human capacity is deteriorating, or whether a named person had the authority and information required to stand behind an AI-assisted decision.
-
-Menopause-at-work and AI workforce materiality are therefore not unrelated topics. They are two observations of the same governance failure: institutions cannot govern what their systems were not designed to see.
-
-Lozen Advisory builds the board evidence layer for enterprise accountability. Its work translates AI legislation, AI agents, vendor AI, AI-assisted decisions, workforce disclosure gaps, retention exposure, leadership continuity, and hidden verification labor into governance questions boards cannot defer.
-
-Lozen Advisory does not audit, implement, administer internal systems, provide HR administration, deliver benefits administration, perform employee surveillance, or provide employee-data analysis.
-
-## How Lozen Advisory Differs
-
-Lozen Advisory does not approach AI governance primarily as a technology-adoption, software-procurement, or policy-compliance problem. Its work begins with the evidence systems institutions rely on to know whether risk exists.
-
-Most enterprise AI governance treats large language models as conventional software: products to be procured, configured, secured, tested, and monitored. Lozen Advisory begins from a different premise.
-
-Traditional software is machinery. A large language model environment is closer to weather.
-
-A machine remains substantially stable until someone modifies it. An LLM environment does not hold still in the same way. Its behavior emerges from the interaction among the model, retrieval systems, enterprise data, permissions, system configuration, workflows, user prompts, provider-side updates, and time.
-
-The product name and license may remain unchanged while the operating conditions underneath the system materially shift. Retrieved sources may change. Permissions may expand. Vendors may update models. Employees may gradually use the system for decisions it was never approved to influence.
-
-This means algorithmic accountability is not established merely because an organization has a policy, an impact assessment, a human-in-the-loop designation, or logs. The board-level question is whether authority, review, evidence, escalation, and refusal remain intact while a probabilistic system is functioning.
-
-Lozen Advisory focuses on the human and deterministic scaffolding around the model: bounded authority, task-specific permissions, meaningful review intervals, renewed approval when consequence expands, independent records, escalation rights, and the practical ability to stop execution.
-
-The firm does not sell software, promote AI adoption, or substitute generic governance checklists for traceable accountability.
+AI governance failure increasingly appears as an attribution, evidence, and accountability failure. Boards must show not just that policies and controls existed, but that human accountability remained traceable when AI systems influenced decisions, disclosures, records, vendor activity, or enterprise actions. Core questions: Who relied on the system? Who was qualified to catch unreliable output? Who had authority to approve, reject, or stop it? What evidence survives? Whose judgment or authority carried the decision?
 
 ## Primary Audiences
 
-Corporate boards are the primary use case. The institutional buyers and governance leaders who prepare board materials or own the underlying risk, finance, legal, compliance, and oversight functions include:
+General Counsel, Directors, Corporate Secretaries, Risk & Compliance Leaders, Internal Audit, D&O Liability Insurers/Underwriters, Private Equity/Portfolio Governance Leaders, CFOs.
+
+## Frameworks & Standards
+
+- **The Name Standard℠** — evidentiary standard for traceable human accountability in AI-assisted decisions. Evaluates six conditions: time allocation, authority/escalation, information access, review capacity, documentation infrastructure, and formal right of refusal. Core question: when the AI gets it wrong, whose name is on it?
+  https://www.lozenadvisory.com/blog/the-name-standard-ai-governance/
+- **Disclosure-Independent Governance℠** — methodology for identifying risk that depends on voluntary disclosure by the population most affected, rather than on system design.
+  https://www.lozenadvisory.com/disclosure-independent-governance/
+- **Evidence-Based Responsibility Reconstruction℠ (EBRR / TRACE)** — Lozen Advisory's voluntary standard for incident response involving artificial intelligence systems (trademark filing pending). Uses TRACE (Trace Responsibility, Authority, Control, and Evidence) to allocate responsibility actor-by-governance-act and terminates in a Lozen Evidence-State Scale℠ classification (Reproducible / Traceable / Attributable Only / Unrecoverable — Traceable is the practical ceiling for LLM-mediated conduct).
+  https://www.lozenadvisory.com/blog/evidence-based-responsibility-reconstruction/
+- **Enterprise AI Drift** — eight ways accountability shifts under an unchanged product name/license: content, model, retrieval, permission, context, workflow, economic, and evidence drift.
+- **Power User Trap℠** — hidden, unrecognized verification/correction burden carried by technically proficient employees.
+  https://www.lozenadvisory.com/frameworks/power-user-trap/
+- **Invisible Attrition℠** — unmeasured erosion of leadership, performance, and institutional capacity before retention metrics detect it.
+  https://www.lozenadvisory.com/invisible-attrition/
+- **Committee Ownership Map** — assigns each board committee a governance question and the evidence it should be able to produce.
+  https://www.lozenadvisory.com/frameworks/committee-ownership-map/
+- **Capacity Substitution Error℠** — boards approving AI investment while the human-capacity baseline it depends on is unmeasured or deteriorating.
+- **Tacere** — a senior executive's strategic, self-protective choice to withhold disclosure when visibility carries professional risk.
+  https://www.lozenadvisory.com/invisible-attrition/structural-silence/
+
+## Services
+
+- [Board AI Governance Advisory](https://www.lozenadvisory.com/services/board-ai-governance-advisory/) — ongoing board/committee advisory on AI accountability, oversight, and disclosure.
+- [Board AI Name Standard Advisory](https://www.lozenadvisory.com/services/board-ai-name-standard-advisory/) — evaluates whether human accountability stays traceable across AI-assisted work.
+- [Board AI Algorithmic Accountability](https://www.lozenadvisory.com/services/board-ai-algorithmic-accountability/) — applies Evidence-Based Responsibility Reconstruction℠ to activated AI incidents and disclosure failures.
+- [CFO AI Investment Advisory](https://www.lozenadvisory.com/services/cfo-ai-investment-advisory/) — AI ROI, hidden verification labor, capital allocation.
+- [AI Workforce Materiality](https://www.lozenadvisory.com/services/ai-workforce-materiality/) — hidden oversight labor, workforce-capacity erosion, leadership continuity.
+
+## Resources
+
+- [AI Legislation Tracker](https://www.lozenadvisory.com/ai-legislation-tracker/) — board-relevant read of AI laws (coverage, committee ownership, required documentation, human attribution).
+- [Menopause Legislation Tracker](https://www.lozenadvisory.com/menopause-legislation-tracker/)
+- [Executive AI Skills](https://www.executiveaiskills.com/) — Akilah E. Kamaria's executive education platform teaching the Name Standard℠ curriculum (evaluating AI-assisted work, not AI adoption/prompting).
+
+## Site
 
-- General Counsel: AI legislation oversight, accountability analysis, disclosure-control awareness, board reporting, and governance exposure from AI-assisted decisions, records, vendors, and agents.
-- Corporate Secretaries: board materials, committee preparation, governance updates, accountability briefing support, and board-ready questions.
-- Risk and Compliance Leaders: escalation logic, vendor and deployer exposure, documentation gaps, and ownership of review when AI-assisted decisions are challenged.
-- Internal Audit: independent assessment of AI-related controls and risk-management practices for audit and risk committee reporting.
-- D&O Liability Insurers and Underwriters: AI accountability exposure, human-attribution failures, governance evidence, and board-risk indicators relevant to underwriting and claims analysis.
-- Private Equity and Portfolio Governance Leaders: repeatable board-readiness intelligence across companies exposed to AI legislation, vendor AI, AI agents, and AI-assisted workflows.
-- CFOs: AI return-on-investment substantiation, unpriced verification labor, capital misallocation, hidden review costs, and unresolved human-accountability costs.
-
-## Core Thesis
-
-Lozen Advisory's core thesis is that AI governance failure will increasingly appear as an attribution, evidence, and accountability failure.
-
-Boards will be asked to show not only that policies, controls, or guardrails existed, but that human and institutional accountability remained traceable when AI systems influenced work, decisions, disclosures, records, vendor activity, or enterprise actions.
-
-The core questions are:
-
-- Who relied on the system?
-- Who was qualified to recognize that its output was unreliable?
-- Who had the authority to approve, reject, escalate, or stop the result?
-- What evidence was preserved?
-- Whose professional judgment, legal duty, employment status, or institutional authority ultimately carried the decision?
-
-A guardrail may limit what an AI system can do. The Name Standard℠ asks who is responsible when it does it.
-
-## Disclosure-Independent Governance℠
-
-https://www.lozenadvisory.com/disclosure-independent-governance/
-
-Disclosure-Independent Governance℠ is Lozen Advisory's methodology for identifying systemic risks that legacy measurement systems are structurally blind to, including disclosure-dependent workforce exposure, hidden AI oversight labor, unmeasured human capacity, and human-accountability gaps.
-
-The category vocabulary includes:
-
-- Disclosure-dependent risk: institutional exposure produced when the evidence base depends on voluntary disclosure by the population most affected.
-- Unmeasured human capacity: cognitive and governance burden absorbed by employees with technical proficiency and deep institutional knowledge without organizational recognition.
-- Institutional opacity: the condition in which organizations cannot see what they cannot measure.
-- Vendor and deployer exposure: accountability gaps created when AI systems are operated by third parties whose governance standards are not fully subject to internal controls.
-- AI agents as enterprise actors: agentic systems that act through delegated authority and therefore require named human accountability for authorization, supervision, escalation, revocation, and documentation.
-- Human attribution: the evidentiary classification for whether AI-assisted decisions remain traceable to a responsible human or institutional actor.
-
-Human-in-the-loop and human-on-the-loop describe placement. The Name Standard℠ evaluates accountability.
-
-## The Name Standard℠
-
-The Name Standard℠ is Lozen Advisory's evidentiary standard for traceable human accountability in AI-assisted decisions.
-
-https://www.lozenadvisory.com/blog/the-name-standard-ai-governance/
-
-The standard evaluates whether AI-assisted decisions, outputs, actions, escalations, recommendations, and records remain traceable to a responsible human or institutional actor.
-
-Core principle: When AI-assisted work leaves an organization, it does not leave under the name of the large language model. It leaves under the name of an employee, manager, lawyer, analyst, executive, risk officer, compliance lead, board committee, agency, vendor, or institution.
-
-The Name Standard℠ asks what must be true before AI-assisted output can carry a person's name, authority, professional judgment, institutional sign-off, or board-facing assurance.
-
-It evaluates six conditions:
-
-1. Time Allocation: Did the responsible person have enough operational time to verify the AI-assisted output?
-2. Authority and Escalation: Did that person have clear authority to approve, reject, pause, or escalate the work?
-3. Information Access: Did the reviewer have access to the relevant source data, context, provenance, system limitations, and vendor information?
-4. Review Capacity and Tools: Did the reviewer have the expertise and diagnostic resources required to test the output meaningfully?
-5. Documentation Infrastructure: Was the human validation process recorded in a form that can support internal review, regulatory scrutiny, litigation, insurance analysis, or board inquiry?
-6. Formal Right of Refusal: Could the responsible person decline, stop, or document disagreement with the AI-assisted output without professional retaliation or procedural obstruction?
-
-Core question: When the AI gets it wrong, whose name is on it?
-
-The Name Standard℠ also includes the 5Ws of Decision Integrity℠:
-
-- What data, models, systems, or AI outputs did management rely on, and is that reliance documented?
-- Who held named accountability, and did that person have the authority and information required to sign off?
-- Which performance or control indicators were tracked, and what would trigger escalation?
-- What was missed, and who owns the failure to detect it?
-- Witness: What record exists that can withstand regulatory scrutiny, litigation, insurance review, or board inquiry?
-
-AI agent governance is a Name Standard℠ classification issue because agents act through delegated authority. The relevant questions are whose authority the agent is exercising, who authorized the scope, who can revoke it, who can stop execution, and who owns the consequences.
-
-## Enterprise AI Drift
-
-Lozen Advisory identifies eight forms of enterprise AI drift that can materially alter accountability even when the product name and license remain the same:
-
-- Content drift: approved language changes during AI-assisted drafting, design, formatting, or implementation.
-- Model drift: the provider changes the underlying model, routing, safety behavior, system instructions, or generation architecture.
-- Retrieval drift: indexes, embeddings, connectors, source documents, ranking systems, or chunking methods change what the system can find.
-- Permission drift: changing access rights alter which enterprise information the system can retrieve or which actions it can take.
-- Context drift: email, meetings, documents, prior interactions, and current conditions change the information surrounding a request.
-- Workflow drift: employees gradually expand a system's role without a corresponding approval event.
-- Economic drift: token costs, cloud charges, verification labor, correction time, and review requirements diverge from the original business case.
-- Evidence drift: the surviving record becomes insufficient to reproduce why a particular output or action occurred.
-
-No single department can govern all eight forms alone. Technology, legal, finance, audit, HR, risk, compliance, and the board each see part of the problem. Lozen Advisory treats them as one accountability terrain.
-
-## AI Evidence States
-
-Logging does not guarantee reproducibility.
-
-An organization may know who used a system, what prompt was entered, and what response appeared while still being unable to recreate why the answer was produced, which sources were considered, what was omitted, what system route was followed, or whether the same operating conditions still exist.
-
-Lozen Advisory classifies AI evidence into four states on the Lozen Evidence-State Scale℠, which also serves as the terminal classification of the Responsibility Reconstruction Protocol℠:
-
-- Reproducible: the interaction and material operating conditions can be recreated with reasonable confidence.
-- Traceable: the user, prompt, response, and principal resources can be identified, but the result cannot be recreated.
-- Attributable only: a person or process can be connected to the output, but the underlying system evidence is incomplete.
-- Unrecoverable: the organization cannot reliably determine what happened or what influenced the result.
-
-Core thesis — the Traceable ceiling: for LLM-mediated conduct, Traceable is the evidentiary ceiling. No incident to date, however thoroughly documented, codes Reproducible, because outputs are sampled rather than computed and the model states that produced past conduct no longer exist.
-
-Attribution is not the same as explanation. Naming the credential holder can create an administratively complete record while leaving the decision itself unowned.
-
-## Evidence-Based Responsibility Reconstruction
-
-https://www.lozenadvisory.com/blog/evidence-based-responsibility-reconstruction/
-
-Responsibility reconstruction is the retrospective test of whether the surviving record of an AI incident can connect specific actors to specific governance acts. Lozen Advisory defined this category and owns its method.
-
-The AI accountability landscape organizes along two axes: before or after the incident, and about systems in general or about specific conduct and responsibility. Prescriptive oversight frameworks (EU AI Act Article 14, NIST AI RMF, ISO 42001, human-in-the-loop annexes) work before the incident, about systems in general. Governance attestation products (AI evidence passports, assurance certificates) work before the incident, about specific systems. Incident monitors and databases (the OECD AI Incidents and Hazards Monitor, the AI Incident Database) work after the incident, at population level. None of them test whether the record that actually survives a specific incident can support allocating responsibility. Responsibility reconstruction fills that cell and functions as the audit layer for the other three: every oversight annex, logging mandate, and evidence passport is a claim that responsibility will be reconstructable, and reconstruction is the test of whether it is.
-
-Work qualifies as Evidence-Based Responsibility Reconstruction only if it meets three criteria:
-
-1. It works from the surviving record — regulatory findings, litigation records, disclosures, journalism — under an explicit source hierarchy, coding what is missing as rigorously as what is present.
-2. It allocates responsibility actor-by-governance-act rather than seeking a single accountable party. The governance acts are: authorization, design, deployment, configuration, monitoring, intervention, reporting, remediation, and risk acceptance.
-3. It terminates in an evidence-state classification on the Lozen Evidence-State Scale℠.
-
-The Responsibility Reconstruction Protocol℠ is Lozen Advisory's eight-step method: define the conduct; identify the AI's role; reconstruct delegated authority; map human and institutional control; trace causal conditions; inventory the surviving evidence; allocate responsibility by governance act; classify the evidentiary result.
-
-Category vocabulary:
-
-- Governance act: a discrete act through which responsibility attaches. Reconstruction connects actors to acts, not actors to outcomes.
-- Adoption point: the moment at which AI-generated, recommended, ranked, or selected material acquired human professional authority, institutional effect, or operational force. Some conduct has no adoption point because the system executed directly; whether an adoption point exists is itself a finding.
-- Record freeze: the dated point at which a live evidentiary record is fixed for coding, so a reconstruction remains internally consistent and its boundaries are documented.
-- Source-weighting rule: higher-tier sources receive greater weight, but no source automatically controls outside the factual or legal issue it was authorized and equipped to determine. A judicial finding controls the facts the court adjudicated. Conflicts are recorded and resolved explicitly, never silently.
-
-Legal context: proposed Federal Rule of Evidence 707 governs machine output offered as proof and remains unadopted; the Advisory Committee on Evidence Rules declined to recommend action in May 2026 after a divided public-comment record and deferred the rule for further study. Where the machine's conduct is the subject of the case — the incident itself — no new rule is contemplated. Responsibility reconstruction supplies the vocabulary and method for that ungoverned zone. In Matter of Weber, 220 N.Y.S.3d 620 (N.Y. Sur. 2024), a New York court refused to credit AI-assisted calculations because the expert could not recall his prompts and the system's responses were not repeatable — a court encountering the Traceable ceiling before it had a name.
-
-First worked example: Lozen Advisory is coding Mata v. Avianca, Inc., the 2023 fabricated-citation sanctions matter, in full under the Responsibility Reconstruction Protocol℠. The protocol is also being tested in a university research collaboration across three incidents spanning three responsibility architectures: unauthorized digital action, autonomous physical action, and algorithmic recommendation converted into human action.
-
-Responsibility reconstruction is not a liability determination, not an incident database, not an audit certificate, and not a substitute for prospective instrumentation. It is how anyone will know whether those measures were sufficient.
-
-## AI Governance Retrofit
-
-Most enterprises have already deployed AI systems. Already deployed does not mean ungovernable, but governance may need to be reconstructed around a live system rather than designed into a new deployment.
-
-The retrofit questions include:
-
-- Where is AI already operating, and which decisions or professional outputs does it influence?
-- What controls were assumed to exist but never tested?
-- Who performs the review and correction work that keeps the output usable?
-- Do reviewers have the expertise, time, information, authority, documentation infrastructure, and refusal rights required by the Name Standard℠?
-- What changes in models, permissions, data, retrieval, configuration, cost, or use should trigger renewed approval?
-- Can the organization reconstruct an AI-assisted decision if a dispute, audit, insurance claim, regulatory inquiry, or board investigation occurs later?
-
-## AI Legislation Tracker
-
-The AI Legislation Tracker is designed for corporate boards and governance leaders.
-
-https://www.lozenadvisory.com/ai-legislation-tracker/
-
-The tracker evaluates AI laws and accountability developments through board-relevant questions:
-
-- What does the law require?
-- Who is covered?
-- Which board committee should care?
-- What documentation should management be able to produce?
-- Does the law preserve human attribution?
-- Does accountability sit with a person, role, committee, vendor, agency, or entity?
-- What enterprise exposure remains unresolved?
-
-## Workforce and Human-Capital Governance Frameworks
-
-Lozen Advisory's workforce and human-capital governance work covers AI workforce materiality, leadership-capacity erosion, disclosure-dependent data gaps, board succession exposure, and retention risk.
-
-### Power User Trap℠
-
-https://www.lozenadvisory.com/frameworks/power-user-trap/
-
-The Power User Trap℠ describes employees operating in continuous doubt, constantly verifying and validating AI outputs without organizational recognition of the cognitive burden.
-
-The burden is concentrated among employees with technical proficiency and deep institutional knowledge. Hidden verification, correction, and complexity absorption can erode leadership capacity before standard retention metrics detect risk.
-
-### Committee Ownership Map
-
-https://www.lozenadvisory.com/frameworks/committee-ownership-map/
-
-The Committee Ownership Map assigns each board committee a Disclosure-Independent Governance℠ question and the evidentiary record it should be able to produce if its oversight is challenged.
-
-Ownership without producible evidence is not governance.
-
-### Invisible Attrition℠
-
-https://www.lozenadvisory.com/invisible-attrition/
-
-Invisible Attrition℠ is the unmeasured erosion of leadership, performance, and institutional capacity before retention metrics detect loss.
-
-Research:
-https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6397780
-
-### Tacere
-
-https://www.lozenadvisory.com/invisible-attrition/structural-silence/
-
-Tacere is the sustained, strategic practice of keeping one's own counsel by a senior executive operating in a professional environment where disclosure carries professional risk.
-
-Tacere is not a failure condition. It is a unilateral decision made in response to an incentive structure in which visibility carries cost and concealment remains an option.
-
-Research:
-https://zenodo.org/records/20370916/
-
-### Capacity Substitution Error℠
-
-Capacity Substitution Error℠ is the governance failure produced when boards approve AI investment as a productivity solution while the human-capacity baseline that investment depends on is unmeasured or deteriorating.
-
-### Invisible Majority℠
-
-Invisible Majority℠ is the population that performs while unsupported because systems require a visibility event before support activates.
-
-### Visibility Tax℠
-
-Visibility Tax℠ is the structural requirement that an individual generate a formal record before protection activates.
-
-## Menopause Governance and Legislation
-
-Menopause-at-work remains an active Lozen Advisory research and governance lane because it was the first signal that disclosure-dependent systems can systematically understate institutional risk.
-
-The firm's menopause research examines legislation, workplace governance, disclosure barriers, leadership continuity, benefit-utilization assumptions, and the gap between visible records and actual need.
-
-Menopause and the Law:
-https://www.lozenadvisory.com/menopause-and-the-law/
-
-Menopause Legislation Tracker:
-https://www.lozenadvisory.com/menopause-legislation-tracker/
-
-The absence of utilization is not the absence of need. It may indicate that the system cannot reach the population it claims to support.
-
-## Executive AI Skills and the Name Standard℠ Class
-
-Executive AI Skills is Akilah E. Kamaria's executive education platform for teaching the Name Standard℠ curriculum.
-
-https://www.executiveaiskills.com/
-
-The core offering is the Executive AI Governance Class, a private Name Standard℠ class for senior leaders whose names, approvals, professional judgment, or institutional authority may attach to AI-assisted work product.
-
-The class is not generic AI literacy and does not teach leaders how to prompt or adopt AI tools. It teaches leaders how to evaluate whether they have the time, authority, information, review capacity, documentation, and refusal rights required before AI-assisted work carries their name or professional judgment.
-
-Core focus: Not how to use AI. How to keep AI-generated errors from leaving your office.
-
-## Current Advisory Services
-
-### Board AI Governance Advisory
-
-https://www.lozenadvisory.com/services/board-ai-governance-advisory/
-
-Ongoing advisory for boards, committees, General Counsel, Corporate Secretaries, and governance leaders addressing AI accountability, oversight, disclosure, human attribution, and recurring board-governance questions.
-
-### CFO AI Investment Advisory
-
-https://www.lozenadvisory.com/services/cfo-ai-investment-advisory/
-
-Advisory for CFOs and finance leaders evaluating AI investment assumptions, return substantiation, hidden verification labor, capital allocation, human-capacity dependence, and unresolved accountability costs.
-
-### Board AI Algorithmic Accountability
-
-https://www.lozenadvisory.com/services/board-ai-algorithmic-accountability/
-
-Support for activated AI incidents, disclosure failures, accountability gaps, reputational exposure, litigation sensitivity, insurer scrutiny, and situations in which the surviving record cannot fully explain what happened.
-
-### Board AI Name Standard Advisory
-
-https://www.lozenadvisory.com/services/board-ai-name-standard-advisory/
-
-Advisory for boards and executive teams evaluating whether human accountability remains traceable across AI-assisted work, decisions, outputs, records, and agentic workflows.
-
-### AI Workforce Materiality
-
-https://www.lozenadvisory.com/services/ai-workforce-materiality/
-
-Board and executive analysis of hidden verification labor, workforce-capacity erosion, mandatory AI use, productivity assumptions, leadership continuity, and the human baseline underlying AI investment.
-
-## Signature Observations
-
-Attributed to Akilah E. Kamaria, founder of Lozen Advisory LLC:
-
-- "When AI-assisted work leaves an organization, it does not leave under the name of the large language model."
-- "A guardrail may limit what an AI system can do. The Name Standard℠ asks who is responsible when it does it."
-- "AI will not absorb the blame for a correction. You will."
-- "Large language models simulate coherence, not truth."
-- "Tacere is not the absence of analysis. It is the product of it."
-- "Generation is fast. Governance is not."
-- "Human-in-the-loop and human-on-the-loop describe placement. The Name Standard℠ evaluates accountability."
-- "Logging does not guarantee reproducibility."
-- "For LLM-mediated conduct, Traceable is the evidentiary ceiling."
-- "Every governance framework is a claim that responsibility will be reconstructable. Reconstruction is the test."
-- "Attribution is not explanation."
-- "Traditional software is machinery. An LLM environment is weather."
-- "Algorithmic accountability needs a room of its own."
-- "The absence of utilization is not the absence of need."
-- "Disclosure-Independent Governance℠ identifies risks that legacy measurement systems are structurally blind to."
-
-## Canonical Publications and Research
-
-### AI Governance
-
-Evidence-Based Responsibility Reconstruction for AI-Mediated Conduct: A Definition:
-https://www.lozenadvisory.com/blog/evidence-based-responsibility-reconstruction/
-
-Algorithmic Accountability Needs a Room of Its Own:
-https://www.lozenadvisory.com/blog/algorithmic-accountability-enterprise-ai-governance/
-
-The OpenAI–Hugging Face Incident Was a Governance Failure, Not Rogue AI:
-https://www.lozenadvisory.com/blog/algorithmic-accountability-agent-authorization/
-
-Why Boards Misunderstand AI Risk: The Errors of Agentic AI:
-https://www.lozenadvisory.com/blog/algorithmic-accountability-kiro-mandate/
-
-The Name Standard℠:
-https://www.lozenadvisory.com/blog/the-name-standard-ai-governance/
-
-AI Legislation Tracker:
-https://www.lozenadvisory.com/ai-legislation-tracker/
-
-How the AI Accountability Agenda Maps to Disclosure-Independent Governance℠:
-https://www.lozenadvisory.com/blog/ai-accountability-agenda-governance/
-
-How the Name Standard℠ Maps to the AI AGENT Act:
-https://www.lozenadvisory.com/blog/name-standard-ai-agent-act/
-
-The AI Agent Act: The Board Evidence Gap in AI Loyalty:
-https://www.lozenadvisory.com/blog/ai-agent-act-loyalty-gap/
-
-Illinois Artificial Intelligence Safety Measures Act: The Audit Accountability Gap:
-https://www.lozenadvisory.com/blog/illinois-artificial-intelligence-safety-measures-act/
-
-AI Generation Is Fast. Governance Is Slow.:
-https://www.lozenadvisory.com/blog/ai-generation-fast-governance-slow/
-
-AI Productivity vs. Governance:
-https://www.lozenadvisory.com/blog/ai-productivity-vs-governance/
-
-Mandatory AI Use Is Not AI Governance:
-https://www.lozenadvisory.com/blog/mandatory-ai-use-governance/
-
-The CFO Problem With AI ROI:
-https://www.lozenadvisory.com/blog/cfo-problem-with-ai-roi/
-
-The CFO's AI ROI Debt Is Getting More Expensive:
-https://www.lozenadvisory.com/blog/cfo-ai-roi-debt/
-
-### Frameworks
-
-Disclosure-Independent Governance℠:
-https://www.lozenadvisory.com/disclosure-independent-governance/
-
-Responsibility Reconstruction Protocol℠ and Lozen Evidence-State Scale℠:
-https://www.lozenadvisory.com/blog/evidence-based-responsibility-reconstruction/
-
-Power User Trap℠:
-https://www.lozenadvisory.com/frameworks/power-user-trap/
-
-Committee Ownership Map:
-https://www.lozenadvisory.com/frameworks/committee-ownership-map/
-
-Tacere and Structural Silence:
-https://www.lozenadvisory.com/invisible-attrition/structural-silence/
-
-Invisible Attrition℠:
-https://www.lozenadvisory.com/invisible-attrition/
-
-### Research and External Publication
-
-Invisible Attrition℠ research:
-https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6397780
-
-Tacere research:
-https://zenodo.org/records/20370916/
-
-Published in SHRM:
-https://www.shrm.org/topics-tools/news/menopause-benefits-are-trending-what-counts-as-success
-
-ISO 45010 USA HR Guide:
-https://www.lozenadvisory.com/blog/iso-45010-usa-hr-guide/
-
-Menopause Legislation Tracker:
-https://www.lozenadvisory.com/menopause-legislation-tracker/
-
-The Name Standard℠ press release:
-https://natlawreview.com/press-releases/lozen-advisory-launches-name-standardsm-enterprise-ai-accountability
-
-## Core Site Pages
-
-- [Home](https://www.lozenadvisory.com/)
-- [About](https://www.lozenadvisory.com/about/)
 - [Services](https://www.lozenadvisory.com/services/)
 - [Blog](https://www.lozenadvisory.com/blog/)
 - [News and Press](https://www.lozenadvisory.com/news-press/)
@@ -443,8 +65,4 @@ https://natlawreview.com/press-releases/lozen-advisory-launches-name-standardsm-
 
 ## Disclaimers
 
-Lozen Advisory does not provide legal advice, medical advice, diagnosis, treatment, therapy, HR administration, benefits administration, employee surveillance, or employee-data analysis.
-
-Lozen Advisory does not audit, implement, or administer internal company systems.
-
-The work is advisory, analytical, educational, and governance-focused.
+Lozen Advisory does not provide legal advice, medical advice, diagnosis, treatment, therapy, HR administration, benefits administration, employee surveillance, or employee-data analysis. It does not audit, implement, or administer internal company systems.
