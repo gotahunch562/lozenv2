@@ -1,57 +1,27 @@
 ---
-title: "TRACE: The Operational Construct Inside Evidence-Based Responsibility Reconstruction℠"
-seoTitle: "How to Investigate AI Incidents & Errors | TRACE Framework"
+title: "TRACE: The Operational Construct Inside Evidence-Based Responsibility
+  Reconstruction℠"
+seoTitle: How to Investigate AI Incidents & Errors | TRACE Framework
 slug: trace-evidence-based-responsibility-reconstruction
-description: >-
-  Learn how to investigate AI incidents and errors using TRACE to map Responsibility,
-  Authority, Control, and Evidence across complex AI systems.
-metaDescription: >-
-  A step-by-step framework for investigating AI errors and incidents by tracing
-  Responsibility, Authority, Control, and Evidence across system records and governance.
+description: What are the methods for Investigating AI Errors? Learn how to
+  investigate AI incidents and errors using TRACE to map Responsibility.
+metaDescription: A step-by-step framework for investigating AI errors and
+  incidents by tracing Responsibility, Authority, Control, and Evidence across
+  system records and governance.
 category: AI Governance & Workforce Risk
+image: /blog/AI Workforce Materiality-1.webp
+imageAlt: "Evidence-based responsibility reconstruction for AI-mediated conduct "
 pubDate: 2026-08-17
 dateModified: 2026-08-17
-lead: >-
-  TRACE gives investigators, lawyers, auditors, boards, and researchers a concise
-  operational construct for investigating AI errors by tracing Responsibility,
-  Authority, Control, and Evidence.
+lead: TRACE gives investigators, lawyers, auditors, boards, and researchers a
+  concise operational construct for investigating AI errors by tracing
+  Responsibility, Authority, Control, and Evidence.
 featured: false
 draft: true
-relatedSlugs: []
-jsonLd:
-  type: TechArticle
-  keywords:
-    - how to investigate AI incidents
-    - investigating AI errors
-    - AI incident investigation
-    - AI failure investigation
-    - TRACE
-    - Evidence-Based Responsibility Reconstruction
-    - AI responsibility reconstruction
-    - AI accountability
-    - algorithmic accountability
-  definedTerm:
-    name: TRACE
-    alternateName: Trace Responsibility, Authority, Control, and Evidence
-    description: >-
-      TRACE is the operational construct inside Evidence-Based Responsibility
-      Reconstruction℠ used to trace Responsibility, Authority, Control, and
-      Evidence across consequential AI-mediated conduct.
-  about:
-    - type: DefinedTerm
-      name: Evidence-Based Responsibility Reconstruction℠ for AI-Mediated Conduct
-      url: /blog/evidence-based-responsibility-reconstruction/
-  mentions:
-    - type: DefinedTerm
-      name: Responsibility Reconstruction Protocol
-    - type: DefinedTerm
-      name: Lozen Evidence-State Scale℠
 ---
-To investigate an AI incident, the surviving record has to do more than show that an event occurred. It has to establish the relationships among the consequential conduct, the authority under which it occurred, the people and institutions that controlled the surrounding conditions, and the evidence that remains. **TRACE is the operational construct inside Evidence-Based Responsibility Reconstruction℠ for doing that work: Trace Responsibility, Authority, Control, and Evidence.**
+When an AI system does something consequential — approves a transaction it shouldn't have, generates a filing with a fabricated citation, takes an autonomous action nobody authorized — the first question every board, regulator, and litigant asks is the same one: **who is responsible?** 
 
-When an AI system does something consequential — approves a transaction it shouldn't have, generates a filing with a fabricated citation, takes an autonomous action nobody authorized — the first question every board, regulator, and litigant asks is the same one: **who is responsible?**
-
-The honest answer is usually harder to reach than people expect. A system log shows that something happened, not that anyone was watching. A signed policy shows what was permitted, not what actually occurred. A certification of a software process shows where a file came from, not the chain of conduct that produced it. Each of these records is real evidence — but none of them, on its own, answers the responsibility question they're so often asked to answer.
+The honest answer is usually harder to reach than people expect. A system log shows that something happened, not that anyone was watching. A signed policy shows what was permitted, not what actually occurred. A certification of a software process shows where a file came from, not the chain of conduct that produced it. Each of these records is real evidence — but none of them, on its own, answers the responsibility question they're so often asked to answer. 
 
 That gap is what Evidence-Based Responsibility Reconstruction℠ was built to address, and TRACE organizes the central inquiry.
 
@@ -66,7 +36,7 @@ Evidence-Based Responsibility Reconstruction℠ separates the governing standard
 
 Each layer has a distinct job. The standard defines what must be established. TRACE identifies the relationships that must be traced. The Protocol provides the ordered implementation sequence. The Evidence-State Scale classifies what the surviving record ultimately supports.
 
-## Standard Principles for Investigating AI Errors and Failures
+## Methods for Investigating AI Errors
 
 Evidence-Based Responsibility Reconstruction℠ is the voluntary standard for incident response involving artificial intelligence systems.
 
@@ -106,34 +76,6 @@ Evidence asks what the surviving record can actually establish about Responsibil
 
 Missing evidence is itself part of the reconstruction. Evidence-Based Responsibility Reconstruction does not silently fill gaps in the record.
 
-## Applying TRACE in Practical AI Incident Audits
-
-TRACE isn't a separate methodology or standard — it's the analytical construct used inside Evidence-Based Responsibility Reconstruction to keep an investigation centered on those four relationships. That's what makes it usable as shorthand:
-
-- *TRACE the incident.*
-- *TRACE the responsibility chain.*
-- *The TRACE analysis establishes authority but leaves control unresolved.*
-- *The surviving record doesn't provide enough evidence to complete TRACE.*
-
-The shorthand makes the standard easier to teach and apply without replacing its formal name.
-
-## Step-by-Step Protocol for Investigating AI Incidents
-
-Where TRACE identifies *what* must be traced, the Responsibility Reconstruction Protocol establishes *how* the reconstruction is performed.
-
-### The 8-Step AI Incident Reconstruction Sequence
-
-1. Define the consequential conduct.
-2. Identify the AI system's role.
-3. Reconstruct delegated authority.
-4. Map human and institutional control.
-5. Trace causal conditions.
-6. Inventory the surviving evidence.
-7. Allocate responsibility by governance act.
-8. Classify the evidentiary result.
-
-TRACE isn't confined to any one step — Responsibility, Authority, Control, and Evidence are relationships developed and tested across the entire sequence.
-
 ## Classifying Evidence Strength After an AI Failure
 
 Once TRACE has been conducted through the Protocol, the surviving record is classified according to what it can actually support.
@@ -147,14 +89,3 @@ Once TRACE has been conducted through the Protocol, the surviving record is clas
 
 The Lozen Evidence-State Scale℠ exists to prevent a reconstruction from implying more evidentiary certainty than the record actually supports.
 
-## Summary: A Standardized Approach to Investigating AI Errors
-
-Each component has a distinct function. Evidence-Based Responsibility Reconstruction℠ defines the standard — what qualifies as Evidence-Based Responsibility Reconstruction and the principles that govern it. TRACE defines the operational inquiry — trace Responsibility, Authority, Control, and Evidence. The Responsibility Reconstruction Protocol defines the implementation sequence — the ordered process for performing the reconstruction. The Lozen Evidence-State Scale℠ defines the evidentiary endpoint — how much the surviving record ultimately allows the reconstruction to establish.
-
-Put simply:
-
-**Standard → Operational Construct → Protocol → Classification**
-
-**Evidence-Based Responsibility Reconstruction℠ → TRACE → Responsibility Reconstruction Protocol → Lozen Evidence-State Scale℠**
-
-The result is a standardized way to investigate AI incidents by working backward from consequential AI-mediated conduct. It does not assume that a named human, an existing policy, a system log, a credential, or a formal oversight structure proves responsibility. TRACE requires Responsibility, Authority, Control, and Evidence to be established from the surviving record rather than inferred from paperwork.
