@@ -95,6 +95,12 @@ content:
         required: true
         description: Short excerpt used on article pages and promotional displays.
 
+      - name: relatedSlugs
+        label: Related articles
+        type: string
+        list: true
+        description: Enter each related article slug without /blog/ or .md.
+
       - name: featured
         label: Featured article
         type: boolean
