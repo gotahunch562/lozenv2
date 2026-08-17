@@ -16,7 +16,7 @@ lead: Two AI security incidents show why identity, credentials, and access logs
   are not proof of authority—and why boards need evidence of the decision
   itself.
 featured: false
-draft: true
+draft: false
 ---
 Two AI security stories broke within weeks of each other this summer. In one, an AI agent's capability outlived every sandbox it ran in, relayed forward through a self-built messaging protocol until it reached a company's production infrastructure. In the other, attackers ran a voice-phishing campaign against major hedge funds, impersonating people employees were trained to trust.
 
