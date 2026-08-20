@@ -80,13 +80,13 @@ const breadcrumbJsonLd = {
       <h2>Event Record</h2>
       <div style="display:grid;gap:20px;margin-top:24px">
         {events.map((event) => (
-          <a href={event.href} class="fcard reveal" style="display:block">
+          <div class="fcard reveal">
             <span class="eyebrow" style="margin-bottom:4px">{event.label} · {event.date}</span>
             <h3>{event.title}</h3>
             <p style="font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin-bottom:10px">{event.context}</p>
             <p>{event.description}</p>
-            <span class="go" style="margin-top:14px;display:inline-block;font-weight:700;color:var(--accent)">View event →</span>
-          </a>
+            <a href={event.href} class="go" style="margin-top:14px;display:inline-block;font-weight:700;color:var(--accent)">View event →</a>
+          </div>
         ))}
       </div>
     </div>
