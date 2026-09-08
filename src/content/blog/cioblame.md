@@ -1,28 +1,23 @@
 ---
 title: The CIO Is Left Holding the Bag
-seo_title: "AI Governance: Why the CIO Is Left Holding the Bag"
+seoTitle: "AI Governance: Why the CIO Is Holding the Bag"
 slug: cio-holding-the-bag-ai-governance
-pubDate: 2026-09-08
-datePublished: 2026-09-08
-dateModified: 2026-09-08
+description: A September 2026 survey reveals 52% of CIOs are held accountable
+  for AI agent errors despite lacking direct operational control. Learn how to
+  bridge the enterprise AI governance gap.
+metaDescription: A September 2026 survey reveals 52% of CIOs are held
+  accountable for AI agent errors despite lacking direct operational control.
+  Learn how to bridge the enterprise AI governance gap.
 category: AI Governance & Workforce Risk
-excerpt: A July 2026 survey reveals that 52% of CIOs are held accountable for AI
-  agent errors despite lacking direct operational control, exposing a critical
-  governance gap between responsibility and authority.
-description: A July 2026 survey reveals 52% of CIOs are held accountable for AI
-  agent errors despite lacking direct operational control. Learn how to bridge
-  the enterprise AI governance gap.
-image:
-  url: /src/images/blog/ceo_walk_away.avif
-  alt: cio walking away with bag
-heroImage: /src/images/blog/ceo_walk_away.avif
-heroAlt: cio walking away with bag
-tags:
-  - AI Governance
-  - AI Accountability
-  - Name Standard
+image: /blog/ceo_walk_away.avif
+imageAlt: cio holding the bag
+pubDate: 2026-09-08
+dateModified: 2026-09-08
+lead: A September 2026 survey reveals that 52% of CIOs are held accountable for
+  AI agent errors despite lacking direct operational control, exposing a
+  critical governance gap between responsibility and authority.
+featured: true
 draft: false
-isFeatured: true
 ---
  In survey released on Sep 08, 2026, 2,501 CIOs and CTOs across five countries, **52% said the CIO is accountable when an AI agent makes an error.** Customer service leadership came in at 16%. Legal and compliance: 6%. 8x8 titled that finding well, they said, **"The CIO Is Holding the Bag."**
 
