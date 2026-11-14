@@ -1,0 +1,78 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CtaStrip from '../../components/CtaStrip.astro';
+
+const description = 'Akilah E. Kamaria will present at the Hawaii Supreme Court Courtroom on managing professional performance when personal circumstances cannot be disclosed.';
+
+const eventJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Event',
+  name: 'How to Manage Performance When Disclosure Is Not an Option',
+  description,
+  startDate: '2027-05-07',
+  eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+  eventStatus: 'https://schema.org/EventScheduled',
+  location: {
+    '@type': 'Place',
+    name: 'Hawaii Supreme Court Courtroom',
+  },
+  organizer: {
+    '@type': 'Organization',
+    name: 'Hawaii Women Lawyers',
+  },
+  performer: {
+    '@type': 'Person',
+    name: 'Akilah E. Kamaria',
+  },
+};
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.lozenadvisory.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Events', item: 'https://www.lozenadvisory.com/events/' },
+    { '@type': 'ListItem', position: 3, name: 'How to Manage Performance When Disclosure Is Not an Option', item: 'https://www.lozenadvisory.com/events/how-to-manage-performance-when-disclosure-is-not-an-option/' },
+  ],
+};
+---
+
+<BaseLayout title="How to Manage Performance When Disclosure Is Not an Option | Lozen Advisory" description={description}>
+<script type="application/ld+json" set:html={JSON.stringify(eventJsonLd)} />
+<script type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd)} />
+
+<section class="page-hero">
+  <div class="grid-bg"></div>
+  <div class="wrap inner">
+    <div class="crumb"><a href="/">Home</a> &nbsp;/&nbsp; <a href="/events/">Events</a> &nbsp;/&nbsp; Hawaii Women Lawyers</div>
+    <span class="pill">Speaking Engagement · May 7, 2027</span>
+    <h1>How to Manage Performance When Disclosure Is Not an Option</h1>
+    <p class="sub">Hawaii Women Lawyers | Hawaii Supreme Court</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="article-body">
+      <p><strong>Organizer:</strong> Hawaii Women Lawyers<br>
+      <strong>Date:</strong> May 7, 2027<br>
+      <strong>Location:</strong> Hawaii Supreme Court Courtroom</p>
+
+      <p>Akilah E. Kamaria, founder of Lozen Advisory LLC, will present at the Hawaii Supreme Court Courtroom as part of a continuing legal education program organized by Hawaii Women Lawyers.</p>
+
+      <p>Drawing on her work in evidence, AI-mediated decision-making, and organizational accountability, Kamaria will examine how attorneys navigate professional expectations when personal circumstances cannot be disclosed.</p>
+
+      <p>Her presentation will also address the emerging influence of artificial intelligence on workplace performance assessments, including how automated evaluations can shape perceptions of competence and productivity without accounting for critical context.</p>
+
+      <p>This engagement reflects Lozen Advisory’s work at the intersection of evidence, accountability, professional decision-making, and emerging technology.</p>
+    </div>
+  </div>
+</section>
+
+<CtaStrip
+  title="Invite Lozen Advisory into the room."
+  description="For speaking invitations, hosted sessions, conferences, panels, or private leadership conversations, contact Lozen Advisory with the event context, audience, timing, and topic."
+  primaryHref="/contact/"
+  primaryLabel="Contact Lozen Advisory →"
+/>
+</BaseLayout>
