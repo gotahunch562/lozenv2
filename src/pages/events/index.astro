@@ -5,6 +5,14 @@ import CtaStrip from '../../components/CtaStrip.astro';
 const events = [
   {
     label: 'Speaking Engagement',
+    date: 'May 7, 2027',
+    title: 'How to Manage Performance When Disclosure Is Not an Option',
+    context: 'Hawaii Women Lawyers | Hawaii Supreme Court',
+    description: 'Akilah E. Kamaria will examine how attorneys navigate professional expectations when personal circumstances cannot be disclosed, including the influence of artificial intelligence on workplace performance assessments.',
+    href: '/events/manage-performance-when-disclosure-is-not-an-option/',
+  },
+  {
+    label: 'Speaking Engagement',
     date: 'September 3, 2026',
     title: 'Marketing for the Agentic Internet: How AI Is Changing Brand, Search, and Website Design',
     context: 'Pepperdine University — AI for Digital Marketing',
@@ -22,12 +30,11 @@ const events = [
 ];
 
 const speakingTopics = [
-  'Professional responsibility in AI-assisted legal work',
-  'Bias in generative AI systems',
-  'Confidentiality risks when using AI tools',
-  'Verification of AI-generated legal authorities',
-  'Employer-mandated AI use in legal practice',
-  'Techniques to identify and challenge AI/LLM output',
+  'Beyond Traditional Software: What Is an LLM?',
+  'When AI Judges Performance: The Risk of Being Evaluated Without Context',
+  'Understanding LLMs, AI Bias, Advocacy, and Autonomous Systems',
+  'Beyond the Prompt: Understanding LLMs, AI Bias, Advocacy, and Autonomous Systems',
+  'Understanding AI Bias Beyond Hallucinations and Discrimination',
 ];
 
 const pageJsonLd = {
@@ -95,8 +102,9 @@ const breadcrumbJsonLd = {
 
 <CtaStrip
   title="Invite Lozen Advisory into the room."
-  description="For speaking invitations, hosted sessions, conferences, panels, or private leadership conversations, contact Lozen Advisory with the event context, audience, timing, and topic."
+  description="For speaking invitations, hosted sessions, conferences, panels, or private leadership conversations, contact Lozen Advisory."
   primaryHref="/contact/"
   primaryLabel="Contact Lozen Advisory →"
 />
 </BaseLayout>
+
